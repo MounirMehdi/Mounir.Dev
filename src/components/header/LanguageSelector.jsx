@@ -123,7 +123,7 @@ const LanguageSelector = () => {
                 <motion.button
                   key={lang.key}
                   onClick={() => handleChange(lang)}
-                  className={`w-full flex items-center gap-3 px-4 py-2.5 text-left ${
+                  className={`cursor-pointer w-full flex items-center gap-3 px-4 py-2.5 text-left ${
                     lang.key === i18n.language 
                       ? "bg-teal-50 dark:bg-teal-900/50 font-semibold text-teal-600 dark:text-teal-400" 
                       : "hover:bg-gray-50 dark:hover:bg-slate-700/70"
