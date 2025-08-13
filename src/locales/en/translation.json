@@ -1,0 +1,1441 @@
+{
+  "developer": "Developer",
+  "slogan": "Bring your digital ideas to life",
+  "description": "Creator of unique and high-performance web experiences. Master's degree in software engineering. Specialized in modern development.",
+  "see_projects": "See my projects",
+  "request_quote": "Request a quote",
+  "experience": "2+ years experience",
+  "delivered_projects": "Projects delivered",
+  "satisfied_clients": "Satisfied clients",
+  "skills_title": "My Skills",
+  "skills_subtitle": "Comprehensive expertise to carry out your web projects from A to Z",
+  "recent_projects": "Recent Projects",
+  "recent_projects_sub": "Discover some of my most outstanding achievements",
+  "see_all_projects": "See all projects",
+  "cta_title": "Ready to start your project?",
+  "cta_sub": "Contact me today to discuss your needs and get a free personalized quote.",
+  "cta_button": "Request a free quote",
+  "project1_desc": "Creation of multi-page websites with forms, APIs and SEO optimization.",
+  "project2_desc": "Web application for tracking port calls with a modern interface.",
+  "project3_desc": "Desktop real estate management software with intuitive interface.",
+  "project_not_found": "Project not found",
+  "project_not_found_message": "The project you are looking for does not exist or has been moved.",
+  "back_to_projects": "Back to projects",
+  "about_project": "About the project",
+  "challenges": "Challenges and solutions",
+  "results": "Achieved results",
+  "gallery": "Project gallery",
+  "project_details": "Project details",
+  "launch_date": "Launch date",
+  "duration": "Project duration",
+  "team": "Team",
+  "featured_project": "Featured project",
+  "featured_project_desc": "Selected as outstanding project",
+  "technologies": "Technologies used",
+  "project_links": "Project links",
+  "visit_site": "Visit site",
+  "source_code": "Source code",
+  "prev_project": "Previous project",
+  "next_project": "Next project",
+  "click_to_gallery": "Click to view gallery",
+  "view_large": "View large",
+  "cta_title": "Ready to make your project a reality?",
+  "cta_sub": "Let's discuss your vision and create something extraordinary together",
+  "cta_button": "Get started now",
+  "cta_hint": "Let's turn your ideas into reality",
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quoteButton": "Free Quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Creative Fullstack Developer",
+      "title1": "Transform your ideas into",
+      "flipWords": [
+        "Digital Experiences",
+        "Captivating Websites",
+        "Innovative Solutions",
+        "High-Performance Platforms"
+      ],
+      "description": "I create custom web and mobile solutions that combine elegant design, technical performance and exceptional user experience. Every project is an opportunity for innovation.",
+      "button1": "Explore my work",
+      "button2": "Discuss your project",
+      "stats": [
+        {
+          "value": "5+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "50+",
+          "label": "Projects delivered"
+        },
+        {
+          "value": "100%",
+          "label": "Satisfied clients"
+        }
+      ]
+    },
+    "skills": {
+      "title": "My",
+      "titleHighlight": "Skills",
+      "subtitle": "Technical and creative expertise to turn your ideas into reality",
+      "frontend": {
+        "name": "Frontend",
+        "tech": "HTML/CSS/JS, Bootstrap, Tailwind, React, Vue.js"
+      },
+      "backend": {
+        "name": "Backend",
+        "tech": "PHP, Laravel, Java"
+      },
+      "design": {
+        "name": "Design",
+        "tech": "UX/UI, Photoshop, Illustrator, Canva"
+      },
+      "seo": {
+        "name": "SEO",
+        "tech": "Analytics, Search Console, SEO, Accessibility, Optimization"
+      },
+      "mobile": {
+        "name": "Mobile",
+        "tech": "Responsive Design, Flutter Apps, Android"
+      },
+      "methodology": {
+        "name": "Methodology",
+        "tech": "Agile, Scrum"
+      }
+    },
+    "services": {
+      "title": "My",
+      "titleHighlight": "Expertise",
+      "subtitle": "Custom solutions to transform your digital challenges into success",
+      "website": {
+        "title": "Websites",
+        "description": "Elegant designs and optimal performance for high-performance digital showcase sites to boost your credibility and generate leads 24/7."
+      },
+      "webapp": {
+        "title": "Web applications",
+        "description": "Custom solutions to automate your business processes and turn your operational challenges into competitive advantages."
+      },
+      "mobile": {
+        "title": "Mobile Applications",
+        "description": "Intuitive mobile solutions, native and smooth mobile experiences published on app stores."
+      },
+      "marketing": {
+        "title": "Digital Strategy & Marketing",
+        "description": "Custom roadmaps to dominate your market and accelerate your growth in the digital age."
+      },
+      "button": "Discover all my expertise"
+    },
+    "projects": {
+      "title": "My",
+      "titleHighlight": "Recent Projects",
+      "subtitle": "Discover my latest achievements and case studies",
+      "button": "See all projects"
+    },
+    "blog": {
+      "title": "My",
+      "titleHighlight": "Latest Articles",
+      "subtitle": "Tips, tutorials and thoughts on web development",
+      "post1": {
+        "title": "Web Development Trends in 2025",
+        "excerpt": "Discover the technologies and frameworks that will dominate this year.",
+        "date": "Jan 15, 2025",
+        "readTime": "5 min",
+        "category": "Development"
+      },
+      "post2": {
+        "title": "SEO Optimization: Complete Guide",
+        "excerpt": "Master the most effective SEO optimization techniques.",
+        "date": "Jan 10, 2025",
+        "readTime": "8 min",
+        "category": "SEO"
+      },
+      "post3": {
+        "title": "Laravel vs React: Choosing the Right Stack",
+        "excerpt": "Detailed comparison between Laravel and React for your web projects.",
+        "date": "Jan 5, 2025",
+        "readTime": "6 min",
+        "category": "Development"
+      },
+      "readButton": "Read article",
+      "button": "See all articles"
+    },
+    "slides": {
+      "slide1": {
+        "title": "Digital Experiences",
+        "description": "Creating high-performance web applications with React and Next.js",
+        "alt": "Digital Experiences"
+      },
+      "slide2": {
+        "title": "Captivating Websites",
+        "description": "Cross-platform development with React Native and Flutter",
+        "alt": "Captivating Websites"
+      },
+      "slide3": {
+        "title": "Innovative Solutions",
+        "description": "Technical and semantic strategies for natural referencing",
+        "alt": "Innovative Solutions"
+      },
+      "slide4": {
+        "title": "High-Performance Platforms",
+        "description": "Technical and semantic strategies for natural referencing",
+        "alt": "High-Performance Platforms"
+      }
+    },
+    "process": {
+      "title": "My",
+      "titleHighlight": "Work Process",
+      "subtitle": "A transparent methodology for exceptional results",
+      "steps": [
+        {
+          "icon": "Users",
+          "step": "Design",
+          "title": "Digital Blueprint",
+          "description": "Goal definition and technical architecture"
+        },
+        {
+          "icon": "Code",
+          "step": "Development",
+          "title": "Technical Creation",
+          "description": "Agile implementation with weekly reviews"
+        },
+        {
+          "icon": "BarChart",
+          "step": "Optimization",
+          "title": "Fine Tuning",
+          "description": "User testing and precise adjustments"
+        },
+        {
+          "icon": "Shield",
+          "step": "Delivery",
+          "title": "Support",
+          "description": "Training and post-delivery support"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to make your project a reality?",
+      "subtitle": "Let's discuss your vision together and create something extraordinary.",
+      "button": "Start my project"
+    }
+  },
+  "projectPopup": {
+    "projects": [
+      {
+        "id": 1,
+        "title": "NextJS Portfolio",
+        "category": "Web Development",
+        "shortDescription": "A modern portfolio with dark mode and smooth animations",
+        "fullDescription": "A modern portfolio with dark mode, smooth animations and internationalization. Built with Next.js, Tailwind CSS and Framer Motion. This project was designed to showcase my work in an elegant and interactive way.",
+        "challenges": "The main challenge was to create a smooth user experience with high-performance animations without sacrificing SEO. I solved this by using Next.js for server-side rendering and Framer Motion for optimized animations.",
+        "resultsIntro": "After implementing our solution, we observed a significant improvement in performance and user experience:",
+        "resultsList": [
+          "40% increase in conversion rate",
+          "30% reduction in page load time",
+          "95% improvement in customer satisfaction"
+        ],
+        "tech": ["Next.js", "Tailwind CSS", "Framer Motion", "i18next"],
+        "demoUrl": "https://portfolio-nextjs-example.com",
+        "githubUrl": "https://github.com/your-user/portfolio-nextjs",
+        "featured": true,
+        "new": false,
+        "launchDate": "2023",
+        "duration": "2 months",
+        "team": ["Frontend Developer", "UI/UX Designer"],
+        "images": [
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "React E-commerce",
+        "category": "Fullstack Application",
+        "shortDescription": "Complete e-commerce platform with cart and Stripe payment",
+        "fullDescription": "Complete e-commerce platform with cart, Stripe payment and admin dashboard. Optimized for performance and SEO. The application includes a product, category and order management system.",
+        "challenges": "Secure integration of Stripe while ensuring a smooth user experience was complex. I implemented a persistent cart system and webhooks to handle asynchronous payments.",
+        "resultsIntro": "The project enabled:",
+        "resultsList": [
+          "25% reduction in cart abandonment",
+          "35% increase in sales",
+          "90% decrease in payment incidents"
+        ],
+        "tech": ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
+        "demoUrl": "https://ecommerce-react-demo.com",
+        "githubUrl": "https://github.com/your-user/ecommerce-react",
+        "featured": true,
+        "new": true,
+        "launchDate": "June 2023",
+        "duration": "5 months",
+        "team": ["Fullstack Developer", "UX Designer"],
+        "images": [
+          "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1603739903239-8b6e64c3b185?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        ]
+      }
+    ],
+    "newBadge": "New",
+    "visitButton": "Visit",
+    "codeButton": "Code",
+    "descriptionTitle": "Description",
+    "challengesTitle": "Challenges",
+    "resultsTitle": "Results",
+    "detailsTitle": "Details",
+    "teamLabel": "Team",
+    "technologiesTitle": "Technologies",
+    "galleryTitle": "Gallery"
+  },
+  "footer": {
+    "description": "I create exceptional digital experiences that transform ideas into high-performance solutions. Specialized in fullstack development and UX/UI design.",
+    "newsletterTitle": "Stay informed",
+    "emailPlaceholder": "Your email",
+    "subscriptionSuccess": "Thank you for subscribing!",
+    "navigationTitle": "Navigation",
+    "navigationItems": [
+      { "name": "Home", "path": "/" },
+      { "name": "Services", "path": "/services" },
+      { "name": "Projects", "path": "/projects" },
+      { "name": "Blog", "path": "/blog" },
+      { "name": "Contact", "path": "/contact" }
+    ],
+    "legalTitle": "Legal",
+    "legalItems": [
+      { "name": "Privacy", "path": "/privacy" },
+      { "name": "Terms", "path": "/terms" },
+      { "name": "Cookies", "path": "/cookies" },
+      { "name": "FAQs", "path": "/faqs" }
+    ],
+    "contactTitle": "Contact",
+    "platformsTitle": "Platforms",
+    "freelancePlatforms": {
+      "fiverr": "Fiverr",
+      "upwork": "Upwork",
+      "freelance": "Freelance.com"
+    },
+    "socialNetworks": {
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "tiktok": "TikTok",
+      "instagram": "Instagram"
+    },
+    "copyright": "All rights reserved."
+  },
+  "projects": {
+    "hero": {
+      "title1": "My",
+      "title2": "Projects",
+      "subtitle": "Discover my projects and the technical expertise used to build innovative and effective solutions",
+      "searchPlaceholder": "Search projects, technologies..."
+    },
+    "filters": {
+      "filterLabel": "Filter:",
+      "all": "All Projects",
+      "web": "Web",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "moreFilters": "More Filters",
+      "projectStatus": "Project Status",
+      "statusAll": "All Statuses",
+      "statusCompleted": "Completed",
+      "statusInProgress": "In Progress",
+      "technologies": "Technologies",
+      "applyFilters": "Apply Filters",
+      "reset": "Reset"
+    },
+    "noProjects": {
+      "title": "No Projects Found",
+      "message": "No projects match your search. Try adjusting your filters or search term."
+    },
+    "viewDetails": "View Details",
+    "technologies": {
+      "title1": "Mastered",
+      "title2": "Technologies",
+      "subtitle": "Tools and technologies I use to build effective solutions"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Let's discuss your vision and create something extraordinary together",
+      "button": "Start a Project"
+    },
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In Progress"
+    },
+    "categories": {
+      "web": "Web",
+      "desktop": "Desktop",
+      "mobile": "Mobile"
+    },
+    "projectDetails": {
+      "title": "Project Details",
+      "description": "Full Description",
+      "client": "Client",
+      "period": "Period",
+      "status": "Status",
+      "category": "Category",
+      "technologies": "Technologies Used",
+      "results": "Achieved Results",
+      "features": "Features",
+      "visitSite": "Visit Site",
+      "viewCode": "View Code"
+    }
+  },
+  "projectsData": [
+    {
+      "id": 1,
+      "title": "Numilex - Dynamic Websites",
+      "category": "web",
+      "client": "Numilex, Béjaïa",
+      "period": "09.2023 - Present",
+      "description": "Creation of dynamic multi-page websites with form integration, APIs, SEO optimization, and animations.",
+      "longDescription": "Complete web development project for Numilex. Creation of a modern showcase website with content management system, advanced contact forms, third-party API integration for services, complete SEO optimization, and CSS/JavaScript animations for an engaging user experience.",
+      "technologies": [
+        "HTML5",
+        "CSS3/SCSS",
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "SEO"
+      ],
+      "features": [
+        "Responsive multi-device design",
+        "Content management system",
+        "Advanced contact forms",
+        "Third-party API integration",
+        "Complete SEO optimization",
+        "Smooth animations and transitions",
+        "Hosting and maintenance"
+      ],
+      "status": "inProgress",
+      "link": null,
+      "github": null,
+      "images": [
+        {
+          "id": 1,
+          "alt": "Numilex Home Page",
+          "caption": "Modern design with animations"
+        },
+        { "id": 2, "alt": "Services Page", "caption": "Services presentation" },
+        {
+          "id": 3,
+          "alt": "Contact Page",
+          "caption": "Advanced form with validation"
+        }
+      ],
+      "challenges": [
+        "Integration with existing booking system",
+        "Performance optimization for fast loading",
+        "GDPR compliance for forms"
+      ],
+      "results": [
+        "45% increase in organic traffic",
+        "28% form conversion rate",
+        "Average loading time reduced to 1.2s"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "EPB - Port Call Tracking",
+      "category": "web",
+      "client": "Port Enterprise of Béjaïa",
+      "period": "02.2022 - 04.2022",
+      "description": "Web application for real-time port call tracking with interactive dashboards.",
+      "longDescription": "Complete web application developed as part of my Master's final project. The application allows real-time tracking of ships, management of port calls, planning of port operations, and generation of detailed reports. Modern user interface with Vue.js and robust backend with Laravel.",
+      "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "API REST"],
+      "features": [
+        "Real-time ship tracking",
+        "Port call management",
+        "Interactive dashboards",
+        "Report generation",
+        "Modern user interface",
+        "Complete REST API",
+        "Secure authentication"
+      ],
+      "status": "completed",
+      "link": null,
+      "github": null,
+      "images": [
+        {
+          "id": 1,
+          "alt": "Main Dashboard",
+          "caption": "Overview of port operations"
+        },
+        {
+          "id": 2,
+          "alt": "Port Call Details",
+          "caption": "Detailed information on a port call"
+        },
+        {
+          "id": 3,
+          "alt": "Operations Schedule",
+          "caption": "Interactive activity calendar"
+        }
+      ],
+      "challenges": [
+        "Real-time data integration from multiple sources",
+        "Designing a complex yet intuitive interface",
+        "Multi-level permissions management"
+      ],
+      "results": [
+        "30% reduction in port call processing time",
+        "25% decrease in planning errors",
+        "Interface adopted by 100% of target users"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "AWAL - Real Estate Management",
+      "category": "desktop",
+      "client": "AWAL Real Estate Agency",
+      "period": "03.2019 - 04.2019",
+      "description": "Real estate management software with intuitive interface for property and client management.",
+      "longDescription": "Complete management software developed in Java for a real estate agency. The system allows management of properties, clients, rental and sales contracts, and generation of financial reports. Intuitive user interface with Java Swing and SQLite database.",
+      "technologies": ["Java", "Swing", "SQLite", "iReport", "OOP"],
+      "features": [
+        "Property management",
+        "Client and prospect management",
+        "Rental and sales contracts",
+        "Report generation",
+        "Intuitive user interface",
+        "Local database",
+        "Backup system"
+      ],
+      "status": "completed",
+      "link": null,
+      "github": null,
+      "images": [
+        { "id": 1, "alt": "Main Interface", "caption": "Management dashboard" },
+        {
+          "id": 2,
+          "alt": "Property Details",
+          "caption": "Property details with photos"
+        },
+        {
+          "id": 3,
+          "alt": "Visit Schedule",
+          "caption": "Visit and appointment planning"
+        }
+      ],
+      "challenges": [
+        "Migration from paper system",
+        "Training non-technical users",
+        "Offline data synchronization"
+      ],
+      "results": [
+        "40% reduction in administrative management time",
+        "20% increase in sales through prospect follow-up",
+        "Centralization of all client and property data"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Personal Portfolio",
+      "category": "web",
+      "client": "Personal Project",
+      "period": "2025",
+      "description": "Modern portfolio website with smooth animations and performance optimization.",
+      "longDescription": "Modern personal portfolio developed with the latest web technologies. Fully responsive site with smooth animations, SEO optimization, and optimal performance. Presentation of skills, projects and services with a modern and professional design.",
+      "technologies": ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+      "features": [
+        "Modern responsive design",
+        "Smooth animations",
+        "SEO optimization",
+        "Optimized performance",
+        "Contact form",
+        "Integrated blog",
+        "Automated deployment"
+      ],
+      "status": "inProgress",
+      "link": "#",
+      "github": "#",
+      "images": [
+        {
+          "id": 1,
+          "alt": "Home Page",
+          "caption": "Modern design with animations"
+        },
+        {
+          "id": 2,
+          "alt": "Projects Page",
+          "caption": "Showcase of achievements"
+        },
+        {
+          "id": 3,
+          "alt": "Skills Page",
+          "caption": "Visualization of mastered technologies"
+        }
+      ],
+      "challenges": [
+        "Creating a unique and memorable design",
+        "Optimizing performance for Lighthouse score >95",
+        "Integrating smooth animations without performance impact"
+      ],
+      "results": [
+        "Performance score of 98/100 on Lighthouse",
+        "Award-winning design in multiple web contests",
+        "60% increase in contact requests"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "GreenMarket - Eco-friendly E-commerce",
+      "category": "web",
+      "client": "GreenMarket Startup",
+      "period": "06.2024 - 08.2024",
+      "description": "E-commerce platform specialized in eco-friendly and sustainable products.",
+      "longDescription": "Complete marketplace for eco-friendly products with secure payment system, inventory management, customer reviews and personalized recommendations. Integration with eco-friendly delivery APIs and carbon footprint calculation.",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
+      "features": [
+        "Product catalog with eco filters",
+        "Secure payment system",
+        "Product carbon footprint calculation",
+        "Personalized recommendations",
+        "Ecology blog",
+        "Sustainable loyalty program"
+      ],
+      "status": "completed",
+      "link": "#",
+      "github": "#",
+      "images": [
+        { "id": 1, "alt": "Home Page", "caption": "Nature-inspired design" },
+        {
+          "id": 2,
+          "alt": "Product Page",
+          "caption": "Product details with environmental impact"
+        },
+        {
+          "id": 3,
+          "alt": "Checkout Process",
+          "caption": "Simplified and secure checkout"
+        }
+      ],
+      "challenges": [
+        "Complex carbon footprint calculation integration",
+        "Creating an eco-friendly recommendation system",
+        "Performance optimization for 5000+ product catalog"
+      ],
+      "results": [
+        "200% sales growth in 3 months",
+        "Average customer rating of 4.8/5",
+        "15% reduction in delivery carbon footprint"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "HealthTrack - Medical Monitoring",
+      "category": "mobile",
+      "client": "Regional Hospital",
+      "period": "01.2024 - 05.2024",
+      "description": "Mobile application for patient monitoring and medical appointment management.",
+      "longDescription": "Complete medical management solution allowing patients to track their treatments, make appointments and communicate with their doctor. For healthcare professionals, the application provides a complete dashboard for patient and prescription management.",
+      "technologies": [
+        "React Native",
+        "Firebase",
+        "Redux",
+        "Node.js",
+        "MongoDB"
+      ],
+      "features": [
+        "Online appointment scheduling",
+        "Prescription tracking",
+        "Medication reminders",
+        "Secure messaging with doctors",
+        "Medical record storage",
+        "Analytical dashboard"
+      ],
+      "status": "completed",
+      "link": "#",
+      "github": null,
+      "images": [
+        { "id": 1, "alt": "Patient Dashboard", "caption": "Health overview" },
+        {
+          "id": 2,
+          "alt": "Appointment Calendar",
+          "caption": "Consultation management"
+        },
+        {
+          "id": 3,
+          "alt": "Medication Tracking",
+          "caption": "Reminders and dose history"
+        }
+      ],
+      "challenges": [
+        "Strict compliance with health regulations",
+        "Real-time data synchronization",
+        "Creating an accessible interface for all ages"
+      ],
+      "results": [
+        "30% reduction in missed appointments",
+        "40% improvement in treatment adherence",
+        "Adoption by 15 clinics in 6 months"
+      ]
+    }
+  ],
+  "technologies": [
+    { "name": "React", "icon": "SiReact" },
+    { "name": "Vue.js", "icon": "SiVuedotjs" },
+    { "name": "Tailwind", "icon": "SiTailwindcss" },
+    { "name": "JavaScript", "icon": "FiCode" },
+    { "name": "HTML", "icon": "FiCode" },
+    { "name": "CSS", "icon": "FiCode" },
+    { "name": "PHP", "icon": "FiCode" },
+    { "name": "Laravel", "icon": "SiLaravel" },
+    { "name": "Node.js", "icon": "SiNodedotjs" },
+    { "name": "Java", "icon": "FaJava" },
+    { "name": "MySQL", "icon": "SiMysql" },
+    { "name": "Git", "icon": "FiCode" },
+    { "name": "GitHub", "icon": "FiCode" },
+    { "name": "Bitbucket", "icon": "FiCode" },
+    { "name": "Photoshop", "icon": "FiCode" },
+    { "name": "Illustrator", "icon": "FiCode" },
+    { "name": "Canva", "icon": "FiCode" },
+    { "name": "Figma", "icon": "SiFigma" }
+  ],
+  "blog": {
+    "title": "Tech Blog",
+    "subtitle": "Discover my thoughts on web development, new technologies and industry best practices.",
+    "searchPlaceholder": "Search for an article, tag or topic...",
+    "categoriesButton": "Categories",
+    "resetButton": "Reset",
+    "featuredPostTitle": "Featured Article",
+    "recentPostsTitle": "Recent Articles",
+    "foundPostsTitle": "Found Articles",
+    "noPostsFound": "No articles found for your search.",
+    "viewAllPosts": "View all articles",
+    "aboutTitle": "About the Blog",
+    "aboutDescription": "Passionate Full Stack Developer sharing experiences, discoveries and reflections on the world of web development. Explore the latest trends, tips and best practices.",
+    "popularTagsTitle": "Popular Tags",
+    "newsletterTitle": "Tech Newsletter",
+    "newsletterDescription": "Receive the latest articles and resources directly in your inbox.",
+    "newsletterPlaceholder": "Your email",
+    "newsletterButton": "Subscribe",
+    "readMore": "Read more",
+    "read": "Read",
+    "close": "Close",
+    "leaveComment": "Leave a comment",
+    "articles": "Artivles",
+    "article": "Article",
+    "categories": {
+      "all": "All articles",
+      "development": "Development",
+      "design": "Design",
+      "seo": "SEO",
+      "methodology": "Methodology",
+      "security": "Security"
+    },
+    "blogPosts": [
+      {
+        "id": 1,
+        "title": "Web Development Trends in 2025",
+        "excerpt": "Discover the technologies and frameworks that will dominate web development this year.",
+        "category": "development",
+        "author": "Mounir Mehdi",
+        "date": "2025-01-15",
+        "readTime": "5 min",
+        "tags": ["React", "CSS", "JavaScript", "Trends"],
+        "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>The future of web development</h2><p>The web development landscape is evolving at lightning speed. In 2025, we are seeing several major trends transforming the way we build web applications.</p><h3>JavaScript frameworks continue to dominate</h3><p>React, Vue and Angular remain the most popular frameworks, but newcomers like Svelte and SolidJS are gaining popularity quickly thanks to their exceptional performance.</p><h3>The rise of JAMstack architectures</h3><p>Static sites with serverless functions (JAMstack) now offer unmatched performance. Platforms like Next.js, Gatsby and Nuxt.js allow creating complex applications with near-instant loading times.</p><h3>WebAssembly changes the game</h3><p>With WebAssembly, it is now possible to execute compiled code (C++, Rust) in the browser, opening the door to web applications with near-native performance.</p><h3>AI integrated into development</h3><p>Tools like GitHub Copilot and Amazon CodeWhisperer are transforming the development experience, suggesting code in real time and automating repetitive tasks.</p>"
+      },
+      {
+        "id": 2,
+        "title": "SEO Optimization: Complete Guide for 2025",
+        "excerpt": "Master the most effective SEO optimization techniques for your websites.",
+        "category": "seo",
+        "author": "Mounir Mehdi",
+        "date": "2025-01-10",
+        "readTime": "8 min",
+        "tags": ["SEO", "Marketing", "Google", "Referencing"],
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>The evolution of SEO in 2025</h2><p>Natural referencing has evolved considerably in recent years. In 2025, search algorithms are smarter than ever, emphasizing user experience and content quality.</p><h3>The importance of Core Web Vitals</h3><p>Loading performance (LCP), responsiveness (FID) and visual stability (CLS) are now key ranking factors. Optimize these metrics to improve your visibility.</p><h3>Expert content (E-E-A-T)</h3><p>Google favors content demonstrating Expertise, Experience, Authority and Trustworthiness (E-E-A-T). Invest in in-depth content written by experts.</p><h3>Optimization for voice search</h3><p>With the rise of voice assistants, optimize your content for conversational queries and direct questions.</p><h3>Local SEO and Google Business presence</h3><p>For local businesses, an optimized Google Business profile is essential. Encourage customer reviews and keep your information up to date.</p>"
+      },
+      {
+        "id": 3,
+        "title": "Laravel vs React: Choosing the Right Stack",
+        "excerpt": "Detailed comparison between Laravel and React for your web projects.",
+        "category": "development",
+        "author": "Mounir Mehdi",
+        "date": "2025-01-05",
+        "readTime": "6 min",
+        "tags": ["Laravel", "React", "PHP", "JavaScript"],
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>Comparison of back-end and front-end technologies</h2><p>Laravel and React are two very different technologies: one is a PHP back-end framework, the other a JavaScript front-end library. But they are often compared because they can be combined to create powerful web applications.</p><h3>Laravel: Back-end excellence</h3><p>Laravel is a complete PHP framework that excels in creating complex web applications with:<ul><li>An elegant routing system</li><li>A powerful ORM (Eloquent)</li><li>A template engine (Blade)</li><li>A robust authentication system</li><li>Queue and scheduling tools</li></ul></p><h3>React: Front-end power</h3><p>React is a JavaScript library for creating interactive user interfaces:<ul><li>Reusable components</li><li>Efficient state management</li><li>Rich ecosystem (Redux, React Router, etc.)</li><li>Server-side rendering with Next.js</li><li>Large community and support</li></ul></p><h3>When to choose what?</h3><p>For data-rich applications with complex business logic, Laravel is ideal. For dynamic and responsive user interfaces, React is unbeatable. Fortunately, you can use both together via an API!</p>"
+      },
+      {
+        "id": 4,
+        "title": "UX/UI Design: Creating Intuitive Interfaces",
+        "excerpt": "The fundamentals of UX/UI design for engaging interfaces.",
+        "category": "design",
+        "author": "Mounir Mehdi",
+        "date": "2024-12-28",
+        "readTime": "7 min",
+        "tags": ["UX", "UI", "Design", "Interface"],
+        "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>The art of creating memorable user experiences</h2><p>UX/UI design goes far beyond aesthetics. It's about creating interfaces that solve real problems while providing a pleasant and intuitive experience.</p><h3>The fundamentals of UX design</h3><p><ul><li><strong>Empathy</strong>: Understanding user needs and frustrations</li><li><strong>Simplicity</strong>: Reducing complexity at every step</li><li><strong>Consistency</strong>: Maintaining consistent interaction patterns</li><li><strong>Feedback</strong>: Providing visual feedback to user actions</li><li><strong>Accessibility</strong>: Designing for all users</li></ul></p><h3>UI trends in 2025</h3><p><ul><li><strong>Dark mode by default</strong>: Reduces eye strain and saves battery</li><li><strong>Micro-interactions</strong>: Subtle animations that guide the user</li><li><strong>3D design and neomorphism</strong>: Depth and realism in interfaces</li><li><strong>Voice design</strong>: Interfaces adapted for voice interactions</li><li><strong>Inclusive design</strong>: Accessible color palettes and clear typography</li></ul></p><h3>Essential tools</h3><p>Figma, Adobe XD, Sketch, InVision Studio and Framer continue to dominate the market with increasingly innovative features for design and prototyping.</p>"
+      },
+      {
+        "id": 5,
+        "title": "Agile Methodology: Optimizing Your Projects",
+        "excerpt": "How to effectively implement Agile methodology in your projects.",
+        "category": "methodology",
+        "author": "Mounir Mehdi",
+        "date": "2024-12-20",
+        "readTime": "4 min",
+        "tags": ["Agile", "Scrum", "Management", "Productivity"],
+        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>Transforming your workflow with Agile</h2><p>The Agile methodology has revolutionized IT project management by emphasizing flexibility, collaboration and continuous value delivery.</p><h3>The pillars of Agile</h3><p><ul><li><strong>Individuals and interactions</strong> over processes and tools</li><li><strong>Working software</strong> over comprehensive documentation</li><li><strong>Customer collaboration</strong> over contract negotiation</li><li><strong>Responding to change</strong> over following a plan</li></ul></p><h3>Scrum: The most popular Agile framework</h3><p>Scrum structures the process into sprints (2-4 week iterations) with:<ul><li>Key roles: Product Owner, Scrum Master, Development Team</li><li>Events: Sprint Planning, Daily Stand-up, Sprint Review, Retrospective</li><li>Artifacts: Product Backlog, Sprint Backlog, Increment</li></ul></p><h3>Measurable benefits</h3><p><ul><li>30-50% reduction in time-to-market</li><li>25% increase in team productivity</li><li>40% improvement in customer satisfaction</li><li>50% decrease in product defects</li></ul></p>"
+      },
+      {
+        "id": 6,
+        "title": "Web Security: Protecting Your Applications",
+        "excerpt": "Essential guide to securing your web applications against threats.",
+        "category": "security",
+        "author": "Mounir Mehdi",
+        "date": "2024-12-15",
+        "readTime": "9 min",
+        "tags": ["Security", "HTTPS", "Authentication", "Protection"],
+        "image": "https://images.unsplash.com/photo-1563014959-7aaa83350992?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>Web security: An absolute necessity in 2025</h2><p>With the increase in cyberattacks, web application security is no longer an option but a necessity. Here are the best practices to protect your applications.</p><h3>The most common threats</h3><p><ul><li><strong>SQL Injection</strong>: Unauthorized access to databases</li><li><strong>Cross-Site Scripting (XSS)</strong>: Execution of malicious scripts</li><li><strong>Cross-Site Request Forgery (CSRF)</strong>: Unauthorized actions</li><li><strong>Denial of Service (DDoS)</strong>: Server overload</li><li><strong>Authentication breach</strong>: Access to user accounts</li></ul></p><h3>The 10 commandments of web security</h3><p><ol><li>Always use HTTPS with valid SSL certificates</li><li>Validate and sanitize ALL user input</li><li>Implement strong authentication (2FA)</li><li>Limit login attempts</li><li>Regularly update your dependencies</li><li>Use Content Security Policies (CSP)</li><li>Configure HTTP headers correctly</li><li>Store passwords securely (hashing)</li><li>Implement a logging system</li><li>Perform regular security audits</li></ol></p><h3>Essential security tools</h3><p>OWASP ZAP, Burp Suite, Nmap, Snyk, SonarQube and Cloudflare offer comprehensive solutions to test and protect your applications.</p>"
+      }
+    ],
+    "categoriesList": [
+      { "id": "all", "icon": "LayoutGrid" },
+      { "id": "development", "icon": "BookOpen" },
+      { "id": "design", "icon": "LayoutGrid" },
+      { "id": "seo", "icon": "TrendingUp" },
+      { "id": "methodology", "icon": "LayoutGrid" },
+      { "id": "security", "icon": "LayoutGrid" }
+    ],
+    "popularTags": [
+      "React",
+      "Laravel",
+      "JavaScript",
+      "SEO",
+      "UX/UI",
+      "Agile",
+      "PHP",
+      "CSS",
+      "NextJS",
+      "TypeScript",
+      "Responsive",
+      "Performance"
+    ],
+    "readTimeSuffix": "read",
+    "shareArticle": "Share this article",
+    "share": "Share",
+    "save": "Save",
+    "like": "Like"
+  },
+  "cookies": {
+    "hero": {
+      "title": "Privacy Policy and Cookie Management",
+      "subtitle": "Transparency and control of your personal data on our platform"
+    },
+    "commitment": {
+      "title": "Our Commitment to Your Privacy",
+      "text1": "At our company, protecting your personal data is an absolute priority. This policy explains how we collect, use, and protect your information.",
+      "text2": "We are committed to complying with the GDPR and French data protection regulations."
+    },
+    "cookiesSection": {
+      "title": "Cookie Policy",
+      "subtitle": "Management of trackers and similar technologies",
+      "whatAreCookies": "What are cookies?",
+      "cookiesDefinition": "Cookies are small text files placed on your device when you browse. They are used to remember your preferences, analyze traffic, and personalize your experience.",
+      "typesTitle": "Types of cookies used",
+      "essential": {
+        "title": "Essential",
+        "description": "Necessary for website operation (security, cart, account)"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Analysis of site usage (pages visited, loading times)"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "Personalization of experience (language, regional preferences)"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Personalized ads and remarketing campaigns"
+      },
+      "management": {
+        "title": "Managing Your Consent",
+        "text": "You have full control over non-essential cookies. You can modify your preferences at any time.",
+        "button": "Manage My Cookie Preferences"
+      }
+    },
+    "dataSection": {
+      "title": "Personal Data Processing",
+      "subtitle": "How we collect and use your information",
+      "collectedData": "Collected Data",
+      "dataList": [
+        "Account information (name, email, address)",
+        "Browsing data (IP address, pages viewed)",
+        "Transaction information (purchase history)",
+        "Preferences and interests"
+      ],
+      "purposesTitle": "Processing Purposes",
+      "purposesList": [
+        "Execution of orders and services",
+        "Personalization of user experience",
+        "Improvement of our products and services",
+        "Marketing communications (with your consent)",
+        "Compliance with legal obligations"
+      ],
+      "protectionTitle": "Data Protection",
+      "protectionText": "We implement advanced security measures including:",
+      "protectionList": [
+        "AES-256 encryption of sensitive data",
+        "Regular security audits",
+        "Restricted access to personal data",
+        "Limited retention policy"
+      ]
+    },
+    "rightsSection": {
+      "title": "Your GDPR Rights",
+      "subtitle": "Control of your personal data",
+      "access": {
+        "title": "Right of Access",
+        "description": "Obtain a copy of your personal data"
+      },
+      "rectification": {
+        "title": "Right to Rectification",
+        "description": "Correct inaccurate information"
+      },
+      "erasure": {
+        "title": "Right to Erasure",
+        "description": "Delete your data ('right to be forgotten')"
+      },
+      "objection": {
+        "title": "Right to Object",
+        "description": "Object to processing for legitimate reasons"
+      },
+      "howToExercise": "How to Exercise Your Rights",
+      "exerciseText": "For any request regarding your personal data, please contact us at the address below. We will respond within a maximum of 30 days."
+    },
+    "disableSection": {
+      "title": "Disabling Cookies",
+      "subtitle": "How to manage your browser settings",
+      "text": "You can control cookies through your browser settings. Here are guides for popular browsers:",
+      "browsers": {
+        "chrome": "Google Chrome",
+        "firefox": "Mozilla Firefox",
+        "safari": "Safari",
+        "edge": "Microsoft Edge"
+      }
+    },
+    "contactSection": {
+      "title": "Contact and DPO",
+      "subtitle": "Our Data Protection Officer",
+      "text": "For any questions about this policy or exercising your rights, contact our DPO:",
+      "dpoName": "Mr. Jean Dupont",
+      "dpoRole": "Data Protection Officer",
+      "email": "dpo@votresociete.com",
+      "phone": "+33 1 23 45 67 89",
+      "mailingAddress": "By mail:",
+      "address": [
+        "XYZ Company",
+        "Data Protection Service",
+        "123 Republic Avenue",
+        "75011 Paris, France"
+      ]
+    },
+    "lastUpdated": "Last updated: "
+  },
+  "contact": {
+    "faqTitle1": "Frequently",
+    "faqTitle2": "Asked Questions",
+    "faqSubtitle": "Find answers to the most common questions",
+    "hero": {
+      "title1": "Contact",
+      "title2": "Me",
+      "subtitle": "A question, a project, or just want to chat? I'm here to listen.",
+      "contactButton": "Contact Me",
+      "devisButton": "Request a Quote"
+    },
+    "whatsapp": {
+      "title": "WhatsApp Contact",
+      "description": "Let's discuss your project directly on WhatsApp",
+      "button": "Open WhatsApp",
+      "link": "https://wa.me/yourphonenumber"
+    },
+    "devis": {
+      "title": "Free Quote",
+      "description": "Get a personalized estimate for your project",
+      "button": "Request a Quote"
+    },
+    "guarantees": [
+      {
+        "title": "24h Response",
+        "text": "I commit to responding to all inquiries within 24 hours"
+      },
+      {
+        "title": "Smooth Communication",
+        "text": "Regular updates and transparent communication throughout the project"
+      },
+      {
+        "title": "Satisfaction Guaranteed",
+        "text": "Revisions included until you're completely satisfied"
+      }
+    ],
+    "errorMessage": "An error occurred, please try again.",
+    "successTitle": "Message sent!",
+    "successMessage": "Thank you for your message. I'll respond very quickly.",
+    "sending": "Sending...",
+    "sendMessage": "Send Message",
+    "formFooter": "* Required fields. Your data is protected and will never be shared.",
+    "contactInfo": [
+      {
+        "title": "Email",
+        "details": ["contact@monsite.com", "support@monsite.com"]
+      },
+      {
+        "title": "Phone",
+        "details": ["+33 6 12 34 56 78"]
+      },
+      {
+        "title": "Location",
+        "details": ["Paris, France"]
+      },
+      {
+        "title": "Availability",
+        "details": ["Mon-Fri: 9am-6pm", "Response within 24h"]
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "username": "myprofile",
+        "url": "https://github.com/myprofile"
+      },
+      {
+        "name": "LinkedIn",
+        "username": "myprofile",
+        "url": "https://linkedin.com/in/myprofile"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "What is your average response time?",
+        "answer": "I commit to responding to all messages within 24 business hours."
+      },
+      {
+        "question": "Can I contact you for free advice?",
+        "answer": "Absolutely! I offer free 15-minute consultations to discuss your needs."
+      },
+      {
+        "question": "Do you handle urgent requests?",
+        "answer": "Yes, for urgent requests, please mention it in your message and I'll do my best to respond promptly."
+      },
+      {
+        "question": "What topics can I discuss?",
+        "answer": "All topics are welcome: technical questions, advice requests, collaborations, or just to say hello!"
+      },
+      {
+        "question": "What are your response times?",
+        "answer": "I commit to responding to all requests within a maximum of 24 business hours. For complex projects, I'll send an initial response within 24h and a detailed quote within 48h."
+      },
+      {
+        "question": "Can I meet you in person?",
+        "answer": "Absolutely! I'm based in Paris and available for in-person meetings. For international or remote clients, I offer consultations via Zoom, Teams, or Google Meet."
+      },
+      {
+        "question": "What types of projects do you accept?",
+        "answer": "I work on a wide range of projects: showcase websites, e-commerce, web applications, redesigns, UI/UX design, and SEO optimization. If your project requires specific expertise, I can refer you to trusted partners."
+      },
+      {
+        "question": "Do you offer post-delivery support?",
+        "answer": "Yes, I offer different levels of post-delivery support, ranging from minor bug fixes to comprehensive maintenance contracts including updates, backups, and continuous improvements."
+      }
+    ],
+    "form": {
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Your Email",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Your message subject",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Describe your request here..."
+    },
+    "sectionTitles": {
+      "sendMessage": "Send a Message",
+      "sendMessageDesc": "Fill out this form and I'll get back to you as soon as possible.",
+      "myContactInfo": "My Contact Information",
+      "socialNetworks": "Social Networks",
+      "findMe": "Where to Find Me",
+      "findMeDesc": "Based in Paris, I work with clients worldwide"
+    },
+    "ctaTitle": "Ready to start your project?",
+    "ctaSubtitle": "Contact me today to discuss your needs and see how I can help you."
+  },
+  "services": {
+    "meta": {
+      "title": "Custom Web Services | Website and App Development",
+      "description": "Expert in web development and UX/UI design. Complete solutions for showcase websites, web applications, and digital strategy."
+    },
+    "hero": {
+      "title1": "Tailor-Made",
+      "title2": "Digital Solutions",
+      "subtitle": "Transform your ideas into exceptional digital experiences with technical expertise combined with innovative design.",
+      "button": "Discuss your project"
+    },
+    "services": {
+      "title1": "My",
+      "title2": "Expertise",
+      "subtitle": "Custom solutions to transform your digital challenges into successes",
+      "featuresTitle": "Proposed Solutions",
+      "techTitle": "Key Technologies",
+      "ctaButton": "Describe your project",
+      "web": {
+        "title": "Websites",
+        "description": "Creation of high-performance, secure websites adapted to your business needs.",
+        "features": [
+          "Custom showcase sites",
+          "Mobile/tablet compatible",
+          "Smooth animations",
+          "Google optimization",
+          "Ultra-fast loading",
+          "Protection against cyber threats",
+          "Secure hosting with backups",
+          "Permanent technical support"
+        ],
+        "technologies": [
+          "Bootstrap",
+          "Tailwind CSS",
+          "React",
+          "MUI",
+          "VueJS",
+          "Vuetify"
+        ]
+      },
+      "app": {
+        "title": "Web Applications",
+        "description": "Complete solutions to automate your business processes.",
+        "features": [
+          "Custom dashboards",
+          "Tailor-made SaaS platforms",
+          "Secure online stores",
+          "Connection to your existing tools",
+          "Automation of repetitive tasks",
+          "Real-time data analysis",
+          "Multi-device synchronization",
+          "User training"
+        ],
+        "technologies": ["Wordpress", "PHP", "Laravel", "MySQL"]
+      },
+      "mobile": {
+        "title": "Mobile Applications",
+        "description": "Native smartphone applications published on official stores.",
+        "features": [
+          "High performance on iOS and Android",
+          "Publication on App Store/Google Play",
+          "Offline features",
+          "Instant notifications",
+          "Personal data protection",
+          "Simple and intuitive interfaces",
+          "Testing on all devices",
+          "Regular updates"
+        ],
+        "technologies": [
+          "Flutter",
+          "React Native",
+          "Firebase",
+          "MYSQL",
+          "NoSQL"
+        ]
+      },
+      "marketing": {
+        "title": "Digital Strategy & Marketing",
+        "description": "Solutions to attract customers and increase your online sales.",
+        "features": [
+          "Visual identity creation (logos, posters)",
+          "Social media management",
+          "Attractive content production",
+          "Targeted Google ads",
+          "Customer loyalty strategies",
+          "Marketing automation",
+          "Performance analysis"
+        ],
+        "technologies": [
+          "Google Ads",
+          "Google Analytics",
+          "Canva",
+          "Photoshop",
+          "Illustrator"
+        ]
+      }
+    },
+    "process": {
+      "title1": "Creative",
+      "title2": "Process",
+      "subtitle": "A transparent methodology for exceptional results"
+    },
+    "processSteps": [
+      {
+        "step": "Design",
+        "title": "Digital Blueprint",
+        "description": "Goal definition and technical architecture"
+      },
+      {
+        "step": "Development",
+        "title": "Technical Creation",
+        "description": "Agile implementation with weekly reviews"
+      },
+      {
+        "step": "Optimization",
+        "title": "Fine-Tuning",
+        "description": "User testing and precise adjustments"
+      },
+      {
+        "step": "Delivery",
+        "title": "Support",
+        "description": "Training and post-delivery support"
+      }
+    ],
+    "why": {
+      "title1": "Committed",
+      "title2": "Expertise",
+      "subtitle": "An approach focused on your business objectives and transparent collaboration",
+      "features": [
+        {
+          "title": "Enhanced Security",
+          "description": "Data protection and GDPR compliance built-in from design"
+        },
+        {
+          "title": "Deadline Respect",
+          "description": "Agile methodology with regular intermediate deliveries"
+        },
+        {
+          "title": "Technical Innovation",
+          "description": "Constant technological watch for cutting-edge solutions"
+        },
+        {
+          "title": "Continuous Support",
+          "description": "Post-delivery support and future developments"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to transform your digital vision?",
+      "subtitle": "Contact me for a free consultation and let's explore the possibilities together.",
+      "button1": "Schedule a call",
+      "button2": "View my projects"
+    }
+  },
+  "devis": {
+    "documentTitle": "Custom Quote Request | Web & App Development",
+    "hero": {
+      "title1": "Request a",
+      "title2": "Custom Quote",
+      "subtitle": "Fill out this detailed form to receive an accurate estimate for your web or mobile project.",
+      "contactButton": "Contact Me"
+    },
+    "form": {
+      "title": "Quote Request Form",
+      "step": "Step {{step}} of {{total}}",
+      "success": {
+        "title": "Request Sent!",
+        "message": "Thank you for your request. I'll contact you within 24 hours with a personalized quote.",
+        "button": "Back to Home"
+      }
+    },
+    "step1": {
+      "title": "Personal Information",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Your last name",
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "Your phone number",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "website": "Website",
+      "websitePlaceholder": "https://yourwebsite.com",
+      "nextButton": "Next"
+    },
+    "step2": {
+      "title": "Project Details",
+      "projectName": "Project Name",
+      "projectNamePlaceholder": "Ex: E-commerce redesign",
+      "service": "Service Type",
+      "servicePlaceholder": "Select a service",
+      "serviceOtherPlaceholder": "Specify service type",
+      "projectType": "Project Type",
+      "projectTypePlaceholder": "Select project type",
+      "projectTypeOtherPlaceholder": "Specify project type",
+      "prevButton": "Previous",
+      "nextButton": "Next"
+    },
+    "step3": {
+      "title": "Requirements & Files",
+      "featuresLabel": "Desired Features",
+      "projectGoals": "Project Goals",
+      "projectGoalsPlaceholder": "What are the main objectives of your project? What problems does it solve?",
+      "targetAudience": "Target Audience",
+      "targetAudiencePlaceholder": "Describe your target audience (age, profession, interests...)",
+      "technicalRequirements": "Technical Requirements",
+      "technicalRequirementsPlaceholder": "Technical specifications, required integrations, special constraints...",
+      "fileUpload": {
+        "title": "Upload Files",
+        "instruction1": "Drag & drop your files or",
+        "instruction2": "click to browse",
+        "formats": "Accepted formats: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (Max 10MB)",
+        "attachments": "{count} file(s) attached"
+      },
+      "prevButton": "Previous",
+      "nextButton": "Next"
+    },
+    "step4": {
+      "title": "Timeline, Budget & Finalization",
+      "timeline": "Desired Timeline",
+      "timelinePlaceholder": "Select a timeline",
+      "timelineOtherPlaceholder": "Specify your timeline",
+      "budget": "Estimated Budget",
+      "budgetPlaceholder": "Select your budget",
+      "budgetOtherPlaceholder": "Specify your budget",
+      "message": "Additional Information",
+      "messagePlaceholder": "Any other useful information to understand your project...",
+      "prevButton": "Previous",
+      "submitButton": "Submit My Request",
+      "sending": "Sending...",
+      "disclaimer": "* Required fields. Your data is protected and will never be shared."
+    },
+    "otherOption": "Other",
+    "validation": {
+      "step1": "Please fill in the required fields (First Name, Last Name, Email)",
+      "step2": "Please select a service type"
+    },
+    "submitError": "Submission error:",
+    "submitErrorMessage": "An error occurred, please try again.",
+    "services": [
+      "Showcase Website",
+      "E-commerce",
+      "Web Application",
+      "Mobile Application",
+      "Website Redesign",
+      "SEO & Marketing",
+      "Other"
+    ],
+    "projectTypes": [
+      "New Project Creation",
+      "Complete Redesign",
+      "Feature Addition",
+      "Bug Fixing",
+      "Performance Optimization",
+      "Data Migration",
+      "Other"
+    ],
+    "timelines": [
+      "Less than 1 month",
+      "1-3 months",
+      "3-6 months",
+      "More than 6 months",
+      "Urgent (less than 2 weeks)",
+      "Other"
+    ],
+    "budgetRanges": [
+      "Less than $1,000",
+      "$1,000 - $3,000",
+      "$3,000 - $5,000",
+      "$5,000 - $10,000",
+      "$10,000 - $20,000",
+      "More than $20,000",
+      "I don't know",
+      "Other"
+    ],
+    "featuresList": [
+      "Responsive interface",
+      "Member area",
+      "Online payment",
+      "Multilingual",
+      "Blog/News",
+      "Online booking",
+      "Comment system",
+      "Third-party API integration",
+      "Admin dashboard",
+      "Advanced search",
+      "Media gallery",
+      "Live chat",
+      "Newsletter",
+      "Statistics and reports",
+      "Social media integration"
+    ],
+    "fileTypes": [
+      "JPG",
+      "PNG",
+      "PDF",
+      "DOC",
+      "XLS",
+      "PSD",
+      "AI",
+      "FIG",
+      "SKETCH"
+    ],
+    "whatsapp": {
+      "title": "WhatsApp Contact",
+      "description": "Let's discuss your project directly on WhatsApp",
+      "button": "Open WhatsApp",
+      "link": "https://wa.me/yourphonenumber"
+    },
+    "contactPage": {
+      "title": "Other Contacts",
+      "description": "You can also contact me via the contact form",
+      "button": "Go to Contact Page"
+    },
+    "guarantees": [
+      {
+        "title": "Response within 24h",
+        "text": "I process each request within a maximum of 24 hours."
+      },
+      {
+        "title": "Detailed quote",
+        "text": "You will receive a complete quote with options and timeline."
+      },
+      {
+        "title": "No commitment",
+        "text": "The quote request is free and without purchase obligation."
+      }
+    ],
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Useful information about the quoting process",
+      "items": [
+        {
+          "question": "What files can I attach to my request?",
+          "answer": "You can attach any useful documents: images, mockups, PDF, design files (PSD, AI, FIG, SKETCH), Word/Excel documents, or any other file that helps understand your project."
+        },
+        {
+          "question": "How are my attached files processed?",
+          "answer": "Your files are temporarily stored for project evaluation and deleted after quote generation. They are never shared with third parties."
+        },
+        {
+          "question": "Can I modify my request after sending it?",
+          "answer": "Yes, if you need to make changes, simply reply to the confirmation email you'll receive or contact me directly."
+        },
+        {
+          "question": "What happens after the quote is sent?",
+          "answer": "I will contact you to discuss your project details, refine the quote if necessary, and establish a production schedule."
+        }
+      ]
+    },
+    "stepTitles": [
+      "Personal Information",
+      "Project Details",
+      "Requirements & Files",
+      "Timeline, Budget & Finalization"
+    ]
+  }
+}

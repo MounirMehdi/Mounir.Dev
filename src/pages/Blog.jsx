@@ -1,391 +1,723 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Input } from '@/components/ui/input'
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 import { 
   Calendar, 
   Clock, 
   User, 
   Search,
   ArrowRight,
-  Tag
-} from 'lucide-react'
+  Tag,
+  Mail,
+  BookOpen,
+  TrendingUp,
+  LayoutGrid,
+  X,
+  ChevronDown,
+  ChevronUp
+} from 'lucide-react';
+import BlogDetail from '../components/blogs/BlogDetail';
+import { useTranslation } from "react-i18next";
+
+// Mapping des icônes
+const iconComponents = {
+  LayoutGrid,
+  BookOpen,
+  TrendingUp
+};
 
 const Blog = () => {
-  const [searchTerm, setSearchTerm] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState('all')
+  const { t, i18n } = useTranslation('translation');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedTags, setSelectedTags] = useState([]);
+  const [isVisible, setIsVisible] = useState(false);
+  const [selectedPost, setSelectedPost] = useState(null);
+  const [showCategories, setShowCategories] = useState(false);
+  const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
+  const categoriesRef = useRef(null);
+  
+  const isRTL = i18n.language === 'ar';
+  const direction = isRTL ? 'rtl' : 'ltr';
+  const textAlign = isRTL ? 'text-right' : 'text-left';
+  const flexDirection = isRTL ? 'flex-row-reverse' : 'flex-row';
 
-  const blogPosts = [
-    {
-      id: 1,
-      title: 'Les Tendances du Développement Web en 2025',
-      excerpt: 'Découvrez les technologies et frameworks qui vont dominer le développement web cette année. De React 19 aux nouvelles fonctionnalités CSS, explorons ensemble l\'avenir du web.',
-      content: 'Le développement web évolue constamment, et 2025 s\'annonce comme une année riche en innovations...',
-      category: 'Développement',
-      author: 'Mounir Mehdi',
-      date: '2025-01-15',
-      readTime: '5 min',
-      image: '/src/assets/VT8VhuLWWFIo.png',
-      tags: ['React', 'CSS', 'JavaScript', 'Tendances']
-    },
-    {
-      id: 2,
-      title: 'Optimisation SEO : Guide Complet pour 2025',
-      excerpt: 'Maîtrisez les techniques d\'optimisation SEO les plus efficaces pour améliorer le référencement de vos sites web et attirer plus de visiteurs qualifiés.',
-      content: 'Le SEO reste un pilier fondamental du marketing digital. Voici les stratégies à adopter...',
-      category: 'SEO',
-      author: 'Mounir Mehdi',
-      date: '2025-01-10',
-      readTime: '8 min',
-      image: '/src/assets/5XKgNOmc4lRA.png',
-      tags: ['SEO', 'Marketing', 'Google', 'Référencement']
-    },
-    {
-      id: 3,
-      title: 'Laravel vs React : Choisir la Bonne Stack',
-      excerpt: 'Comparaison détaillée entre Laravel et React pour vos projets web. Avantages, inconvénients et cas d\'usage pour faire le bon choix technologique.',
-      content: 'Le choix de la stack technologique est crucial pour le succès d\'un projet...',
-      category: 'Développement',
-      author: 'Mounir Mehdi',
-      date: '2025-01-05',
-      readTime: '6 min',
-      image: '/src/assets/bcb1vDfnAQwT.png',
-      tags: ['Laravel', 'React', 'PHP', 'JavaScript']
-    },
-    {
-      id: 4,
-      title: 'UX/UI Design : Créer des Interfaces Intuitives',
-      excerpt: 'Les principes fondamentaux du design UX/UI pour créer des interfaces utilisateur engageantes et intuitives. Conseils pratiques et exemples concrets.',
-      content: 'Une bonne interface utilisateur peut faire la différence entre le succès et l\'échec d\'une application...',
-      category: 'Design',
-      author: 'Mounir Mehdi',
-      date: '2024-12-28',
-      readTime: '7 min',
-      image: '/src/assets/VClZJhkQKTJD.png',
-      tags: ['UX', 'UI', 'Design', 'Interface']
-    },
-    {
-      id: 5,
-      title: 'Méthodologie Agile : Optimiser vos Projets',
-      excerpt: 'Comment implémenter efficacement la méthodologie Agile dans vos projets de développement pour améliorer la productivité et la qualité.',
-      content: 'L\'approche Agile révolutionne la gestion de projet en développement logiciel...',
-      category: 'Méthodologie',
-      author: 'Mounir Mehdi',
-      date: '2024-12-20',
-      readTime: '4 min',
-      image: '/src/assets/REA5EtQyaqGw.jpg',
-      tags: ['Agile', 'Scrum', 'Gestion', 'Productivité']
-    },
-    {
-      id: 6,
-      title: 'Sécurité Web : Protéger vos Applications',
-      excerpt: 'Guide essentiel pour sécuriser vos applications web. Découvrez les vulnérabilités courantes et les meilleures pratiques de sécurité.',
-      content: 'La sécurité web est un enjeu majeur dans le développement d\'applications modernes...',
-      category: 'Sécurité',
-      author: 'Mounir Mehdi',
-      date: '2024-12-15',
-      readTime: '9 min',
-      image: '/src/assets/uor65CeyUbPn.jpg',
-      tags: ['Sécurité', 'HTTPS', 'Authentification', 'Protection']
+  // Récupération des données de traduction
+  const blogData = t('blog', { returnObjects: true });
+  
+  // Extraction des données
+  const {
+    title: blogTitle,
+    subtitle,
+    searchPlaceholder,
+    categories,
+    filters,
+    featuredPostTitle,
+    recentPostsTitle,
+    foundPostsTitle,
+    noPostsFound,
+    viewAllPosts,
+    aboutTitle,
+    aboutDescription,
+    popularTagsTitle,
+    newsletterTitle,
+    newsletterDescription,
+    newsletterPlaceholder,
+    newsletterButton,
+    readMore,
+    read,
+    close,
+    leaveComment,
+    categoriesButton,
+    blogPosts = [],
+    categoriesList = [],
+    popularTags = []
+  } = blogData;
+
+  useEffect(() => {
+    setIsVisible(true);
+    
+    const timer = setTimeout(() => {
+      const searchInput = document.getElementById('search-input');
+      if (searchInput) {
+        searchInput.focus();
+      }
+    }, 500);
+
+    // Gestion du scroll pour le header
+    const handleScroll = () => {
+      setIsHeaderScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Fermer le dropdown des catégories en cliquant à l'extérieur
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (categoriesRef.current && !categoriesRef.current.contains(event.target)) {
+        setShowCategories(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const filteredPosts = useMemo(() => {
+    return blogPosts.filter(post => {
+      const matchesSearch = 
+        post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
+      
+      const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory;
+      
+      const matchesTags = selectedTags.length === 0 || 
+                         selectedTags.every(tag => post.tags.includes(tag));
+      
+      return matchesSearch && matchesCategory && matchesTags;
+    });
+  }, [blogPosts, searchTerm, selectedCategory, selectedTags]);
+
+  const featuredPost = blogPosts[0];
+  const recentPosts = blogPosts.slice(1, 4);
+
+  const toggleTag = (tag) => {
+    if (selectedTags.includes(tag)) {
+      setSelectedTags(selectedTags.filter(t => t !== tag));
+    } else {
+      setSelectedTags([...selectedTags, tag]);
     }
-  ]
+  };
 
-  const categories = [
-    { id: 'all', label: 'Tous les articles' },
-    { id: 'Développement', label: 'Développement' },
-    { id: 'Design', label: 'Design' },
-    { id: 'SEO', label: 'SEO' },
-    { id: 'Méthodologie', label: 'Méthodologie' },
-    { id: 'Sécurité', label: 'Sécurité' }
-  ]
+  const resetFilters = () => {
+    setSearchTerm('');
+    setSelectedCategory('all');
+    setSelectedTags([]);
+  };
 
-  const popularTags = ['React', 'Laravel', 'JavaScript', 'SEO', 'UX/UI', 'Agile', 'PHP', 'CSS']
+  const openPostDetail = (post) => {
+    setSelectedPost(post);
+    document.body.style.overflow = 'hidden';
+  };
 
-  const filteredPosts = blogPosts.filter(post => {
-    const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
-    const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory
-    return matchesSearch && matchesCategory
-  })
+  const closePostDetail = () => {
+    setSelectedPost(null);
+    document.body.style.overflow = 'auto';
+  };
 
-  const featuredPost = blogPosts[0]
-  const recentPosts = blogPosts.slice(1, 4)
+  // Variants d'animation
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5, ease: "easeOut" }
+    }
+  };
+
+  // Formater la date selon la locale
+  const formatDate = (dateString) => {
+    return new Date(dateString).toLocaleDateString(i18n.language, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  };
 
   return (
-    <div className="pt-20">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-teal-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl font-bold text-slate-800 mb-6">
-              Blog
-            </h1>
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Découvrez mes réflexions sur le développement web, les nouvelles technologies, 
-              et les meilleures pratiques du secteur. Partageons ensemble notre passion pour le code !
-            </p>
-          </div>
+    <motion.div 
+      className="pt-16 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 min-h-screen"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      dir={direction}
+    >
+      {/* Hero Section améliorée */}
+      <section className="relative py-24 bg-gradient-to-br from-indigo-50 to-teal-50 dark:from-slate-900 dark:to-teal-900/10 overflow-hidden">
+        {/* Shapes décoratifs */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-20 dark:opacity-10">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+          <div className="absolute bottom-20 left-20 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div 
+            className={`text-center max-w-3xl mx-auto`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            
+            <motion.h1 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <span className="bg-gradient-to-r from-teal-600 to-indigo-600 dark:from-teal-400 dark:to-indigo-400 bg-clip-text text-transparent">
+                {blogTitle}
+              </span>
+            </motion.h1>
+                        <motion.div
+                          initial={{ opacity: 0, width: 0 }}
+                          animate={{ opacity: 1, width: "100%" }}
+                          transition={{ delay: 0.3, duration: 0.8 }}
+                          className="flex justify-center mb-6"
+                        >
+                          <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+                        </motion.div>
+            
+            <motion.p 
+              className="text-xl text-slate-700 dark:text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              {subtitle}
+            </motion.p>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="relative max-w-xl mx-auto"
+            >
+              <Search className={`absolute ${isRTL ? 'right-4' : 'left-4'} top-1/2 transform -translate-y-1/2 text-slate-500`} size={20} />
+              <input
+                id="search-input"
+                type="text"
+                placeholder={searchPlaceholder}
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className={`w-full ${isRTL ? 'pr-12' : 'pl-12'} py-4 bg-white dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all shadow-lg`}
+              />
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Search and Filters */}
-      <section className="py-8 bg-white border-b border-slate-200">
+      {/* Filtres améliorés avec sticky header */}
+      <motion.section 
+        className={`sticky top-0 z-30 py-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 transition-all duration-300 ${
+          isHeaderScrolled ? 'shadow-md' : ''
+        }`}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
-            {/* Search */}
-            <div className="relative w-full lg:w-96">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
-              <Input
-                type="text"
-                placeholder="Rechercher un article..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10"
-              />
+          <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+            {/* Catégories */}
+            <div className="relative" ref={categoriesRef}>
+              <button 
+                onClick={() => setShowCategories(!showCategories)}
+                className={`flex items-center gap-2 px-4 py-2.5 bg-slate-50 dark:bg-slate-800/70 text-slate-800 dark:text-slate-200 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors cursor-pointer`}
+              >
+                <LayoutGrid size={18} />
+                <span className="font-medium">{categoriesButton}</span>
+                {showCategories ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+              </button>
+              
+              <AnimatePresence>
+                {showCategories && (
+                  <motion.div 
+                    className={`absolute z-40 mt-2 w-64 bg-white dark:bg-slate-800/95 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 shadow-2xl py-2 ${textAlign}`}
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                  >
+                    {categoriesList.map((category) => {
+                      const IconComponent = iconComponents[category.icon];
+                      return (
+                        <button
+                          key={category.id}
+                          onClick={() => {
+                            setSelectedCategory(category.id);
+                            setShowCategories(false);
+                          }}
+                          className={`w-full px-4 py-3 flex items-center gap-3 ${
+                            selectedCategory === category.id 
+                              ? 'bg-teal-50 dark:bg-teal-900/40 text-teal-700 dark:text-teal-400' 
+                              : 'hover:bg-slate-100 dark:hover:bg-slate-700'
+                          } transition-colors`}
+                        >
+                          {IconComponent && <IconComponent size={18} className="flex-shrink-0" />}
+                          <span className="font-medium">{categories[category.id]}</span>
+                          {selectedCategory === category.id && (
+                            <div className={`ml-auto ${isRTL ? 'mr-auto' : 'ml-auto'}`}>
+                              <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                            </div>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
-
-            {/* Category Filters */}
-            <div className="flex flex-wrap gap-2">
-              {categories.map((category) => (
-                <Button
-                  key={category.id}
-                  variant={selectedCategory === category.id ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setSelectedCategory(category.id)}
-                  className={selectedCategory === category.id ? "bg-teal-600 hover:bg-teal-700" : ""}
+            
+            {/* Filtres actifs */}
+            <div className={`flex flex-wrap gap-3`}>
+              {(selectedCategory !== 'all' || selectedTags.length > 0 || searchTerm) && (
+                <motion.button 
+                  onClick={resetFilters}
+                  className={`px-3 py-1.5 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 text-sm flex items-center gap-1.5 bg-slate-100 dark:bg-slate-800 rounded-lg font-medium`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  {category.label}
-                </Button>
+                  <X size={16} /> {filters?.resetButton || "Réinitialiser"}
+                </motion.button>
+              )}
+              
+              {selectedCategory !== 'all' && (
+                <motion.div
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  className={`px-3 py-1.5 bg-teal-100 dark:bg-teal-900/40 text-teal-800 dark:text-teal-200 rounded-lg text-sm flex items-center gap-2 font-medium`}
+                >
+                  {categories[selectedCategory]}
+                  <button 
+                    onClick={() => setSelectedCategory('all')}
+                    className="text-teal-700 dark:text-teal-300 hover:text-teal-900 dark:hover:text-teal-100"
+                  >
+                    <X size={14} />
+                  </button>
+                </motion.div>
+              )}
+              
+              {selectedTags.map(tag => (
+                <motion.div
+                  key={tag}
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  className={`px-3 py-1.5 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 rounded-lg text-sm flex items-center gap-2 font-medium`}
+                >
+                  #{tag}
+                  <button 
+                    onClick={() => toggleTag(tag)}
+                    className="text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100"
+                  >
+                    <X size={14} />
+                  </button>
+                </motion.div>
               ))}
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-3">
             {/* Featured Article */}
-            {searchTerm === '' && selectedCategory === 'all' && (
-              <div className="mb-12">
-                <h2 className="text-2xl font-bold text-slate-800 mb-6">Article à la Une</h2>
-                <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="relative">
+            {searchTerm === '' && selectedCategory === 'all' && selectedTags.length === 0 && featuredPost && (
+              <motion.div 
+                className="mb-12"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 }}
+              >
+                <h2 className={`text-2xl font-bold text-slate-800 dark:text-white mb-6 ${textAlign}`}>
+                  {featuredPostTitle}
+                </h2>
+                <motion.div
+                  whileHover={{ y: -5 }}
+                  className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-xl hover:shadow-2xl transition-all cursor-pointer group"
+                  onClick={() => openPostDetail(featuredPost)}
+                >
+                  <div className="relative h-64 md:h-80 lg:h-96">
                     <img 
                       src={featuredPost.image} 
                       alt={featuredPost.title}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute top-4 left-4">
-                      <Badge className="bg-teal-600">{featuredPost.category}</Badge>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                    <div className={`absolute bottom-0 left-0 right-0 p-6 ${textAlign}`}>
+                      <div className={`flex items-center gap-3 mb-3`}>
+                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${featuredPost.color} shadow-md`}>
+                          <BookOpen className={`${featuredPost.iconColor}`} size={20} />
+                        </div>
+                        <div>
+                          <span className="text-sm font-medium text-white">
+                            {categories[featuredPost.category]}
+                          </span>
+                          <div className={`flex items-center gap-2 text-sm text-slate-200`}>
+                            <span className="flex items-center gap-1">
+                              <User size={14} />
+                              {featuredPost.author}
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <Calendar size={14} />
+                              {formatDate(featuredPost.date)}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                        {featuredPost.title}
+                      </h3>
+                      
+                      <p className="text-slate-200 mb-4 max-w-3xl">
+                        {featuredPost.excerpt}
+                      </p>
+                      
+                      <div className={`flex flex-wrap items-center justify-between gap-3`}>
+                        <div className="flex flex-wrap gap-2">
+                          {featuredPost.tags.map((tag, index) => (
+                            <motion.span 
+                              key={index}
+                              className="px-3 py-1 bg-white/20 text-white rounded-full text-xs font-medium hover:bg-white/30 transition-colors cursor-pointer"
+                              whileHover={{ scale: 1.05 }}
+                              whileTap={{ scale: 0.95 }}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                toggleTag(tag);
+                              }}
+                            >
+                              #{tag}
+                            </motion.span>
+                          ))}
+                        </div>
+                        <Button className="bg-white text-teal-600 hover:bg-slate-100 shadow-md group-hover:bg-teal-600 group-hover:text-white transition-colors cursor-pointer">
+                          {readMore}
+                          <ArrowRight className={`ml-2 transition-transform group-hover:translate-x-1 ${isRTL ? 'transform rotate-180' : ''}`} size={16} />
+                        </Button>
+                      </div>
                     </div>
                   </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-2xl font-bold text-slate-800 mb-3 hover:text-teal-600 transition-colors">
-                      <Link to={`/blog/${featuredPost.id}`}>{featuredPost.title}</Link>
-                    </h3>
-                    <div className="flex items-center space-x-4 text-sm text-slate-600 mb-4">
-                      <div className="flex items-center space-x-1">
-                        <User size={16} />
-                        <span>{featuredPost.author}</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        <Calendar size={16} />
-                        <span>{new Date(featuredPost.date).toLocaleDateString('fr-FR')}</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        <Clock size={16} />
-                        <span>{featuredPost.readTime}</span>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 mb-4 leading-relaxed">{featuredPost.excerpt}</p>
-                    <div className="flex items-center justify-between">
-                      <div className="flex flex-wrap gap-2">
-                        {featuredPost.tags.slice(0, 3).map((tag, index) => (
-                          <span 
-                            key={index}
-                            className="px-2 py-1 bg-slate-100 text-slate-600 rounded text-xs"
-                          >
-                            #{tag}
-                          </span>
-                        ))}
-                      </div>
-                      <Button asChild variant="outline">
-                        <Link to={`/blog/${featuredPost.id}`}>
-                          Lire la suite
-                          <ArrowRight className="ml-2" size={16} />
-                        </Link>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+                </motion.div>
+              </motion.div>
             )}
 
             {/* Articles Grid */}
-            <div>
-              <h2 className="text-2xl font-bold text-slate-800 mb-6">
-                {searchTerm || selectedCategory !== 'all' ? 'Résultats de recherche' : 'Articles Récents'}
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {filteredPosts.map((post) => (
-                  <Card key={post.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
-                    <div className="relative overflow-hidden">
-                      <img 
-                        src={post.image} 
-                        alt={post.title}
-                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
-                      <div className="absolute top-3 left-3">
-                        <Badge className="bg-teal-600">{post.category}</Badge>
-                      </div>
-                    </div>
-                    <CardContent className="p-4">
-                      <h3 className="text-lg font-semibold text-slate-800 mb-2 group-hover:text-teal-600 transition-colors line-clamp-2">
-                        <Link to={`/blog/${post.id}`}>{post.title}</Link>
-                      </h3>
-                      <div className="flex items-center space-x-3 text-xs text-slate-600 mb-3">
-                        <div className="flex items-center space-x-1">
-                          <Calendar size={14} />
-                          <span>{new Date(post.date).toLocaleDateString('fr-FR')}</span>
-                        </div>
-                        <div className="flex items-center space-x-1">
-                          <Clock size={14} />
-                          <span>{post.readTime}</span>
-                        </div>
-                      </div>
-                      <p className="text-slate-600 text-sm mb-4 line-clamp-3">{post.excerpt}</p>
-                      <div className="flex items-center justify-between">
-                        <div className="flex flex-wrap gap-1">
-                          {post.tags.slice(0, 2).map((tag, index) => (
-                            <span 
-                              key={index}
-                              className="px-2 py-1 bg-slate-100 text-slate-600 rounded text-xs"
-                            >
-                              #{tag}
-                            </span>
-                          ))}
-                        </div>
-                        <Button asChild size="sm" variant="ghost">
-                          <Link to={`/blog/${post.id}`}>
-                            Lire
-                            <ArrowRight className="ml-1" size={14} />
-                          </Link>
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              animate={isVisible ? "visible" : "hidden"}
+            >
+              <div className={`flex flex-wrap items-center justify-between mb-6 gap-4 ${textAlign}`}>
+                <h2 className="text-2xl font-bold text-slate-800 dark:text-white">
+                  {searchTerm || selectedCategory !== 'all' || selectedTags.length > 0 ? foundPostsTitle : recentPostsTitle}
+                </h2>
+                <span className="text-slate-600 dark:text-slate-400 font-medium">
+                  {filteredPosts.length} {filteredPosts.length !== 1 ? t('blog.articles') : t('blog.article')}
+                </span>
               </div>
-
-              {filteredPosts.length === 0 && (
-                <div className="text-center py-12">
-                  <p className="text-slate-600 text-lg">Aucun article trouvé pour votre recherche.</p>
+              
+              {filteredPosts.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {filteredPosts.map((post) => (
+                    <motion.div 
+                      key={post.id}
+                      variants={itemVariants}
+                      whileHover={{ y: -10 }}
+                    >
+                      <div 
+                        className="bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden group hover:shadow-xl transition-all h-full cursor-pointer"
+                        onClick={() => openPostDetail(post)}
+                      >
+                        <div className="relative h-48">
+                          <img 
+                            src={post.image} 
+                            alt={post.title}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                          <div className={`absolute top-3 ${isRTL ? 'left-3' : 'right-3'}`}>
+                            <span className={`px-3 py-1.5 text-xs font-medium text-white rounded-full ${post?.color || 'bg-gray-500'} shadow-md`}>
+                              {categories[post.category]}
+                            </span>
+                          </div>
+                        </div>
+                        
+                        <div className={`p-5 h-full flex flex-col ${textAlign}`}>
+                          <div className={`flex items-center gap-3 mb-4`}>
+                            <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${post.color} shadow-md`}>
+                              <BookOpen className={`${post.iconColor}`} size={20} />
+                            </div>
+                            <div>
+                              <div className={`flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400`}>
+                                <span className="flex items-center gap-1">
+                                  <Calendar size={12} />
+                                  {formatDate(post.date)}
+                                </span>
+                                <span className="flex items-center gap-1">
+                                  <Clock size={12} />
+                                  {post.readTime}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors line-clamp-2">
+                            {post.title}
+                          </h3>
+                          
+                          <p className="text-slate-600 dark:text-slate-300 mb-4 flex-grow line-clamp-3">
+                            {post.excerpt}
+                          </p>
+                          
+                          <div className={`flex items-center justify-between mt-auto`}>
+                            <div className="flex flex-wrap gap-2">
+                              {post.tags.slice(0, 2).map((tag, index) => (
+                                <motion.span 
+                                  key={index}
+                                  className="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-xs font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
+                                  whileHover={{ scale: 1.05 }}
+                                  whileTap={{ scale: 0.95 }}
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    toggleTag(tag);
+                                  }}
+                                >
+                                  #{tag}
+                                </motion.span>
+                              ))}
+                            </div>
+                            <Button 
+                              size="sm" 
+                              variant="ghost" 
+                              className="text-teal-600 dark:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 group-hover:bg-teal-100 dark:group-hover:bg-teal-900/30"
+                            >
+                              {read}
+                              <ArrowRight className={`ml-1.5 transition-transform group-hover:translate-x-1 ${isRTL ? 'transform rotate-180' : ''}`} size={14} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              ) : (
+                <motion.div 
+                  className={`text-center py-16 ${textAlign}`}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-slate-100 dark:bg-slate-800 rounded-full mb-6">
+                    <Search className="text-slate-600 dark:text-slate-400" size={32} />
+                  </div>
+                  <p className="text-slate-600 dark:text-slate-300 text-xl mb-4 font-medium">
+                    {noPostsFound}
+                  </p>
                   <Button 
-                    onClick={() => {
-                      setSearchTerm('')
-                      setSelectedCategory('all')
-                    }}
+                    onClick={resetFilters}
                     className="mt-4"
                     variant="outline"
                   >
-                    Voir tous les articles
+                    {viewAllPosts}
                   </Button>
-                </div>
+                </motion.div>
               )}
-            </div>
+            </motion.div>
           </div>
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="space-y-8">
+            <div className="space-y-8 sticky top-24">
               {/* About */}
-              <Card>
-                <CardHeader>
-                  <h3 className="text-lg font-semibold text-slate-800">À propos</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600 text-sm leading-relaxed">
-                    Développeur Full Stack passionné, je partage ici mes expériences, 
-                    découvertes et réflexions sur le monde du développement web.
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9 }}
+              >
+                <div className={`bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 p-6 ${textAlign}`}>
+                  <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">
+                    {aboutTitle}
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
+                    {aboutDescription}
                   </p>
-                </CardContent>
-              </Card>
-
-              {/* Popular Tags */}
-              <Card>
-                <CardHeader>
-                  <h3 className="text-lg font-semibold text-slate-800">Tags Populaires</h3>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {popularTags.map((tag, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setSearchTerm(tag)}
-                        className="px-3 py-1 bg-slate-100 hover:bg-teal-100 text-slate-700 hover:text-teal-700 rounded-full text-sm transition-colors"
-                      >
-                        <Tag size={12} className="inline mr-1" />
-                        {tag}
-                      </button>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Recent Posts */}
-              <Card>
-                <CardHeader>
-                  <h3 className="text-lg font-semibold text-slate-800">Articles Récents</h3>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {recentPosts.map((post) => (
-                      <div key={post.id} className="group">
-                        <Link to={`/blog/${post.id}`} className="block">
-                          <h4 className="text-sm font-medium text-slate-800 group-hover:text-teal-600 transition-colors line-clamp-2 mb-1">
-                            {post.title}
-                          </h4>
-                          <div className="flex items-center space-x-2 text-xs text-slate-600">
-                            <Calendar size={12} />
-                            <span>{new Date(post.date).toLocaleDateString('fr-FR')}</span>
-                          </div>
-                        </Link>
+                  <div className="flex gap-3">
+                    {[1, 2, 3, 4].map((item) => (
+                      <div key={item} className="w-10 h-10 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center transition-transform hover:scale-110 cursor-pointer">
+                        <div className="bg-slate-300 dark:bg-slate-600 rounded-full w-8 h-8"></div>
                       </div>
                     ))}
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </motion.div>
+
+              {/* Popular Tags */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.0 }}
+              >
+                <div className={`bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 p-6 ${textAlign}`}>
+                  <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">
+                    {popularTagsTitle}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {popularTags.map((tag, index) => (
+                      <motion.button
+                        key={index}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => toggleTag(tag)}
+                        className={`cursor-pointer px-3 py-1.5 rounded-lg text-sm font-medium transition-colors flex items-center ${
+                          selectedTags.includes(tag)
+                            ? 'bg-teal-600 text-white shadow-md'
+                            : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
+                        }`}
+                      >
+                        <Tag size={14} className={`${isRTL ? 'ml-1.5' : 'mr-1.5'}`} />
+                        {tag}
+                      </motion.button>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Recent Posts */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.1 }}
+              >
+                <div className={`bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 p-6 ${textAlign}`}>
+                  <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">
+                    {recentPostsTitle}
+                  </h3>
+                  <div className="space-y-4">
+                    {recentPosts.map((post) => (
+                      <motion.div 
+                        key={post.id} 
+                        className="group"
+                        whileHover={{ x: isRTL ? -5 : 5 }}
+                      >
+                        <div 
+                          className={`flex items-start gap-3 cursor-pointer`}
+                          onClick={() => openPostDetail(post)}
+                        >
+                          <div className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden shadow-sm">
+                            <img 
+                              src={post.image} 
+                              alt={post.title}
+                              className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="text-sm font-medium text-slate-800 dark:text-slate-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors line-clamp-2 mb-1">
+                              {post.title}
+                            </h4>
+                            <div className={`flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400`}>
+                              <Calendar size={12} />
+                              <span>{formatDate(post.date)}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Newsletter */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.2 }}
+              >
+                <div className={`bg-gradient-to-br from-indigo-500 to-teal-500 dark:from-indigo-600 dark:to-teal-700 rounded-xl p-6 text-white ${textAlign} shadow-lg`}>
+                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {newsletterTitle}
+                  </h3>
+                  <p className="text-indigo-100 text-sm mb-4">
+                    {newsletterDescription}
+                  </p>
+                  <div className="relative mb-3">
+                    <input 
+                      type="email" 
+                      placeholder={newsletterPlaceholder}
+                      className={`w-full py-3 bg-white/20 backdrop-blur-sm text-white placeholder-indigo-200 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent border border-indigo-300 transition-all ${isRTL ? 'pr-4 pl-10' : 'pl-4 pr-10'}`}
+                    />
+                    <Mail className={`absolute top-1/2 transform -translate-y-1/2 text-indigo-200 ${isRTL ? 'left-3' : 'right-3'}`} size={16} />
+                  </div>
+                  <Button className="w-full bg-white text-indigo-600 hover:bg-slate-100 font-medium shadow-md">
+                    {newsletterButton}
+                  </Button>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Newsletter CTA */}
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-700 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Restez informé</h2>
-          <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Recevez les derniers articles et conseils directement dans votre boîte mail.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <Input 
-              type="email" 
-              placeholder="Votre adresse email"
-              className="bg-white text-slate-800"
-            />
-            <Button className="bg-orange-500 hover:bg-orange-600 whitespace-nowrap">
-              S'abonner
-            </Button>
-          </div>
-        </div>
-      </section>
-    </div>
+      {/* Post Detail Modal */}
+      <BlogDetail 
+        selectedPost={selectedPost} 
+        onClose={closePostDetail}
+        t={t}
+        formatDate={formatDate}
+        isRTL={isRTL}
+        categories={categories}
+      />
+    </motion.div>
   )
 }
 
-export default Blog
-
+export default Blog;

@@ -1,0 +1,1485 @@
+{
+  "developer": "Développeur",
+  "slogan": "Donnez vie à vos idées digitales",
+  "description": "Créateur d'expériences web uniques et performantes. Diplomé en master génie logiciel. Spécialisé en développement moderne.",
+  "see_projects": "Voir mes projets",
+  "request_quote": "Demander un devis",
+  "experience": "2+ ans d'expérience",
+  "delivered_projects": "Projets livrés",
+  "satisfied_clients": "Clients satisfaits",
+  "skills_title": "Mes Compétences",
+  "skills_subtitle": "Une expertise complète pour réaliser vos projets web de A à Z",
+  "recent_projects": "Projets Récents",
+  "recent_projects_sub": "Découvrez quelques-unes de mes réalisations les plus marquantes",
+  "see_all_projects": "Voir tous les projets",
+  "cta_title": "Prêt à démarrer votre projet ?",
+  "cta_sub": "Contactez-moi dès aujourd'hui pour discuter de vos besoins et obtenir un devis gratuit personnalisé.",
+  "cta_button": "Demander un devis gratuit",
+  "project1_desc": "Création de sites web multi-pages avec formulaires, APIs et optimisation SEO.",
+  "project2_desc": "Application web pour le suivi des escales portuaires avec interface moderne.",
+  "project3_desc": "Logiciel desktop de gestion immobilière avec interface intuitive.",
+  "project_not_found": "Projet non trouvé",
+  "project_not_found_message": "Le projet que vous cherchez n'existe pas ou a été déplacé.",
+  "back_to_projects": "Retour aux projets",
+  "about_project": "À propos du projet",
+  "challenges": "Défis et solutions",
+  "results": "Résultats obtenus",
+  "gallery": "Galerie du projet",
+  "project_details": "Détails du projet",
+  "launch_date": "Date de lancement",
+  "duration": "Durée du projet",
+  "team": "Équipe",
+  "featured_project": "Projet vedette",
+  "featured_project_desc": "Sélectionné comme projet exceptionnel",
+  "technologies": "Technologies utilisées",
+  "project_links": "Liens du projet",
+  "visit_site": "Visiter le site",
+  "source_code": "Code source",
+  "prev_project": "Projet précédent",
+  "next_project": "Projet suivant",
+  "click_to_gallery": "Cliquez pour voir la galerie",
+  "view_large": "Voir en grand",
+  "cta_title": "Prêt à concrétiser votre projet ?",
+  "cta_sub": "Discutons de votre vision et créons quelque chose d'extraordinaire ensemble",
+  "cta_button": "Commencer maintenant",
+  "cta_hint": "Transformons vos idées en réalité",
+  "header": {
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quoteButton": "Devis Gratuit",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Développeur Fullstack Créatif",
+      "title1": "Transformez vos idées en",
+      "flipWords": [
+        "Expériences Digitales",
+        "Sites Web Captivants",
+        "Solutions Innovantes",
+        "Plateformes Performantes"
+      ],
+      "description": "Je crée des solutions web et mobiles sur-mesure qui allient design élégant, performance technique et expérience utilisateur exceptionnelle. Chaque projet est une opportunité d'innovation.",
+      "button1": "Explorer mes réalisations",
+      "button2": "Discutons de votre projet",
+      "stats": [
+        {
+          "value": "5+",
+          "label": "Ans d'expérience"
+        },
+        {
+          "value": "50+",
+          "label": "Projets livrés"
+        },
+        {
+          "value": "100%",
+          "label": "Clients satisfaits"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Mes",
+      "titleHighlight": "Compétences",
+      "subtitle": "Expertise technique et créative pour transformer vos idées en réalité",
+      "frontend": {
+        "name": "Frontend",
+        "tech": "HTML/CSS/JS, Bootstrap, Tailwind, React, Vue.js"
+      },
+      "backend": {
+        "name": "Backend",
+        "tech": "PHP, Laravel, Java"
+      },
+      "design": {
+        "name": "Design",
+        "tech": "UX/UI, Photoshop, Illustrator, Canva"
+      },
+      "seo": {
+        "name": "SEO",
+        "tech": "Analytics, Search Console, Référencement, Accessibilité, Optimisation"
+      },
+      "mobile": {
+        "name": "Mobile",
+        "tech": "Responsive Design, Apps Flutter, Android"
+      },
+      "methodology": {
+        "name": "Méthodologie",
+        "tech": "Agile, Scrum"
+      }
+    },
+    "services": {
+      "title": "Mes",
+      "titleHighlight": "Expertises",
+      "subtitle": "Des solutions sur mesure pour transformer vos défis digitaux en succès",
+      "website": {
+        "title": "Sites Web",
+        "description": "Designs élégants et performances optimales pour des sites vitrines digitales hautes performances pour booster votre crédibilité et générer du lead 24/7."
+      },
+      "webapp": {
+        "title": "Applications web",
+        "description": "Solutions sur-mesure pour automatiser vos processus métiers et transformer vos défis opérationnels en avantages compétitifs."
+      },
+      "mobile": {
+        "title": "Applications Mobile",
+        "description": "Solutions mobiles intuitives , expériences mobiles natives et fluides publiées sur les stores."
+      },
+      "marketing": {
+        "title": "Stratégie Digitale & Marketing",
+        "description": "Feuilles de route sur-mesure pour dominer votre marché et accélérer votre croissance à l'ère numérique."
+      },
+      "button": "Découvrir toutes mes expertises"
+    },
+    "projects": {
+      "title": "Mes",
+      "titleHighlight": "Projets Récents",
+      "subtitle": "Découvrez mes dernières réalisations et études de cas",
+      "button": "Voir tous les projets"
+    },
+    "blog": {
+      "title": "Mes",
+      "titleHighlight": "Derniers Articles",
+      "subtitle": "Conseils, tutoriels et réflexions sur le développement web",
+      "post1": {
+        "title": "Les Tendances du Développement Web en 2025",
+        "excerpt": "Découvrez les technologies et frameworks qui vont dominer cette année.",
+        "date": "15 Jan 2025",
+        "readTime": "5 min",
+        "category": "Développement"
+      },
+      "post2": {
+        "title": "Optimisation SEO : Guide Complet",
+        "excerpt": "Maîtrisez les techniques d'optimisation SEO les plus efficaces.",
+        "date": "10 Jan 2025",
+        "readTime": "8 min",
+        "category": "SEO"
+      },
+      "post3": {
+        "title": "Laravel vs React : Choisir la Bonne Stack",
+        "excerpt": "Comparaison détaillée entre Laravel et React pour vos projets web.",
+        "date": "5 Jan 2025",
+        "readTime": "6 min",
+        "category": "Développement"
+      },
+      "readButton": "Lire l'article",
+      "button": "Voir tous les articles"
+    },
+    "slides": {
+      "slide1": {
+        "title": "Expériences Digitales",
+        "description": "Création d'applications web performantes avec React et Next.js",
+        "alt": "Expériences Digitales"
+      },
+      "slide2": {
+        "title": "Sites Web Captivants",
+        "description": "Développement cross-platform avec React Native et Flutter",
+        "alt": "Sites Web Captivants"
+      },
+      "slide3": {
+        "title": "Solutions Innovantes",
+        "description": "Stratégies techniques et sémantiques pour le référencement naturel",
+        "alt": "Solutions Innovantes"
+      },
+      "slide4": {
+        "title": "Plateformes Performantes",
+        "description": "Stratégies techniques et sémantiques pour le référencement naturel",
+        "alt": "Plateformes Performantes"
+      }
+    },
+    "process": {
+      "title": "Mon",
+      "titleHighlight": "Processus de Travail",
+      "subtitle": "Une méthodologie transparente pour des résultats exceptionnels",
+      "steps": [
+        {
+          "icon": "Users",
+          "step": "Conception",
+          "title": "Blueprint Digital",
+          "description": "Définition des objectifs et architecture technique"
+        },
+        {
+          "icon": "Code",
+          "step": "Développement",
+          "title": "Création Technique",
+          "description": "Implémentation agile avec revues hebdomadaires"
+        },
+        {
+          "icon": "BarChart",
+          "step": "Optimisation",
+          "title": "Réglage Fin",
+          "description": "Tests utilisateurs et ajustements précis"
+        },
+        {
+          "icon": "Shield",
+          "step": "Livraison",
+          "title": "Accompagnement",
+          "description": "Formation et support post-livraison"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à concrétiser votre projet ?",
+      "subtitle": "Discutons ensemble de votre vision et créons quelque chose d'extraordinaire.",
+      "button": "Commencer mon projet"
+    }
+  },
+  "projectPopup": {
+    "projects": [
+      {
+        "id": 1,
+        "title": "Portfolio NextJS",
+        "category": "Développement Web",
+        "shortDescription": "Un portfolio moderne avec dark mode et animations fluides",
+        "fullDescription": "Un portfolio moderne avec dark mode, animations fluides et internationalisation. Construit avec Next.js, Tailwind CSS et Framer Motion. Ce projet a été conçu pour présenter mon travail de manière élégante et interactive.",
+        "challenges": "Le principal défi était de créer une expérience utilisateur fluide avec des animations performantes sans sacrifier le référencement. J'ai résolu cela en utilisant Next.js pour le rendu côté serveur et Framer Motion pour des animations optimisées.",
+        "resultsIntro": "Après la mise en œuvre de notre solution, nous avons constaté une amélioration significative des performances et de l'expérience utilisateur :",
+        "resultsList": [
+          "Augmentation de 40% du taux de conversion",
+          "Réduction de 30% du temps de chargement des pages",
+          "Amélioration de 95% de la satisfaction client"
+        ],
+        "tech": ["Next.js", "Tailwind CSS", "Framer Motion", "i18next"],
+        "demoUrl": "https://portfolio-nextjs-example.com",
+        "githubUrl": "https://github.com/votre-user/portfolio-nextjs",
+        "featured": true,
+        "new": false,
+        "launchDate": "2023",
+        "duration": "2 mois",
+        "team": ["Développeur Frontend", "Designer UI/UX"],
+        "images": [
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "E-commerce React",
+        "category": "Application Fullstack",
+        "shortDescription": "Plateforme e-commerce complète avec panier et paiement Stripe",
+        "fullDescription": "Plateforme e-commerce complète avec panier, paiement Stripe et tableau de bord administrateur. Optimisée pour les performances et le SEO. L'application comprend un système de gestion de produits, de catégories et de commandes.",
+        "challenges": "L'intégration sécurisée de Stripe tout en garantissant une expérience utilisateur fluide était complexe. J'ai implémenté un système de panier persistante et des webhooks pour gérer les paiements asynchrones.",
+        "resultsIntro": "Le projet a permis de :",
+        "resultsList": [
+          "Réduire les abandons de panier de 25%",
+          "Augmenter les ventes de 35%",
+          "Diminuer les incidents de paiement de 90%"
+        ],
+        "tech": ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
+        "demoUrl": "https://ecommerce-react-demo.com",
+        "githubUrl": "https://github.com/votre-user/ecommerce-react",
+        "featured": true,
+        "new": true,
+        "launchDate": "Juin 2023",
+        "duration": "5 mois",
+        "team": ["Développeur Fullstack", "Designer UX"],
+        "images": [
+          "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1603739903239-8b6e64c3b185?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        ]
+      }
+    ],
+    "newBadge": "Nouveau",
+    "visitButton": "Visiter",
+    "codeButton": "Code",
+    "descriptionTitle": "Description",
+    "challengesTitle": "Défis",
+    "resultsTitle": "Résultats",
+    "detailsTitle": "Détails",
+    "teamLabel": "Équipe",
+    "technologiesTitle": "Technologies",
+    "galleryTitle": "Galerie"
+  },
+  "footer": {
+    "description": "Je crée des expériences digitales exceptionnelles qui transforment les idées en solutions performantes. Spécialisé en développement fullstack et UX/UI design.",
+    "newsletterTitle": "Restez informé",
+    "emailPlaceholder": "Votre email",
+    "subscriptionSuccess": "Merci pour votre inscription !",
+    "navigationTitle": "Navigation",
+    "navigationItems": [
+      { "name": "Accueil", "path": "/" },
+      { "name": "Services", "path": "/services" },
+      { "name": "Projets", "path": "/projects" },
+      { "name": "Blog", "path": "/blog" },
+      { "name": "Contact", "path": "/contact" }
+    ],
+    "legalTitle": "Légals",
+    "legalItems": [
+      { "name": "Confidentialité", "path": "/privacy" },
+      { "name": "Conditions", "path": "/terms" },
+      { "name": "Cookies", "path": "/cookies" },
+      { "name": "FAQs", "path": "/faqs" }
+    ],
+    "contactTitle": "Contact",
+    "platformsTitle": "Plateformes",
+    "freelancePlatforms": {
+      "fiverr": "Fiverr",
+      "upwork": "Upwork",
+      "freelance": "Freelance.com"
+    },
+    "socialNetworks": {
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "tiktok": "TikTok",
+      "instagram": "Instagram"
+    },
+    "copyright": "Tous droits réservés."
+  },
+  "projects": {
+    "hero": {
+      "title1": "Mes",
+      "title2": "Réalisations",
+      "subtitle": "Découvrez mes projets et l'expertise technique mise en œuvre pour créer des solutions innovantes et performantes",
+      "searchPlaceholder": "Rechercher des projets, technologies..."
+    },
+    "filters": {
+      "filterLabel": "Filtrer :",
+      "all": "Tous les projets",
+      "web": "Web",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "moreFilters": "Plus de filtres",
+      "projectStatus": "Statut du projet",
+      "statusAll": "Tous les statuts",
+      "statusCompleted": "Terminé",
+      "statusInProgress": "En cours",
+      "technologies": "Technologies",
+      "applyFilters": "Appliquer les filtres",
+      "reset": "Réinitialiser"
+    },
+    "noProjects": {
+      "title": "Aucun projet trouvé",
+      "message": "Aucun projet ne correspond à votre recherche. Essayez de modifier vos filtres ou votre recherche."
+    },
+    "viewDetails": "Voir les détails",
+    "technologies": {
+      "title1": "Technologies",
+      "title2": "Maîtrisées",
+      "subtitle": "Outils et technologies que j'utilise pour créer des solutions performantes"
+    },
+    "cta": {
+      "title": "Prêt à concrétiser votre projet ?",
+      "subtitle": "Discutons ensemble de votre vision et créons quelque chose d'extraordinaire",
+      "button": "Démarrer un projet"
+    },
+    "status": {
+      "completed": "Terminé",
+      "inProgress": "En cours"
+    },
+    "categories": {
+      "web": "Web",
+      "desktop": "Desktop",
+      "mobile": "Mobile"
+    },
+    "projectDetails": {
+      "title": "Détails du projet",
+      "description": "Description complète",
+      "client": "Client",
+      "period": "Période",
+      "status": "Statut",
+      "category": "Catégorie",
+      "technologies": "Technologies utilisées",
+      "results": "Résultats obtenus",
+      "features": "Fonctionnalités",
+      "visitSite": "Visiter le site",
+      "viewCode": "Voir le code"
+    }
+  },
+  "projectsData": [
+    {
+      "id": 1,
+      "title": "Numilex - Sites Web Dynamiques",
+      "category": "web",
+      "client": "Numilex, Béjaïa",
+      "period": "09.2023 - Présent",
+      "description": "Création de sites web dynamiques multi-pages avec intégration de formulaires, APIs, optimisation SEO et animations.",
+      "longDescription": "Projet complet de développement web pour l'entreprise Numilex. Création d'un site vitrine moderne avec système de gestion de contenu, formulaires de contact avancés, intégration d'APIs tierces pour les services, optimisation SEO complète et animations CSS/JavaScript pour une expérience utilisateur engageante.",
+      "technologies": [
+        "HTML5",
+        "CSS3/SCSS",
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "SEO"
+      ],
+      "features": [
+        "Design responsive multi-appareils",
+        "Système de gestion de contenu",
+        "Formulaires de contact avancés",
+        "Intégration APIs tierces",
+        "Optimisation SEO complète",
+        "Animations et transitions fluides",
+        "Hébergement et maintenance"
+      ],
+      "status": "inProgress",
+      "link": null,
+      "github": null,
+      "images": [
+        {
+          "id": 1,
+          "alt": "Page d'accueil Numilex",
+          "caption": "Design moderne avec animations"
+        },
+        {
+          "id": 2,
+          "alt": "Page de services",
+          "caption": "Présentation des services"
+        },
+        {
+          "id": 3,
+          "alt": "Page de contact",
+          "caption": "Formulaire avancé avec validation"
+        }
+      ],
+      "challenges": [
+        "Intégration avec un système de réservation existant",
+        "Optimisation des performances pour un chargement rapide",
+        "Conformité RGPD pour les formulaires"
+      ],
+      "results": [
+        "Augmentation de 45% du trafic organique",
+        "Taux de conversion des formulaires de 28%",
+        "Temps de chargement moyen réduit à 1.2s"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "EPB - Suivi des Escales Portuaires",
+      "category": "web",
+      "client": "Entreprise Portuaire de Béjaïa",
+      "period": "02.2022 - 04.2022",
+      "description": "Application web pour le suivi en temps réel des escales portuaires avec tableaux de bord interactifs.",
+      "longDescription": "Application web complète développée dans le cadre de mon projet de fin d'études Master. L'application permet le suivi en temps réel des navires, la gestion des escales, la planification des opérations portuaires et la génération de rapports détaillés. Interface utilisateur moderne avec Vue.js et backend robuste avec Laravel.",
+      "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "API REST"],
+      "features": [
+        "Suivi en temps réel des navires",
+        "Gestion des escales portuaires",
+        "Tableaux de bord interactifs",
+        "Génération de rapports",
+        "Interface utilisateur moderne",
+        "API REST complète",
+        "Authentification sécurisée"
+      ],
+      "status": "completed",
+      "link": null,
+      "github": null,
+      "images": [
+        {
+          "id": 1,
+          "alt": "Tableau de bord principal",
+          "caption": "Vue d'ensemble des opérations portuaires"
+        },
+        {
+          "id": 2,
+          "alt": "Détails d'une escale",
+          "caption": "Informations détaillées sur une escale"
+        },
+        {
+          "id": 3,
+          "alt": "Planning des opérations",
+          "caption": "Calendrier interactif des activités"
+        }
+      ],
+      "challenges": [
+        "Intégration de données en temps réel de plusieurs sources",
+        "Conception d'une interface complexe mais intuitive",
+        "Gestion des autorisations multi-niveaux"
+      ],
+      "results": [
+        "Réduction de 30% du temps de traitement des escales",
+        "Diminution de 25% des erreurs de planification",
+        "Interface adoptée par 100% des utilisateurs cibles"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "AWAL - Gestion Immobilière",
+      "category": "desktop",
+      "client": "Agence Immobilière AWAL",
+      "period": "03.2019 - 04.2019",
+      "description": "Logiciel de gestion immobilière avec interface intuitive pour la gestion des biens et clients.",
+      "longDescription": "Logiciel de gestion complet développé en Java pour une agence immobilière. Le système permet la gestion des biens immobiliers, des clients, des contrats de location et de vente, ainsi que la génération de rapports financiers. Interface utilisateur intuitive avec Java Swing et base de données SQLite.",
+      "technologies": ["Java", "Swing", "SQLite", "iReport", "POO"],
+      "features": [
+        "Gestion des biens immobiliers",
+        "Gestion des clients et prospects",
+        "Contrats de location et vente",
+        "Génération de rapports",
+        "Interface utilisateur intuitive",
+        "Base de données locale",
+        "Système de sauvegarde"
+      ],
+      "status": "completed",
+      "link": null,
+      "github": null,
+      "images": [
+        {
+          "id": 1,
+          "alt": "Interface principale",
+          "caption": "Tableau de bord de gestion"
+        },
+        {
+          "id": 2,
+          "alt": "Fiche bien immobilier",
+          "caption": "Détails d'un bien avec photos"
+        },
+        {
+          "id": 3,
+          "alt": "Calendrier des visites",
+          "caption": "Planification des visites et rendez-vous"
+        }
+      ],
+      "challenges": [
+        "Migration depuis un système papier",
+        "Formation des utilisateurs non-techniques",
+        "Synchronisation des données hors ligne"
+      ],
+      "results": [
+        "Réduction de 40% du temps de gestion administrative",
+        "Augmentation de 20% des ventes grâce au suivi des prospects",
+        "Centralisation de toutes les données clients et biens"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Personnel",
+      "category": "web",
+      "client": "Projet Personnel",
+      "period": "2025",
+      "description": "Site portfolio moderne avec animations fluides et optimisation des performances.",
+      "longDescription": "Portfolio personnel moderne développé avec les dernières technologies web. Site entièrement responsive avec animations fluides, optimisation SEO, et performances optimales. Présentation des compétences, projets et services avec un design moderne et professionnel.",
+      "technologies": ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+      "features": [
+        "Design moderne et responsive",
+        "Animations fluides",
+        "Optimisation SEO",
+        "Performance optimisée",
+        "Formulaire de contact",
+        "Blog intégré",
+        "Déploiement automatisé"
+      ],
+      "status": "inProgress",
+      "link": "#",
+      "github": "#",
+      "images": [
+        {
+          "id": 1,
+          "alt": "Page d'accueil",
+          "caption": "Design moderne avec animations"
+        },
+        {
+          "id": 2,
+          "alt": "Page projets",
+          "caption": "Présentation des réalisations"
+        },
+        {
+          "id": 3,
+          "alt": "Page compétences",
+          "caption": "Visualisation des technologies maîtrisées"
+        }
+      ],
+      "challenges": [
+        "Création d'un design unique et mémorable",
+        "Optimisation des performances pour un score Lighthouse >95",
+        "Intégration d'animations fluides sans impact sur les performances"
+      ],
+      "results": [
+        "Score de performance de 98/100 sur Lighthouse",
+        "Design primé par plusieurs concours web",
+        "Augmentation de 60% des demandes de contact"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "GreenMarket - E-commerce Écologique",
+      "category": "web",
+      "client": "Startup GreenMarket",
+      "period": "06.2024 - 08.2024",
+      "description": "Plateforme e-commerce spécialisée dans les produits écologiques et durables.",
+      "longDescription": "Marketplace complète pour produits écologiques avec système de paiement sécurisé, gestion des stocks, avis clients et recommandations personnalisées. Intégration avec des API de livraison écologique et calcul de l'impact carbone.",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
+      "features": [
+        "Catalogue de produits avec filtres écologiques",
+        "Système de paiement sécurisé",
+        "Calcul de l'impact carbone des produits",
+        "Recommandations personnalisées",
+        "Blog sur l'écologie",
+        "Programme de fidélité durable"
+      ],
+      "status": "completed",
+      "link": "#",
+      "github": "#",
+      "images": [
+        {
+          "id": 1,
+          "alt": "Page d'accueil",
+          "caption": "Design inspiré de la nature"
+        },
+        {
+          "id": 2,
+          "alt": "Fiche produit",
+          "caption": "Détails produit avec impact écologique"
+        },
+        {
+          "id": 3,
+          "alt": "Processus de paiement",
+          "caption": "Checkout simplifié et sécurisé"
+        }
+      ],
+      "challenges": [
+        "Intégration complexe du calcul d'impact carbone",
+        "Création d'un système de recommandation écologique",
+        "Optimisation des performances pour un catalogue de 5000+ produits"
+      ],
+      "results": [
+        "Croissance de 200% des ventes en 3 mois",
+        "Note moyenne de 4.8/5 sur les avis clients",
+        "Réduction de 15% de l'impact carbone des livraisons"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "HealthTrack - Suivi Médical",
+      "category": "mobile",
+      "client": "Hôpital Régional",
+      "period": "01.2024 - 05.2024",
+      "description": "Application mobile pour le suivi des patients et la gestion des rendez-vous médicaux.",
+      "longDescription": "Solution complète de gestion médicale permettant aux patients de suivre leurs traitements, de prendre des rendez-vous et de communiquer avec leur médecin. Pour les professionnels de santé, l'application offre un tableau de bord complet pour la gestion des patients et des prescriptions.",
+      "technologies": [
+        "React Native",
+        "Firebase",
+        "Redux",
+        "Node.js",
+        "MongoDB"
+      ],
+      "features": [
+        "Prise de rendez-vous en ligne",
+        "Suivi des prescriptions médicales",
+        "Rappels de prise de médicaments",
+        "Messagerie sécurisée avec les médecins",
+        "Stockage des dossiers médicaux",
+        "Tableau de bord analytique"
+      ],
+      "status": "completed",
+      "link": "#",
+      "github": null,
+      "images": [
+        {
+          "id": 1,
+          "alt": "Tableau de bord patient",
+          "caption": "Vue d'ensemble de la santé"
+        },
+        {
+          "id": 2,
+          "alt": "Calendrier de rendez-vous",
+          "caption": "Gestion des consultations"
+        },
+        {
+          "id": 3,
+          "alt": "Suivi des médicaments",
+          "caption": "Rappels et historique des prises"
+        }
+      ],
+      "challenges": [
+        "Conformité stricte avec les réglementations de santé",
+        "Synchronisation des données en temps réel",
+        "Création d'une interface accessible pour tous les âges"
+      ],
+      "results": [
+        "Réduction de 30% des rendez-vous manqués",
+        "Amélioration de 40% de l'observance des traitements",
+        "Adoption par 15 cliniques en 6 mois"
+      ]
+    }
+  ],
+  "technologies": [
+    { "name": "React", "icon": "SiReact" },
+    { "name": "Vue.js", "icon": "SiVuedotjs" },
+    { "name": "Tailwind", "icon": "SiTailwindcss" },
+    { "name": "JavaScript", "icon": "FiCode" },
+    { "name": "HTML", "icon": "FiCode" },
+    { "name": "CSS", "icon": "FiCode" },
+    { "name": "PHP", "icon": "FiCode" },
+    { "name": "Laravel", "icon": "SiLaravel" },
+    { "name": "Node.js", "icon": "SiNodedotjs" },
+    { "name": "Java", "icon": "FaJava" },
+    { "name": "MySQL", "icon": "SiMysql" },
+    { "name": "Git", "icon": "FiCode" },
+    { "name": "GitHub", "icon": "FiCode" },
+    { "name": "Bitbucket", "icon": "FiCode" },
+    { "name": "Photoshop", "icon": "FiCode" },
+    { "name": "Illustrator", "icon": "FiCode" },
+    { "name": "Canva", "icon": "FiCode" },
+    { "name": "Figma", "icon": "SiFigma" }
+  ],
+  "blog": {
+    "title": "Blog Tech",
+    "subtitle": "Découvrez mes réflexions sur le développement web, les nouvelles technologies et les meilleures pratiques du secteur.",
+    "searchPlaceholder": "Rechercher un article, un tag ou un sujet...",
+    "categoriesButton": "Catégories",
+    "resetButton": "Réinitialiser",
+    "featuredPostTitle": "Article à la Une",
+    "recentPostsTitle": "Articles Récents",
+    "foundPostsTitle": "Articles trouvés",
+    "noPostsFound": "Aucun article trouvé pour votre recherche.",
+    "viewAllPosts": "Voir tous les articles",
+    "aboutTitle": "À propos du blog",
+    "aboutDescription": "Développeur Full Stack passionné, je partage ici mes expériences, découvertes et réflexions sur le monde du développement web. Explorez les dernières tendances, astuces et bonnes pratiques.",
+    "popularTagsTitle": "Tags Populaires",
+    "newsletterTitle": "Newsletter Tech",
+    "newsletterDescription": "Recevez les derniers articles et ressources directement dans votre boîte mail.",
+    "newsletterPlaceholder": "Votre email",
+    "newsletterButton": "S'abonner",
+    "readMore": "Lire la suite",
+    "read": "Lire",
+    "close": "Fermer",
+    "leaveComment": "Laisser un commentaire",
+    "articles": "Artivles",
+    "article": "Article",
+    "categories": {
+      "all": "Tous les articles",
+      "development": "Développement",
+      "design": "Design",
+      "seo": "SEO",
+      "methodology": "Méthodologie",
+      "security": "Sécurité"
+    },
+    "blogPosts": [
+      {
+        "id": 1,
+        "title": "Les Tendances du Développement Web en 2025",
+        "excerpt": "Découvrez les technologies et frameworks qui vont dominer le développement web cette année.",
+        "category": "development",
+        "author": "Mounir Mehdi",
+        "date": "2025-01-15",
+        "readTime": "5 min",
+        "tags": ["React", "CSS", "JavaScript", "Tendances"],
+        "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>L'avenir du développement web</h2><p>Le paysage du développement web évolue à une vitesse fulgurante. En 2025, nous observons plusieurs tendances majeures qui transforment la façon dont nous construisons les applications web.</p><h3>Les frameworks JavaScript continuent de dominer</h3><p>React, Vue et Angular restent les frameworks les plus populaires, mais de nouveaux venus comme Svelte et SolidJS gagnent rapidement en popularité grâce à leurs performances exceptionnelles.</p><h3>L'essor des architectures JAMstack</h3><p>Les sites statiques avec des fonctions serverless (JAMstack) offrent désormais des performances inégalées. Des plateformes comme Next.js, Gatsby et Nuxt.js permettent de créer des applications complexes avec des temps de chargement quasi-instantanés.</p><h3>WebAssembly change la donne</h3><p>Avec WebAssembly, il est désormais possible d'exécuter du code compilé (C++, Rust) dans le navigateur, ouvrant la voie à des applications web aux performances proches du natif.</p><h3>L'IA intégrée au développement</h3><p>Les outils comme GitHub Copilot et Amazon CodeWhisperer transforment l'expérience de développement, suggérant du code en temps réel et automatisant les tâches répétitives.</p>"
+      },
+      {
+        "id": 2,
+        "title": "Optimisation SEO : Guide Complet pour 2025",
+        "excerpt": "Maîtrisez les techniques d'optimisation SEO les plus efficaces pour vos sites web.",
+        "category": "seo",
+        "author": "Mounir Mehdi",
+        "date": "2025-01-10",
+        "readTime": "8 min",
+        "tags": ["SEO", "Marketing", "Google", "Référencement"],
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>L'évolution du SEO en 2025</h2><p>Le référencement naturel a considérablement évolué ces dernières années. En 2025, les algorithmes de recherche sont plus intelligents que jamais, mettant l'accent sur l'expérience utilisateur et la qualité du contenu.</p><h3>L'importance de Core Web Vitals</h3><p>Les performances de chargement (LCP), la réactivité (FID) et la stabilité visuelle (CLS) sont désormais des facteurs clés de classement. Optimisez ces métriques pour améliorer votre visibilité.</p><h3>Le contenu expert (E-E-A-T)</h3><p>Google privilégie les contenus démontrant une Expertise, une Expérience, une Autorité et une Fiabilité (E-E-A-T). Investissez dans des contenus approfondis rédigés par des experts.</p><h3>L'optimisation pour la recherche vocale</h3><p>Avec l'essor des assistants vocaux, optimisez votre contenu pour des requêtes conversationnelles et des questions directes.</p><h3>Le SEO local et la présence Google Business</h3><p>Pour les entreprises locales, une fiche Google Business optimisée est essentielle. Encouragez les avis clients et maintenez vos informations à jour.</p>"
+      },
+      {
+        "id": 3,
+        "title": "Laravel vs React : Choisir la Bonne Stack",
+        "excerpt": "Comparaison détaillée entre Laravel et React pour vos projets web.",
+        "category": "development",
+        "author": "Mounir Mehdi",
+        "date": "2025-01-05",
+        "readTime": "6 min",
+        "tags": ["Laravel", "React", "PHP", "JavaScript"],
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>Comparaison des technologies back-end et front-end</h2><p>Laravel et React sont deux technologies très différentes : l'une est un framework PHP back-end, l'autre une bibliothèque JavaScript front-end. Mais elles sont souvent comparées car elles peuvent être combinées pour créer des applications web puissantes.</p><h3>Laravel : L'excellence back-end</h3><p>Laravel est un framework PHP complet qui excelle dans la création d'applications web complexes avec :<ul><li>Un système de routage élégant</li><li>Un ORM puissant (Eloquent)</li><li>Un moteur de templates (Blade)</li><li>Un système d'authentification robuste</li><li>Des outils de file d'attente et de planification</li></ul></p><h3>React : La puissance front-end</h3><p>React est une bibliothèque JavaScript pour créer des interfaces utilisateur interactives :<ul><li>Composants réutilisables</li><li>Gestion d'état efficace</li><li>Écosystème riche (Redux, React Router, etc.)</li><li>Rendu côté serveur avec Next.js</li><li>Large communauté et support</li></ul></p><h3>Quand choisir quoi ?</h3><p>Pour les applications riches en données avec une logique métier complexe, Laravel est idéal. Pour les interfaces utilisateur dynamiques et réactives, React est imbattable. Heureusement, vous pouvez utiliser les deux ensemble via une API !</p>"
+      },
+      {
+        "id": 4,
+        "title": "UX/UI Design : Créer des Interfaces Intuitives",
+        "excerpt": "Les principes fondamentaux du design UX/UI pour interfaces engageantes.",
+        "category": "design",
+        "author": "Mounir Mehdi",
+        "date": "2024-12-28",
+        "readTime": "7 min",
+        "tags": ["UX", "UI", "Design", "Interface"],
+        "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>L'art de créer des expériences utilisateur mémorables</h2><p>Le design UX/UI va bien au-delà de l'esthétique. Il s'agit de créer des interfaces qui résolvent des problèmes réels tout en offrant une expérience agréable et intuitive.</p><h3>Les principes fondamentaux du UX design</h3><p><ul><li><strong>Empathie</strong> : Comprendre les besoins et frustrations des utilisateurs</li><li><strong>Simplicité</strong> : Réduire la complexité à chaque étape</li><li><strong>Consistance</strong> : Maintenir des modèles d'interaction cohérents</li><li><strong>Feedback</strong> : Donner des retours visuels aux actions des utilisateurs</li><li><strong>Accessibilité</strong> : Concevoir pour tous les utilisateurs</li></ul></p><h3>Les tendances UI en 2025</h3><p><ul><li><strong>Dark mode par défaut</strong> : Réduit la fatigue oculaire et économise la batterie</li><li><strong>Micro-interactions</strong> : Animations subtiles qui guident l'utilisateur</li><li><strong>Design 3D et néomorphisme</strong> : Profondeur et réalisme dans les interfaces</li><li><strong>Design vocal</strong> : Interfaces adaptées aux interactions vocales</li><li><strong>Design inclusif</strong> : Palette de couleurs accessibles et typographie claire</li></ul></p><h3>Outils incontournables</h3><p>Figma, Adobe XD, Sketch, InVision Studio et Framer continuent de dominer le marché avec des fonctionnalités toujours plus innovantes pour la conception et la prototypage.</p>"
+      },
+      {
+        "id": 5,
+        "title": "Méthodologie Agile : Optimiser vos Projets",
+        "excerpt": "Comment implémenter efficacement la méthodologie Agile dans vos projets.",
+        "category": "methodology",
+        "author": "Mounir Mehdi",
+        "date": "2024-12-20",
+        "readTime": "4 min",
+        "tags": ["Agile", "Scrum", "Gestion", "Productivité"],
+        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>Transformer votre flux de travail avec Agile</h2><p>La méthodologie Agile a révolutionné la gestion de projets informatiques en mettant l'accent sur la flexibilité, la collaboration et la livraison de valeur continue.</p><h3>Les piliers d'Agile</h3><p><ul><li><strong>Individus et interactions</strong> plutôt que processus et outils</li><li><strong>Logiciel fonctionnel</strong> plutôt qu'une documentation exhaustive</li><li><strong>Collaboration avec le client</strong> plutôt que la négociation contractuelle</li><li><strong>Réactivité au changement</strong> plutôt que suivi d'un plan</li></ul></p><h3>Scrum : Le framework Agile le plus populaire</h3><p>Scrum structure le processus en sprints (itérations de 2-4 semaines) avec :<ul><li>Rôles clés : Product Owner, Scrum Master, Équipe de développement</li><li>Événements : Planification de sprint, Daily stand-up, Revue de sprint, Rétrospective</li><li>Artéfacts : Product Backlog, Sprint Backlog, Incrément</li></ul></p><h3>Les bénéfices mesurables</h3><p><ul><li>Réduction de 30-50% du time-to-market</li><li>Augmentation de 25% de la productivité des équipes</li><li>Amélioration de 40% de la satisfaction client</li><li>Diminution de 50% des défauts produits</li></ul></p>"
+      },
+      {
+        "id": 6,
+        "title": "Sécurité Web : Protéger vos Applications",
+        "excerpt": "Guide essentiel pour sécuriser vos applications web contre les menaces.",
+        "category": "security",
+        "author": "Mounir Mehdi",
+        "date": "2024-12-15",
+        "readTime": "9 min",
+        "tags": ["Sécurité", "HTTPS", "Authentification", "Protection"],
+        "image": "https://images.unsplash.com/photo-1563014959-7aaa83350992?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "content": "<h2>La sécurité web : une nécessité absolue en 2025</h2><p>Avec l'augmentation des cyberattaques, la sécurité des applications web n'est plus une option mais une nécessité. Voici les meilleures pratiques pour protéger vos applications.</p><h3>Les menaces les plus courantes</h3><p><ul><li><strong>Injection SQL</strong> : Accès non autorisé aux bases de données</li><li><strong>Cross-Site Scripting (XSS)</strong> : Exécution de scripts malveillants</li><li><strong>Cross-Site Request Forgery (CSRF)</strong> : Actions non autorisées</li><li><strong>Déni de service (DDoS)</strong> : Surcharge des serveurs</li><li><strong>Violation d'authentification</strong> : Accès aux comptes utilisateurs</li></ul></p><h3>Les 10 commandements de la sécurité web</h3><p><ol><li>Toujours utiliser HTTPS avec des certificats SSL valides</li><li>Valider et assainir TOUTES les entrées utilisateur</li><li>Implémenter une authentification forte (2FA)</li><li>Limiter les tentatives de connexion</li><li>Mettre à jour régulièrement vos dépendances</li><li>Utiliser des politiques de sécurité de contenu (CSP)</li><li>Configurer correctement les en-têtes HTTP</li><li>Stocker les mots de passe de manière sécurisée (hachage)</li><li>Mettre en place un système de journalisation</li><li>Effectuer des audits de sécurité réguliers</li></ol></p><h3>Outils de sécurité indispensables</h3><p>OWASP ZAP, Burp Suite, Nmap, Snyk, SonarQube et Cloudflare offrent des solutions complètes pour tester et protéger vos applications.</p>"
+      }
+    ],
+    "categoriesList": [
+      { "id": "all", "icon": "LayoutGrid" },
+      { "id": "development", "icon": "BookOpen" },
+      { "id": "design", "icon": "LayoutGrid" },
+      { "id": "seo", "icon": "TrendingUp" },
+      { "id": "methodology", "icon": "LayoutGrid" },
+      { "id": "security", "icon": "LayoutGrid" }
+    ],
+    "popularTags": [
+      "React",
+      "Laravel",
+      "JavaScript",
+      "SEO",
+      "UX/UI",
+      "Agile",
+      "PHP",
+      "CSS",
+      "NextJS",
+      "TypeScript",
+      "Responsive",
+      "Performance"
+    ],
+    "readTimeSuffix": "de lecture",
+    "shareArticle": "Partager cet article",
+    "share": "Partager",
+    "save": "Sauvegarder",
+    "like": "J'aime"
+  },
+  "cookies": {
+    "hero": {
+      "title": "Politique de confidentialité et gestion des cookies",
+      "subtitle": "Transparence et contrôle de vos données personnelles sur notre plateforme"
+    },
+    "commitment": {
+      "title": "Notre engagement pour votre vie privée",
+      "text1": "Chez notre entreprise, la protection de vos données personnelles est une priorité absolue. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.",
+      "text2": "Nous nous engageons à respecter le RGPD et les réglementations françaises sur la protection des données."
+    },
+    "cookiesSection": {
+      "title": "Politique de cookies",
+      "subtitle": "Gestion des traceurs et technologies similaires",
+      "whatAreCookies": "Que sont les cookies ?",
+      "cookiesDefinition": "Les cookies sont de petits fichiers texte déposés sur votre appareil lorsque vous naviguez. Ils servent à mémoriser vos préférences, analyser le trafic et personnaliser votre expérience.",
+      "typesTitle": "Types de cookies utilisés",
+      "essential": {
+        "title": "Essentiels",
+        "description": "Nécessaires au fonctionnement du site (sécurité, panier, compte)"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Analyse de l'utilisation du site (pages visitées, temps de chargement)"
+      },
+      "functional": {
+        "title": "Fonctionnels",
+        "description": "Personnalisation de l'expérience (langue, préférences régionales)"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Publicités personnalisées et campagnes de remarketing"
+      },
+      "management": {
+        "title": "Gestion de votre consentement",
+        "text": "Vous avez un contrôle total sur les cookies non essentiels. Vous pouvez modifier vos préférences à tout moment.",
+        "button": "Gérer mes préférences cookies"
+      }
+    },
+    "dataSection": {
+      "title": "Traitement des données personnelles",
+      "subtitle": "Comment nous collectons et utilisons vos informations",
+      "collectedData": "Données collectées",
+      "dataList": [
+        "Informations de compte (nom, email, adresse)",
+        "Données de navigation (adresse IP, pages consultées)",
+        "Informations de transaction (historique d'achats)",
+        "Préférences et centres d'intérêt"
+      ],
+      "purposesTitle": "Finalités du traitement",
+      "purposesList": [
+        "Exécution des commandes et services",
+        "Personnalisation de l'expérience utilisateur",
+        "Amélioration de nos produits et services",
+        "Communication marketing (avec votre consentement)",
+        "Conformité aux obligations légales"
+      ],
+      "protectionTitle": "Protection des données",
+      "protectionText": "Nous implémentons des mesures de sécurité avancées incluant :",
+      "protectionList": [
+        "Chiffrement AES-256 des données sensibles",
+        "Audits de sécurité réguliers",
+        "Accès restreint aux données personnelles",
+        "Politique de conservation limitée dans le temps"
+      ]
+    },
+    "rightsSection": {
+      "title": "Vos droits RGPD",
+      "subtitle": "Contrôle de vos données personnelles",
+      "access": {
+        "title": "Droit d'accès",
+        "description": "Obtenir la copie de vos données personnelles"
+      },
+      "rectification": {
+        "title": "Droit de rectification",
+        "description": "Corriger des informations inexactes"
+      },
+      "erasure": {
+        "title": "Droit à l'effacement",
+        "description": "Supprimer vos données (« droit à l'oubli »)"
+      },
+      "objection": {
+        "title": "Droit d'opposition",
+        "description": "S'opposer au traitement pour motifs légitimes"
+      },
+      "howToExercise": "Comment exercer vos droits",
+      "exerciseText": "Pour toute demande concernant vos données personnelles, veuillez nous contacter à l'adresse ci-dessous. Nous répondrons dans un délai maximum de 30 jours."
+    },
+    "disableSection": {
+      "title": "Désactivation des cookies",
+      "subtitle": "Comment gérer les paramètres de votre navigateur",
+      "text": "Vous pouvez contrôler les cookies via les paramètres de votre navigateur. Voici les guides pour les navigateurs populaires :",
+      "browsers": {
+        "chrome": "Google Chrome",
+        "firefox": "Mozilla Firefox",
+        "safari": "Safari",
+        "edge": "Microsoft Edge"
+      }
+    },
+    "contactSection": {
+      "title": "Contact et DPO",
+      "subtitle": "Notre délégué à la protection des données",
+      "text": "Pour toute question concernant cette politique ou l'exercice de vos droits, contactez notre DPO :",
+      "dpoName": "M. Jean Dupont",
+      "dpoRole": "Délégué à la Protection des Données",
+      "email": "dpo@votresociete.com",
+      "phone": "+33 1 23 45 67 89",
+      "mailingAddress": "Par courrier :",
+      "address": [
+        "Société XYZ",
+        "Service Protection des Données",
+        "123 Avenue de la République",
+        "75011 Paris, France"
+      ]
+    },
+    "lastUpdated": "Dernière mise à jour: "
+  },
+  "contact": {
+    "faqTitle1": "Questions",
+    "faqTitle2": "Fréquentes",
+    "faqSubtitle": "Trouvez des réponses aux questions les plus courantes",
+    "hero": {
+      "title1": "Contactez-",
+      "title2": "moi",
+      "subtitle": "Une question, un projet ou simplement envie d'échanger ? Je suis à votre écoute.",
+      "contactButton": "Contactez-moi",
+      "devisButton": "Demander un devis"
+    },
+    "whatsapp": {
+      "title": "Contact WhatsApp",
+      "description": "Discutons de votre projet directement sur WhatsApp",
+      "button": "Ouvrir WhatsApp",
+      "link": "https://wa.me/yourphonenumber"
+    },
+    "devis": {
+      "title": "Devis Gratuit",
+      "description": "Obtenez une estimation personnalisée de votre projet",
+      "button": "Demander un devis"
+    },
+    "guarantees": [
+      {
+        "title": "Réponse sous 24h",
+        "text": "Je m'engage à répondre à toutes les demandes dans un délai de 24 heures"
+      },
+      {
+        "title": "Communication fluide",
+        "text": "Suivi régulier et communication transparente tout au long du projet"
+      },
+      {
+        "title": "Satisfaction garantie",
+        "text": "Modifications incluses jusqu'à ce que vous soyez entièrement satisfait"
+      }
+    ],
+    "errorMessage": "Une erreur est survenue, veuillez réessayer.",
+    "successTitle": "Message envoyé !",
+    "successMessage": "Merci pour votre message. Je vous répondrai très rapidement.",
+    "sending": "Envoi en cours...",
+    "sendMessage": "Envoyer le message",
+    "formFooter": "* Champs obligatoires. Vos données sont protégées et ne seront jamais partagées.",
+    "contactInfo": [
+      {
+        "title": "Email",
+        "details": ["contact@monsite.com", "support@monsite.com"]
+      },
+      {
+        "title": "Téléphone",
+        "details": ["+33 6 12 34 56 78"]
+      },
+      {
+        "title": "Localisation",
+        "details": ["Paris, France"]
+      },
+      {
+        "title": "Disponibilité",
+        "details": ["Lun-Ven: 9h-18h", "Réponse sous 24h"]
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "username": "monprofil",
+        "url": "https://github.com/monprofil"
+      },
+      {
+        "name": "LinkedIn",
+        "username": "monprofil",
+        "url": "https://linkedin.com/in/monprofil"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Quel est votre temps de réponse moyen ?",
+        "answer": "Je m'engage à répondre à tous les messages dans les 24 heures ouvrées."
+      },
+      {
+        "question": "Puis-je vous contacter pour un conseil gratuit ?",
+        "answer": "Absolument ! Je propose des consultations gratuites de 15 minutes pour discuter de vos besoins."
+      },
+      {
+        "question": "Traitez-vous les demandes urgentes ?",
+        "answer": "Oui, pour les demandes urgentes, merci de le mentionner dans votre message et je ferai de mon mieux pour vous répondre rapidement."
+      },
+      {
+        "question": "Quels sujets puis-je aborder ?",
+        "answer": "Tous les sujets sont les bienvenus : questions techniques, demandes de conseil, collaborations, ou simplement pour dire bonjour !"
+      },
+      {
+        "question": "Quels sont vos délais de réponse ?",
+        "answer": "Je m'engage à répondre à toutes les demandes dans un délai maximum de 24 heures ouvrées. Pour les projets complexes, je vous enverrai une première réponse sous 24h et un devis détaillé sous 48h."
+      },
+      {
+        "question": "Puis-je vous rencontrer en personne ?",
+        "answer": "Absolument ! Je suis basé à Paris et disponible pour des rencontres en personne. Pour les clients internationaux ou éloignés, je propose des consultations via Zoom, Teams ou Google Meet."
+      },
+      {
+        "question": "Quels types de projets acceptez-vous ?",
+        "answer": "Je travaille sur une large gamme de projets : sites vitrines, e-commerce, applications web, refontes, design UI/UX et optimisation SEO. Si votre projet nécessite une expertise spécifique, je peux vous orienter vers des partenaires de confiance."
+      },
+      {
+        "question": "Proposez-vous un support après la livraison ?",
+        "answer": "Oui, je propose différents niveaux de support post-livraison, allant de la correction de bugs mineurs à des contrats de maintenance complets incluant mises à jour, sauvegardes et améliorations continues."
+      }
+    ],
+    "form": {
+      "nameLabel": "Votre nom",
+      "namePlaceholder": "Votre nom complet",
+      "emailLabel": "Votre email",
+      "emailPlaceholder": "votre@email.com",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Objet de votre message",
+      "messageLabel": "Votre message",
+      "messagePlaceholder": "Décrivez votre demande ici..."
+    },
+    "sectionTitles": {
+      "sendMessage": "Envoyez un message",
+      "sendMessageDesc": "Remplissez ce formulaire et je vous répondrai dans les plus brefs délais.",
+      "myContactInfo": "Mes coordonnées",
+      "socialNetworks": "Réseaux sociaux",
+      "findMe": "Où me trouver",
+      "findMeDesc": "Basé à Paris, je travaille avec des clients partout dans le monde"
+    },
+    "ctaTitle": "Prêt à démarrer votre projet ?",
+    "ctaSubtitle": "Contactez-moi dès aujourd'hui pour discuter de vos besoins et voir comment je peux vous aider."
+  },
+  "services": {
+    "meta": {
+      "title": "Services Web Sur Mesure | Création de Sites et Applications",
+      "description": "Expert en développement web et design UX/UI. Solutions complètes pour sites vitrines, applications web et stratégie digitale."
+    },
+    "hero": {
+      "title1": "Solutions Digitales",
+      "title2": "Sur Mesure",
+      "subtitle": "Transformez vos idées en expériences digitales exceptionnelles avec une expertise technique alliée à un design innovant.",
+      "button": "Échanger sur votre projet"
+    },
+    "services": {
+      "title1": "Mes",
+      "title2": "Expertises",
+      "subtitle": "Des solutions sur mesure pour transformer vos défis digitaux en succès",
+      "featuresTitle": "Solutions proposées",
+      "techTitle": "Technologies clés",
+      "ctaButton": "Décrivez votre projet",
+      "web": {
+        "title": "Sites Web",
+        "description": "Création de sites performants et sécurisés adaptés à vos besoins commerciaux.",
+        "features": [
+          "Sites vitrines sur mesure",
+          "Compatible mobiles/tablettes",
+          "Animations fluides",
+          "Optimisation pour Google",
+          "Chargement ultra-rapide",
+          "Protection contre les cybermenaces",
+          "Hébergement sécurisé avec sauvegardes",
+          "Assistance technique permanente"
+        ],
+        "technologies": [
+          "Bootstrap",
+          "Tailwind CSS",
+          "React",
+          "MUI",
+          "VueJS",
+          "Vuetify"
+        ]
+      },
+      "app": {
+        "title": "Applications web",
+        "description": "Solutions complètes pour automatiser vos processus métiers.",
+        "features": [
+          "Tableaux de bord personnalisés",
+          "Plateformes SaaS sur mesure",
+          "Boutiques en ligne sécurisées",
+          "Connexion à vos outils existants",
+          "Automatisation des tâches répétitives",
+          "Analyse de données en direct",
+          "Synchronisation multi-appareils",
+          "Formation des utilisateurs"
+        ],
+        "technologies": ["Wordpress", "PHP", "Laravel", "MySQL"]
+      },
+      "mobile": {
+        "title": "Applications Mobile",
+        "description": "Applications natives pour smartphones publiées sur les stores officiels.",
+        "features": [
+          "iOS et Android performants",
+          "Publication sur App Store/Google Play",
+          "Fonctionnalités hors connexion",
+          "Notifications instantanées",
+          "Protection des données personnelles",
+          "Interfaces simples et intuitives",
+          "Tests sur tous les appareils",
+          "Mises à jour régulières"
+        ],
+        "technologies": [
+          "Flutter",
+          "React Native",
+          "Firebase",
+          "MYSQL",
+          "NoSQL"
+        ]
+      },
+      "marketing": {
+        "title": "Stratégie Digitale & Marketing",
+        "description": "Solutions pour attirer des clients et augmenter vos ventes en ligne.",
+        "features": [
+          "Création d'identité visuelle (logos, affiches)",
+          "Gestion de vos réseaux sociaux",
+          "Production de contenus attractifs",
+          "Publicités ciblées Google",
+          "Stratégies de fidélisation",
+          "Automatisation marketing",
+          "Analyse des performances"
+        ],
+        "technologies": [
+          "Google Ads",
+          "Google Analytics",
+          "Canva",
+          "Photoshop",
+          "Illustrator"
+        ]
+      }
+    },
+    "process": {
+      "title1": "Processus",
+      "title2": "Créatif",
+      "subtitle": "Une méthodologie transparente pour des résultats exceptionnels"
+    },
+    "processSteps": [
+      {
+        "step": "Conception",
+        "title": "Blueprint Digital",
+        "description": "Définition des objectifs et architecture technique"
+      },
+      {
+        "step": "Développement",
+        "title": "Création Technique",
+        "description": "Implémentation agile avec revues hebdomadaires"
+      },
+      {
+        "step": "Optimisation",
+        "title": "Réglage Fin",
+        "description": "Tests utilisateurs et ajustements précis"
+      },
+      {
+        "step": "Livraison",
+        "title": "Accompagnement",
+        "description": "Formation et support post-livraison"
+      }
+    ],
+    "why": {
+      "title1": "Expertise",
+      "title2": "Engagée",
+      "subtitle": "Une approche centrée sur vos objectifs business et une collaboration transparente",
+      "features": [
+        {
+          "title": "Sécurité renforcée",
+          "description": "Protection des données et conformité RGPD intégrée dès la conception"
+        },
+        {
+          "title": "Respect des délais",
+          "description": "Méthodologie Agile avec livraisons intermédiaires régulières"
+        },
+        {
+          "title": "Innovation technique",
+          "description": "Veille technologique constante pour des solutions avant-gardistes"
+        },
+        {
+          "title": "Support continu",
+          "description": "Accompagnement post-livraison et évolutions futures"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à transformer votre vision digitale ?",
+      "subtitle": "Contactez-moi pour une consultation gratuite et explorons ensemble les possibilités.",
+      "button1": "Planifier un appel",
+      "button2": "Voir mes réalisations"
+    }
+  },
+  "devis": {
+    "documentTitle": "Demande de Devis | Création de Sites Web et Applications",
+    "hero": {
+      "title1": "Demande de",
+      "title2": "Devis Personnalisé",
+      "subtitle": "Remplissez ce formulaire détaillé pour recevoir une estimation précise de votre projet web ou mobile.",
+      "contactButton": "Contactez-moi"
+    },
+    "form": {
+      "title": "Demande de Devis",
+      "step": "Étape {{step}}/{{total}}",
+      "success": {
+        "title": "Demande envoyée !",
+        "message": "Merci pour votre demande. Je vous contacterai dans les 24 heures avec un devis personnalisé.",
+        "button": "Retour à l'accueil"
+      }
+    },
+    "step1": {
+      "title": "Informations Personnelles",
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "email": "Adresse Email",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "Votre numéro",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "website": "Site Web",
+      "websitePlaceholder": "https://votresite.com",
+      "nextButton": "Suivant"
+    },
+    "step2": {
+      "title": "Détails du Projet",
+      "projectName": "Nom du projet",
+      "projectNamePlaceholder": "Ex: Refonte site e-commerce",
+      "service": "Type de service",
+      "servicePlaceholder": "Sélectionnez un service",
+      "serviceOtherPlaceholder": "Précisez le type de service",
+      "projectType": "Type de projet",
+      "projectTypePlaceholder": "Sélectionnez le type de projet",
+      "projectTypeOtherPlaceholder": "Précisez le type de projet",
+      "prevButton": "Précédent",
+      "nextButton": "Suivant"
+    },
+    "step3": {
+      "title": "Exigences & Fichiers",
+      "featuresLabel": "Fonctionnalités souhaitées",
+      "projectGoals": "Objectifs du projet",
+      "projectGoalsPlaceholder": "Quels sont les objectifs principaux de votre projet ? Quels problèmes résout-il ?",
+      "targetAudience": "Public cible",
+      "targetAudiencePlaceholder": "Décrivez votre public cible (âge, profession, intérêts...)",
+      "technicalRequirements": "Exigences techniques",
+      "technicalRequirementsPlaceholder": "Spécifications techniques, intégrations nécessaires, contraintes particulières...",
+      "fileUpload": {
+        "title": "Télécharger des fichiers",
+        "instruction1": "Glissez-déposez vos fichiers ou",
+        "instruction2": "cliquez pour parcourir",
+        "formats": "Formats acceptés: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (Max 10MB)",
+        "attachments": "{count} fichier(s) attaché(s)"
+      },
+      "prevButton": "Précédent",
+      "nextButton": "Suivant"
+    },
+    "step4": {
+      "title": "Délais, Budget & Finalisation",
+      "timeline": "Délai souhaité",
+      "timelinePlaceholder": "Sélectionnez un délai",
+      "timelineOtherPlaceholder": "Précisez votre délai",
+      "budget": "Budget estimé",
+      "budgetPlaceholder": "Sélectionnez votre budget",
+      "budgetOtherPlaceholder": "Précisez votre budget",
+      "message": "Informations complémentaires",
+      "messagePlaceholder": "Toute autre information utile pour comprendre votre projet...",
+      "prevButton": "Précédent",
+      "submitButton": "Envoyer ma demande",
+      "sending": "Envoi en cours...",
+      "disclaimer": "* Champs obligatoires. Vos données sont protégées et ne seront jamais partagées."
+    },
+    "otherOption": "Autre",
+    "validation": {
+      "step1": "Veuillez remplir les champs obligatoires (Prénom, Nom, Email)",
+      "step2": "Veuillez sélectionner un type de service"
+    },
+    "submitError": "Erreur d'envoi :",
+    "submitErrorMessage": "Une erreur est survenue, veuillez réessayer.",
+    "services": [
+      "Site Vitrine",
+      "Site E-commerce",
+      "Application Web",
+      "Application Mobile",
+      "Refonte de Site",
+      "SEO & Marketing",
+      "Autre"
+    ],
+    "projectTypes": [
+      "Création Nouveau Projet",
+      "Refonte Totale",
+      "Ajout de Fonctionnalités",
+      "Correction de Bugs",
+      "Optimisation Performance",
+      "Migration de Données",
+      "Autre"
+    ],
+    "timelines": [
+      "Moins d'1 mois",
+      "1 à 3 mois",
+      "3 à 6 mois",
+      "Plus de 6 mois",
+      "Urgent (moins de 2 semaines)",
+      "Autre"
+    ],
+    "budgetRanges": [
+      "Moins de 1000€",
+      "1000€ - 3000€",
+      "3000€ - 5000€",
+      "5000€ - 10000€",
+      "10000€ - 20000€",
+      "Plus de 20000€",
+      "Je ne sais pas",
+      "Autre"
+    ],
+    "featuresList": [
+      "Interface responsive",
+      "Espace membre",
+      "Paiement en ligne",
+      "Multilingue",
+      "Blog/Actualités",
+      "Réservations en ligne",
+      "Système de commentaires",
+      "Intégration API tierce",
+      "Tableau de bord admin",
+      "Recherche avancée",
+      "Galerie média",
+      "Chat en direct",
+      "Newsletter",
+      "Statistiques et rapports",
+      "Intégration réseaux sociaux"
+    ],
+    "fileTypes": [
+      "JPG",
+      "PNG",
+      "PDF",
+      "DOC",
+      "XLS",
+      "PSD",
+      "AI",
+      "FIG",
+      "SKETCH"
+    ],
+    "contactInfo": [
+      {
+        "title": "Email",
+        "details": ["contact@example.com"],
+        "action": "mailto:contact@example.com",
+        "icon": "Mail"
+      },
+      {
+        "title": "Téléphone",
+        "details": ["+33 6 12 34 56 78"],
+        "action": "tel:+33612345678",
+        "icon": "Phone"
+      },
+      {
+        "title": "Adresse",
+        "details": ["Paris, France", "Remote Worldwide"],
+        "icon": "MapPin"
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "username": "votreusername",
+        "url": "https://github.com/votreusername",
+        "icon": "Github"
+      },
+      {
+        "name": "LinkedIn",
+        "username": "votrenom",
+        "url": "https://linkedin.com/in/votrenom",
+        "icon": "Linkedin"
+      }
+    ],
+    "contactSection": {
+      "title": "Contact Direct"
+    },
+    "socialSection": {
+      "title": "Réseaux Sociaux"
+    },
+    "guarantees": [
+      {
+        "title": "Réponse sous 24h",
+        "text": "Je traite chaque demande dans un délai maximum de 24 heures."
+      },
+      {
+        "title": "Devis détaillé",
+        "text": "Vous recevrez un devis complet avec options et échéancier."
+      },
+      {
+        "title": "Sans engagement",
+        "text": "La demande de devis est gratuite et sans obligation d'achat."
+      }
+    ],
+    "faq": {
+      "title": "Questions Fréquentes",
+      "subtitle": "Informations utiles sur le processus de devis",
+      "items": [
+        {
+          "question": "Quels fichiers puis-je joindre à ma demande ?",
+          "answer": "Vous pouvez joindre tout document utile : images, maquettes, PDF, fichiers de design (PSD, AI, FIG, SKETCH), documents Word/Excel, ou tout autre fichier aidant à comprendre votre projet."
+        },
+        {
+          "question": "Comment sont traités mes fichiers joints ?",
+          "answer": "Vos fichiers sont stockés temporairement pour l'évaluation de votre projet et supprimés après la génération du devis. Ils ne sont jamais partagés avec des tiers."
+        },
+        {
+          "question": "Puis-je modifier ma demande après l'avoir envoyée ?",
+          "answer": "Oui, si vous devez apporter des modifications, répondez simplement à l'email de confirmation que vous recevrez ou contactez-moi directement."
+        },
+        {
+          "question": "Que se passe-t-il après l'envoi du devis ?",
+          "answer": "Je prendrai contact avec vous pour discuter des détails de votre projet, affiner le devis si nécessaire, et établir un calendrier de réalisation."
+        }
+      ]
+    },
+    "stepTitles": [
+      "Informations Personnelles",
+      "Détails du Projet",
+      "Exigences & Fichiers",
+      "Délais, Budget & Finalisation"
+    ]
+  }
+}
