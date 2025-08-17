@@ -13,13 +13,12 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const menuRef = useRef(null);
+  const [theme, setTheme] = useState('light');
 
-  // Déterminer la direction
   const isRTL = i18n.language === 'ar';
   const direction = isRTL ? 'rtl' : 'ltr';
   const textAlign = isRTL ? 'text-right' : 'text-left';
 
-  // Navigation items traduits
   const navItems = [
     { name: t('header.home'), path: "/" },
     { name: t('header.services'), path: "/services" },
@@ -28,7 +27,25 @@ const Header = () => {
     { name: t('header.contact'), path: "/contact" },
   ];
 
-  // Fermer le menu en cliquant à l'extérieur
+  // Observer les changements de thème
+  useEffect(() => {
+    const updateTheme = () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      setTheme(isDark ? 'dark' : 'light');
+    };
+
+    updateTheme();
+
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Gestion du clic en dehors du menu
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -40,7 +57,7 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Gestion du scroll
+  // Gestion du défilement
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -83,6 +100,17 @@ const Header = () => {
     }
   };
 
+  // Styles conditionnels basés sur le thème
+  const bgColor = theme === 'dark' 
+    ? (isScrolled ? 'rgba(15, 23, 42, 0.95)' : 'rgba(15, 23, 42, 0.85)')
+    : (isScrolled ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.85)');
+    
+  const textColor = theme === 'dark' ? 'text-gray-100' : 'text-gray-900';
+  const navTextColor = theme === 'dark' ? 'text-gray-300' : 'text-gray-600';
+  const navHoverColor = theme === 'dark' ? 'hover:text-teal-400' : 'hover:text-teal-500';
+  const activeColor = theme === 'dark' ? 'text-teal-400' : 'text-teal-500';
+  const borderColor = theme === 'dark' ? 'border-gray-700' : 'border-gray-300';
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -91,10 +119,9 @@ const Header = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300`}
       dir={direction}
       style={{
-        background: isScrolled 
-          ? 'rgba(255, 255, 255, 0.95)' 
-          : 'rgba(255, 255, 255, 0.65)',
-        backdropFilter: isScrolled ? 'blur(10px)' : 'blur(8px)',
+        background: bgColor,
+        backdropFilter: isScrolled ? 'blur(12px)' : 'blur(8px)',
+        WebkitBackdropFilter: isScrolled ? 'blur(12px)' : 'blur(8px)',
         boxShadow: isScrolled 
           ? '0 4px 6px rgba(0, 0, 0, 0.1)' 
           : '0 2px 4px rgba(0, 0, 0, 0.05)',
@@ -104,7 +131,7 @@ const Header = () => {
         <div className={`flex items-center justify-between ${isRTL ? 'flex-row-reverse' : ''}`}>
           <Link
             to="/"
-            className="text-2xl font-bold hover:text-teal-600 transition-colors"
+            className="text-2xl font-bold transition-colors"
             aria-label={t('header.home')}
           >
             <motion.span 
@@ -112,9 +139,9 @@ const Header = () => {
               className="flex items-center gap-1"
               dir="ltr"
             >
-              <span className="text-teal-600 font-bold">&lt;</span>
-              <span className="text-slate-800">MM.Dev</span>
-              <span className="text-teal-600 font-bold">/&gt;</span>
+              <span className="text-teal-400 font-bold">&lt;</span>
+              <span className={`${textColor} ${isRTL ? 'ml-2' : 'mr-2'}`}>MM.Dev</span>
+              <span className="text-teal-400 font-bold">/&gt;</span>
             </motion.span>
           </Link>
 
@@ -127,20 +154,23 @@ const Header = () => {
               >
                 <Link
                   to={item.path}
-                  className={`relative py-1 font-medium transition-colors text-slate-700 hover:text-teal-600 ${
-                    location.pathname === item.path 
-                      ? "text-teal-600" 
-                      : ""
-                  }`}
+                  className={`relative py-1 font-medium transition-colors
+                    ${navTextColor} ${navHoverColor}
+                    ${location.pathname === item.path ? activeColor : ''}`}
                   aria-current={location.pathname === item.path ? "page" : undefined}
                 >
                   {item.name}
                   {location.pathname === item.path && (
                     <motion.div
                       layoutId="activeIndicator"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-teal-600"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-teal-500 dark:bg-teal-400"
                       initial={false}
-                      transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                      transition={{ 
+                        type: "spring", 
+                        stiffness: 300, 
+                        damping: 30,
+                        mass: 0.5 
+                      }}
                     />
                   )}
                 </Link>
@@ -155,22 +185,17 @@ const Header = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 asChild
-                className={`bg-gradient-to-r hover:from-orange-600 hover:to-orange-700 text-white shadow-lg shadow-orange-500/20 ${
-                  isScrolled 
-                    ? "from-orange-500 to-orange-600" 
-                    : "from-orange-500/50 to-orange-600/70"
-                }`}
+                className={`bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white shadow-lg shadow-teal-500/20 dark:shadow-teal-700/30`}
               >
                 <Link to="/devis">{t('header.quoteButton')}</Link>
               </Button>
             </motion.div>
           </div>
 
-          {/* Mobile Menu Button */}
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100"
+            className={`md:hidden p-2 rounded-lg ${navTextColor} hover:bg-gray-200 dark:hover:bg-gray-800`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? t('header.closeMenu') : t('header.openMenu')}
             aria-expanded={isMenuOpen}
@@ -180,7 +205,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation animée */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.nav
@@ -189,7 +213,7 @@ const Header = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden overflow-hidden bg-white border-t border-slate-200"
+            className={`md:hidden overflow-hidden bg-gray-100 dark:bg-gray-900 border-t ${borderColor}`}
             dir={direction}
           >
             <motion.div 
@@ -205,8 +229,8 @@ const Header = () => {
                     to={item.path}
                     className={`block py-2 text-lg font-medium ${
                       location.pathname === item.path
-                        ? "text-teal-600"
-                        : "text-slate-700"
+                        ? activeColor
+                        : navTextColor
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                     aria-current={location.pathname === item.path ? "page" : undefined}
@@ -217,14 +241,14 @@ const Header = () => {
               ))}
               
               <motion.div 
-                className={`flex flex-wrap items-center gap-4 pt-4 border-t border-slate-100 ${isRTL ? 'flex-row-reverse' : ''}`}
+                className={`flex flex-wrap items-center gap-4 pt-4 border-t ${borderColor} ${isRTL ? 'flex-row-reverse' : ''}`}
                 variants={itemVariants}
               >
                 <ThemeToggle />
                 <LanguageSelector />
                 <Button
                   asChild
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
+                  className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white"
                 >
                   <Link to="/devis" onClick={() => setIsMenuOpen(false)}>
                     {t('header.quoteButton')}

@@ -9,17 +9,14 @@ import {
   Search,
   Server,
   GraduationCap,
-  CheckCircle,
   ChevronRight,
   ChevronDown,
   FolderIcon,
   ArrowRight,
-  BookOpen,
   User,
   Clock,
   MessageSquare,
   Globe,
-  LayoutTemplate,
   BarChart,
   Users,
   Shield,
@@ -94,7 +91,7 @@ const AnimatedSection = ({ children, className = "", delay = 0 }) => {
 const Accueil = () => {
   const { t, i18n } = useTranslation('translation');
   const [activeService, setActiveService] = useState(null);
-  
+
   const isRTL = i18n.language === 'ar';
   const direction = isRTL ? 'rtl' : 'ltr';
   const textAlign = isRTL ? 'text-right' : 'text-left';
@@ -132,32 +129,7 @@ const Accueil = () => {
     },
   ];
 
-  const blogPosts = [
-    {
-      id: 1,
-      title: t('home.blog.post1.title'),
-      excerpt: t('home.blog.post1.excerpt'),
-      date: t('home.blog.post1.date'),
-      readTime: t('home.blog.post1.readTime'),
-      category: t('home.blog.post1.category')
-    },
-    {
-      id: 2,
-      title: t('home.blog.post2.title'),
-      excerpt: t('home.blog.post2.excerpt'),
-      date: t('home.blog.post2.date'),
-      readTime: t('home.blog.post2.readTime'),
-      category: t('home.blog.post2.category')
-    },
-    {
-      id: 3,
-      title: t('home.blog.post3.title'),
-      excerpt: t('home.blog.post3.excerpt'),
-      date: t('home.blog.post3.date'),
-      readTime: t('home.blog.post3.readTime'),
-      category: t('home.blog.post3.category')
-    }
-  ];
+  const blogPosts = t('blogPosts', { returnObjects: true });
 
   const slides = [
     {
@@ -178,15 +150,29 @@ const Accueil = () => {
       id: 3,
       title: t('home.slides.slide3.title'),
       description: t('home.slides.slide3.description'),
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&w=800&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=1400",
       alt: t('home.slides.slide3.alt')
     },
     {
       id: 4,
       title: t('home.slides.slide4.title'),
       description: t('home.slides.slide4.description'),
-      image: "https://images.unsplash.com/photo-1468436139062-f60a71c5c892?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&w=800&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600",
       alt: t('home.slides.slide4.alt')
+    },
+    {
+      id: 5,
+      title: t('home.slides.slide5.title'),
+      description: t('home.slides.slide5.description'),
+      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1400",
+      alt: t('home.slides.slide5.alt')
+    },
+    {
+      id: 6,
+      title: t('home.slides.slide6.title'),
+      description: t('home.slides.slide6.description'),
+      image: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1600",
+      alt: t('home.slides.slide6.alt')
     }
   ];
 
@@ -235,21 +221,24 @@ const Accueil = () => {
       description: t('home.services.marketing.description')
     }
   ];
+
+  // Configuration du slider avec autoplay et loop
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 5000 })
+    Autoplay({ delay: 4000 }) // 4 secondes
   ]);
-  
+
   const openPostDetail = (post) => {
     setSelectedPost(post);
     document.body.style.overflow = 'hidden';
   };
-  
+
   return (
-    <div 
+    <div
       className="bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-950"
       dir={direction}
     >
-      <section className="pt-30 pb-20 min-h-[90vh] lg:min-h-[750px] lg:max-h-[750px] flex items-center overflow-hidden relative">
+      {/* Section Hero - Arrière-plan néon avec dégradé vert/bleu */}
+      <section className="pt-30 lg:pt-30 pb-16 lg:pb-20 min-h-[650px] md:max-h-[1200px] max-h-[990px] lg:max-h-[690px] flex items-center overflow-hidden relative">
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-cover bg-center" style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')",
@@ -261,16 +250,16 @@ const Accueil = () => {
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div
-              className="space-y-8"
+              className="space-y-6 md:space-y-8"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 <motion.div
-                  className="inline-block px-4 py-1 bg-teal-500/20 dark:bg-teal-700/30 text-teal-600 dark:text-teal-300 rounded-full text-sm font-medium backdrop-blur-sm"
+                  className="inline-block px-4 py-1 bg-gradient-to-r from-teal-400 to-teal-600 text-white rounded-full text-sm font-medium backdrop-blur-sm shadow-teal-500/20 shadow-md"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.4 }}
@@ -278,7 +267,7 @@ const Accueil = () => {
                   {t('home.hero.welcome')}
                 </motion.div>
 
-                <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight ${textAlign}`}>
+                <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight ${textAlign}`}>
                   <motion.span
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -288,14 +277,14 @@ const Accueil = () => {
                   </motion.span>
                   <br />
                   <FlipWords
-                    className="text-3xl md:text-4xl lg:text-5xl text-teal-400 block mt-2"
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-teal-300 block mt-2"
                     words={t('home.hero.flipWords', { returnObjects: true })}
                     duration={3000}
                   />
                 </h1>
 
                 <motion.p
-                  className={`text-lg text-slate-200 leading-relaxed max-w-2xl ${isRTL ? 'text-right' : 'text-left'}`}
+                  className={`text-base md:text-lg text-slate-200 leading-relaxed max-w-2xl ${isRTL ? 'text-right' : 'text-left'}`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.6 }}
@@ -304,8 +293,9 @@ const Accueil = () => {
                 </motion.p>
               </div>
 
+              {/* Boutons en colonne sur mobile, centrés */}
               <motion.div
-                className={`flex gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}
+                className={`flex flex-col sm:flex-row gap-3 sm:gap-4 ${isRTL ? 'sm:flex-row-reverse' : ''} justify-center sm:justify-start items-center`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
@@ -313,7 +303,7 @@ const Accueil = () => {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white shadow-lg shadow-teal-500/30 backdrop-blur-sm"
+                  className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white shadow-lg shadow-teal-500/30 backdrop-blur-sm w-full sm:w-auto"
                 >
                   <Link to="/projects">
                     {t('home.hero.button1')}
@@ -324,14 +314,14 @@ const Accueil = () => {
                   asChild
                   variant="secondary"
                   size="lg"
-                  className="bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-sm"
+                  className="bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-sm w-full sm:w-auto"
                 >
                   <Link to="/devis">{t('home.hero.button2')}</Link>
                 </Button>
               </motion.div>
 
               <motion.div
-                className="grid grid-cols-3 gap-4 mt-8"
+                className="grid grid-cols-3 gap-3 md:gap-4 mt-6 md:mt-8"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}
@@ -339,29 +329,31 @@ const Accueil = () => {
                 {t('home.hero.stats', { returnObjects: true }).map((stat, index) => (
                   <motion.div
                     key={index}
-                    className="p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10 text-center"
+                    className="p-3 md:p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10 text-center"
                     whileHover={{ y: -5 }}
                   >
-                    <div className="text-2xl font-bold text-teal-400">{stat.value}</div>
-                    <div className="text-sm text-slate-200 mt-1">{stat.label}</div>
+                    <div className="text-xl md:text-2xl font-bold text-teal-400">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-slate-200 mt-1">{stat.label}</div>
                   </motion.div>
                 ))}
               </motion.div>
             </motion.div>
             <motion.div
-              className="relative"
+              className="relative mt-10 lg:mt-0"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
-                dir="ltr"
+              dir="ltr"
             >
-              <div className="relative z-10 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-4 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-purple-500/5 dark:from-teal-700/5 dark:to-purple-700/5 z-0">
-                  <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-teal-900/60"></div></div>
+              <div className="relative z-10 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-3 md:p-4 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-blue-500/5 dark:from-teal-700/5 dark:to-blue-700/5 z-0">
+                  <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-teal-900/60"></div>
+                </div>
 
                 <div className="relative z-10 rounded-xl overflow-hidden">
-                  <div className="embla overflow-hidden h-96" ref={emblaRef}>
-                    <div className="embla__container flex">
+                  {/* Slider responsive avec hauteur variable */}
+                  <div className="embla overflow-hidden h-[300px] sm:h-[350px] md:h-96" ref={emblaRef}>
+                    <div className="embla__container flex h-full">
                       {slides.map((slide) => (
                         <div className="embla__slide flex-[0_0_100%] min-w-0 relative" key={slide.id}>
                           <img
@@ -377,20 +369,21 @@ const Accueil = () => {
                 </div>
 
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-teal-500 rounded-full blur-2xl opacity-30 dark:opacity-20"></div>
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-purple-500 rounded-full blur-2xl opacity-30 dark:opacity-20"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-500 rounded-full blur-2xl opacity-30 dark:opacity-20"></div>
               </div>
 
-              <div className="absolute -top-6 -right-6 w-full h-full bg-teal-500/10 dark:bg-teal-700/10 rounded-2xl"></div>
+              <div className="absolute -top-4 -right-4 w-full h-full bg-teal-500/10 dark:bg-teal-700/10 rounded-2xl"></div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-900/50">
+      {/* Section Compétences - Arrière-plan néon avec dégradé vert */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 dark:from-slate-900 dark:via-teal-900/20 dark:to-slate-800">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10 md:mb-12">
             <motion.h2
-              className={`text-4xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+              className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -406,7 +399,7 @@ const Accueil = () => {
               <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
             </motion.div>
             <motion.p
-              className={`text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
+              className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
@@ -415,7 +408,8 @@ const Accueil = () => {
             </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Cartes responsives avec hauteur fixe */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
             {skills.map((skill, index) => (
               <motion.div
                 key={index}
@@ -428,26 +422,26 @@ const Accueil = () => {
                 }}
                 viewport={{ once: true, margin: "-50px" }}
               >
-                <div className="group h-full border border-slate-200 dark:border-gray-800 hover:border-teal-300 dark:hover:border-teal-500 transition-all duration-300 bg-white/80 dark:bg-gray-800/50 backdrop-blur-lg rounded-xl overflow-hidden p-6 hover:shadow-lg hover:-translate-y-1.5">
+                <div className="group h-full border border-slate-200 dark:border-gray-800 hover:border-teal-300 dark:hover:border-teal-500 transition-all duration-300 bg-white/80 dark:bg-gray-800/50 backdrop-blur-lg rounded-xl overflow-hidden p-5 hover:shadow-lg hover:-translate-y-1.5 hover:shadow-teal-500/20 dark:hover:shadow-teal-400/30">
                   <motion.div
-                    className="w-14 h-14 bg-gradient-to-br from-teal-100 to-teal-50 dark:from-teal-900/30 dark:to-teal-800/20 rounded-xl flex items-center justify-center mx-auto mb-5 group-hover:bg-gradient-to-br group-hover:from-teal-500 group-hover:to-teal-400 transition-all duration-300"
+                    className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-teal-100 to-teal-50 dark:from-teal-900/30 dark:to-teal-800/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-gradient-to-br group-hover:from-teal-500 group-hover:to-teal-400 transition-all duration-300"
                     whileHover={{ rotate: 5, scale: 1.05 }}
                   >
                     <skill.icon
                       className="text-teal-600 dark:text-teal-400 group-hover:text-white transition-colors duration-300"
-                      size={28}
+                      size={24}
                     />
                   </motion.div>
 
-                  <h3 className={`text-xl font-semibold text-slate-800 dark:text-white mb-2 text-center`}>
+                  <h3 className={`text-lg md:text-xl font-semibold text-slate-800 dark:text-white mb-2 text-center`}>
                     {skill.name}
                   </h3>
 
-                  <div className="flex flex-wrap justify-center gap-2 mt-4">
+                  <div className="flex flex-wrap justify-center gap-2 mt-3">
                     {skill.tech.split(',').map((tech, i) => (
                       <motion.span
                         key={i}
-                        className="px-3 py-1 text-xs font-medium bg-slate-100 dark:bg-gray-700 text-slate-700 dark:text-slate-300 rounded-full"
+                        className="px-2 py-1 text-xs font-medium bg-slate-100 dark:bg-gray-700 text-slate-700 dark:text-slate-300 rounded-full"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
@@ -466,11 +460,12 @@ const Accueil = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-white dark:bg-gray-900">
+      {/* Section Services - Arrière-plan néon avec dégradé bleu */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900/20 dark:to-slate-800">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <motion.h2
-              className={`text-4xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+              className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -488,7 +483,7 @@ const Accueil = () => {
             </motion.div>
 
             <motion.p
-              className={`text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto`}
+              className={`text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
@@ -498,7 +493,7 @@ const Accueil = () => {
           </div>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:max-w-[800px] gap-6 mx-auto"
+            className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 max-w-4xl mx-auto"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -508,25 +503,25 @@ const Accueil = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="h-full lg:max-w-[800px]"
+                className="h-full"
                 whileHover="hover"
               >
                 <div className="group h-full bg-white dark:bg-slate-800/30 backdrop-blur-sm border border-slate-200 dark:border-slate-700/60 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-teal-300/50 dark:hover:border-teal-500/50 relative">
                   <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-purple-500/5 dark:from-teal-700/5 dark:to-purple-700/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-blue-500/5 dark:from-teal-700/5 dark:to-blue-700/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute inset-0 border border-slate-200 dark:border-slate-700/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
 
-                  <div className="relative z-10 p-6 h-full flex flex-col">
+                  <div className="relative z-10 p-5 md:p-6 h-full flex flex-col">
                     <div className="text-center mb-4">
                       <motion.div
-                        className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:rotate-6 transition-transform duration-300"
+                        className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-teal-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:rotate-6 transition-transform duration-300"
                         whileHover={{ rotate: 10, scale: 1.1 }}
                       >
-                        <service.icon className="text-white text-2xl" />
+                        <service.icon className="text-white text-xl md:text-2xl" />
                       </motion.div>
                       <motion.h3
-                        className="text-xl font-bold text-slate-800 dark:text-white"
+                        className="text-lg md:text-xl font-bold text-slate-800 dark:text-white"
                         whileHover={{ color: "#0d9488" }}
                         transition={{ duration: 0.2 }}
                       >
@@ -534,7 +529,7 @@ const Accueil = () => {
                       </motion.h3>
                     </div>
 
-                    <p className={`text-slate-600 dark:text-slate-400 mb-5 text-center`}>
+                    <p className={`text-sm md:text-base text-slate-600 dark:text-slate-400 mb-4 text-center`}>
                       {service.description}
                     </p>
                   </div>
@@ -544,7 +539,7 @@ const Accueil = () => {
           </motion.div>
 
           <motion.div
-            className="text-center mt-16"
+            className="text-center mt-12 md:mt-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
@@ -567,61 +562,59 @@ const Accueil = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-900/50">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="text-center mb-12">
-              <motion.h2
-                className={`text-4xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-              >
-                {t('home.projects.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.projects.titleHighlight')}</span>
-              </motion.h2>
-              <motion.div
-                initial={{ opacity: 0, width: 0 }}
-                animate={{ opacity: 1, width: "100%" }}
-                transition={{ delay: 0.3, duration: 0.8 }}
-                className="flex justify-center mb-6"
-              >
-                <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
-              </motion.div>
-              <motion.p
-                className={`text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.15 }}
-              >
-                {t('home.projects.subtitle')}
-              </motion.p>
-            </div>
-          </AnimatedSection>
-
-          <ProjectPopup />
-
-          <AnimatedSection>
-            <div className="text-center mt-10">
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 font-medium"
-              >
-                <Link to="/projects">
-                  {t('home.projects.button')}
-                  <ArrowRight className={`ml-2 ${isRTL ? 'transform rotate-180' : ''}`} size={20} />
-                </Link>
-              </Button>
-            </div>
-          </AnimatedSection>
+      {/* Section Projets - Arrière-plan néon avec dégradé vert */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 dark:from-slate-900 dark:via-teal-900/20 dark:to-slate-800">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-6 md:mb-8">
+          <motion.h2
+            className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            {t('home.projects.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.projects.titleHighlight')}</span>
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0, width: 0 }}
+            animate={{ opacity: 1, width: "100%" }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="flex justify-center mb-6"
+          >
+            <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+          </motion.div>
+          <motion.p
+            className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+          >
+            {t('home.projects.subtitle')}
+          </motion.p>
         </div>
-      </section>
 
-      <section className="py-16 bg-white dark:bg-gray-900">
+        <ProjectPopup />
+
+        <div className="text-center mt-5 md:mt-6">
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 font-medium"
+          >
+            <Link to="/projects">
+              {t('home.projects.button')}
+              <ArrowRight className={`ml-2 ${isRTL ? 'transform rotate-180' : ''}`} size={20} />
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </section>
+
+      {/* Section Blog - Arrière-plan néon avec dégradé bleu */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900/20 dark:to-slate-800">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10 md:mb-12">
             <motion.h2
-              className={`text-4xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+              className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -637,7 +630,7 @@ const Accueil = () => {
               <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
             </motion.div>
             <motion.p
-              className={`text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
+              className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
@@ -646,7 +639,7 @@ const Accueil = () => {
             </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
             {blogPosts.map((post, index) => (
               <motion.div
                 key={post.id}
@@ -656,18 +649,18 @@ const Accueil = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="group h-full bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:shadow-xl transition-all"
-                onClick={() => openPostDetail(post)}>
-                  <div className="p-6">
-                    <span className="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-full text-xs font-medium mb-4">
+                <div className="group h-full bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:shadow-xl transition-all hover:shadow-blue-500/20 dark:hover:shadow-blue-400/30"
+                  onClick={() => openPostDetail(post)}>
+                  <div className="p-5 md:p-6">
+                    <span className="inline-block px-3 py-1 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-700 dark:to-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-xs font-medium mb-3 md:mb-4">
                       {post.category}
                     </span>
 
-                    <h3 className={`text-xl font-bold text-slate-800 dark:text-white mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors ${textAlign}`}>
+                    <h3 className={`text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 md:mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors ${textAlign}`}>
                       {post.title}
                     </h3>
 
-                    <p className={`text-slate-600 dark:text-slate-400 mb-4 ${textAlign}`}>
+                    <p className={`text-sm md:text-base text-slate-600 dark:text-slate-400 mb-3 md:mb-4 ${textAlign}`}>
                       {post.excerpt}
                     </p>
 
@@ -685,7 +678,7 @@ const Accueil = () => {
                     <Button
                       asChild
                       variant="link"
-                      className={`mt-4 ${isRTL ? 'pr-0' : 'pl-0'} text-teal-600 dark:text-teal-400 hover:no-underline`}
+                      className={`mt-3 md:mt-4 ${isRTL ? 'pr-0' : 'pl-0'} text-teal-600 dark:text-teal-400 hover:no-underline`}
                     >
                       <Link to="/blog">
                         {isRTL && <ArrowRight className="mr-1 transform rotate-180" size={16} />}
@@ -699,7 +692,7 @@ const Accueil = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-10 md:mt-12">
             <Button
               asChild
               size="lg"
@@ -715,11 +708,12 @@ const Accueil = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-900/50">
+      {/* Section Process - Arrière-plan néon avec dégradé vert */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 dark:from-slate-900 dark:via-teal-900/20 dark:to-slate-800">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10 md:mb-12">
             <motion.h2
-              className={`text-4xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+              className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -735,7 +729,7 @@ const Accueil = () => {
               <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
             </motion.div>
             <motion.p
-              className={`text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
+              className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
@@ -744,38 +738,44 @@ const Accueil = () => {
             </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             {t('home.process.steps', { returnObjects: true }).map((step, index) => (
               <motion.div
                 key={index}
-                className="bg-white dark:bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-slate-200 dark:border-slate-700 text-center"
+                className="bg-white dark:bg-slate-800/50 backdrop-blur-sm p-5 md:p-6 rounded-xl border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:shadow-teal-500/20 dark:hover:shadow-teal-400/30"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.6 }}
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
               >
-                <div className="w-16 h-16 bg-teal-100 dark:bg-teal-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  {step.icon === 'Users' && <Users className="text-teal-600 dark:text-teal-400" size={32} />}
-                  {step.icon === 'Code' && <Code className="text-teal-600 dark:text-teal-400" size={32} />}
-                  {step.icon === 'BarChart' && <BarChart className="text-teal-600 dark:text-teal-400" size={32} />}
-                  {step.icon === 'Shield' && <Shield className="text-teal-600 dark:text-teal-400" size={32} />}
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-teal-100 to-teal-200 dark:from-teal-900/30 dark:to-teal-800/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4">
+                  {step.icon === 'Users' && <Users className="text-teal-600 dark:text-teal-400" size={24} />}
+                  {step.icon === 'Code' && <Code className="text-teal-600 dark:text-teal-400" size={24} />}
+                  {step.icon === 'BarChart' && <BarChart className="text-teal-600 dark:text-teal-400" size={24} />}
+                  {step.icon === 'Shield' && <Shield className="text-teal-600 dark:text-teal-400" size={24} />}
                 </div>
-                <span className="inline-block bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-3 py-1 rounded-full text-sm font-medium mb-3">
+                <span className="inline-block bg-gradient-to-r from-teal-100 to-teal-200 dark:from-teal-900 dark:to-teal-800 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-full text-xs md:text-sm font-medium mb-2 md:mb-3">
                   {step.step}
                 </span>
-                <h3 className={`text-xl font-semibold text-slate-800 dark:text-white mb-2 ${textAlign}`}>{step.title}</h3>
-                <p className={`text-slate-600 dark:text-slate-400 ${textAlign}`}>{step.description}</p>
+                <h3 className={`text-lg md:text-xl font-semibold text-slate-800 dark:text-white mb-2 ${textAlign}`}>{step.title}</h3>
+                <p className={`text-sm md:text-base text-slate-600 dark:text-slate-400 ${textAlign}`}>{step.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 text-white">
-        <div className="container mx-auto px-4 text-center">
+      {/* Section CTA - Dégradé vert néon avec effet lumineux */}
+      <section className="py-16 md:py-20 bg-gradient-to-r from-teal-500 to-teal-600 dark:from-teal-600 dark:to-teal-700 text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute -top-1/2 -left-1/4 w-[150%] h-[150%] bg-[radial-gradient(circle,var(--tw-gradient-stops))] from-teal-400/10 to-transparent"></div>
+          <div className="absolute -bottom-1/3 -right-1/4 w-[120%] h-[120%] bg-[radial-gradient(circle,var(--tw-gradient-stops))] from-teal-600/10 to-transparent"></div>
+        </div>
+
+        <div className="container mx-auto px-4 text-center relative z-10">
           <AnimatedSection>
             <motion.h2
-              className="text-4xl font-bold mb-4"
+              className="text-3xl md:text-4xl font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -788,10 +788,10 @@ const Accueil = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-white to-transparent w-48"></div>
             </motion.div>
             <motion.p
-              className="text-xl mb-8 opacity-90 max-w-2xl mx-auto"
+              className="text-lg md:text-xl mb-6 md:mb-8 opacity-90 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -806,7 +806,7 @@ const Accueil = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg shadow-orange-500/20 dark:shadow-orange-600/30"
+                className="bg-gradient-to-r from-white to-slate-100 text-teal-600 hover:text-teal-700 shadow-lg shadow-teal-500/30 dark:shadow-teal-600/40 hover:shadow-teal-500/40 font-bold"
               >
                 <Link to="/devis">
                   {t('home.cta.button')}

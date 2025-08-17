@@ -69,11 +69,11 @@ const Blog = () => {
     close,
     leaveComment,
     categoriesButton,
-    blogPosts = [],
     categoriesList = [],
     popularTags = []
   } = blogData;
 
+  const blogPosts = t('blogPosts', { returnObjects: true });
   useEffect(() => {
     setIsVisible(true);
     

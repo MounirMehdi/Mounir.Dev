@@ -1,661 +1,711 @@
 {
-  "developer": "مطور",
-  "slogan": "أحْيِ أفكارك الرقمية",
-  "description": "مبتكر تجارب ويب فريدة وعالية الأداء. حاصل على ماجستير في هندسة البرمجيات. متخصص في التطوير الحديث.",
-  "see_projects": "رؤية مشاريعي",
-  "request_quote": "طلب عرض سعر",
-  "experience": "أكثر من سنتين خبرة",
-  "delivered_projects": "مشاريع تم تسليمها",
-  "satisfied_clients": "عملاء راضون",
-  "skills_title": "مهاراتي",
-  "skills_subtitle": "خبرة شاملة لتنفيذ مشاريع الويب من الألف إلى الياء",
-  "recent_projects": "المشاريع الحديثة",
-  "recent_projects_sub": "اكتشف بعض من أبرز إنجازاتي",
-  "see_all_projects": "رؤية جميع المشاريع",
-  "cta_title": "مستعد لبدء مشروعك؟",
-  "cta_sub": "اتصل بي اليوم لمناقشة احتياجاتك والحصول على عرض أسعار مجاني مخصص.",
-  "cta_button": "طلب عرض أسعار مجاني",
-  "project1_desc": "إنشاء مواقع ويب متعددة الصفحات مع نماذج وواجهات برمجة وتطبيقات وتحسين لمحركات البحث.",
-  "project2_desc": "تطبيق ويب لمتابعة الموانئ بواجهة حديثة.",
-  "project3_desc": "برنامج سطح مكتب لإدارة العقارات بواجهة بديهية.",
-  "project_not_found": "المشروع غير موجود",
-  "project_not_found_message": "المشروع الذي تبحث عنه غير موجود أو تم نقله.",
-  "back_to_projects": "العودة إلى المشاريع",
-  "about_project": "حول المشروع",
-  "challenges": "التحديات والحلول",
-  "results": "النتائج المحققة",
-  "gallery": "معرض المشروع",
-  "project_details": "تفاصيل المشروع",
-  "launch_date": "تاريخ الإطلاق",
-  "duration": "مدة المشروع",
-  "team": "الفريق",
-  "featured_project": "مشروع مميز",
-  "featured_project_desc": "تم اختياره كمشروع استثنائي",
-  "technologies": "التقنيات المستخدمة",
-  "project_links": "روابط المشروع",
-  "visit_site": "زيارة الموقع",
-  "source_code": "الكود المصدري",
-  "prev_project": "المشروع السابق",
-  "next_project": "المشروع التالي",
-  "click_to_gallery": "انقر لرؤية المعرض",
-  "view_large": "عرض بحجم كبير",
-  "cta_title": "مستعد لتحقيق مشروعك؟",
-  "cta_sub": "لنتناقش حول رؤيتك ونخلق شيئًا استثنائيًا معًا",
-  "cta_button": "ابدأ الآن",
-  "cta_hint": "لنحول أفكارك إلى واقع",
+  "developer": "Développeur",
+  "slogan": "Donnez vie à vos idées digitales",
+  "description": "Créateur d'expériences web uniques et performantes. Diplomé en master génie logiciel. Spécialisé en développement moderne.",
+  "see_projects": "Voir mes projets",
+  "request_quote": "Demander un devis",
+  "experience": "2+ ans d'expérience",
+  "delivered_projects": "Projets livrés",
+  "satisfied_clients": "Clients satisfaits",
+  "skills_title": "Mes Compétences",
+  "skills_subtitle": "Une expertise complète pour réaliser vos projets web de A à Z",
+  "recent_projects": "Projets Récents",
+  "recent_projects_sub": "Découvrez quelques-unes de mes réalisations les plus marquantes",
+  "see_all_projects": "Voir tous les projets",
+  "cta_title": "Prêt à démarrer votre projet ?",
+  "cta_sub": "Contactez-moi dès aujourd'hui pour discuter de vos besoins et obtenir un devis gratuit personnalisé.",
+  "cta_button": "Demander un devis gratuit",
+  "project1_desc": "Création de sites web multi-pages avec formulaires, APIs et optimisation SEO.",
+  "project2_desc": "Application web pour le suivi des escales portuaires avec interface moderne.",
+  "project3_desc": "Logiciel desktop de gestion immobilière avec interface intuitive.",
+  "project_not_found": "Projet non trouvé",
+  "project_not_found_message": "Le projet que vous cherchez n'existe pas ou a été déplacé.",
+  "back_to_projects": "Retour aux projets",
+  "about_project": "À propos du projet",
+  "challenges": "Défis et solutions",
+  "results": "Résultats obtenus",
+  "gallery": "Galerie du projet",
+  "project_details": "Détails du projet",
+  "launch_date": "Date de lancement",
+  "duration": "Durée du projet",
+  "team": "Équipe",
+  "featured_project": "Projet vedette",
+  "featured_project_desc": "Sélectionné comme projet exceptionnel",
+  "technologies": "Technologies utilisées",
+  "project_links": "Liens du projet",
+  "visit_site": "Visiter le site",
+  "source_code": "Code source",
+  "prev_project": "Projet précédent",
+  "next_project": "Projet suivant",
+  "click_to_gallery": "Cliquez pour voir la galerie",
+  "view_large": "Voir en grand",
+  "cta_title": "Prêt à concrétiser votre projet ?",
+  "cta_sub": "Discutons de votre vision et créons quelque chose d'extraordinaire ensemble",
+  "cta_button": "Commencer maintenant",
+  "cta_hint": "Transformons vos idées en réalité",
   "header": {
-    "home": "الرئيسية",
-    "services": "الخدمات",
-    "projects": "المشاريع",
-    "blog": "المدونة",
-    "contact": "اتصل",
-    "quoteButton": "عرض مجاني",
-    "openMenu": "فتح القائمة",
-    "closeMenu": "إغلاق القائمة"
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quoteButton": "Devis Gratuit",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "home": {
     "hero": {
-      "welcome": "مطور Fullstack مبدع",
-      "title1": "حول أفكارك إلى",
+      "welcome": "Développeur Fullstack Créatif",
+      "title1": "Transformez vos idées en",
       "flipWords": [
-        "تجارب رقمية",
-        "مواقع ويب جذابة",
-        "حلول مبتكرة",
-        "منصات عالية الأداء"
+        "Expériences Digitales",
+        "Sites Web Captivants",
+        "Solutions Innovantes",
+        "Plateformes Performantes"
       ],
-      "description": "أصمم حلول ويب وجوال مخصصة تجمع بين التصميم الأنيق والأداء الفني وتجربة المستخدم الاستثنائية. كل مشروع هو فرصة للابتكار.",
-      "button1": "استكشف أعمالي",
-      "button2": "ناقش مشروعك",
+      "description": "Je crée des solutions web et mobiles sur-mesure qui allient design élégant, performance technique et expérience utilisateur exceptionnelle. Chaque projet est une opportunité d'innovation.",
+      "button1": "Explorer mes réalisations",
+      "button2": "Discutons de votre projet",
       "stats": [
         {
           "value": "5+",
-          "label": "سنوات خبرة"
+          "label": "Ans d'expérience"
         },
         {
           "value": "50+",
-          "label": "مشروع تم تسليمه"
+          "label": "Projets livrés"
         },
         {
           "value": "100%",
-          "label": "عملاء راضون"
+          "label": "Clients satisfaits"
         }
       ]
     },
     "skills": {
-      "title": "مهاراتي",
-      "titleHighlight": "",
-      "subtitle": "خبرة تقنية وإبداعية لتحويل أفكارك إلى واقع",
+      "title": "Mes",
+      "titleHighlight": "Compétences",
+      "subtitle": "Expertise technique et créative pour transformer vos idées en réalité",
       "frontend": {
-        "name": "واجهة المستخدم",
+        "name": "Frontend",
         "tech": "HTML/CSS/JS, Bootstrap, Tailwind, React, Vue.js"
       },
       "backend": {
-        "name": "الخلفية",
+        "name": "Backend",
         "tech": "PHP, Laravel, Java"
       },
       "design": {
-        "name": "التصميم",
+        "name": "Design",
         "tech": "UX/UI, Photoshop, Illustrator, Canva"
       },
       "seo": {
         "name": "SEO",
-        "tech": "تحليلات، وحدة التحكم في البحث، تحسين محركات البحث، إمكانية الوصول، تحسين"
+        "tech": "Analytics, Search Console, Référencement, Accessibilité, Optimisation"
       },
       "mobile": {
-        "name": "الجوال",
-        "tech": "تصميم متجاوب، تطبيقات Flutter، أندرويد"
+        "name": "Mobile",
+        "tech": "Responsive Design, Apps Flutter, Android"
       },
       "methodology": {
-        "name": "المنهجية",
+        "name": "Méthodologie",
         "tech": "Agile, Scrum"
       }
     },
     "services": {
-      "title": "خبراتي",
-      "titleHighlight": "",
-      "subtitle": "حلول مخصصة لتحويل تحدياتك الرقمية إلى نجاح",
+      "title": "Mes",
+      "titleHighlight": "Expertises",
+      "subtitle": "Des solutions sur mesure pour transformer vos défis digitaux en succès",
       "website": {
-        "title": "مواقع الويب",
-        "description": "تصاميم أنيقة وأداء مثالي لمواقع عرض رقمية عالية الأداء لتعزيز مصداقيتك وتوليد العملاء 24/7."
+        "title": "Sites Web",
+        "description": "Designs élégants et performances optimales pour des sites vitrines digitales hautes performances pour booster votre crédibilité et générer du lead 24/7."
       },
       "webapp": {
-        "title": "تطبيقات الويب",
-        "description": "حلول مخصصة لأتمتة عملياتك التجارية وتحويل تحدياتك التشغيلية إلى مزايا تنافسية."
+        "title": "Applications web",
+        "description": "Solutions sur-mesure pour automatiser vos processus métiers et transformer vos défis opérationnels en avantages compétitifs."
       },
       "mobile": {
-        "title": "تطبيقات الجوال",
-        "description": "حلول جوال بديهية، تجارب جوال أصلية وسلسة منشورة على المتاجر."
+        "title": "Applications Mobile",
+        "description": "Solutions mobiles intuitives , expériences mobiles natives et fluides publiées sur les stores."
       },
       "marketing": {
-        "title": "استراتيجية رقمية وتسويق",
-        "description": "خطط طريق مخصصة للهيمنة على سوقك وتسريع نموك في العصر الرقمي."
+        "title": "Stratégie Digitale & Marketing",
+        "description": "Feuilles de route sur-mesure pour dominer votre marché et accélérer votre croissance à l'ère numérique."
       },
-      "button": "اكتشف جميع خبراتي"
+      "button": "Découvrir toutes mes expertises"
     },
     "projects": {
-      "title": "مشاريعي",
-      "titleHighlight": "الأخيرة",
-      "subtitle": "اكتشف أحدث إنجازاتي ودراسات الحالة",
-      "button": "رؤية جميع المشاريع"
+      "title": "Mes",
+      "titleHighlight": "Projets Récents",
+      "subtitle": "Découvrez mes dernières réalisations et études de cas",
+      "button": "Voir tous les projets"
     },
     "blog": {
-      "title": "مقالاتي",
-      "titleHighlight": "الأخيرة",
-      "subtitle": "نصائح ودروس وأفكار حول تطوير الويب",
-      "post1": {
-        "title": "اتجاهات تطوير الويب في 2025",
-        "excerpt": "اكتشف التقنيات والأطر التي ستسيطر هذا العام.",
-        "date": "15 يناير 2025",
-        "readTime": "5 دقائق",
-        "category": "تطوير"
-      },
-      "post2": {
-        "title": "تحسين SEO: دليل شامل",
-        "excerpt": "أتقن تقنيات تحسين محركات البحث الأكثر فعالية.",
-        "date": "10 يناير 2025",
-        "readTime": "8 دقائق",
-        "category": "SEO"
-      },
-      "post3": {
-        "title": "Laravel مقابل React: اختيار التقنية المناسبة",
-        "excerpt": "مقارنة مفصلة بين Laravel و React لمشاريعك الويب.",
-        "date": "5 يناير 2025",
-        "readTime": "6 دقائق",
-        "category": "تطوير"
-      },
-      "readButton": "قراءة المقال",
-      "button": "رؤية جميع المقالات"
+      "title": "Mes",
+      "titleHighlight": "Derniers Articles",
+      "subtitle": "Conseils, tutoriels et réflexions sur le développement web",
+      "readButton": "Lire l'article",
+      "button": "Voir tous les articles"
     },
     "slides": {
       "slide1": {
-        "title": "تجارب رقمية",
-        "description": "إنشاء تطبيقات ويب عالية الأداء مع React و Next.js",
-        "alt": "تجارب رقمية"
+        "title": "Expériences Digitales",
+        "description": "Création d'applications web performantes avec React et Next.js",
+        "alt": "Expériences Digitales"
       },
       "slide2": {
-        "title": "مواقع ويب جذابة",
-        "description": "تطوير متعدد المنصات مع React Native و Flutter",
-        "alt": "مواقع ويب جذابة"
+        "title": "Sites Web Captivants",
+        "description": "Développement cross-platform avec React Native et Flutter",
+        "alt": "Sites Web Captivants"
       },
       "slide3": {
-        "title": "حلول مبتكرة",
-        "description": "استراتيجيات تقنية ودلالية للتصنيف الطبيعي",
-        "alt": "حلول مبتكرة"
+        "title": "Solutions Innovantes",
+        "description": "Stratégies techniques et sémantiques pour le référencement naturel",
+        "alt": "Solutions Innovantes"
       },
       "slide4": {
-        "title": "منصات عالية الأداء",
-        "description": "استراتيجيات تقنية ودلالية للتصنيف الطبيعي",
-        "alt": "منصات عالية الأداء"
+        "title": "Plateformes Performantes",
+        "description": "Stratégies techniques et sémantiques pour le référencement naturel",
+        "alt": "Plateformes Performantes"
+      },
+      "slide5": {
+        "title": "Plateformes Performantes",
+        "description": "Stratégies techniques et sémantiques pour le référencement naturel",
+        "alt": "Plateformes Performantes"
+      },
+      "slide6": {
+        "title": "Plateformes Performantes",
+        "description": "Stratégies techniques et sémantiques pour le référencement naturel",
+        "alt": "Plateformes Performantes"
       }
     },
     "process": {
-      "title": "عملية",
-      "titleHighlight": "عملي",
-      "subtitle": "منهجية شفافة لنتائج استثنائية",
+      "title": "Mon",
+      "titleHighlight": "Processus de Travail",
+      "subtitle": "Une méthodologie transparente pour des résultats exceptionnels",
       "steps": [
         {
           "icon": "Users",
-          "step": "تصميم",
-          "title": "المخطط الرقمي",
-          "description": "تحديد الأهداف والهندسة التقنية"
+          "step": "Conception",
+          "title": "Blueprint Digital",
+          "description": "Définition des objectifs et architecture technique"
         },
         {
           "icon": "Code",
-          "step": "تطوير",
-          "title": "إبداع تقني",
-          "description": "تنفيذ أجايل مع مراجعات أسبوعية"
+          "step": "Développement",
+          "title": "Création Technique",
+          "description": "Implémentation agile avec revues hebdomadaires"
         },
         {
           "icon": "BarChart",
-          "step": "تحسين",
-          "title": "ضبط دقيق",
-          "description": "اختبارات المستخدم وتعديلات دقيقة"
+          "step": "Optimisation",
+          "title": "Réglage Fin",
+          "description": "Tests utilisateurs et ajustements précis"
         },
         {
           "icon": "Shield",
-          "step": "تسليم",
-          "title": "دعم",
-          "description": "تدريب ودعم ما بعد التسليم"
+          "step": "Livraison",
+          "title": "Accompagnement",
+          "description": "Formation et support post-livraison"
         }
       ]
     },
     "cta": {
-      "title": "مستعد لتحقيق مشروعك؟",
-      "subtitle": "لنتناقش معًا حول رؤيتك ونخلق شيئًا استثنائيًا.",
-      "button": "بدء مشروعي"
+      "title": "Prêt à concrétiser votre projet ?",
+      "subtitle": "Discutons ensemble de votre vision et créons quelque chose d'extraordinaire.",
+      "button": "Commencer mon projet"
     }
   },
   "projectPopup": {
-    "projects": [
-      {
-        "id": 1,
-        "title": "بورتفوليو NextJS",
-        "category": "تطوير الويب",
-        "shortDescription": "بورتفوليو عصري مع وضع دايم وحركات سلسة",
-        "fullDescription": "بورتفوليو عصري مع وضع دايم، حركات سلسة وتعددية لغات. مبني باستخدام Next.js، Tailwind CSS و Framer Motion. صمم هذا المشروع لعرض أعمالي بطريقة أنيقة وتفاعلية.",
-        "challenges": "التحدي الرئيسي كان إنشاء تجربة مستخدم سلسة مع حركات عالية الأداء دون التضحية بالـ SEO. حللت ذلك باستخدام Next.js للعرض من جانب الخادم و Framer Motion لحركات محسنة.",
-        "resultsIntro": "بعد تنفيذ الحل، لاحظنا تحسنًا كبيرًا في الأداء وتجربة المستخدم:",
-        "resultsList": [
-          "زيادة 40% في معدل التحويل",
-          "تقليل 30% في وقت تحميل الصفحات",
-          "تحسن 95% في رضا العملاء"
-        ],
-        "tech": ["Next.js", "Tailwind CSS", "Framer Motion", "i18next"],
-        "demoUrl": "https://portfolio-nextjs-example.com",
-        "githubUrl": "https://github.com/your-user/portfolio-nextjs",
-        "featured": true,
-        "new": false,
-        "launchDate": "2023",
-        "duration": "شهران",
-        "team": ["مطور واجهة", "مصمم واجهة/تجربة مستخدم"],
-        "images": [
-          "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "متجر إلكتروني React",
-        "category": "تطبيق كامل",
-        "shortDescription": "منصة متجر إلكتروني كاملة مع سلة دفع Stripe",
-        "fullDescription": "منصة متجر إلكتروني كاملة مع سلة، دفع Stripe ولوحة تحكم مدير. محسنة للأداء والـ SEO. يشمل التطبيق نظام إدارة منتجات، فئات وطلبات.",
-        "challenges": "كانت تكامل Stripe الآمن مع ضمان تجربة مستخدم سلسة معقدًا. نفذت نظام سلة ثابت و webhooks لمعالجة المدفوعات غير المتزامنة.",
-        "resultsIntro": "مكّن المشروع من:",
-        "resultsList": [
-          "تقليل 25% في التخلي عن السلة",
-          "زيادة 35% في المبيعات",
-          "انخفاض 90% في حوادث الدفع"
-        ],
-        "tech": ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-        "demoUrl": "https://ecommerce-react-demo.com",
-        "githubUrl": "https://github.com/your-user/ecommerce-react",
-        "featured": true,
-        "new": true,
-        "launchDate": "يونيو 2023",
-        "duration": "5 أشهر",
-        "team": ["مطور كامل", "مصمم تجربة مستخدم"],
-        "images": [
-          "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1603739903239-8b6e64c3b185?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        ]
-      }
-    ],
-    "newBadge": "جديد",
-    "visitButton": "زيارة",
-    "codeButton": "كود",
-    "descriptionTitle": "الوصف",
-    "challengesTitle": "التحديات",
-    "resultsTitle": "النتائج",
-    "detailsTitle": "التفاصيل",
-    "teamLabel": "الفريق",
-    "technologiesTitle": "التقنيات",
-    "galleryTitle": "المعرض"
+    "newBadge": "Nouveau",
+    "visitButton": "Visiter",
+    "codeButton": "Code",
+    "descriptionTitle": "Description",
+    "challengesTitle": "Défis",
+    "resultsTitle": "Résultats",
+    "detailsTitle": "Détails",
+    "teamLabel": "Équipe",
+    "technologiesTitle": "Technologies",
+    "galleryTitle": "Galerie"
   },
   "footer": {
-    "description": "أصنع تجارب رقمية استثنائية تحول الأفكار إلى حلول عالية الأداء. متخصص في تطوير Fullstack وتصميم UX/UI.",
-    "newsletterTitle": "ابقَ على اطلاع",
-    "emailPlaceholder": "بريدك الإلكتروني",
-    "subscriptionSuccess": "شكرًا على اشتراكك!",
-    "navigationTitle": "التنقل",
+    "description": "Je crée des expériences digitales exceptionnelles qui transforment les idées en solutions performantes. Spécialisé en développement fullstack et UX/UI design.",
+    "newsletterTitle": "Restez informé",
+    "emailPlaceholder": "Votre email",
+    "subscriptionSuccess": "Merci pour votre inscription !",
+    "navigationTitle": "Navigation",
     "navigationItems": [
-      { "name": "الرئيسية", "path": "/" },
-      { "name": "الخدمات", "path": "/services" },
-      { "name": "المشاريع", "path": "/projects" },
-      { "name": "المدونة", "path": "/blog" },
-      { "name": "اتصل", "path": "/contact" }
+      { "name": "Accueil", "path": "/" },
+      { "name": "Services", "path": "/services" },
+      { "name": "Projets", "path": "/projects" },
+      { "name": "Blog", "path": "/blog" },
+      { "name": "Contact", "path": "/contact" }
     ],
-    "legalTitle": "قانوني",
+    "legalTitle": "Légals",
     "legalItems": [
-      { "name": "الخصوصية", "path": "/privacy" },
-      { "name": "الشروط", "path": "/terms" },
-      { "name": "الكوكيز", "path": "/cookies" },
-      { "name": "الأسئلة الشائعة", "path": "/faqs" }
+      { "name": "Confidentialité", "path": "/privacy" },
+      { "name": "Conditions", "path": "/terms" },
+      { "name": "Cookies", "path": "/cookies" },
+      { "name": "FAQs", "path": "/faqs" }
     ],
-    "contactTitle": "اتصل",
-    "platformsTitle": "المنصات",
+    "contactTitle": "Contact",
+    "platformsTitle": "Plateformes",
     "freelancePlatforms": {
       "fiverr": "Fiverr",
       "upwork": "Upwork",
       "freelance": "Freelance.com"
     },
     "socialNetworks": {
-      "whatsapp": "واتساب",
-      "email": "بريد إلكتروني",
-      "linkedin": "لينكد إن",
-      "facebook": "فيسبوك",
-      "tiktok": "تيك توك",
-      "instagram": "إنستجرام"
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "tiktok": "TikTok",
+      "instagram": "Instagram"
     },
-    "copyright": "جميع الحقوق محفوظة."
+    "copyright": "Tous droits réservés."
   },
   "projects": {
     "hero": {
-      "title1": "مشاريعي",
-      "title2": "السابقة",
-      "subtitle": "اكتشف مشاريعي والخبرات التقنية المستخدمة لبناء حلول مبتكرة وفعالة",
-      "searchPlaceholder": "ابحث عن مشاريع، تقنيات..."
+      "title1": "Mes",
+      "title2": "Réalisations",
+      "subtitle": "Découvrez mes projets et l'expertise technique mise en œuvre pour créer des solutions innovantes et performantes",
+      "searchPlaceholder": "Rechercher des projets, technologies..."
     },
     "filters": {
-      "filterLabel": "تصفية:",
-      "all": "جميع المشاريع",
-      "web": "ويب",
-      "desktop": "سطح المكتب",
-      "mobile": "جوال",
-      "moreFilters": "مزيد من الفلاتر",
-      "projectStatus": "حالة المشروع",
-      "statusAll": "جميع الحالات",
-      "statusCompleted": "مكتمل",
-      "statusInProgress": "قيد التنفيذ",
-      "technologies": "التقنيات",
-      "applyFilters": "تطبيق الفلاتر",
-      "reset": "إعادة تعيين"
+      "filterLabel": "Filtrer :",
+      "all": "Tous les projets",
+      "web": "Web",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "moreFilters": "Plus de filtres",
+      "projectStatus": "Statut du projet",
+      "statusAll": "Tous les statuts",
+      "statusCompleted": "Terminé",
+      "statusInProgress": "En cours",
+      "technologies": "Technologies",
+      "applyFilters": "Appliquer les filtres",
+      "reset": "Réinitialiser"
     },
     "noProjects": {
-      "title": "لم يتم العثور على مشاريع",
-      "message": "لا توجد مشاريع مطابقة لبحثك. حاول تعديل الفلاتر أو كلمة البحث."
+      "title": "Aucun projet trouvé",
+      "message": "Aucun projet ne correspond à votre recherche. Essayez de modifier vos filtres ou votre recherche."
     },
-    "viewDetails": "عرض التفاصيل",
+    "viewDetails": "Voir les détails",
     "technologies": {
-      "title1": "التقنيات",
-      "title2": "المتقنة",
-      "subtitle": "الأدوات والتقنيات التي أستخدمها لبناء حلول فعالة"
+      "title1": "Technologies",
+      "title2": "Maîtrisées",
+      "subtitle": "Outils et technologies que j'utilise pour créer des solutions performantes"
     },
     "cta": {
-      "title": "هل أنت مستعد لبدء مشروعك؟",
-      "subtitle": "لنتناقش عن رؤيتك ونخلق شيئاً استثنائياً معاً",
-      "button": "بدء مشروع"
+      "title": "Prêt à concrétiser votre projet ?",
+      "subtitle": "Discutons ensemble de votre vision et créons quelque chose d'extraordinaire",
+      "button": "Démarrer un projet"
     },
     "status": {
-      "completed": "مكتمل",
-      "inProgress": "قيد التنفيذ"
+      "completed": "Terminé",
+      "inProgress": "En cours"
     },
     "categories": {
-      "web": "ويب",
-      "desktop": "سطح المكتب",
-      "mobile": "جوال"
+      "web": "Web",
+      "desktop": "Desktop",
+      "mobile": "Mobile"
     },
     "projectDetails": {
-      "title": "تفاصيل المشروع",
-      "description": "وصف كامل",
-      "client": "العميل",
-      "period": "الفترة",
-      "status": "الحالة",
-      "category": "الفئة",
-      "technologies": "التقنيات المستخدمة",
-      "results": "النتائج المحققة",
-      "features": "الميزات",
-      "visitSite": "زيارة الموقع",
-      "viewCode": "عرض الكود"
+      "title": "Détails du projet",
+      "description": "Description complète",
+      "client": "Client",
+      "period": "Période",
+      "status": "Statut",
+      "category": "Catégorie",
+      "technologies": "Technologies utilisées",
+      "results": "Résultats obtenus",
+      "features": "Fonctionnalités",
+      "visitSite": "Visiter le site",
+      "viewCode": "Voir le code"
     }
   },
   "projectsData": [
     {
       "id": 1,
-      "title": "نوميليكس - مواقع ويب ديناميكية",
-      "category": "web",
-      "client": "نوميليكس، بجاية",
-      "period": "09.2023 - الحاضر",
-      "description": "إنشاء مواقع ويب ديناميكية متعددة الصفحات مع تكامل النماذج وواجهات برمجة التطبيقات وتحسين محركات البحث والرسوم المتحركة.",
-      "longDescription": "مشروع تطوير ويب كامل لشركة نوميليكس. إنشاء موقع ويب عصري مع نظام إدارة المحتوى، نماذج اتصال متقدمة، تكامل واجهات برمجة التطبيقات الخارجية للخدمات، تحسين محركات البحث كامل ورسوم متحركة CSS/JavaScript لتجربة مستخدم جذابة.",
-      "technologies": [
-        "HTML5",
-        "CSS3/SCSS",
-        "JavaScript",
-        "PHP",
-        "MySQL",
-        "SEO"
-      ],
+      "title": "ImmobilisPro - Gestion Immobilière",
+      "category": "desktop",
+      "client": "AWAL Real Estate",
+      "period": "03.2019 - 04.2019",
+      "shortDescription": "Logiciel complet de gestion immobilière avec interface intuitive",
+      "fullDescription": "Application Java pour la gestion centralisée des biens immobiliers, clients, contrats et rendez-vous. Solution complète avec génération automatique de contrats et rapports financiers.",
+      "technologies": ["Java", "Swing", "SQLite", "iReport", "POO"],
       "features": [
-        "تصميم متجاوب متعدد الأجهزة",
-        "نظام إدارة المحتوى",
-        "نماذج اتصال متقدمة",
-        "تكامل واجهات برمجة التطبيقات الخارجية",
-        "تحسين محركات البحث كامل",
-        "رسوم متحركة وانتقالات سلسة",
-        "استضافة وصيانة"
+        "Gestion centralisée des propriétés",
+        "Suivi des clients et prospects",
+        "Génération automatique de contrats",
+        "Calendrier de visites intégré",
+        "Système de sauvegarde automatique",
+        "Rapports financiers personnalisés"
       ],
-      "status": "inProgress",
-      "link": null,
-      "github": null,
+      "status": "completed",
+      "demoUrl": null,
+      "githubUrl": "#",
+      "featured": true,
+      "new": false,
       "images": [
         {
-          "id": 1,
-          "alt": "الصفحة الرئيسية لنوميليكس",
-          "caption": "تصميم عصري مع رسوم متحركة"
+          "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Tableau de bord immobilier",
+          "caption": "Interface de gestion des propriétés"
         },
-        { "id": 2, "alt": "صفحة الخدمات", "caption": "عرض الخدمات" },
-        { "id": 3, "alt": "صفحة الاتصال", "caption": "نموذج متقدم مع تحقق" }
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Détails d'une propriété",
+          "caption": "Fiche technique complète avec photos"
+        }
       ],
       "challenges": [
-        "التكامل مع نظام حجوزات موجود",
-        "تحسين الأداء لتحميل سريع",
-        "الامتثال لـ RGPD للنماذج"
+        "Migration depuis un système papier",
+        "Formation d'utilisateurs non-techniques",
+        "Synchronisation des données offline"
       ],
       "results": [
-        "زيادة 45% في الزيارات العضوية",
-        "معدل تحويل النماذج 28%",
-        "انخفاض متوسط وقت التحميل إلى 1.2 ثانية"
+        "Réduction de 40% du temps administratif",
+        "Augmentation de 20% des ventes",
+        "Centralisation de 500+ propriétés"
       ]
     },
     {
       "id": 2,
-      "title": "المؤسسة المينائية - تتبع الوصولات البحرية",
+      "title": "PortManager - Suivi Maritime",
       "category": "web",
-      "client": "المؤسسة المينائية لبجاية",
+      "client": "Port de Béjaïa",
       "period": "02.2022 - 04.2022",
-      "description": "تطبيق ويب لتتبع الوصولات البحرية في الوقت الفعلي مع لوحات تحكم تفاعلية.",
-      "longDescription": "تطبيق ويب كامل تم تطويره كجزء من مشروع نهاية دراسات الماجستير. يتيح التطبيق تتبع السفن في الوقت الفعلي، وإدارة الوصولات البحرية، وتخطيط عمليات الموانئ، وإنشاء تقارير مفصلة. واجهة مستخدم عصرية مع Vue.js وواجهة خلفية قوية مع Laravel.",
+      "shortDescription": "Application web de gestion des opérations portuaires",
+      "fullDescription": "Solution complète pour le suivi des navires, gestion des escales, planning des opérations et génération de rapports réglementaires.",
       "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "API REST"],
       "features": [
-        "تتبع السفن في الوقت الفعلي",
-        "إدارة الوصولات البحرية",
-        "لوحات تحكم تفاعلية",
-        "إنشاء التقارير",
-        "واجهة مستخدم عصرية",
-        "واجهة برمجة تطبيقات REST كاملة",
-        "مصادقة آمنة"
+        "Suivi temps réel des navires",
+        "Gestion des escales",
+        "Planning des opérations",
+        "Génération de documents",
+        "Tableaux de bord personnalisés"
       ],
       "status": "completed",
-      "link": null,
-      "github": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
       "images": [
         {
-          "id": 1,
-          "alt": "لوحة التحكم الرئيسية",
-          "caption": "نظرة عامة على عمليات الميناء"
-        },
-        {
-          "id": 2,
-          "alt": "تفاصيل وصول بحري",
-          "caption": "معلومات مفصلة عن وصول بحري"
-        },
-        { "id": 3, "alt": "جدول العمليات", "caption": "تقويم تفاعلي للأنشطة" }
+          "url": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Tableau de bord maritime",
+          "caption": "Visualisation des opérations portuaires"
+        }
       ],
       "challenges": [
-        "تكامل بيانات في الوقت الفعلي من مصادر متعددة",
-        "تصميم واجهة معقدة ولكن بديهية",
-        "إدارة الصلاحيات متعددة المستويات"
+        "Intégration de données multiples",
+        "Conformité réglementaire maritime",
+        "Interface complexe mais intuitive"
       ],
       "results": [
-        "خفض 30% في وقت معالجة الوصولات",
-        "انخفاض 25% في أخطاء التخطيط",
-        "اعتماد الواجهة من قبل 100% من المستخدمين المستهدفين"
+        "Réduction de 30% du temps de traitement",
+        "Diminution de 25% des erreurs",
+        "Adoption par 100% des utilisateurs cibles"
       ]
     },
     {
       "id": 3,
-      "title": "أوال - إدارة عقارية",
-      "category": "desktop",
-      "client": "الوكالة العقارية أوال",
-      "period": "03.2019 - 04.2019",
-      "description": "برنامج إدارة عقاري بواجهة بديهية لإدارة الممتلكات والعملاء.",
-      "longDescription": "برنامج إدارة كامل تم تطويره بلغة Java لوكالة عقارية. يتيح النظام إدارة العقارات، والعملاء، وعقود الإيجار والبيع، وإنشاء التقارير المالية. واجهة مستخدم بديهية مع Java Swing وقاعدة بيانات SQLite.",
-      "technologies": ["Java", "Swing", "SQLite", "iReport", "POO"],
+      "title": "NextJS Portfolio",
+      "category": "Web Development",
+      "client": "Numilex, Béjaïa",
+      "period": "09.2023 - Present",
+      "shortDescription": "Creation of dynamic multi-page websites",
+      "fullDescription": "Portfolio moderne avec mode sombre/clair, chat assistant IA et animations fluides. Présentation dynamique des projets avec filtres avancés.",
+      "technologies": ["Next.js", "Tailwind CSS", "Framer Motion", "i18next"],
       "features": [
-        "إدارة العقارات",
-        "إدارة العملاء والزبائن المحتملين",
-        "عقود الإيجار والبيع",
-        "إنشاء التقارير",
-        "واجهة مستخدم بديهية",
-        "قاعدة بيانات محلية",
-        "نظام النسخ الاحتياطي"
+        "Mode sombre/clair",
+        "Assistant IA personnel",
+        "Animations fluides",
+        "Filtres de projets dynamiques",
+        "Design 100% responsive"
       ],
-      "status": "completed",
-      "link": null,
-      "github": null,
+      "status": "inProgress",
+      "demoUrl": "https://portfolio-nextjs-example.com",
+      "githubUrl": "https://github.com/your-user/portfolio-nextjs",
+      "featured": true,
+      "new": false,
       "images": [
-        { "id": 1, "alt": "الواجهة الرئيسية", "caption": "لوحة تحكم الإدارة" },
-        { "id": 2, "alt": "بطاقة عقارية", "caption": "تفاصيل عقار مع صور" },
         {
-          "id": 3,
-          "alt": "جدول الزيارات",
-          "caption": "جدولة الزيارات والمواعيد"
+          "url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Portfolio mode sombre",
+          "caption": "Interface avec assistant IA"
         }
       ],
       "challenges": [
-        "الانتقال من نظام ورقي",
-        "تدريب المستخدمين غير التقنيين",
-        "مزامنة البيانات دون اتصال"
+        "Intégration fluide de l'IA",
+        "Performance des animations",
+        "Design unique et mémorable"
       ],
       "results": [
-        "خفض 40% في وقت الإدارة الإدارية",
-        "زيادة 20% في المبيعات بفضل متابعة الزبائن المحتملين",
-        "مركزية جميع بيانات العملاء والعقارات"
+        "Score Lighthouse 98/100",
+        "Augmentation de 70% des contacts",
+        "Temps d'engagement moyen 5min+"
       ]
     },
     {
       "id": 4,
-      "title": "معرض أعمال شخصي",
-      "category": "web",
-      "client": "مشروع شخصي",
-      "period": "2025",
-      "description": "موقع معرض أعمال عصري مع رسوم متحركة سلسة وتحسين الأداء.",
-      "longDescription": "معرض أعمال شخصي عصري تم تطويره بأحدث تقنيات الويب. موقع متجاوب بالكامل مع رسوم متحركة سلسة، وتحسين محركات البحث، وأداء مثالي. عرض المهارات والمشاريع والخدمات بتصميم عصري ومهني.",
-      "technologies": ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+      "title": "React E-commerce",
+      "category": "Fullstack Application",
+      "client": "Port Enterprise of Béjaïa",
+      "period": "02.2022 - 04.2022",
+      "shortDescription": "Complete e-commerce platform with cart and Stripe payment",
+      "fullDescription": "Plateforme de commande en ligne avec paiement sécurisé, suivi de livraison en temps réel et système de fidélité intégré.",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
       "features": [
-        "تصميم عصري ومتجاوب",
-        "رسوم متحركة سلسة",
-        "تحسين محركات البحث",
-        "أداء محسن",
-        "نموذج اتصال",
-        "مدونة مدمجة",
-        "نشر آلي"
+        "Panier dynamique",
+        "Paiement en ligne sécurisé",
+        "Suivi de livraison en temps réel",
+        "Système de parrainage",
+        "Design responsive mobile-first"
       ],
-      "status": "inProgress",
-      "link": "#",
-      "github": "#",
+      "status": "completed",
+      "demoUrl": "https://ecommerce-react-demo.com",
+      "githubUrl": "https://github.com/your-user/ecommerce-react",
+      "featured": true,
+      "new": true,
       "images": [
         {
-          "id": 1,
-          "alt": "الصفحة الرئيسية",
-          "caption": "تصميم عصري مع رسوم متحركة"
-        },
-        { "id": 2, "alt": "صفحة المشاريع", "caption": "عرض الإنجازات" },
-        { "id": 3, "alt": "صفحة المهارات", "caption": "تصور التقنيات المتقنة" }
+          "url": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Interface de commande",
+          "caption": "Processus de commande simplifié"
+        }
       ],
       "challenges": [
-        "إنشاء تصميم فريد لا يُنسى",
-        "تحسين الأداء لدرجة Lighthouse >95",
-        "دمج رسوم متحركة سلسة دون التأثير على الأداء"
+        "Optimisation du flux de commande",
+        "Intégration des paiements en 1-clic",
+        "Gestion des pics de commande"
       ],
       "results": [
-        "درجة أداء 98/100 على Lighthouse",
-        "تصميم حاصل على جوائز في مسابقات ويب متعددة",
-        "زيادة 60% في طلبات الاتصال"
+        "Taux de conversion 25%",
+        "Temps moyen de commande <90s",
+        "75% de clients récurrents"
       ]
     },
     {
       "id": 5,
-      "title": "غرين ماركت - تجارة إلكترونية صديقة للبيئة",
+      "title": "HandballManager - Gestion de Ligue",
       "category": "web",
-      "client": "مشروع ناشئ غرين ماركت",
-      "period": "06.2024 - 08.2024",
-      "description": "منصة تجارة إلكترونية متخصصة في المنتجات الصديقة للبيئة والمستدامة.",
-      "longDescription": "سوق كامل للمنتجات الصديقة للبيئة مع نظام دفع آمن، وإدارة المخزون، وتقييمات العملاء وتوصيات مخصصة. تكامل مع واجهات برمجة التطبيقات للتوصيل الصديق للبيئة وحساب البصمة الكربونية.",
-      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
+      "client": "Ligue Régionale de Handball",
+      "period": "06.2024 - Present",
+      "shortDescription": "Application de gestion de ligue sportive",
+      "fullDescription": "Solution complète pour la gestion des équipes, calendriers des matchs, statistiques des joueurs et communication avec les clubs.",
+      "technologies": ["Laravel", "React", "MySQL", "API REST"],
       "features": [
-        "كتالوج منتجات مع فلاتر بيئية",
-        "نظام دفع آمن",
-        "حساب البصمة الكربونية للمنتجات",
-        "توصيات مخصصة",
-        "مدونة حول البيئة",
-        "برنامج ولاء مستدام"
+        "Gestion des équipes et joueurs",
+        "Calendrier des matchs interactif",
+        "Statistiques en temps réel",
+        "Espace club personnalisé",
+        "Système de communication"
       ],
-      "status": "completed",
-      "link": "#",
-      "github": "#",
+      "status": "inProgress",
+      "demoUrl": null,
+      "githubUrl": "#",
+      "featured": false,
+      "new": true,
       "images": [
         {
-          "id": 1,
-          "alt": "الصفحة الرئيسية",
-          "caption": "تصميم مستوحى من الطبيعة"
-        },
-        {
-          "id": 2,
-          "alt": "صفحة المنتج",
-          "caption": "تفاصيل المنتج مع الأثر البيئي"
-        },
-        { "id": 3, "alt": "عملية الدفع", "caption": "دفع مبسط وآمن" }
+          "url": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Tableau de bord handball",
+          "caption": "Gestion des équipes et matchs"
+        }
       ],
       "challenges": [
-        "تكامل معقد لحساب البصمة الكربونية",
-        "إنشاء نظام توصيل بيئي",
-        "تحسين الأداء لكتالوج 5000+ منتج"
+        "Gestion de données temps réel",
+        "Synchronisation multi-clubs",
+        "Interface adaptée aux différents rôles"
       ],
       "results": [
-        "نمو 200% في المبيعات خلال 3 أشهر",
-        "متوسط تقييم 4.8/5 من العملاء",
-        "خفض 15% من البصمة الكربونية للتوصيل"
+        "Automatisation complète des calendriers",
+        "Réduction de 50% du travail administratif",
+        "Support de 30+ équipes"
       ]
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "Les Tendances du Développement Web en 2025",
+      "excerpt": "Découvrez les frameworks, technologies et outils qui façonnent le développement web en 2025.",
+      "category": "development",
+      "author": "Mounir Mehdi",
+      "date": "2025-01-15",
+      "readTime": "6 min",
+      "tags": ["React", "Vue", "Svelte", "WebAssembly", "JAMstack"],
+      "image": "https://images.unsplash.com/photo-1529101091764-c3526daf38fe?auto=format&fit=crop&w=1200&q=80",
+      "content": "## L'avenir du développement web\n\nLe paysage du développement web évolue à une vitesse fulgurante. En **2025**, plusieurs tendances clés redéfinissent la manière dont nous créons des applications.\n\n### Les frameworks JavaScript dominent encore\nReact, Vue et Angular conservent leur popularité. Mais de nouveaux acteurs comme **Svelte** et **SolidJS** séduisent par leur légèreté et leurs performances.\n\n- **React** : toujours leader grâce à son écosystème riche ([React](https://react.dev))\n- **Vue 3** : simplicité et adoption croissante\n- **Svelte** : compilation en code natif, ultra rapide\n- **SolidJS** : approche réactive innovante\n\n### L'essor du JAMstack\nLes architectures **JAMstack** (JavaScript, APIs, Markup) explosent avec des frameworks tels que **Next.js**, **Nuxt.js** et **Gatsby**. Résultat : des sites plus rapides, plus sécurisés et mieux adaptés au SEO.\n\n### WebAssembly : le game changer\nAvec **WebAssembly (WASM)**, exécuter du code C++ ou Rust dans le navigateur devient possible. Des apps web aux performances proches du natif voient le jour.\n\n### L'IA au service des développeurs\nOutils comme [GitHub Copilot](https://github.com/features/copilot) ou Amazon CodeWhisperer assistent les devs au quotidien en proposant du code intelligent.\n\n---\nEn résumé, **2025 est l'année de la performance, de la modularité et de l'IA intégrée dans le développement web.**"
+    },
+    {
+      "id": 2,
+      "title": "Optimisation SEO : Guide Complet pour 2025",
+      "excerpt": "Boostez votre visibilité en ligne grâce aux meilleures pratiques SEO adaptées aux algorithmes de 2025.",
+      "category": "seo",
+      "author": "Mounir Mehdi",
+      "date": "2025-01-10",
+      "readTime": "9 min",
+      "tags": ["SEO", "Google", "Core Web Vitals", "E-E-A-T", "Référencement"],
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "content": "## L'évolution du SEO en 2025\n\nLe **SEO** a profondément changé. Google mise désormais sur **l'expérience utilisateur** et la **qualité du contenu**.\n\n### Core Web Vitals : vos meilleurs alliés\nLes métriques de performance deviennent cruciales :\n- **LCP** (Largest Contentful Paint)\n- **FID** (First Input Delay)\n- **CLS** (Cumulative Layout Shift)\n\n👉 Suivez vos performances avec [Google PageSpeed Insights](https://pagespeed.web.dev/).\n\n### E-E-A-T : expertise avant tout\nGoogle privilégie les contenus démontrant :\n- **Expertise**\n- **Expérience**\n- **Autorité**\n- **Fiabilité**\n\nCréez du contenu écrit par des experts et bien sourcé.\n\n### Recherche vocale & SEO conversationnel\nAvec la montée des assistants vocaux, optimisez pour des **questions naturelles** :\n- \"Quel est le meilleur framework en 2025 ?\"\n- \"Comment améliorer la vitesse de mon site ?\"\n\n### SEO local et Google Business Profile\nPour les entreprises locales, une fiche **Google Business** optimisée et des **avis clients** réguliers boostent votre visibilité.\n\n---\n**Le SEO en 2025** n'est pas une bataille de mots-clés, mais une stratégie globale centrée sur la qualité et la pertinence."
+    },
+    {
+      "id": 3,
+      "title": "Laravel vs React : Quelle Stack Choisir en 2025 ?",
+      "excerpt": "Comparatif complet entre Laravel et React pour mieux choisir votre stack en 2025.",
+      "category": "development",
+      "author": "Mounir Mehdi",
+      "date": "2025-01-05",
+      "readTime": "7 min",
+      "tags": ["Laravel", "React", "PHP", "JavaScript", "Stack"],
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+      "content": "## Laravel vs React : deux mondes complémentaires\n\nLaravel et React ne sont pas concurrents directs. L'un excelle côté **back-end**, l'autre côté **front-end**.\n\n### Laravel : le roi du back-end PHP\n- Routage élégant\n- ORM puissant (**Eloquent**)\n- Authentification robuste\n- Système de jobs et queues\n\n👉 Idéal pour des applications métiers complexes.\n\n### React : l'arme du front-end moderne\n- Composants réutilisables\n- Gestion d'état avec Redux ou Zustand\n- Rendu serveur avec [Next.js](https://nextjs.org)\n- Large communauté\n\n👉 Parfait pour des interfaces dynamiques.\n\n### Quand utiliser quoi ?\n- **Laravel seul** : back-office, API, CMS custom\n- **React seul** : sites statiques, apps single-page\n- **Laravel + React** : combo gagnant via une API REST ou GraphQL\n\n---\n**Astuce :** ne les opposez pas, combinez-les !"
+    },
+    {
+      "id": 4,
+      "title": "UX/UI Design : Créer des Interfaces Intuitives en 2025",
+      "excerpt": "Découvrez les principes UX/UI et les tendances de design qui marquent 2025.",
+      "category": "design",
+      "author": "Mounir Mehdi",
+      "date": "2024-12-28",
+      "readTime": "8 min",
+      "tags": ["UX", "UI", "Design", "Accessibilité", "Tendances"],
+      "image": "https://images.unsplash.com/photo-1587614295999-6cb7882f0f9a?auto=format&fit=crop&w=1200&q=80",
+      "content": "## L'art de créer des expériences mémorables\n\nEn **UX/UI**, l'objectif est simple : résoudre les problèmes des utilisateurs tout en offrant une expérience agréable.\n\n### Principes fondamentaux\n- **Empathie** : comprendre les besoins\n- **Simplicité** : réduire la complexité\n- **Consistance** : garder une cohérence\n- **Feedback** : donner un retour visuel\n- **Accessibilité** : penser à tous les profils\n\n👉 Guide utile : [WCAG Accessibility Standards](https://www.w3.org/WAI/standards-guidelines/wcag/)\n\n### Tendances UI 2025\n- Mode sombre par défaut\n- Micro-interactions animées\n- Design 3D immersif\n- Interfaces vocales\n- Design inclusif\n\n### Outils incontournables\n- [Figma](https://figma.com)\n- Adobe XD\n- Sketch\n- Framer\n\n---\nUn bon design **UX/UI** est celui qu'on ne remarque pas : il coule de source."
+    },
+    {
+      "id": 5,
+      "title": "Méthodologie Agile : Booster vos Projets en 2025",
+      "excerpt": "Implémentez efficacement Agile pour améliorer productivité, qualité et satisfaction client.",
+      "category": "methodology",
+      "author": "Mounir Mehdi",
+      "date": "2024-12-20",
+      "readTime": "6 min",
+      "tags": ["Agile", "Scrum", "Productivité", "Gestion de projet"],
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+      "content": "## Transformer vos projets avec Agile\n\nLa méthodologie **Agile** met l'accent sur la collaboration, la flexibilité et la valeur continue.\n\n### Les piliers d'Agile\n- Individus et interactions > processus\n- Logiciel fonctionnel > documentation exhaustive\n- Collaboration client > négociation contractuelle\n- Adaptabilité > suivi strict d'un plan\n\n### Scrum : framework phare\n- Rôles : Product Owner, Scrum Master, Dev Team\n- Événements : Sprint Planning, Daily, Review, Retro\n- Artefacts : Backlogs et Incréments\n\n### Les bénéfices\n- -30% de time-to-market\n- +25% de productivité\n- +40% de satisfaction client\n\n👉 Pour aller plus loin : [Scrum.org](https://www.scrum.org/)\n\n---\nAdopter Agile, c’est passer d’un mode rigide à un mode **adaptatif et collaboratif**."
     },
     {
       "id": 6,
-      "title": "هيلث تراك - متابعة طبية",
+      "title": "Sécurité Web : Protéger vos Applications en 2025",
+      "excerpt": "Découvrez les menaces les plus courantes et les bonnes pratiques pour sécuriser vos applications web.",
+      "category": "security",
+      "author": "Mounir Mehdi",
+      "date": "2024-12-15",
+      "readTime": "9 min",
+      "tags": ["Sécurité", "HTTPS", "OWASP", "Authentification", "Protection"],
+      "image": "https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=1200&q=80",
+      "content": "## La sécurité web : un enjeu crucial en 2025\n\nAvec l’explosion des cyberattaques, sécuriser vos applications est **une priorité absolue**.\n\n### Menaces courantes\n- Injection SQL\n- Cross-Site Scripting (XSS)\n- Cross-Site Request Forgery (CSRF)\n- Attaques DDoS\n- Vol d’identifiants\n\n### Les bonnes pratiques\n1. Utiliser **HTTPS** avec certificats SSL\n2. Valider toutes les entrées utilisateur\n3. Implémenter **l’authentification forte (2FA)**\n4. Limiter les tentatives de connexion\n5. Mettre à jour dépendances & frameworks\n6. Configurer les **en-têtes HTTP sécurisés**\n\n👉 Ressource utile : [OWASP Top 10](https://owasp.org/www-project-top-ten/)\n\n### Outils de sécurité\n- OWASP ZAP\n- Burp Suite\n- Snyk\n- Cloudflare\n\n---\nProtéger vos applis, c’est protéger vos **utilisateurs et votre réputation**."
+    },
+    {
+      "id": 7,
+      "title": "Développement Full Stack : Maîtriser le Frontend et le Backend",
+      "excerpt": "Un guide complet pour devenir développeur full stack en 2025 et maîtriser les deux côtés du web.",
+      "category": "development",
+      "author": "Mounir Mehdi",
+      "date": "2025-02-01",
+      "readTime": "10 min",
+      "tags": ["Full Stack", "Frontend", "Backend", "Node.js", "DevOps"],
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "content": "## Le rôle du développeur Full Stack\n\nÊtre **Full Stack**, c’est savoir jongler entre **frontend** et **backend**, tout en intégrant les bonnes pratiques DevOps.\n\n### Les technologies côté frontend\n- **React**, Vue, Angular\n- Frameworks UI : TailwindCSS, Chakra UI\n- Optimisation SEO & accessibilité\n\n### Les technologies côté backend\n- **Node.js** et Express\n- PHP avec **Laravel**\n- Python avec Django / FastAPI\n- Bases de données SQL et NoSQL\n\n### Outils complémentaires\n- Docker & Kubernetes\n- Git et CI/CD\n- Cloud (AWS, GCP, Azure)\n\n👉 Ressource utile : [The Full Stack Developer Roadmap](https://roadmap.sh/full-stack)\n\n---\nLe développeur **Full Stack** est un profil polyvalent, très recherché en 2025."
+    },
+    {
+      "id": 8,
+      "title": "Développement Mobile : Flutter vs React Native en 2025",
+      "excerpt": "Comparatif entre Flutter et React Native, les deux frameworks leaders pour créer des apps mobiles modernes.",
       "category": "mobile",
-      "client": "مستشفى إقليمي",
-      "period": "01.2024 - 05.2024",
-      "description": "تطبيق جوال لمتابعة المرضى وإدارة المواعيد الطبية.",
-      "longDescription": "حل إدارة طبية كامل يسمح للمرضى بمتابعة علاجاتهم، وحجز المواعيد والتواصل مع طبيبهم. بالنسبة لمقدمي الرعاية الصحية، يوفر التطبيق لوحة تحكم كاملة لإدارة المرضى والوصفات الطبية.",
-      "technologies": [
-        "React Native",
-        "Firebase",
-        "Redux",
-        "Node.js",
-        "MongoDB"
-      ],
-      "features": [
-        "حجز مواعيد عبر الإنترنت",
-        "متابعة الوصفات الطبية",
-        "تذكير بتناول الأدوية",
-        "مراسلة آمنة مع الأطباء",
-        "تخزين السجلات الطبية",
-        "لوحة تحكم تحليلية"
-      ],
-      "status": "completed",
-      "link": "#",
-      "github": null,
-      "images": [
-        {
-          "id": 1,
-          "alt": "لوحة تحكم المريض",
-          "caption": "نظرة عامة على الصحة"
-        },
-        { "id": 2, "alt": "جدول المواعيد", "caption": "إدارة الاستشارات" },
-        { "id": 3, "alt": "متابعة الأدوية", "caption": "تذكيرات وسجل الجرعات" }
-      ],
-      "challenges": [
-        "الامتثال الصارم للوائح الصحة",
-        "مزامنة البيانات في الوقت الفعلي",
-        "إنشاء واجهة يمكن الوصول لها لجميع الأعمار"
-      ],
-      "results": [
-        "خفض 30% في المواعيد الفائتة",
-        "تحسن 40% في التزام العلاج",
-        "اعتماد من 15 عيادة في 6 أشهر"
-      ]
+      "author": "Mounir Mehdi",
+      "date": "2025-02-05",
+      "readTime": "7 min",
+      "tags": ["Mobile", "Flutter", "React Native", "iOS", "Android"],
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+      "content": "## Développement mobile multiplateforme\n\nEn 2025, deux frameworks dominent : **Flutter** et **React Native**.\n\n### Flutter\n- Développé par Google\n- Langage Dart\n- UI personnalisables et fluides\n- Excellent support pour Android, iOS, web et desktop\n\n### React Native\n- Basé sur React\n- Large communauté & librairies\n- Intégration facile avec des apps existantes\n- Soutenu par Meta\n\n### Quand choisir quoi ?\n- **Flutter** : besoin de performance et d’une UI 100% custom\n- **React Native** : rapidité de développement et communauté géante\n\n👉 Comparatif : [Flutter vs React Native](https://flutter.dev/docs/get-started/flutter-for/react-native-devs)\n\n---\nLe choix dépend de vos **objectifs**, mais les deux frameworks sont des valeurs sûres."
+    },
+    {
+      "id": 9,
+      "title": "Maintenance et Performances des Sites Web",
+      "excerpt": "Pourquoi la maintenance et l’optimisation des performances web sont vitales pour vos projets.",
+      "category": "performance",
+      "author": "Mounir Mehdi",
+      "date": "2025-02-10",
+      "readTime": "8 min",
+      "tags": ["Maintenance", "Performance", "Web Vitals", "Optimisation"],
+      "image": "https://images.unsplash.com/photo-1581093588401-22d64d4a2fd3?auto=format&fit=crop&w=1200&q=80",
+      "content": "## La maintenance web en 2025\n\nUn site sans maintenance, c’est comme une voiture sans révision. La **performance** et la **sécurité** doivent être suivies régulièrement.\n\n### Pourquoi la maintenance est essentielle\n- Mise à jour des CMS et frameworks\n- Corrections de bugs et failles\n- Sauvegardes régulières\n- Amélioration continue du SEO\n\n### Les clés des performances\n- Optimisation des images\n- Mise en cache intelligente\n- Utilisation d’un CDN\n- Minification CSS/JS\n- Lazy loading\n\n👉 Outils utiles : [GTmetrix](https://gtmetrix.com), [WebPageTest](https://www.webpagetest.org)\n\n---\nUn site rapide et bien maintenu améliore **SEO, conversion et expérience utilisateur**."
+    },
+    {
+      "id": 10,
+      "title": "Intelligence Artificielle : Assistants AI pour Développeurs",
+      "excerpt": "Découvrez comment l’IA transforme le développement avec des assistants intelligents comme Copilot.",
+      "category": "ai",
+      "author": "Mounir Mehdi",
+      "date": "2025-02-15",
+      "readTime": "9 min",
+      "tags": ["IA", "Assistants", "Copilot", "Productivité", "Développement"],
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+      "content": "## L’IA au service des développeurs\n\nLes **assistants AI** révolutionnent la façon de coder en 2025.\n\n### Les outils phares\n- [GitHub Copilot](https://github.com/features/copilot)\n- Amazon CodeWhisperer\n- Tabnine\n- ChatGPT API\n\n### Avantages\n- Suggestions de code en temps réel\n- Automatisation des tâches répétitives\n- Génération de tests unitaires\n- Documentation automatique\n\n### Limites\n- Dépendance aux outils\n- Risque de code généré non optimal\n- Confidentialité des données\n\n---\nBien utilisés, les **assistants AI** augmentent la productivité sans remplacer la créativité du développeur."
+    },
+    {
+      "id": 11,
+      "title": "Calendly et ses Alternatives Gratuites en 2025",
+      "excerpt": "Découvrez les meilleures alternatives à Calendly pour gérer vos rendez-vous en ligne sans frais.",
+      "category": "tools",
+      "author": "Mounir Mehdi",
+      "date": "2025-02-20",
+      "readTime": "7 min",
+      "tags": ["Calendly", "Outils", "Rendez-vous", "Productivité"],
+      "image": "https://images.unsplash.com/photo-1581091870634-1c75a7e96a0e?auto=format&fit=crop&w=1200&q=80",
+      "content": "## Prendre des rendez-vous en ligne facilement\n\n**Calendly** est l’outil leader, mais plusieurs alternatives gratuites existent en 2025.\n\n### Calendly\n- Intégration Google & Outlook\n- Automatisation des rappels\n- Version gratuite limitée\n\n### Alternatives gratuites\n- [TidyCal](https://tidycal.com) : simple et efficace\n- [Cal.com](https://cal.com) : open-source, personnalisable\n- [Zoho Bookings](https://zoho.com/bookings) : intégration CRM\n- [Rallly](https://rallly.co) : idéal pour planifier en groupe\n\n### Pourquoi utiliser une alternative ?\n- Plus de personnalisation\n- Open-source et auto-hébergement\n- Gratuité sans limitations majeures\n\n---\n**Astuce :** choisissez votre outil en fonction de votre **flux de travail** (pro, équipe, perso)."
+    },
+    {
+      "id": 12,
+      "title": "Newsletters : Mailchimp et Alternatives Gratuites",
+      "excerpt": "Un comparatif des meilleures solutions de newsletters pour 2025 : Mailchimp, Sendinblue, MailerLite et plus.",
+      "category": "marketing",
+      "author": "Mounir Mehdi",
+      "date": "2025-02-25",
+      "readTime": "8 min",
+      "tags": ["Newsletter", "Mailchimp", "Marketing", "Emailing"],
+      "image": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=1200&q=80",
+      "content": "## L’importance des newsletters en 2025\n\nLes newsletters restent un canal marketing puissant, surtout pour le **SEO et la fidélisation**.\n\n### Mailchimp : le classique\n- Interface intuitive\n- Automatisations puissantes\n- Version gratuite jusqu’à 500 contacts\n\n### Alternatives gratuites\n- [MailerLite](https://www.mailerlite.com) : simplicité et automatisations\n- [Brevo (ex Sendinblue)](https://www.brevo.com) : emailing + SMS\n- [Benchmark Email](https://www.benchmarkemail.com) : drag & drop\n- [Moosend](https://moosend.com) : segmentation avancée\n\n### Bonnes pratiques SEO + emailing\n- Personnaliser l’objet de l’email\n- Intégrer des liens vers votre blog\n- Éviter le spam (authentification DKIM/SPF)\n\n---\n**Astuce :** choisissez un outil qui **grandit avec vous** (scalabilité)."
+    },
+    {
+      "id": 13,
+      "title": "Optimisation Avancée pour les Moteurs de Recherche",
+      "excerpt": "Au-delà du SEO classique : découvrez les techniques avancées pour booster votre visibilité en 2025.",
+      "category": "seo",
+      "author": "Mounir Mehdi",
+      "date": "2025-03-01",
+      "readTime": "10 min",
+      "tags": ["SEO", "Optimisation", "Google", "Stratégie"],
+      "image": "https://images.unsplash.com/photo-1504691342899-8d2d2d7d98c5?auto=format&fit=crop&w=1200&q=80",
+      "content": "## Aller plus loin que le SEO de base\n\nEn 2025, le SEO est un **écosystème complet** qui inclut technique, contenu et autorité.\n\n### Optimisation technique\n- Schema.org et balisage enrichi\n- Sitemap XML dynamique\n- Optimisation des logs serveur\n\n### Stratégies avancées de contenu\n- Contenu long (> 2000 mots)\n- Ciblage des **featured snippets**\n- Intégration de vidéos et podcasts\n\n### SEO off-site\n- Backlinks de qualité (guest blogging, partenariats)\n- Netlinking intelligent\n- Autorité de domaine (DA)\n\n👉 Guide complet : [Google Search Central](https://developers.google.com/search)\n\n---\nLe **SEO avancé** permet de dépasser vos concurrents sur les requêtes stratégiques."
+    },
+    {
+      "id": 14,
+      "title": "DevOps et Cloud : Accélérer le Développement",
+      "excerpt": "Découvrez comment DevOps et le cloud transforment la livraison des projets en 2025.",
+      "category": "devops",
+      "author": "Mounir Mehdi",
+      "date": "2025-03-05",
+      "readTime": "9 min",
+      "tags": ["DevOps", "Cloud", "CI/CD", "Docker", "Kubernetes"],
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "content": "## DevOps + Cloud : le duo gagnant\n\nEn 2025, les entreprises adoptent massivement le **DevOps** et le **cloud computing**.\n\n### DevOps : automatisation et rapidité\n- CI/CD (Intégration et Déploiement continu)\n- Tests automatisés\n- Monitoring & observabilité\n\n### Cloud : scalabilité et flexibilité\n- [AWS](https://aws.amazon.com)\n- [Google Cloud](https://cloud.google.com)\n- [Microsoft Azure](https://azure.microsoft.com)\n\n### Outils incontournables\n- Docker & Kubernetes\n- Terraform\n- GitHub Actions / GitLab CI\n\n---\nLe DevOps et le Cloud améliorent **vitesse, sécurité et scalabilité** des projets modernes."
+    },
+    {
+      "id": 15,
+      "title": "L’Avenir du Développement avec l’Intelligence Artificielle",
+      "excerpt": "Comment l’IA transforme le développement logiciel et ouvre de nouvelles perspectives.",
+      "category": "ai",
+      "author": "Mounir Mehdi",
+      "date": "2025-03-10",
+      "readTime": "8 min",
+      "tags": ["IA", "Développement", "Futur", "Automatisation"],
+      "image": "https://images.unsplash.com/photo-1684581326373-f9d9aa1ef3ab?auto=format&fit=crop&w=1200&q=80",
+      "content": "## L’IA, un partenaire de développement\n\nL’IA ne remplace pas les développeurs, mais les rend **plus efficaces**.\n\n### Domaines impactés\n- Génération de code\n- Débogage assisté\n- Optimisation des performances\n- Revue automatique du code\n\n### Exemples concrets\n- [ChatGPT](https://openai.com/chatgpt) pour générer du code\n- Copilot pour l’auto-complétion\n- Outils d’IA pour la documentation\n\n### Limites actuelles\n- Biais dans les modèles\n- Problèmes de confidentialité\n- Besoin de validation humaine\n\n---\nL’avenir du dev sera **hybride : humain + IA**, une collaboration plutôt qu’une substitution."
     }
   ],
   "technologies": [
@@ -679,111 +729,37 @@
     { "name": "Figma", "icon": "SiFigma" }
   ],
   "blog": {
-    "title": "مدونة تقنية",
-    "subtitle": "اكتشف أفكاري حول تطوير الويب، التقنيات الجديدة وأفضل ممارسات الصناعة.",
-    "searchPlaceholder": "ابحث عن مقال، وسم أو موضوع...",
-    "categoriesButton": "التصنيفات",
-    "resetButton": "إعادة تعيين",
-    "featuredPostTitle": "مقال مميز",
-    "recentPostsTitle": "مقالات حديثة",
-    "foundPostsTitle": "مقالات تم العثور عليها",
-    "noPostsFound": "لم يتم العثور على مقالات لبحثك.",
-    "viewAllPosts": "عرض جميع المقالات",
-    "aboutTitle": "حول المدونة",
-    "aboutDescription": "مطور Full Stack شغوف يشارك تجاربه واكتشافاته وتأملاته في عالم تطوير الويب. استكشف أحدث الاتجاهات والنصائح وأفضل الممارسات.",
-    "popularTagsTitle": "الوسوم الشائعة",
-    "newsletterTitle": "النشرة التقنية",
-    "newsletterDescription": "استقبل أحدث المقالات والموارد مباشرة في صندوق بريدك.",
-    "newsletterPlaceholder": "بريدك الإلكتروني",
-    "newsletterButton": "اشتراك",
-    "readMore": "قراءة المزيد",
-    "read": "قراءة",
-    "close": "إغلاق",
-    "leaveComment": "ترك تعليق",
-    "articles": "مقالات",
-    "article": "مقال",
+    "title": "Blog Tech",
+    "subtitle": "Découvrez mes réflexions sur le développement web, les nouvelles technologies et les meilleures pratiques du secteur.",
+    "searchPlaceholder": "Rechercher un article, un tag ou un sujet...",
+    "categoriesButton": "Catégories",
+    "resetButton": "Réinitialiser",
+    "featuredPostTitle": "Article à la Une",
+    "recentPostsTitle": "Articles Récents",
+    "foundPostsTitle": "Articles trouvés",
+    "noPostsFound": "Aucun article trouvé pour votre recherche.",
+    "viewAllPosts": "Voir tous les articles",
+    "aboutTitle": "À propos du blog",
+    "aboutDescription": "Développeur Full Stack passionné, je partage ici mes expériences, découvertes et réflexions sur le monde du développement web. Explorez les dernières tendances, astuces et bonnes pratiques.",
+    "popularTagsTitle": "Tags Populaires",
+    "newsletterTitle": "Newsletter Tech",
+    "newsletterDescription": "Recevez les derniers articles et ressources directement dans votre boîte mail.",
+    "newsletterPlaceholder": "Votre email",
+    "newsletterButton": "S'abonner",
+    "readMore": "Lire la suite",
+    "read": "Lire",
+    "close": "Fermer",
+    "leaveComment": "Laisser un commentaire",
+    "articles": "Artivles",
+    "article": "Article",
     "categories": {
-      "all": "جميع المقالات",
-      "development": "تطوير",
-      "design": "تصميم",
+      "all": "Tous les articles",
+      "development": "Développement",
+      "design": "Design",
       "seo": "SEO",
-      "methodology": "منهجية",
-      "security": "أمان"
+      "methodology": "Méthodologie",
+      "security": "Sécurité"
     },
-    "blogPosts": [
-      {
-        "id": 1,
-        "title": "اتجاهات تطوير الويب في 2025",
-        "excerpt": "اكتشف التقنيات والأطر التي ستسيطر على تطوير الويب هذا العام.",
-        "category": "development",
-        "author": "منير مهدي",
-        "date": "2025-01-15",
-        "readTime": "5 دقائق",
-        "tags": ["React", "CSS", "JavaScript", "اتجاهات"],
-        "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "content": "<h2>مستقبل تطوير الويب</h2><p>مشهد تطوير الويب يتطور بسرعة البرق. في 2025، نلاحظ عدة اتجاهات رئيسية تحول طريقة بناء تطبيقات الويب.</p><h3>أطر JavaScript تستمر في السيطرة</h3><p>React و Vue و Angular تظل الأطر الأكثر شعبية، لكن الوافدين الجدد مثل Svelte و SolidJS يكتسبون شعبية سريعًا بفضل أدائهم الاستثنائي.</p><h3>صعود بنى JAMstack</h3><p>المواقع الثابتة مع وظائف serverless (JAMstack) تقدم الآن أداءً لا مثيل له. منصات مثل Next.js و Gatsby و Nuxt.js تسمح بإنشاء تطبيقات معقدة بأوقات تحميل شبه فورية.</p><h3>WebAssembly يغير اللعبة</h3><p>مع WebAssembly، أصبح من الممكن تنفيذ كود مترجم (C++، Rust) في المتصفح، مما يفتح الباب لتطبيقات ويب بأداء قريب من الأداء الأصلي.</p><h3>الذكاء الاصطناعي المدمج في التطوير</h3><p>أدوات مثل GitHub Copilot و Amazon CodeWhisperer تحول تجربة التطوير، باقتراح كود في الوقت الحقيقي وأتمتة المهام المتكررة.</p>"
-      },
-      {
-        "id": 2,
-        "title": "تحسين SEO: دليل شامل لـ 2025",
-        "excerpt": "أتقن أكثر تقنيات تحسين SEO فعالية لمواقعك الإلكترونية.",
-        "category": "seo",
-        "author": "منير مهدي",
-        "date": "2025-01-10",
-        "readTime": "8 دقائق",
-        "tags": ["SEO", "تسويق", "جوجل", "تصنيف"],
-        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "content": "<h2>تطور SEO في 2025</h2><p>التصنيف الطبيعي تطور بشكل كبير في السنوات الأخيرة. في 2025، خوارزميات البحث أكثر ذكاءً من أي وقت مضى، مؤكدة على تجربة المستخدم وجودة المحتوى.</p><h3>أهمية Core Web Vitals</h3><p>أداء التحميل (LCP)، التفاعل (FID) والاستقرار البصري (CLS) أصبحت عوامل تصنيف رئيسية. حسّن هذه المقاييس لتحسين ظهورك.</p><h3>المحتوى الخبير (E-E-A-T)</h3><p>جوجل تفضل المحتوى الذي يظهر الخبرة، التجربة، السلطة والموثوقية (E-E-A-T). استثمر في محتوى متعمق مكتوب من قبل خبراء.</p><h3>التحسين للبحث الصوتي</h3><p>مع صعود المساعدات الصوتية، حسّن محتوىك للاستفسارات المحادثة والأسئلة المباشرة.</p><h3>SEO المحلي ووجود Google Business</h3><p>للشركات المحلية، ملف Google Business الأمثل ضروري. شجع تقييمات العملاء وحافظ على معلوماتك محدثة.</p>"
-      },
-      {
-        "id": 3,
-        "title": "Laravel مقابل React: اختيار التقنية المناسبة",
-        "excerpt": "مقارنة مفصلة بين Laravel و React لمشاريعك الويب.",
-        "category": "development",
-        "author": "منير مهدي",
-        "date": "2025-01-05",
-        "readTime": "6 دقائق",
-        "tags": ["Laravel", "React", "PHP", "JavaScript"],
-        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "content": "<h2>مقارنة تقنيات الخلفية والواجهة</h2><p>Laravel و React هما تقنيتان مختلفتان جدًا: واحدة إطار عمل PHP للخلفية، والأخرى مكتبة JavaScript للواجهة. لكنهما غالبًا ما تتم مقارنتهما لأنه يمكن دمجهما لإنشاء تطبيقات ويب قوية.</p><h3>Laravel: تميز الخلفية</h3><p>Laravel هو إطار عمل PHP كامل يتفوق في إنشاء تطبيقات ويب معقدة مع:<ul><li>نظام توجيه أنيق</li><li>نظام ORM قوي (Eloquent)</li><li>محرك قوالب (Blade)</li><li>نظام مصادقة قوي</li><li>أدوات للطابور والجدولة</li></ul></p><h3>React: قوة الواجهة</h3><p>React هي مكتبة JavaScript لإنشاء واجهات مستخدم تفاعلية:<ul><li>مكونات قابلة لإعادة الاستخدام</li><li>إدارة حالة فعالة</li><li>نظام غني (Redux, React Router, إلخ)</li><li>عرض من جانب الخادم مع Next.js</li><li>مجتمع كبير ودعم</li></ul></p><h3>متى تختار ماذا؟</h3><p>للتطبيقات الغنية بالبيانات مع منطق أعمال معقد، Laravel مثالي. لواجهات المستخدم الديناميكية والمتفاعلة، React لا تقهر. لحسن الحظ، يمكنك استخدام الاثنين معًا عبر API!</p>"
-      },
-      {
-        "id": 4,
-        "title": "تصميم UX/UI: إنشاء واجهات بديهية",
-        "excerpt": "المبادئ الأساسية لتصميم UX/UI لواجهات جذابة.",
-        "category": "design",
-        "author": "منير مهدي",
-        "date": "2024-12-28",
-        "readTime": "7 دقائق",
-        "tags": ["UX", "UI", "تصميم", "واجهة"],
-        "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "content": "<h2>فن إنشاء تجارب مستخدم لا تنسى</h2><p>تصميم UX/UI يتجاوز الجماليات. يتعلق بإنشاء واجهات تحل مشاكل حقيقية مع تقديم تجربة ممتعة وبديهية.</p><h3>المبادئ الأساسية لتصميم UX</h3><p><ul><li><strong>التعاطف</strong>: فهم احتياجات وإحباطات المستخدمين</li><li><strong>البساطة</strong>: تقليل التعقيد في كل خطوة</li><li><strong>الاتساق</strong>: الحفاظ على أنماط تفاعل متناسقة</li><li><strong>التغذية الراجعة</strong>: تقديم ردود فعل بصرية لأفعال المستخدمين</li><li><strong>إمكانية الوصول</strong>: التصميم لجميع المستخدمين</li></ul></p><h3>اتجاهات UI في 2025</h3><p><ul><li><strong>الوضع الداكن افتراضيًا</strong>: يقلل إجهاد العين ويوفر البطارية</li><li><strong>التفاعلات الدقيقة</strong>: حركات خفيفة ترشد المستخدم</li><li><strong>تصميم ثلاثي الأبعاد والنيومورفيزم</strong>: عمق وواقعية في الواجهات</li><li><strong>التصميم الصوتي</strong>: واجهات مكيفة للتفاعلات الصوتية</li><li><strong>تصميم شامل</strong>: لوحات ألوان قابلة للوصول وطباعة واضحة</li></ul></p><h3>أدوات أساسية</h3><p>Figma، Adobe XD، Sketch، InVision Studio و Framer تستمر في الهيمنة على السوق بميزات أكثر ابتكارًا للتصميم والنماذج الأولية.</p>"
-      },
-      {
-        "id": 5,
-        "title": "منهجية Agile: تحسين مشاريعك",
-        "excerpt": "كيف تنفذ منهجية Agile بفعالية في مشاريعك.",
-        "category": "methodology",
-        "author": "منير مهدي",
-        "date": "2024-12-20",
-        "readTime": "4 دقائق",
-        "tags": ["Agile", "Scrum", "إدارة", "إنتاجية"],
-        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "content": "<h2>تحويل سير عملك مع Agile</h2><p>منهجية Agile أحدثت ثورة في إدارة مشاريع تكنولوجيا المعلومات بالتركيز على المرونة، التعاون وتسليم القيمة المستمرة.</p><h3>ركائز Agile</h3><p><ul><li><strong>الأفراد والتفاعلات</strong> بدلاً من العمليات والأدوات</li><li><strong>برمجيات عاملة</strong> بدلاً من توثيق شامل</li><li><strong>التعاون مع العميل</strong> بدلاً من التفاوض التعاقدي</li><li><strong>الاستجابة للتغيير</strong> بدلاً من اتباع خطة</li></ul></p><h3>Scrum: إطار Agile الأكثر شعبية</h3><p>Scrum ينظم العملية في سباقات (تكررات من 2-4 أسابيع) مع:<ul><li>أدوار رئيسية: مالك المنتج، Scrum Master، فريق التطوير</li><li>أحداث: تخطيط السباق، الاجتماع اليومي، مراجعة السباق، استرجاع</li><li>أعمال: قائمة منتجات، قائمة السباق، الزيادة</li></ul></p><h3>الفوائد القابلة للقياس</h3><p><ul><li>تقليل 30-50% في وقت الوصول للسوق</li><li>زيادة 25% في إنتاجية الفرق</li><li>تحسن 40% في رضا العملاء</li><li>انخفاض 50% في عيوب المنتجات</li></ul></p>"
-      },
-      {
-        "id": 6,
-        "title": "أمان الويب: حماية تطبيقاتك",
-        "excerpt": "دليل أساسي لتأمين تطبيقاتك الويب ضد التهديدات.",
-        "category": "security",
-        "author": "منير مهدي",
-        "date": "2024-12-15",
-        "readTime": "9 دقائق",
-        "tags": ["أمان", "HTTPS", "مصادقة", "حماية"],
-        "image": "https://images.unsplash.com/photo-1563014959-7aaa83350992?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "content": "<h2>أمان الويب: ضرورة مطلقة في 2025</h2><p>مع زيادة الهجمات الإلكترونية، أمان تطبيقات الويب لم يعد خيارًا بل ضرورة. إليك أفضل الممارسات لحماية تطبيقاتك.</p><h3>التهديدات الأكثر شيوعًا</h3><p><ul><li><strong>حقن SQL</strong>: وصول غير مصرح به لقواعد البيانات</li><li><strong>التنصت عبر المواقع (XSS)</strong>: تنفيذ نصوص خبيثة</li><li><strong>تزوير الطلب عبر المواقع (CSRF)</strong>: إجراءات غير مصرح بها</li><li><strong>رفض الخدمة (DDoS)</strong>: إرباك الخوادم</li><li><strong>خرق المصادقة</strong>: الوصول إلى حسابات المستخدمين</li></ul></p><h3>الوصايا العشر لأمان الويب</h3><p><ol><li>استخدم دائمًا HTTPS مع شهادات SSL صالحة</li><li>تحقق وطهر كافة مدخلات المستخدم</li><li>نفذ مصادقة قوية (2FA)</li><li>حدد محاولات الدخول</li><li>حدث تبعياتك بانتظام</li><li>استخدم سياسات أمان المحتوى (CSP)</li><li>اضبط رؤوس HTTP بشكل صحيح</li><li>خزن كلمات المرور بأمان (تجزئة)</li><li>نفذ نظام تسجيل</li><li>أجرِ تدقيقات أمنية منتظمة</li></ol></p><h3>أدوات أمان أساسية</h3><p>OWASP ZAP، Burp Suite، Nmap، Snyk، SonarQube و Cloudflare تقدم حلولاً شاملة لاختبار وحماية تطبيقاتك.</p>"
-      }
-    ],
     "categoriesList": [
       { "id": "all", "icon": "LayoutGrid" },
       { "id": "development", "icon": "BookOpen" },
@@ -806,103 +782,103 @@
       "Responsive",
       "Performance"
     ],
-    "readTimeSuffix": "قراءة",
-    "shareArticle": "مشاركة المقال",
-    "share": "مشاركة",
-    "save": "حفظ",
-    "like": "إعجاب"
+    "readTimeSuffix": "de lecture",
+    "shareArticle": "Partager cet article",
+    "share": "Partager",
+    "save": "Sauvegarder",
+    "like": "J'aime"
   },
   "cookies": {
     "hero": {
-      "title": "سياسة الخصوصية وإدارة ملفات تعريف الارتباط",
-      "subtitle": "الشفافية والتحكم في بياناتك الشخصية على منصتنا"
+      "title": "Politique de confidentialité et gestion des cookies",
+      "subtitle": "Transparence et contrôle de vos données personnelles sur notre plateforme"
     },
     "commitment": {
-      "title": "التزامنا تجاه خصوصيتك",
-      "text1": "في شركتنا، حماية بياناتك الشخصية هي أولوية مطلقة. توضح هذه السياسة كيفية جمعنا واستخدامنا وحماية معلوماتك.",
-      "text2": "نلتزم بالامتثال للائحة العامة لحماية البيانات (RGPD) واللوائح الفرنسية لحماية البيانات."
+      "title": "Notre engagement pour votre vie privée",
+      "text1": "Chez notre entreprise, la protection de vos données personnelles est une priorité absolue. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.",
+      "text2": "Nous nous engageons à respecter le RGPD et les réglementations françaises sur la protection des données."
     },
     "cookiesSection": {
-      "title": "سياسة ملفات تعريف الارتباط",
-      "subtitle": "إدارة المتعقبات والتقنيات المشابهة",
-      "whatAreCookies": "ما هي ملفات تعريف الارتباط؟",
-      "cookiesDefinition": "ملفات تعريف الارتباط هي ملفات نصية صغيرة يتم وضعها على جهازك أثناء التصفح. تُستخدم لتذكر تفضيلاتك وتحليل الزيارات وتخصيص تجربتك.",
-      "typesTitle": "أنواع ملفات تعريف الارتباط المستخدمة",
+      "title": "Politique de cookies",
+      "subtitle": "Gestion des traceurs et technologies similaires",
+      "whatAreCookies": "Que sont les cookies ?",
+      "cookiesDefinition": "Les cookies sont de petits fichiers texte déposés sur votre appareil lorsque vous naviguez. Ils servent à mémoriser vos préférences, analyser le trafic et personnaliser votre expérience.",
+      "typesTitle": "Types de cookies utilisés",
       "essential": {
-        "title": "ضرورية",
-        "description": "لازمة لعمل الموقع (الأمان، سلة التسوق، الحساب)"
+        "title": "Essentiels",
+        "description": "Nécessaires au fonctionnement du site (sécurité, panier, compte)"
       },
       "performance": {
-        "title": "أداء",
-        "description": "تحليل استخدام الموقع (الصفحات المُزارة، أوقات التحميل)"
+        "title": "Performance",
+        "description": "Analyse de l'utilisation du site (pages visitées, temps de chargement)"
       },
       "functional": {
-        "title": "وظيفية",
-        "description": "تخصيص التجربة (اللغة، التفضيلات الإقليمية)"
+        "title": "Fonctionnels",
+        "description": "Personnalisation de l'expérience (langue, préférences régionales)"
       },
       "marketing": {
-        "title": "تسويق",
-        "description": "إعلانات مخصصة وحملات إعادة الاستهداف"
+        "title": "Marketing",
+        "description": "Publicités personnalisées et campagnes de remarketing"
       },
       "management": {
-        "title": "إدارة موافقتك",
-        "text": "لديك تحكم كامل في ملفات تعريف الارتباط غير الضرورية. يمكنك تعديل تفضيلاتك في أي وقت.",
-        "button": "إدارة تفضيلات ملفات تعريف الارتباط"
+        "title": "Gestion de votre consentement",
+        "text": "Vous avez un contrôle total sur les cookies non essentiels. Vous pouvez modifier vos préférences à tout moment.",
+        "button": "Gérer mes préférences cookies"
       }
     },
     "dataSection": {
-      "title": "معالجة البيانات الشخصية",
-      "subtitle": "كيف نجمع ونستخدم معلوماتك",
-      "collectedData": "البيانات المجمعة",
+      "title": "Traitement des données personnelles",
+      "subtitle": "Comment nous collectons et utilisons vos informations",
+      "collectedData": "Données collectées",
       "dataList": [
-        "معلومات الحساب (الاسم، البريد الإلكتروني، العنوان)",
-        "بيانات التصفح (عنوان IP، الصفحات المُشاهدة)",
-        "معلومات المعاملات (سجل المشتريات)",
-        "التفضيلات والاهتمامات"
+        "Informations de compte (nom, email, adresse)",
+        "Données de navigation (adresse IP, pages consultées)",
+        "Informations de transaction (historique d'achats)",
+        "Préférences et centres d'intérêt"
       ],
-      "purposesTitle": "أغراض المعالجة",
+      "purposesTitle": "Finalités du traitement",
       "purposesList": [
-        "تنفيذ الطلبات والخدمات",
-        "تخصيص تجربة المستخدم",
-        "تحسين منتجاتنا وخدماتنا",
-        "الاتصالات التسويقية (بموافقتك)",
-        "الامتثال للالتزامات القانونية"
+        "Exécution des commandes et services",
+        "Personnalisation de l'expérience utilisateur",
+        "Amélioration de nos produits et services",
+        "Communication marketing (avec votre consentement)",
+        "Conformité aux obligations légales"
       ],
-      "protectionTitle": "حماية البيانات",
-      "protectionText": "ننفذ إجراءات أمنية متقدمة تشمل:",
+      "protectionTitle": "Protection des données",
+      "protectionText": "Nous implémentons des mesures de sécurité avancées incluant :",
       "protectionList": [
-        "تشفير البيانات الحساسة بـ AES-256",
-        "مراجعات أمنية منتظمة",
-        "وصول مقيد للبيانات الشخصية",
-        "سياسة احتفاظ محدودة زمنياً"
+        "Chiffrement AES-256 des données sensibles",
+        "Audits de sécurité réguliers",
+        "Accès restreint aux données personnelles",
+        "Politique de conservation limitée dans le temps"
       ]
     },
     "rightsSection": {
-      "title": "حقوقك بموجب الـ RGPD",
-      "subtitle": "التحكم في بياناتك الشخصية",
+      "title": "Vos droits RGPD",
+      "subtitle": "Contrôle de vos données personnelles",
       "access": {
-        "title": "حق الوصول",
-        "description": "الحصول على نسخة من بياناتك الشخصية"
+        "title": "Droit d'accès",
+        "description": "Obtenir la copie de vos données personnelles"
       },
       "rectification": {
-        "title": "حق التصحيح",
-        "description": "تصحيح المعلومات غير الدقيقة"
+        "title": "Droit de rectification",
+        "description": "Corriger des informations inexactes"
       },
       "erasure": {
-        "title": "حق المحو",
-        "description": "حذف بياناتك («حق النسيان»)"
+        "title": "Droit à l'effacement",
+        "description": "Supprimer vos données (« droit à l'oubli »)"
       },
       "objection": {
-        "title": "حق الاعتراض",
-        "description": "الاعتراض على المعالجة لأسباب مشروعة"
+        "title": "Droit d'opposition",
+        "description": "S'opposer au traitement pour motifs légitimes"
       },
-      "howToExercise": "كيف تمارس حقوقك",
-      "exerciseText": "لأي طلب يتعلق ببياناتك الشخصية، يرجى الاتصال بنا على العنوان أدناه. سوف نرد في غضون 30 يوماً كحد أقصى."
+      "howToExercise": "Comment exercer vos droits",
+      "exerciseText": "Pour toute demande concernant vos données personnelles, veuillez nous contacter à l'adresse ci-dessous. Nous répondrons dans un délai maximum de 30 jours."
     },
     "disableSection": {
-      "title": "تعطيل ملفات تعريف الارتباط",
-      "subtitle": "كيف تدير إعدادات متصفحك",
-      "text": "يمكنك التحكم في ملفات تعريف الارتباط عبر إعدادات متصفحك. إليك أدلة المتصفحات الشائعة:",
+      "title": "Désactivation des cookies",
+      "subtitle": "Comment gérer les paramètres de votre navigateur",
+      "text": "Vous pouvez contrôler les cookies via les paramètres de votre navigateur. Voici les guides pour les navigateurs populaires :",
       "browsers": {
         "chrome": "Google Chrome",
         "firefox": "Mozilla Firefox",
@@ -911,81 +887,81 @@
       }
     },
     "contactSection": {
-      "title": "الاتصال وDPO",
-      "subtitle": "مسؤول حماية البيانات لدينا",
-      "text": "لأي أسئلة حول هذه السياسة أو ممارسة حقوقك، اتصل بـ DPO:",
-      "dpoName": "السيد جان دوبون",
-      "dpoRole": "مسؤول حماية البيانات",
+      "title": "Contact et DPO",
+      "subtitle": "Notre délégué à la protection des données",
+      "text": "Pour toute question concernant cette politique ou l'exercice de vos droits, contactez notre DPO :",
+      "dpoName": "M. Jean Dupont",
+      "dpoRole": "Délégué à la Protection des Données",
       "email": "dpo@votresociete.com",
       "phone": "+33 1 23 45 67 89",
-      "mailingAddress": "عن طريق البريد:",
+      "mailingAddress": "Par courrier :",
       "address": [
-        "شركة XYZ",
-        "خدمة حماية البيانات",
-        "123 شارع الجمهورية",
-        "75011 باريس، فرنسا"
+        "Société XYZ",
+        "Service Protection des Données",
+        "123 Avenue de la République",
+        "75011 Paris, France"
       ]
     },
-    "lastUpdated": "آخر تحديث: "
+    "lastUpdated": "Dernière mise à jour: "
   },
   "contact": {
-    "faqTitle1": "أسئلة",
-    "faqTitle2": "شائعة",
-    "faqSubtitle": "ابحث عن إجابات للأسئلة الأكثر شيوعًا",
+    "faqTitle1": "Questions",
+    "faqTitle2": "Fréquentes",
+    "faqSubtitle": "Trouvez des réponses aux questions les plus courantes",
     "hero": {
-      "title1": "اتصل",
-      "title2": "بي",
-      "subtitle": "سؤال، مشروع، أو مجرد رغبة في التواصل؟ أنا هنا لاستمع إليك.",
-      "contactButton": "اتصل بي",
-      "devisButton": "اطلب عرض سعر"
+      "title1": "Contactez-",
+      "title2": "moi",
+      "subtitle": "Une question, un projet ou simplement envie d'échanger ? Je suis à votre écoute.",
+      "contactButton": "Contactez-moi",
+      "devisButton": "Demander un devis"
     },
     "whatsapp": {
-      "title": "الاتصال عبر واتساب",
-      "description": "لنتناقش حول مشروعك مباشرة على واتساب",
-      "button": "فتح واتساب",
+      "title": "Contact WhatsApp",
+      "description": "Discutons de votre projet directement sur WhatsApp",
+      "button": "Ouvrir WhatsApp",
       "link": "https://wa.me/yourphonenumber"
     },
     "devis": {
-      "title": "عرض سعر مجاني",
-      "description": "احصل على تقدير شخصي لمشروعك",
-      "button": "اطلب عرض سعر"
+      "title": "Devis Gratuit",
+      "description": "Obtenez une estimation personnalisée de votre projet",
+      "button": "Demander un devis"
     },
     "guarantees": [
       {
-        "title": "رد خلال 24 ساعة",
-        "text": "أتعهد بالرد على جميع الاستفسارات خلال 24 ساعة"
+        "title": "Réponse sous 24h",
+        "text": "Je m'engage à répondre à toutes les demandes dans un délai de 24 heures"
       },
       {
-        "title": "تواصل سلس",
-        "text": "تحديثات منتظمة واتصال شفاف طوال المشروع"
+        "title": "Communication fluide",
+        "text": "Suivi régulier et communication transparente tout au long du projet"
       },
       {
-        "title": "رضا مضمون",
-        "text": "مراجعات متضمنة حتى تكون راضيًا تمامًا"
+        "title": "Satisfaction garantie",
+        "text": "Modifications incluses jusqu'à ce que vous soyez entièrement satisfait"
       }
     ],
-    "errorMessage": "حدث خطأ، يرجى المحاولة مرة أخرى.",
-    "successTitle": "تم إرسال الرسالة!",
-    "successMessage": "شكراً على رسالتك. سأرد عليك بسرعة.",
-    "sending": "جاري الإرسال...",
-    "sendMessage": "إرسال الرسالة",
-    "formFooter": "* الحقول إلزامية. بياناتك محمية ولن تتم مشاركتها أبداً.",
+    "errorMessage": "Une erreur est survenue, veuillez réessayer.",
+    "successTitle": "Message envoyé !",
+    "successMessage": "Merci pour votre message. Je vous répondrai très rapidement.",
+    "sending": "Envoi en cours...",
+    "sendMessage": "Envoyer le message",
+    "formFooter": "* Champs obligatoires. Vos données sont protégées et ne seront jamais partagées.",
     "contactInfo": [
       {
-        "title": "البريد الإلكتروني",
+        "title": "Email",
         "details": ["contact@monsite.com", "support@monsite.com"]
       },
       {
-        "title": "الهاتف",
+        "title": "Téléphone",
         "details": ["+33 6 12 34 56 78"]
       },
       {
-        "title": "الموقع",
-        "details": ["باريس، فرنسا"]
+        "title": "Localisation",
+        "details": ["Paris, France"]
       },
       {
-        "title": "مواعيد العمل",
-        "details": ["الإثنين-الجمعة: 9 صباحاً-6 مساءً", "رد خلال 24 ساعة"]
+        "title": "Disponibilité",
+        "details": ["Lun-Ven: 9h-18h", "Réponse sous 24h"]
       }
     ],
     "socialLinks": [
@@ -1002,89 +978,89 @@
     ],
     "faqItems": [
       {
-        "question": "ما هو متوسط وقت استجابتك؟",
-        "answer": "أتعهد بالرد على جميع الرسائل خلال 24 ساعة عمل."
+        "question": "Quel est votre temps de réponse moyen ?",
+        "answer": "Je m'engage à répondre à tous les messages dans les 24 heures ouvrées."
       },
       {
-        "question": "هل يمكنني الاتصال بك للحصول على استشارة مجانية؟",
-        "answer": "بالتأكيد! أقدم استشارات مجانية لمدة 15 دقيقة لمناقشة احتياجاتك."
+        "question": "Puis-je vous contacter pour un conseil gratuit ?",
+        "answer": "Absolument ! Je propose des consultations gratuites de 15 minutes pour discuter de vos besoins."
       },
       {
-        "question": "هل تتعامل مع الطلبات العاجلة؟",
-        "answer": "نعم، للطلبات العاجلة، يرجى ذكر ذلك في رسالتك وسأبذل قصارى جهدي للرد بسرعة."
+        "question": "Traitez-vous les demandes urgentes ?",
+        "answer": "Oui, pour les demandes urgentes, merci de le mentionner dans votre message et je ferai de mon mieux pour vous répondre rapidement."
       },
       {
-        "question": "ما هي المواضيع التي يمكنني مناقشتها؟",
-        "answer": "جميع المواضيع مرحب بها: أسئلة تقنية، طلبات استشارة، تعاون، أو ببساطة لتحية!"
+        "question": "Quels sujets puis-je aborder ?",
+        "answer": "Tous les sujets sont les bienvenus : questions techniques, demandes de conseil, collaborations, ou simplement pour dire bonjour !"
       },
       {
-        "question": "ما هي مهلة الرد الخاصة بك؟",
-        "answer": "أتعهد بالرد على جميع الطلبات في غضون 24 ساعة عمل كحد أقصى. للمشاريع المعقدة، سأرسل رداً أولياً خلال 24 ساعة وعرض أسعار مفصل خلال 48 ساعة."
+        "question": "Quels sont vos délais de réponse ?",
+        "answer": "Je m'engage à répondre à toutes les demandes dans un délai maximum de 24 heures ouvrées. Pour les projets complexes, je vous enverrai une première réponse sous 24h et un devis détaillé sous 48h."
       },
       {
-        "question": "هل يمكنني مقابلتك شخصياً؟",
-        "answer": "بالتأكيد! أنا مقيم في باريس ومتاح للقاءات شخصية. للعملاء الدوليين أو البعيدين، أقدم استشارات عبر Zoom أو Teams أو Google Meet."
+        "question": "Puis-je vous rencontrer en personne ?",
+        "answer": "Absolument ! Je suis basé à Paris et disponible pour des rencontres en personne. Pour les clients internationaux ou éloignés, je propose des consultations via Zoom, Teams ou Google Meet."
       },
       {
-        "question": "ما هي أنواع المشاريع التي تقبلها؟",
-        "answer": "أعمل على مجموعة واسعة من المشاريع: مواقع الويب، التجارة الإلكترونية، التطبيقات، إعادة التصميم، واجهة المستخدم/تجربة المستخدم، وتحسين محركات البحث (SEO). إذا تطلب مشروعك خبرة محددة، يمكنني توجيهك إلى شركاء موثوقين."
+        "question": "Quels types de projets acceptez-vous ?",
+        "answer": "Je travaille sur une large gamme de projets : sites vitrines, e-commerce, applications web, refontes, design UI/UX et optimisation SEO. Si votre projet nécessite une expertise spécifique, je peux vous orienter vers des partenaires de confiance."
       },
       {
-        "question": "هل تقدم دعماً بعد التسليم؟",
-        "answer": "نعم، أقدم مستويات مختلفة من الدعم ما بعد التسليم، بدءاً من إصلاح الأخطاء البسيطة إلى عقود صيانة شاملة تشمل التحديثات والنسخ الاحتياطية والتحسينات المستمرة."
+        "question": "Proposez-vous un support après la livraison ?",
+        "answer": "Oui, je propose différents niveaux de support post-livraison, allant de la correction de bugs mineurs à des contrats de maintenance complets incluant mises à jour, sauvegardes et améliorations continues."
       }
     ],
     "form": {
-      "nameLabel": "اسمك",
-      "namePlaceholder": "اسمك الكامل",
-      "emailLabel": "بريدك الإلكتروني",
-      "emailPlaceholder": "your@email.com",
-      "subjectLabel": "الموضوع",
-      "subjectPlaceholder": "موضوع رسالتك",
-      "messageLabel": "رسالتك",
-      "messagePlaceholder": "صف طلبك هنا..."
+      "nameLabel": "Votre nom",
+      "namePlaceholder": "Votre nom complet",
+      "emailLabel": "Votre email",
+      "emailPlaceholder": "votre@email.com",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Objet de votre message",
+      "messageLabel": "Votre message",
+      "messagePlaceholder": "Décrivez votre demande ici..."
     },
     "sectionTitles": {
-      "sendMessage": "أرسل رسالة",
-      "sendMessageDesc": "املأ هذا النموذج وسأرد عليك في أقرب وقت.",
-      "myContactInfo": "معلومات الاتصال بي",
-      "socialNetworks": "الشبكات الاجتماعية",
-      "findMe": "أين تجدني",
-      "findMeDesc": "مقيم في باريس، أعمل مع عملاء من جميع أنحاء العالم"
+      "sendMessage": "Envoyez un message",
+      "sendMessageDesc": "Remplissez ce formulaire et je vous répondrai dans les plus brefs délais.",
+      "myContactInfo": "Mes coordonnées",
+      "socialNetworks": "Réseaux sociaux",
+      "findMe": "Où me trouver",
+      "findMeDesc": "Basé à Paris, je travaille avec des clients partout dans le monde"
     },
-    "ctaTitle": "مستعد لبدء مشروعك؟",
-    "ctaSubtitle": "اتصل بي اليوم لمناقشة احتياجاتك ومعرفة كيف يمكنني مساعدتك."
+    "ctaTitle": "Prêt à démarrer votre projet ?",
+    "ctaSubtitle": "Contactez-moi dès aujourd'hui pour discuter de vos besoins et voir comment je peux vous aider."
   },
   "services": {
     "meta": {
-      "title": "خدمات ويب مخصصة | تصميم مواقع وتطبيقات",
-      "description": "خبير في تطوير الويب وتصميم UX/UI. حلول متكاملة للمواقع التعريفية وتطبيقات الويب والاستراتيجية الرقمية."
+      "title": "Services Web Sur Mesure | Création de Sites et Applications",
+      "description": "Expert en développement web et design UX/UI. Solutions complètes pour sites vitrines, applications web et stratégie digitale."
     },
     "hero": {
-      "title1": "حلول رقمية",
-      "title2": "مخصصة",
-      "subtitle": "حول أفكارك إلى تجارب رقمية استثنائية مع خبرة تقنية مصحوبة بتصميم مبتكر.",
-      "button": "ناقش مشروعك"
+      "title1": "Solutions Digitales",
+      "title2": "Sur Mesure",
+      "subtitle": "Transformez vos idées en expériences digitales exceptionnelles avec une expertise technique alliée à un design innovant.",
+      "button": "Échanger sur votre projet"
     },
     "services": {
-      "title1": "مجالات",
-      "title2": "تخصصي",
-      "subtitle": "حلول مخصصة لتحويل تحدياتك الرقمية إلى نجاحات",
-      "featuresTitle": "الحلول المقترحة",
-      "techTitle": "التقنيات الأساسية",
-      "ctaButton": "صف مشروعك",
+      "title1": "Mes",
+      "title2": "Expertises",
+      "subtitle": "Des solutions sur mesure pour transformer vos défis digitaux en succès",
+      "featuresTitle": "Solutions proposées",
+      "techTitle": "Technologies clés",
+      "ctaButton": "Décrivez votre projet",
       "web": {
-        "title": "مواقع الويب",
-        "description": "تصميم مواقع آمنة وعالية الأداء تلبي احتياجاتك التجارية.",
+        "title": "Sites Web",
+        "description": "Création de sites performants et sécurisés adaptés à vos besoins commerciaux.",
         "features": [
-          "مواقع تعريفية مخصصة",
-          "متوافقة مع الجوال والأجهزة اللوحية",
-          "رسوميات متحركة سلسة",
-          "تحسين لمحركات البحث",
-          "تحميل فائق السرعة",
-          "حماية من التهديدات السيبرانية",
-          "استضافة آمنة مع نسخ احتياطية",
-          "دعم فني دائم"
+          "Sites vitrines sur mesure",
+          "Compatible mobiles/tablettes",
+          "Animations fluides",
+          "Optimisation pour Google",
+          "Chargement ultra-rapide",
+          "Protection contre les cybermenaces",
+          "Hébergement sécurisé avec sauvegardes",
+          "Assistance technique permanente"
         ],
         "technologies": [
           "Bootstrap",
@@ -1096,32 +1072,32 @@
         ]
       },
       "app": {
-        "title": "تطبيقات الويب",
-        "description": "حلول متكاملة لأتمتة عملياتك التجارية.",
+        "title": "Applications web",
+        "description": "Solutions complètes pour automatiser vos processus métiers.",
         "features": [
-          "لوحات تحكم مخصصة",
-          "منصات SaaS حسب الطلب",
-          "متاجر إلكترونية آمنة",
-          "اتصال بأدواتك الحالية",
-          "أتمتة المهام المتكررة",
-          "تحليل البيانات الفوري",
-          "مزامنة متعددة الأجهزة",
-          "تدريب المستخدمين"
+          "Tableaux de bord personnalisés",
+          "Plateformes SaaS sur mesure",
+          "Boutiques en ligne sécurisées",
+          "Connexion à vos outils existants",
+          "Automatisation des tâches répétitives",
+          "Analyse de données en direct",
+          "Synchronisation multi-appareils",
+          "Formation des utilisateurs"
         ],
         "technologies": ["Wordpress", "PHP", "Laravel", "MySQL"]
       },
       "mobile": {
-        "title": "تطبيقات الجوال",
-        "description": "تطبيقات أصلية للهواتف الذكية منشورة على المتاجر الرسمية.",
+        "title": "Applications Mobile",
+        "description": "Applications natives pour smartphones publiées sur les stores officiels.",
         "features": [
-          "أداء عالي على iOS و Android",
-          "النشر على App Store/Google Play",
-          "وظائف دون اتصال",
-          "إشعارات فورية",
-          "حماية البيانات الشخصية",
-          "واجهات بسيطة وبديهية",
-          "اختبار على جميع الأجهزة",
-          "تحديثات منتظمة"
+          "iOS et Android performants",
+          "Publication sur App Store/Google Play",
+          "Fonctionnalités hors connexion",
+          "Notifications instantanées",
+          "Protection des données personnelles",
+          "Interfaces simples et intuitives",
+          "Tests sur tous les appareils",
+          "Mises à jour régulières"
         ],
         "technologies": [
           "Flutter",
@@ -1132,16 +1108,16 @@
         ]
       },
       "marketing": {
-        "title": "الاستراتيجية الرقمية والتسويق",
-        "description": "حول لاجتذاب العملاء وزيادة مبيعاتك عبر الإنترنت.",
+        "title": "Stratégie Digitale & Marketing",
+        "description": "Solutions pour attirer des clients et augmenter vos ventes en ligne.",
         "features": [
-          "إنشاء هوية بصرية (شعارات، ملصقات)",
-          "إدارة وسائل التواصل الاجتماعي",
-          "إنتاج محتوى جذاب",
-          "إعلانات مستهدفة على Google",
-          "استراتيجيات ولاء العملاء",
-          "أتمتة التسويق",
-          "تحليل الأداء"
+          "Création d'identité visuelle (logos, affiches)",
+          "Gestion de vos réseaux sociaux",
+          "Production de contenus attractifs",
+          "Publicités ciblées Google",
+          "Stratégies de fidélisation",
+          "Automatisation marketing",
+          "Analyse des performances"
         ],
         "technologies": [
           "Google Ads",
@@ -1153,201 +1129,201 @@
       }
     },
     "process": {
-      "title1": "العملية",
-      "title2": "الإبداعية",
-      "subtitle": "منهجية شفافة لنتائج استثنائية"
+      "title1": "Processus",
+      "title2": "Créatif",
+      "subtitle": "Une méthodologie transparente pour des résultats exceptionnels"
     },
     "processSteps": [
       {
-        "step": "التصميم",
-        "title": "المخطط الرقمي",
-        "description": "تحديد الأهداف والهندسة التقنية"
+        "step": "Conception",
+        "title": "Blueprint Digital",
+        "description": "Définition des objectifs et architecture technique"
       },
       {
-        "step": "التطوير",
-        "title": "البناء التقني",
-        "description": "تنفيذ مرن مع مراجعات أسبوعية"
+        "step": "Développement",
+        "title": "Création Technique",
+        "description": "Implémentation agile avec revues hebdomadaires"
       },
       {
-        "step": "التحسين",
-        "title": "الضبط الدقيق",
-        "description": "اختبارات المستخدم والتعديلات الدقيقة"
+        "step": "Optimisation",
+        "title": "Réglage Fin",
+        "description": "Tests utilisateurs et ajustements précis"
       },
       {
-        "step": "التسليم",
-        "title": "الدعم",
-        "description": "تدريب ودعم ما بعد التسليم"
+        "step": "Livraison",
+        "title": "Accompagnement",
+        "description": "Formation et support post-livraison"
       }
     ],
     "why": {
-      "title1": "خبرة",
-      "title2": "ملتزمة",
-      "subtitle": "نهج يركز على أهدافك التجارية وتعاون شفاف",
+      "title1": "Expertise",
+      "title2": "Engagée",
+      "subtitle": "Une approche centrée sur vos objectifs business et une collaboration transparente",
       "features": [
         {
-          "title": "أمان معزز",
-          "description": "حماية البيانات وامتثال GDPR مدمج منذ التصميم"
+          "title": "Sécurité renforcée",
+          "description": "Protection des données et conformité RGPD intégrée dès la conception"
         },
         {
-          "title": "الالتزام بالمواعيد",
-          "description": "منهجية Agile مع تسليمات مرحلية منتظمة"
+          "title": "Respect des délais",
+          "description": "Méthodologie Agile avec livraisons intermédiaires régulières"
         },
         {
-          "title": "ابتكار تقني",
-          "description": "مراقبة تقنية مستمرة لحلول متقدمة"
+          "title": "Innovation technique",
+          "description": "Veille technologique constante pour des solutions avant-gardistes"
         },
         {
-          "title": "دعم مستمر",
-          "description": "مرافقة ما بعد التسليم وتطورات مستقبلية"
+          "title": "Support continu",
+          "description": "Accompagnement post-livraison et évolutions futures"
         }
       ]
     },
     "cta": {
-      "title": "هل أنت مستعد لتحويل رؤيتك الرقمية؟",
-      "subtitle": "اتصل بي للحصول على استشارة مجانية واستكشف الإمكانيات معاً.",
-      "button1": "جدولة مكالمة",
-      "button2": "شاهد أعمالي"
+      "title": "Prêt à transformer votre vision digitale ?",
+      "subtitle": "Contactez-moi pour une consultation gratuite et explorons ensemble les possibilités.",
+      "button1": "Planifier un appel",
+      "button2": "Voir mes réalisations"
     }
   },
   "devis": {
-    "documentTitle": "طلب عرض سعر | تصميم مواقع وتطبيقات",
+    "documentTitle": "Demande de Devis | Création de Sites Web et Applications",
     "hero": {
-      "title1": "طلب",
-      "title2": "عرض سعر مخصص",
-      "subtitle": "املأ هذا النموذج التفصيلي للحصول على تقدير دقيق لمشروعك على الويب أو الجوال.",
-      "contactButton": "اتصل بي"
+      "title1": "Demande de",
+      "title2": "Devis Personnalisé",
+      "subtitle": "Remplissez ce formulaire détaillé pour recevoir une estimation précise de votre projet web ou mobile.",
+      "contactButton": "Contactez-moi"
     },
     "form": {
-      "title": "نموذج طلب عرض السعر",
-      "step": "الخطوة {{step}} من {{total}}",
+      "title": "Demande de Devis",
+      "step": "Étape {{step}}/{{total}}",
       "success": {
-        "title": "تم إرسال الطلب!",
-        "message": "شكرًا على طلبك. سأتصل بك خلال 24 ساعة بعرض سعر مخصص.",
-        "button": "العودة إلى الصفحة الرئيسية"
+        "title": "Demande envoyée !",
+        "message": "Merci pour votre demande. Je vous contacterai dans les 24 heures avec un devis personnalisé.",
+        "button": "Retour à l'accueil"
       }
     },
     "step1": {
-      "title": "المعلومات الشخصية",
-      "firstName": "الاسم الأول",
-      "firstNamePlaceholder": "اسمك الأول",
-      "lastName": "الاسم الأخير",
-      "lastNamePlaceholder": "اسمك الأخير",
-      "email": "البريد الإلكتروني",
-      "emailPlaceholder": "your@email.com",
-      "phone": "الهاتف",
-      "phonePlaceholder": "رقم هاتفك",
-      "company": "الشركة",
-      "companyPlaceholder": "اسم شركتك",
-      "website": "الموقع الإلكتروني",
-      "websitePlaceholder": "https://yourwebsite.com",
-      "nextButton": "التالي"
+      "title": "Informations Personnelles",
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "email": "Adresse Email",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "Votre numéro",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "website": "Site Web",
+      "websitePlaceholder": "https://votresite.com",
+      "nextButton": "Suivant"
     },
     "step2": {
-      "title": "تفاصيل المشروع",
-      "projectName": "اسم المشروع",
-      "projectNamePlaceholder": "مثال: إعادة تصميم موقع تجارة إلكترونية",
-      "service": "نوع الخدمة",
-      "servicePlaceholder": "اختر خدمة",
-      "serviceOtherPlaceholder": "حدد نوع الخدمة",
-      "projectType": "نوع المشروع",
-      "projectTypePlaceholder": "اختر نوع المشروع",
-      "projectTypeOtherPlaceholder": "حدد نوع المشروع",
-      "prevButton": "السابق",
-      "nextButton": "التالي"
+      "title": "Détails du Projet",
+      "projectName": "Nom du projet",
+      "projectNamePlaceholder": "Ex: Refonte site e-commerce",
+      "service": "Type de service",
+      "servicePlaceholder": "Sélectionnez un service",
+      "serviceOtherPlaceholder": "Précisez le type de service",
+      "projectType": "Type de projet",
+      "projectTypePlaceholder": "Sélectionnez le type de projet",
+      "projectTypeOtherPlaceholder": "Précisez le type de projet",
+      "prevButton": "Précédent",
+      "nextButton": "Suivant"
     },
     "step3": {
-      "title": "المتطلبات والملفات",
-      "featuresLabel": "الميزات المطلوبة",
-      "projectGoals": "أهداف المشروع",
-      "projectGoalsPlaceholder": "ما هي الأهداف الرئيسية لمشروعك؟ ما المشاكل التي يحلها؟",
-      "targetAudience": "الجمهور المستهدف",
-      "targetAudiencePlaceholder": "صف جمهورك المستهدف (العمر، المهنة، الاهتمامات...)",
-      "technicalRequirements": "المتطلبات الفنية",
-      "technicalRequirementsPlaceholder": "المواصفات الفنية، التكاملات المطلوبة، القيود الخاصة...",
+      "title": "Exigences & Fichiers",
+      "featuresLabel": "Fonctionnalités souhaitées",
+      "projectGoals": "Objectifs du projet",
+      "projectGoalsPlaceholder": "Quels sont les objectifs principaux de votre projet ? Quels problèmes résout-il ?",
+      "targetAudience": "Public cible",
+      "targetAudiencePlaceholder": "Décrivez votre public cible (âge, profession, intérêts...)",
+      "technicalRequirements": "Exigences techniques",
+      "technicalRequirementsPlaceholder": "Spécifications techniques, intégrations nécessaires, contraintes particulières...",
       "fileUpload": {
-        "title": "رفع الملفات",
-        "instruction1": "اسحب وأفلت ملفاتك أو",
-        "instruction2": "انقر للتصفح",
-        "formats": "الصيغ المقبولة: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (الحد الأقصى 10MB)",
-        "attachments": "{count} ملف مرفق"
+        "title": "Télécharger des fichiers",
+        "instruction1": "Glissez-déposez vos fichiers ou",
+        "instruction2": "cliquez pour parcourir",
+        "formats": "Formats acceptés: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (Max 10MB)",
+        "attachments": "{count} fichier(s) attaché(s)"
       },
-      "prevButton": "السابق",
-      "nextButton": "التالي"
+      "prevButton": "Précédent",
+      "nextButton": "Suivant"
     },
     "step4": {
-      "title": "الجدول الزمني، الميزانية والإنهاء",
-      "timeline": "الجدول الزمني المطلوب",
-      "timelinePlaceholder": "اختر جدولًا زمنيًا",
-      "timelineOtherPlaceholder": "حدد جدولك الزمني",
-      "budget": "الميزانية المتوقعة",
-      "budgetPlaceholder": "اختر ميزانيتك",
-      "budgetOtherPlaceholder": "حدد ميزانيتك",
-      "message": "معلومات إضافية",
-      "messagePlaceholder": "أي معلومات أخرى مفيدة لفهم مشروعك...",
-      "prevButton": "السابق",
-      "submitButton": "إرسال طلبي",
-      "sending": "جارٍ الإرسال...",
-      "disclaimer": "* الحقول الإلزامية. بياناتك محمية ولن تتم مشاركتها أبدًا."
+      "title": "Délais, Budget & Finalisation",
+      "timeline": "Délai souhaité",
+      "timelinePlaceholder": "Sélectionnez un délai",
+      "timelineOtherPlaceholder": "Précisez votre délai",
+      "budget": "Budget estimé",
+      "budgetPlaceholder": "Sélectionnez votre budget",
+      "budgetOtherPlaceholder": "Précisez votre budget",
+      "message": "Informations complémentaires",
+      "messagePlaceholder": "Toute autre information utile pour comprendre votre projet...",
+      "prevButton": "Précédent",
+      "submitButton": "Envoyer ma demande",
+      "sending": "Envoi en cours...",
+      "disclaimer": "* Champs obligatoires. Vos données sont protégées et ne seront jamais partagées."
     },
-    "otherOption": "أخرى",
+    "otherOption": "Autre",
     "validation": {
-      "step1": "يرجى ملء الحقول الإلزامية (الاسم الأول، الاسم الأخير، البريد الإلكتروني)",
-      "step2": "يرجى اختيار نوع الخدمة"
+      "step1": "Veuillez remplir les champs obligatoires (Prénom, Nom, Email)",
+      "step2": "Veuillez sélectionner un type de service"
     },
-    "submitError": "خطأ في الإرسال:",
-    "submitErrorMessage": "حدث خطأ، يرجى المحاولة مرة أخرى.",
+    "submitError": "Erreur d'envoi :",
+    "submitErrorMessage": "Une erreur est survenue, veuillez réessayer.",
     "services": [
-      "موقع تعريفي",
-      "متجر إلكتروني",
-      "تطبيق ويب",
-      "تطبيق جوال",
-      "إعادة تصميم الموقع",
-      "تحسين محركات البحث والتسويق",
-      "أخرى"
+      "Site Vitrine",
+      "Site E-commerce",
+      "Application Web",
+      "Application Mobile",
+      "Refonte de Site",
+      "SEO & Marketing",
+      "Autre"
     ],
     "projectTypes": [
-      "مشروع جديد",
-      "إعادة تصميم كاملة",
-      "إضافة ميزات",
-      "إصلاح أخطاء",
-      "تحسين الأداء",
-      "هجرة البيانات",
-      "أخرى"
+      "Création Nouveau Projet",
+      "Refonte Totale",
+      "Ajout de Fonctionnalités",
+      "Correction de Bugs",
+      "Optimisation Performance",
+      "Migration de Données",
+      "Autre"
     ],
     "timelines": [
-      "أقل من شهر",
-      "1-3 أشهر",
-      "3-6 أشهر",
-      "أكثر من 6 أشهر",
-      "عاجل (أقل من أسبوعين)",
-      "أخرى"
+      "Moins d'1 mois",
+      "1 à 3 mois",
+      "3 à 6 mois",
+      "Plus de 6 mois",
+      "Urgent (moins de 2 semaines)",
+      "Autre"
     ],
     "budgetRanges": [
-      "أقل من 1000 دولار",
-      "1000 - 3000 دولار",
-      "3000 - 5000 دولار",
-      "5000 - 10000 دولار",
-      "10000 - 20000 دولار",
-      "أكثر من 20000 دولار",
-      "لا أعرف",
-      "أخرى"
+      "Moins de 1000€",
+      "1000€ - 3000€",
+      "3000€ - 5000€",
+      "5000€ - 10000€",
+      "10000€ - 20000€",
+      "Plus de 20000€",
+      "Je ne sais pas",
+      "Autre"
     ],
     "featuresList": [
-      "واجهة متجاوبة",
-      "منطقة أعضاء",
-      "دفع إلكتروني",
-      "متعدد اللغات",
-      "مدونة/أخبار",
-      "حجوزات إلكترونية",
-      "نظام تعليقات",
-      "تكامل واجهات برمجة تطبيقات خارجية",
-      "لوحة تحكم إدارة",
-      "بحث متقدم",
-      "معرض وسائط",
-      "دردشة مباشرة",
-      "نشرة إخبارية",
-      "إحصائيات وتقارير",
-      "تكامل وسائل التواصل الاجتماعي"
+      "Interface responsive",
+      "Espace membre",
+      "Paiement en ligne",
+      "Multilingue",
+      "Blog/Actualités",
+      "Réservations en ligne",
+      "Système de commentaires",
+      "Intégration API tierce",
+      "Tableau de bord admin",
+      "Recherche avancée",
+      "Galerie média",
+      "Chat en direct",
+      "Newsletter",
+      "Statistiques et rapports",
+      "Intégration réseaux sociaux"
     ],
     "fileTypes": [
       "JPG",
@@ -1359,58 +1335,87 @@
       "AI",
       "FIG",
       "SKETCH"
-    ],"whatsapp": {
-      "title": "الاتصال عبر واتساب",
-      "description": "لنتناقش حول مشروعك مباشرة على واتساب",
-      "button": "فتح واتساب",
-      "link": "https://wa.me/yourphonenumber"
+    ],
+    "contactInfo": [
+      {
+        "title": "Email",
+        "details": ["contact@example.com"],
+        "action": "mailto:contact@example.com",
+        "icon": "Mail"
+      },
+      {
+        "title": "Téléphone",
+        "details": ["+33 6 12 34 56 78"],
+        "action": "tel:+33612345678",
+        "icon": "Phone"
+      },
+      {
+        "title": "Adresse",
+        "details": ["Paris, France", "Remote Worldwide"],
+        "icon": "MapPin"
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "username": "votreusername",
+        "url": "https://github.com/votreusername",
+        "icon": "Github"
+      },
+      {
+        "name": "LinkedIn",
+        "username": "votrenom",
+        "url": "https://linkedin.com/in/votrenom",
+        "icon": "Linkedin"
+      }
+    ],
+    "contactSection": {
+      "title": "Contact Direct"
     },
-    "contactPage": {
-      "title": "وسائل اتصال أخرى",
-      "description": "يمكنك أيضًا التواصل معي عبر نموذج الاتصال",
-      "button": "انتقل إلى صفحة الاتصال"
+    "socialSection": {
+      "title": "Réseaux Sociaux"
     },
     "guarantees": [
       {
-        "title": "رد خلال 24 ساعة",
-        "text": "أعالج كل طلب خلال 24 ساعة كحد أقصى."
+        "title": "Réponse sous 24h",
+        "text": "Je traite chaque demande dans un délai maximum de 24 heures."
       },
       {
-        "title": "عرض سعر مفصل",
-        "text": "ستتلقى عرض سعر كامل مع الخيارات والجدول الزمني."
+        "title": "Devis détaillé",
+        "text": "Vous recevrez un devis complet avec options et échéancier."
       },
       {
-        "title": "بدون التزام",
-        "text": "طلب عرض السعر مجاني وبدون أي التزام بالشراء."
+        "title": "Sans engagement",
+        "text": "La demande de devis est gratuite et sans obligation d'achat."
       }
     ],
     "faq": {
-      "title": "الأسئلة الشائعة",
-      "subtitle": "معلومات مفيدة حول عملية طلب العروض",
+      "title": "Questions Fréquentes",
+      "subtitle": "Informations utiles sur le processus de devis",
       "items": [
         {
-          "question": "ما هي الملفات التي يمكنني إرفاقها بطلبي؟",
-          "answer": "يمكنك إرفاق أي مستند مفيد: صور، نماذج، PDF، ملفات تصميم (PSD, AI, FIG, SKETCH)، مستندات Word/Excel، أو أي ملف آخر يساعد في فهم مشروعك."
+          "question": "Quels fichiers puis-je joindre à ma demande ?",
+          "answer": "Vous pouvez joindre tout document utile : images, maquettes, PDF, fichiers de design (PSD, AI, FIG, SKETCH), documents Word/Excel, ou tout autre fichier aidant à comprendre votre projet."
         },
         {
-          "question": "كيف يتم معالجة الملفات المرفقة؟",
-          "answer": "يتم تخزين ملفاتك مؤقتًا لتقييم المشروع وحذفها بعد إنشاء عرض السعر. لا تتم مشاركتها مع أطراف ثالثة أبدًا."
+          "question": "Comment sont traités mes fichiers joints ?",
+          "answer": "Vos fichiers sont stockés temporairement pour l'évaluation de votre projet et supprimés après la génération du devis. Ils ne sont jamais partagés avec des tiers."
         },
         {
-          "question": "هل يمكنني تعديل طلبي بعد إرساله؟",
-          "answer": "نعم، إذا كنت بحاجة لإجراء تعديلات، فقط قم بالرد على البريد الإلكتروني التأكيدي الذي ستتلقاه أو اتصل بي مباشرة."
+          "question": "Puis-je modifier ma demande après l'avoir envoyée ?",
+          "answer": "Oui, si vous devez apporter des modifications, répondez simplement à l'email de confirmation que vous recevrez ou contactez-moi directement."
         },
         {
-          "question": "ماذا يحدث بعد إرسال عرض السعر؟",
-          "answer": "سأتصل بك لمناقشة تفاصيل مشروعك، وتحسين عرض السعر إذا لزم الأمر، ووضع جدول زمني للتنفيذ."
+          "question": "Que se passe-t-il après l'envoi du devis ?",
+          "answer": "Je prendrai contact avec vous pour discuter des détails de votre projet, affiner le devis si nécessaire, et établir un calendrier de réalisation."
         }
       ]
     },
     "stepTitles": [
-      "المعلومات الشخصية",
-      "تفاصيل المشروع",
-      "المتطلبات والملفات",
-      "الجدول الزمني، الميزانية والإنهاء"
+      "Informations Personnelles",
+      "Détails du Projet",
+      "Exigences & Fichiers",
+      "Délais, Budget & Finalisation"
     ]
   }
 }

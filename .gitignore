@@ -1,6 +1,11 @@
 # Dépendances
 node_modules/
 
+# Build
+dist/
+build/
+
+.cache/
 # Logs
 npm-debug.log*
 yarn-debug.log*

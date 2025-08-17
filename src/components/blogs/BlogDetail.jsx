@@ -130,8 +130,10 @@ const BlogDetail = ({ selectedPost, onClose, t, formatDate, isRTL, categories })
                         </div>
                     </div>
                 </motion.div>
-            </motion.div>
+            </motion.div><style jsx>{``}
+</style>
         </AnimatePresence>
+        
     );
 };
 

@@ -14,6 +14,7 @@ const LanguageSelector = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const [activeLang, setActiveLang] = useState(
     LANGUAGES.find((l) => l.key === i18n.language) || LANGUAGES[0]
   );
@@ -26,6 +27,7 @@ const LanguageSelector = () => {
     //window.location.reload();
   };
 
+  // Détection du défilement
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -35,6 +37,7 @@ const LanguageSelector = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Détection des clics extérieurs
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -46,10 +49,28 @@ const LanguageSelector = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Détection de la taille d'écran pour mobile
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 640); // 640px = breakpoint 'sm' de Tailwind
+    };
+
+    // Vérification initiale
+    checkIfMobile();
+    
+    // Écouteur de redimensionnement
+    window.addEventListener('resize', checkIfMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
+
+  // Variantes d'animation
   const dropdownVariants = {
     hidden: { 
       opacity: 0, 
-      y: -10,
+      y: isMobile ? 10 : -10,
       scale: 0.95
     },
     visible: { 
@@ -64,7 +85,7 @@ const LanguageSelector = () => {
     },
     exit: { 
       opacity: 0, 
-      y: -10,
+      y: isMobile ? 10 : -10,
       scale: 0.95,
       transition: { duration: 0.15 } 
     }
@@ -111,12 +132,16 @@ const LanguageSelector = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className={`absolute ${isRTL ? 'left-0' : 'right-0'} mt-2 min-w-[120px] bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-gray-200 dark:border-slate-700 overflow-hidden`}
+            className={`absolute ${isRTL ? 'left-0' : 'right-0'} ${
+              isMobile 
+                ? 'bottom-full mb-2'  // Positionnement mobile : au-dessus du bouton
+                : 'top-full mt-2'     // Positionnement desktop : en dessous du bouton
+            } min-w-[120px] bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-gray-200 dark:border-slate-700 overflow-hidden`}
             variants={dropdownVariants}
             initial="hidden"
             animate="visible"
             exit="exit"
-            dir="ltr" // Toujours en LTR pour le menu déroulant
+            dir="ltr"
           >
             <div className="py-1">
               {LANGUAGES.map((lang, index) => (
