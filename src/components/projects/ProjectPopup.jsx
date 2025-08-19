@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fi';
 import { ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -134,6 +134,14 @@ const ProjectPopup = () => {
           slidesPerView={'auto'}
           spaceBetween={24}
           loop={canLoop}
+          keyboard={{
+            enabled: true,
+            onlyInViewport: true
+          }}
+          mousewheel={{
+            forceToAxis: true,
+            sensitivity: 0.5
+          }}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -166,7 +174,7 @@ const ProjectPopup = () => {
               spaceBetween: 32,
             }
           }}
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Pagination, Autoplay, Keyboard, Mousewheel ]}
           className="swiper-container"
         >
           {projects.map((project) => (
@@ -460,7 +468,7 @@ const ProjectPopup = () => {
       </AnimatePresence>
 
       {/* Styles pour le carrousel*/}
-      <style jsx>{`
+      <style jsx="true">{`
         .swiper-slide {
           transition: transform 0.3s ease, opacity 0.3s ease;
           opacity: 0.9;

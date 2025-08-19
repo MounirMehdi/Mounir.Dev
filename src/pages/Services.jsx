@@ -1,466 +1,341 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { 
-  ArrowRight,
-  Layout,
-  Cpu,
-  BarChart,
-  Users,
-  Clock,
-  ShieldCheck
-} from 'lucide-react';
-import { 
-  FiCode, 
-  FiSmartphone, 
-  FiSearch, 
-  FiBarChart2,
-  FiServer,
-  FiLayers,
-  FiCheckCircle,
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import {
   FiLayout,
-  FiCloud,
-  FiBarChart,
-  FiShoppingCart,
   FiGrid,
-  FiShare2,
-  FiUsers,
-  FiCheck, FiArrowRight, FiStar
-} from 'react-icons/fi';
-import { useTranslation } from 'react-i18next';
+  FiSmartphone,
+  FiBarChart,
+  FiCheck,
+  FiArrowRight,
+} from "react-icons/fi";
+import { ShieldCheck } from "lucide-react";
 
 const Services = () => {
   const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === 'ar';
-  const direction = isRTL ? 'rtl' : 'ltr';
-  const textAlign = isRTL ? 'text-right' : 'text-left';
-  const flexDirection = isRTL ? 'flex-row-reverse' : 'flex-row';
-  const marginIcon = isRTL ? 'ml-2' : 'mr-2';
-  const arrowIcon = isRTL ? 'rotate-180' : '';
+  const isRTL = i18n.language === "ar";
+  const direction = isRTL ? "rtl" : "ltr";
+  const arrowIcon = isRTL ? "rotate-180" : "";
 
   useEffect(() => {
-    document.title = t('services.meta.title');
-    document.querySelector('meta[name="description"]')?.setAttribute('content', t('services.meta.description'));
+    document.title = t("services.meta.title");
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", t("services.meta.description"));
   }, [t]);
 
+  // ==== DATA ====
   const services = [
     {
       icon: FiLayout,
-      title: t('services.services.web.title'),
-      description: t('services.services.web.description'),
-      features: t('services.services.web.features', { returnObjects: true }),
-      technologies: t('services.services.web.technologies', { returnObjects: true })
+      title: t("services.services.web.title"),
+      description: t("services.services.web.description"),
+      features: t("services.services.web.features", { returnObjects: true }),
+      technologies: t("services.services.web.technologies", { returnObjects: true }),
     },
     {
       icon: FiGrid,
-      title: t('services.services.app.title'),
-      description: t('services.services.app.description'),
-      features: t('services.services.app.features', { returnObjects: true }),
-      technologies: t('services.services.app.technologies', { returnObjects: true })
+      title: t("services.services.app.title"),
+      description: t("services.services.app.description"),
+      features: t("services.services.app.features", { returnObjects: true }),
+      technologies: t("services.services.app.technologies", { returnObjects: true }),
     },
     {
       icon: FiSmartphone,
-      title: t('services.services.mobile.title'),
-      description: t('services.services.mobile.description'),
-      features: t('services.services.mobile.features', { returnObjects: true }),
-      technologies: t('services.services.mobile.technologies', { returnObjects: true })
+      title: t("services.services.mobile.title"),
+      description: t("services.services.mobile.description"),
+      features: t("services.services.mobile.features", { returnObjects: true }),
+      technologies: t("services.services.mobile.technologies", { returnObjects: true }),
     },
     {
       icon: FiBarChart,
-      title: t('services.services.marketing.title'),
-      description: t('services.services.marketing.description'),
-      features: t('services.services.marketing.features', { returnObjects: true }),
-      technologies: t('services.services.marketing.technologies', { returnObjects: true })
-    }
+      title: t("services.services.marketing.title"),
+      description: t("services.services.marketing.description"),
+      features: t("services.services.marketing.features", { returnObjects: true }),
+      technologies: t("services.services.marketing.technologies", { returnObjects: true }),
+    },
   ];
 
-  const processSteps = t('services.processSteps', { returnObjects: true });
-  
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15
-      }
-    }
-  };
+  const processSteps = t("services.processSteps", { returnObjects: true });
 
-  const itemVariants = {
+  // ==== SCROLL ANIMATIONS ====
+  const { scrollY } = useScroll();
+  const heroY = useTransform(scrollY, [0, 300], [0, 80]);
+  const whyUsY = useTransform(scrollY, [300, 900], [0, -60]);
+
+  // ==== VARIANTS ====
+  const fadeUp = {
     hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      transition: { 
-        duration: 0.6,
-        ease: [0.16, 1, 0.3, 1]
-      }
-    },
-    hover: {
-      y: -10,
-      transition: { duration: 0.3 }
-    }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   return (
-    <div 
-      className="pt-16 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
+    <div
+      className="pt-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950"
       dir={direction}
     >
-      <section className="py-40 bg-gradient-to-br from-slate-50 to-teal-50 dark:from-slate-900 dark:to-teal-900/20">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            className={`text-center max-w-4xl mx-auto`}
-            initial={{ opacity: 0, y: 20 }}
+      {/* ================= HERO ================= */}
+      <section className="py-32 text-center relative overflow-hidden">
+        {/* Background avec parallaxe */}
+        <motion.div
+          style={{ y: heroY }}
+          className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center opacity-20"
+        />
+        <div className="relative z-10">
+          <motion.h1
+            className="text-5xl font-extrabold text-slate-900 dark:text-white mb-6 leading-tight"
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 dark:text-white mb-6">
-              {t('services.hero.title1')}{' '}
-              <span className="text-teal-600 dark:text-teal-400">
-                {t('services.hero.title2')}
-              </span>
-            </h1>
-            <motion.div
-              initial={{ opacity: 0, width: 0 }}
-              animate={{ opacity: 1, width: "100%" }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="flex justify-center mb-6"
-            >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
-            </motion.div>
-            <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              {t('services.hero.subtitle')}
-            </p>
-            <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-700 dark:hover:bg-teal-600">
-              <Link to="/contact">
-                {t('services.hero.button')}
-                <ArrowRight className={`${arrowIcon} ${isRTL ? 'mr-2' : 'ml-2'}`} size={20} />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
+            {t("services.hero.title1")}{" "}
+            <span className="text-teal-600 dark:text-teal-400">
+              {t("services.hero.title2")}
+            </span>
+          </motion.h1>
 
-      <section className="py-20 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950 relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10 dark:opacity-5">
-          <div className="absolute top-1/4 -left-40 w-96 h-96 bg-teal-500 rounded-full blur-[150px]"></div>
-          <div className="absolute bottom-1/3 -right-40 w-96 h-96 bg-purple-500 rounded-full blur-[150px]"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className={`text-center mb-16`}>
-            <motion.h2 
-              className="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              {t('services.services.title1')}{' '}
-              <span className="text-teal-600 dark:text-teal-400">
-                {t('services.services.title2')}
-              </span>
-            </motion.h2>
-            
-            <motion.div
-              initial={{ opacity: 0, width: 0 }}
-              animate={{ opacity: 1, width: "100%" }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="flex justify-center mb-6"
-            >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
-            </motion.div>
-            
-            <motion.p 
-              className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-            >
-              {t('services.services.subtitle')}
-            </motion.p>
-          </div>
-
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:max-w-[800px] gap-6 mx-auto"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            {services.map((service, index) => (
-              <motion.div 
-                key={index} 
-                variants={itemVariants}
-                className="h-full lg:max-w-[800px]"
-                whileHover="hover"
-              >
-                <div className="group h-full bg-white dark:bg-slate-800/30 backdrop-blur-sm border border-slate-200 dark:border-slate-700/60 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-teal-300/50 dark:hover:border-teal-500/50 relative">
-                  <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-purple-500/5 dark:from-teal-700/5 dark:to-purple-700/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="absolute inset-0 border border-slate-200 dark:border-slate-700/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  
-                  <div className="relative z-10 p-6 h-full flex flex-col">
-                    <div className="text-center mb-4">
-                      <motion.div 
-                        className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:rotate-6 transition-transform duration-300"
-                        whileHover={{ rotate: 10, scale: 1.1 }}
-                      >
-                        <service.icon className="text-white text-2xl" />
-                      </motion.div>
-                      <motion.h3 
-                        className="text-xl font-bold text-slate-800 dark:text-white"
-                        whileHover={{ color: "#0d9488" }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        {service.title}
-                      </motion.h3>
-                    </div>
-                    
-                    <p className="text-slate-600 dark:text-slate-400 mb-5 text-center">
-                      {service.description}
-                    </p>
-                    
-                    <div className="mb-5">
-                      <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-3 flex items-center">
-                        <span className="bg-slate-200 dark:bg-slate-700/50 h-px flex-grow mr-3"></span>
-                        {t('services.services.featuresTitle')}
-                        <span className="bg-slate-200 dark:bg-slate-700/50 h-px flex-grow ml-3"></span>
-                      </h4>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, featureIndex) => (
-                          <li 
-                            key={featureIndex} 
-                            className="flex items-start text-sm text-slate-700 dark:text-slate-300"
-                            style={{ direction }}
-                          >
-                            <FiCheck className={`text-teal-600 dark:text-teal-400 ${marginIcon} mt-0.5 flex-shrink-0`} />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div className="mt-auto pt-4">
-                      <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-3 flex items-center">
-                        <span className="bg-slate-200 dark:bg-slate-700/50 h-px flex-grow mr-3"></span>
-                        {t('services.services.techTitle')}
-                        <span className="bg-slate-200 dark:bg-slate-700/50 h-px flex-grow ml-3"></span>
-                      </h4>
-                      <div className="flex flex-wrap gap-2 justify-center">
-                        {service.technologies.map((tech, techIndex) => (
-                          <motion.span 
-                            key={techIndex}
-                            className="px-3 py-1.5 bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300 rounded-full text-xs font-medium backdrop-blur-sm"
-                            whileHover={{ 
-                              scale: 1.1,
-                              backgroundColor: "rgba(13, 148, 136, 0.1)",
-                              color: "#0d9488",
-                              border: "1px solid rgba(13, 148, 136, 0.3)"
-                            }}
-                            transition={{ duration: 0.2 }}
-                          >
-                            {tech}
-                          </motion.span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-
-          <motion.div 
-            className="text-center mt-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <Button 
-              asChild 
-              size="lg" 
-              variant="outline"
-              className="border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 font-medium group"
-            >
-              <Link to="/devis">
-                <span className="group-hover:translate-x-1 transition-transform">
-                  {t('services.services.ctaButton')}
-                </span>
-                <FiArrowRight className={`${arrowIcon} ${isRTL ? 'mr-2' : 'ml-2'} inline-block group-hover:translate-x-1 transition-transform`} />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-slate-50 dark:bg-slate-900/50">
-        <div className="container mx-auto px-4">
-          <div className={`text-center mb-16`}>
-            <motion.h2 
-              className="text-4xl font-bold text-slate-800 dark:text-white mb-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              {t('services.process.title1')}{' '}
-              <span className="text-teal-600 dark:text-teal-400">
-                {t('services.process.title2')}
-              </span>
-            </motion.h2>
-            <motion.div
-              initial={{ opacity: 0, width: 0 }}
-              animate={{ opacity: 1, width: "100%" }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="flex justify-center mb-6"
-            >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
-            </motion.div>
-            <motion.p 
-              className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            >
-              {t('services.process.subtitle')}
-            </motion.p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <motion.div 
-                key={index}
-                className="bg-white dark:bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-slate-200 dark:border-slate-700 text-center"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-                whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              >
-                <div className="w-16 h-16 bg-teal-100 dark:bg-teal-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Layout className="text-teal-600 dark:text-teal-400" size={32} />
-                </div>
-                <span className="inline-block bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-3 py-1 rounded-full text-sm font-medium mb-3">
-                  {step.step}
-                </span>
-                <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-2">{step.title}</h3>
-                <p className="text-slate-600 dark:text-slate-400">{step.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${flexDirection}`}>
-            <motion.div
-              initial={{ opacity: 0, x: isRTL ? 30 : -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              <div className="relative">
-                <div className="absolute -inset-4 bg-teal-600/10 dark:bg-teal-400/10 rounded-2xl rotate-3"></div>
-                <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96" />
-                </div>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: isRTL ? -30 : 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-6 text-center">
-                {t('services.why.title1')}{' '}
-                <span className="text-teal-600 dark:text-teal-400">
-                  {t('services.why.title2')}
-                </span>
-              </h2>
-            <motion.div
-              initial={{ opacity: 0, width: 0 }}
-              animate={{ opacity: 1, width: "100%" }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="flex justify-center mb-6"
-            >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
-            </motion.div>
-              <p className="text-lg text-slate-600 dark:text-slate-300 mb-8">
-                {t('services.why.subtitle')}
-              </p>
-              
-              <div className="space-y-6">
-                {t('services.why.features', { returnObjects: true }).map((item, index) => (
-                  <motion.div 
-                    key={index}
-                    className={`flex items-start ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'}`}
-                    whileHover={{ x: isRTL ? -10 : 10 }}
-                  >
-                    <div className={`flex-shrink-0 mt-1 ${isRTL ? 'ml-2' : 'mr-2'}`}>
-                      <ShieldCheck className="text-teal-600 dark:text-teal-400" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-lg text-slate-800 dark:text-slate-200">{item.title}</h3>
-                      <p className="text-slate-600 dark:text-slate-400">{item.description}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <motion.h2 
-            className="text-4xl font-bold mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            {t('services.cta.title')}
-          </motion.h2>
-            <motion.div
-              initial={{ opacity: 0, width: 0 }}
-              animate={{ opacity: 1, width: "100%" }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="flex justify-center mb-6"
-            >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
-            </motion.div>
-          <motion.p 
-            className="text-xl mb-8 opacity-90 max-w-2xl mx-auto"
+          <motion.p
+            className="text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.4 }}
           >
-            {t('services.cta.subtitle')}
+            {t("services.hero.subtitle")}
           </motion.p>
-          <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.6 }}
           >
-            <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-slate-100 dark:bg-slate-100 dark:text-teal-700">
+            <Button
+              asChild
+              size="lg"
+              className="px-8 py-6 text-lg bg-teal-600 hover:bg-teal-700 dark:bg-teal-700 dark:hover:bg-teal-600 rounded-full shadow-lg hover:shadow-xl transition"
+            >
               <Link to="/contact">
-                {t('services.cta.button1')}
-                <ArrowRight className={`${arrowIcon} ${isRTL ? 'mr-2' : 'ml-2'}`} size={20} />
+                {t("services.hero.button")}
+                <FiArrowRight className={`${arrowIcon} ml-2`} size={20} />
               </Link>
-            </Button>
-            <Button asChild size="lg" className="border-white text-white hover:bg-white/10">
-              <Link to="/projects">{t('services.cta.button2')}</Link>
             </Button>
           </motion.div>
         </div>
       </section>
+
+      {/* ================= SERVICES GRID ================= */}
+      <section className="py-24 relative">
+        <div className="container mx-auto px-6">
+          <motion.h2
+            className="text-3xl font-bold text-center text-slate-900 dark:text-white mb-16"
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeUp}
+            viewport={{ once: true }}
+          >
+            {t("services.services.title1")}{" "}
+            <span className="text-teal-600 dark:text-teal-400">
+              {t("services.services.title2")}
+            </span>
+          </motion.h2>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {services.map((s, i) => (
+              <motion.div
+                key={i}
+                className="p-8 rounded-2xl bg-white/70 dark:bg-slate-800/50 backdrop-blur-xl border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-xl transition group"
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                whileHover={{ y: -8 }}
+                viewport={{ once: true }}
+              >
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-teal-500 to-teal-700 text-white rounded-xl mb-6 group-hover:scale-110 transition-transform">
+                    <s.icon size={28} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
+                    {s.title}
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-400 mb-6">
+                    {s.description}
+                  </p>
+
+                  <h4 className="font-medium text-slate-700 dark:text-slate-300 mb-2">
+                    {t("services.services.featuresTitle")}
+                  </h4>
+                  <ul className="text-sm text-slate-600 dark:text-slate-400 mb-6 space-y-1">
+                    {s.features.map((f, idx) => (
+                      <li key={idx} className="flex items-center justify-center">
+                        <FiCheck className="text-teal-600 mr-2" /> {f}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <h4 className="font-medium text-slate-700 dark:text-slate-300 mb-3">
+                    {t("services.services.techTitle")}
+                  </h4>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {s.technologies.map((tech, idx) => (
+                      <span
+                        key={idx}
+                        className="px-3 py-1 bg-slate-100 dark:bg-slate-700/40 rounded-full text-xs text-slate-700 dark:text-slate-300"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= PROCESS ================= */}
+      <section className="py-24 bg-slate-50 dark:bg-slate-900/40">
+        <div className="container mx-auto px-6">
+          <motion.h2
+            className="text-3xl font-bold text-center mb-16 text-slate-900 dark:text-white"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {t("services.process.title1")}{" "}
+            <span className="text-teal-600 dark:text-teal-400">
+              {t("services.process.title2")}
+            </span>
+          </motion.h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((step, i) => (
+              <motion.div
+                key={i}
+                className="bg-white dark:bg-slate-800/60 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 text-center shadow hover:shadow-lg transition"
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeUp}
+                whileHover={{ y: -8 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-14 h-14 mx-auto flex items-center justify-center bg-teal-100 dark:bg-teal-900/40 text-teal-600 dark:text-teal-400 rounded-xl mb-4">
+                  <span className="font-bold text-lg">{i + 1}</span>
+                </div>
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">
+                  {step.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= WHY US ================= */}
+      <section className="py-24 container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        <motion.div
+          style={{ y: whyUsY }}
+          className="rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1170&q=80"
+            alt={t("services.why.imageAlt")}
+            className="w-full h-96 object-cover"
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
+            {t("services.why.title1")}{" "}
+            <span className="text-teal-600 dark:text-teal-400">
+              {t("services.why.title2")}
+            </span>
+          </h2>
+          <p className="text-lg text-slate-600 dark:text-slate-300 mb-8">
+            {t("services.why.subtitle")}
+          </p>
+
+          <div className="space-y-6">
+            {t("services.why.features", { returnObjects: true }).map(
+              (item, i) => (
+                <motion.div
+                  key={i}
+                  className="flex items-start"
+                  whileHover={{ x: 6 }}
+                >
+                  <ShieldCheck className="text-teal-600 dark:text-teal-400 mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 dark:text-white">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">
+                      {item.description}
+                    </p>
+                  </div>
+                </motion.div>
+              )
+            )}
+          </div>
+        </motion.div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="py-24 bg-gradient-to-r from-teal-600 to-teal-700 text-white text-center">
+        <motion.h2
+          className="text-4xl font-bold mb-6"
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeUp}
+          viewport={{ once: true }}
+        >
+          {t("services.cta.title")}
+        </motion.h2>
+        <motion.p
+          className="text-lg mb-10 opacity-90 max-w-2xl mx-auto"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {t("services.cta.subtitle")}
+        </motion.p>
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <Button
+            asChild
+            size="lg"
+            className="bg-white text-teal-600 hover:bg-slate-100 rounded-full px-8 py-6 shadow-lg hover:shadow-xl"
+          >
+            <Link to="/contact">
+              {t("services.cta.button1")}
+              <FiArrowRight className={`${arrowIcon} ml-2`} size={20} />
+            </Link>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            className="border border-white text-white hover:bg-white/10 rounded-full px-8 py-6"
+          >
+            <Link to="/projects">{t("services.cta.button2")}</Link>
+          </Button>
+        </motion.div>
+      </section>
     </div>
-  )
-}
+  );
+};
 
 export default Services;

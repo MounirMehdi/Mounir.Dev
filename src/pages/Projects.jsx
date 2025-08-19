@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import {
   FiExternalLink,
   FiGithub,
@@ -13,7 +13,7 @@ import {
   FiSearch,
   FiChevronLeft,
   FiChevronRight,
-  FiCode 
+  FiCode
 } from 'react-icons/fi';
 import {
   SiReact,
@@ -76,23 +76,27 @@ const Projects = () => {
     }
   };
 
+  // ==== SCROLL ANIMATIONS ====
+  const { scrollY } = useScroll();
+  const heroY = useTransform(scrollY, [0, 300], [0, 80]);
+
   // Filtrer les projets
   const filteredProjects = projects.filter(project => {
     // Filtre par catégorie
     const matchesCategory = categoryFilter === 'all' || project.category === categoryFilter;
-    
+
     // Filtre par statut
     const matchesStatus = statusFilter === 'all' || project.status === statusFilter;
-    
+
     // Filtre par technologies
-    const matchesTech = techFilters.length === 0 || 
-                        techFilters.some(tech => project.technologies.includes(tech));
-    
+    const matchesTech = techFilters.length === 0 ||
+      techFilters.some(tech => project.technologies.includes(tech));
+
     // Filtre par recherche
     const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.technologies.some(tech => tech.toLowerCase().includes(searchQuery.toLowerCase()));
-    
+
     return matchesCategory && matchesStatus && matchesTech && matchesSearch;
   });
 
@@ -141,64 +145,69 @@ const Projects = () => {
       dir={direction}
     >
       {/* Hero Section Moderne */}
-      <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-900/30 dark:to-teal-900/10 overflow-hidden">
-        {/* Background elements */}
+      <section className="py-32 md:py-40 text-center relative overflow-hidden">
+        {/* Background avec parallaxe */}
+        <motion.div 
+          style={{ y: heroY ,
+    backgroundAttachment: 'fixed', 
+  }}
+          className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center opacity-30 dark:opacity-20"
+        />
+        
         <div className="absolute inset-0 z-0">
           <div className="absolute top-20 left-1/4 w-64 h-64 bg-teal-200/30 dark:bg-teal-800/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-indigo-200/30 dark:bg-indigo-800/20 rounded-full blur-3xl"></div>
           <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-purple-200/20 dark:bg-purple-800/20 rounded-full blur-3xl"></div>
         </div>
         
-        <div className="container mx-auto px-4 relative z-10">
-          <div className={`text-center max-w-3xl mx-auto`}>
-            <motion.h1
-              className="text-4xl md:text-6xl font-bold text-slate-800 dark:text-white mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <span className="block mb-2">{t('projects.hero.title1')}</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-indigo-600 dark:from-teal-400 dark:to-indigo-400">
-                {t('projects.hero.title2')}
-              </span>
-            </motion.h1>
-            
-            <motion.div
-              initial={{ opacity: 0, width: 0 }}
-              animate={{ opacity: 1, width: "100%" }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="flex justify-center mb-8"
-            >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
-            </motion.div>
-            
-            <motion.p
-              className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              {t('projects.hero.subtitle')}
-            </motion.p>
-            
-            <motion.div
-              className="relative w-full max-w-md mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <div className={`absolute inset-y-0 ${isRTL ? 'right-0 pr-4' : 'left-0 pl-4'} flex items-center pointer-events-none`}>
-                <FiSearch className="h-5 w-5 text-slate-500 dark:text-slate-400" />
-              </div>
-              <input
-                type="text"
-                placeholder={t('projects.hero.searchPlaceholder')}
-                className={`w-full ${isRTL ? 'pr-12 pl-4' : 'pl-12 pr-4'} py-4 rounded-full border border-slate-300 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent shadow-lg`}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </motion.div>
-          </div>
+        <div className="relative z-10">
+          <motion.h1 
+            className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 leading-tight"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="block mb-2">{t('projects.hero.title1')}</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-indigo-600 dark:from-teal-400 dark:to-indigo-400">
+              {t('projects.hero.title2')}
+            </span>
+          </motion.h1>
+          
+          <motion.div 
+            initial={{ opacity: 0, width: 0 }}
+            animate={{ opacity: 1, width: "100%" }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="flex justify-center mb-6"
+          >
+            <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+          </motion.div>
+          
+          <motion.p 
+            className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            {t('projects.hero.subtitle')}
+          </motion.p>
+          
+          <motion.div 
+            className="relative w-full max-w-md mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <div className={`absolute inset-y-0 ${isRTL ? 'right-0 pr-4' : 'left-0 pl-4'} flex items-center pointer-events-none`}>
+              <FiSearch className="h-5 w-5 text-slate-500 dark:text-slate-400" />
+            </div>
+            <input 
+              type="text" 
+              placeholder={t('projects.hero.searchPlaceholder')}
+              className={`w-full ${isRTL ? 'pr-12 pl-4' : 'pl-12 pr-4'} py-4 rounded-full border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent shadow-lg`}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </motion.div>
         </div>
       </section>
 
@@ -208,13 +217,7 @@ const Projects = () => {
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-between gap-3">
             {/* Filtres principaux */}
             <div className="w-full sm:w-auto">
-              <div className="flex items-center text-slate-600 dark:text-slate-400 mb-2 sm:mb-2">
-                <FiFilter size={18} />
-                <span className={`font-medium ${isRTL ? 'pr-2' : 'pl-2'}`}>
-                  {t('projects.filters.filterLabel')}
-                </span>
-              </div>
-              
+
               <div className="flex overflow-x-auto pb-2 gap-2 hide-scrollbar">
                 {categoryFilters.map((filter) => (
                   <motion.div
@@ -225,11 +228,10 @@ const Projects = () => {
                   >
                     <button
                       onClick={() => setCategoryFilter(filter.id)}
-                      className={`px-3 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-sm rounded-full font-medium transition-colors whitespace-nowrap ${
-                        categoryFilter === filter.id
+                      className={`px-3 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-sm rounded-full font-medium transition-colors whitespace-nowrap ${categoryFilter === filter.id
                           ? "bg-teal-600 hover:bg-teal-700 text-white"
                           : "bg-slate-100 dark:bg-gray-700 hover:bg-slate-200 dark:hover:bg-gray-600 text-slate-700 dark:text-slate-300"
-                      }`}
+                        }`}
                     >
                       {t(`projects.filters.${filter.id}`)}
                     </button>
@@ -242,9 +244,8 @@ const Projects = () => {
             <div className="relative w-full sm:w-auto">
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className={`w-full flex items-center justify-center space-x-1 text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 px-3 py-2 rounded-lg bg-slate-100 dark:bg-gray-700 hover:bg-slate-200 dark:hover:bg-gray-600 ${
-                  isRTL ? 'space-x-reverse' : ''
-                }`}
+                className={`w-full flex items-center justify-center space-x-1 text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 px-3 py-2 rounded-lg bg-slate-100 dark:bg-gray-700 hover:bg-slate-200 dark:hover:bg-gray-600 ${isRTL ? 'space-x-reverse' : ''
+                  }`}
               >
                 <span>{t('projects.filters.moreFilters')}</span>
                 <FiChevronDown
@@ -256,9 +257,8 @@ const Projects = () => {
               <AnimatePresence>
                 {showFilters && (
                   <motion.div
-                    className={`absolute ${
-                      isRTL ? 'sm:left-0' : 'sm:right-0'
-                    } mt-2 w-full sm:w-64 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-slate-200 dark:border-gray-700 z-20`}
+                    className={`absolute ${isRTL ? 'sm:left-0' : 'sm:right-0'
+                      } mt-2 w-full sm:w-64 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-slate-200 dark:border-gray-700 z-20`}
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
@@ -302,17 +302,17 @@ const Projects = () => {
 
                       <div className="mt-4 flex justify-end">
                         <button
-          onClick={() => {
-            setCategoryFilter('all');
-            setStatusFilter('all');
-            setTechFilters([]);
-            setShowFilters(false);
-          }}
-          className="px-3 py-2 text-sm rounded-lg bg-slate-100 dark:bg-gray-700 hover:bg-slate-200 dark:hover:bg-gray-600 text-slate-700 dark:text-slate-300 whitespace-nowrap"
-          aria-label={t('projects.filters.reset')}
-        >
-          {t('projects.filters.reset')}
-        </button>
+                          onClick={() => {
+                            setCategoryFilter('all');
+                            setStatusFilter('all');
+                            setTechFilters([]);
+                            setShowFilters(false);
+                          }}
+                          className="px-3 py-2 text-sm rounded-lg bg-slate-100 dark:bg-gray-700 hover:bg-slate-200 dark:hover:bg-gray-600 text-slate-700 dark:text-slate-300 whitespace-nowrap"
+                          aria-label={t('projects.filters.reset')}
+                        >
+                          {t('projects.filters.reset')}
+                        </button>
                       </div>
                     </div>
                   </motion.div>
@@ -570,7 +570,7 @@ const Projects = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h2
-              className="text-3xl md:text-4xl font-bold mb-6"
+              className="text-3xl font-bold mb-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}

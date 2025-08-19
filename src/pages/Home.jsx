@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -43,6 +43,7 @@ import { useTranslation } from "react-i18next";
 import ProjectPopup from '../components/projects/ProjectPopup';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import BlogDetail from '../components/blogs/BlogDetail';
 
 const FlipWords = ({ words, className, duration = 3000 }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -95,6 +96,55 @@ const Accueil = () => {
   const isRTL = i18n.language === 'ar';
   const direction = isRTL ? 'rtl' : 'ltr';
   const textAlign = isRTL ? 'text-right' : 'text-left';
+  const [selectedPost, setSelectedPost] = useState(null);
+
+  // Fonction pour ouvrir le détail d'un article
+  const openPostDetail = (post) => {
+    setSelectedPost(post);
+    document.body.style.overflow = 'hidden';
+  };
+
+  // Fonction pour fermer le détail
+  const closePostDetail = () => {
+    setSelectedPost(null);
+    document.body.style.overflow = 'auto';
+  };
+
+  // Fonction de formatage de date
+  const formatDate = (dateString) => {
+    return new Date(dateString).toLocaleDateString(i18n.language, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  };
+
+  // Récupérer les catégories
+  const blogData = t('blog', { returnObjects: true });
+  const { categories } = blogData;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentPosts, setCurrentPosts] = useState([]);
+
+  // Fonction pour obtenir 3 articles aléatoires
+  const getRandomPosts = () => {
+    const shuffled = [...blogPosts].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, 3);
+  };
+
+  // Initialisation des articles aléatoires
+  useEffect(() => {
+    setCurrentPosts(getRandomPosts());
+  }, []);
+
+  // Rotation automatique toutes les 10 secondes
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => prev + 1);
+      setCurrentPosts(getRandomPosts());
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const skills = [
     {
@@ -226,11 +276,6 @@ const Accueil = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 4000 }) // 4 secondes
   ]);
-
-  const openPostDetail = (post) => {
-    setSelectedPost(post);
-    document.body.style.overflow = 'hidden';
-  };
 
   return (
     <div
@@ -383,7 +428,7 @@ const Accueil = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-10 md:mb-12">
             <motion.h2
-              className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+              className={`text-3xl font-bold text-slate-800 dark:text-white mb-4`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -465,7 +510,7 @@ const Accueil = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <motion.h2
-              className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+              className={`text-3xl font-bold text-slate-800 dark:text-white mb-4`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -564,57 +609,57 @@ const Accueil = () => {
 
       {/* Section Projets - Arrière-plan néon avec dégradé vert */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 dark:from-slate-900 dark:via-teal-900/20 dark:to-slate-800">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-6 md:mb-8">
-          <motion.h2
-            className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            {t('home.projects.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.projects.titleHighlight')}</span>
-          </motion.h2>
-          <motion.div
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: 1, width: "100%" }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="flex justify-center mb-6"
-          >
-            <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
-          </motion.div>
-          <motion.p
-            className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15 }}
-          >
-            {t('home.projects.subtitle')}
-          </motion.p>
-        </div>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-5 md:mb-6">
+            <motion.h2
+              className={`text-3xl font-bold text-slate-800 dark:text-white mb-4`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              {t('home.projects.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.projects.titleHighlight')}</span>
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, width: 0 }}
+              animate={{ opacity: 1, width: "100%" }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+              className="flex justify-center mb-6"
+            >
+              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+            </motion.div>
+            <motion.p
+              className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15 }}
+            >
+              {t('home.projects.subtitle')}
+            </motion.p>
+          </div>
 
-        <ProjectPopup />
+          <ProjectPopup />
 
-        <div className="text-center mt-5 md:mt-6">
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 font-medium"
-          >
-            <Link to="/projects">
-              {t('home.projects.button')}
-              <ArrowRight className={`ml-2 ${isRTL ? 'transform rotate-180' : ''}`} size={20} />
-            </Link>
-          </Button>
+          <div className="text-center mt-3 md:mt-5">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 font-medium"
+            >
+              <Link to="/projects">
+                {t('home.projects.button')}
+                <ArrowRight className={`ml-2 ${isRTL ? 'transform rotate-180' : ''}`} size={20} />
+              </Link>
+            </Button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Section Blog - Arrière-plan néon avec dégradé bleu */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900/20 dark:to-slate-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10 md:mb-12">
             <motion.h2
-              className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+              className={`text-3xl font-bold text-slate-800 dark:text-white mb-4`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -639,57 +684,69 @@ const Accueil = () => {
             </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-            {blogPosts.map((post, index) => (
+          <div className="relative">
+            <AnimatePresence mode="wait">
               <motion.div
-                key={post.id}
-                className="h-full"
+                key={currentIndex}
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -30 }}
+                transition={{ duration: 0.7 }}
               >
-                <div className="group h-full bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:shadow-xl transition-all hover:shadow-blue-500/20 dark:hover:shadow-blue-400/30"
-                  onClick={() => openPostDetail(post)}>
-                  <div className="p-5 md:p-6">
-                    <span className="inline-block px-3 py-1 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-700 dark:to-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-xs font-medium mb-3 md:mb-4">
-                      {post.category}
-                    </span>
+                {currentPosts.map((post, index) => (
+                  <motion.div
+                    key={`${currentIndex}-${post.id}`}
+                    className="h-full cursor-pointer"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 + 0.2 }}
+                    onClick={() => openPostDetail(post)}
+                  >
+                    <div className="group h-full flex flex-col bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:shadow-xl transition-all hover:shadow-blue-500/20 dark:hover:shadow-blue-400/30">
+                      <div className="p-5 md:p-6 flex-grow">
+                        <span className="inline-block px-3 py-1 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-700 dark:to-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-xs font-medium mb-3 md:mb-4">
+                          {post.category}
+                        </span>
 
-                    <h3 className={`text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 md:mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors ${textAlign}`}>
-                      {post.title}
-                    </h3>
+                        <h3 className={`text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 md:mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors ${textAlign}`}>
+                          {post.title}
+                        </h3>
 
-                    <p className={`text-sm md:text-base text-slate-600 dark:text-slate-400 mb-3 md:mb-4 ${textAlign}`}>
-                      {post.excerpt}
-                    </p>
+                        <p className={`text-sm md:text-base text-slate-600 dark:text-slate-400 mb-3 md:mb-4 ${textAlign}`}>
+                          {post.excerpt}
+                        </p>
 
-                    <div className={`flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                      <span className="flex items-center gap-1">
-                        <Calendar size={12} />
-                        {post.date}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Clock size={12} />
-                        {post.readTime}
-                      </span>
+                        <div className={`flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                          <span className="flex items-center gap-1">
+                            <Calendar size={12} />
+                            {post.date}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <Clock size={12} />
+                            {post.readTime}
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="px-5 pb-5 md:px-6 md:pb-6 pt-0 mt-auto">
+                        <Button
+                          variant="link"
+                          className={`w-full justify-center ${isRTL ? 'pr-0' : 'pl-0'} text-teal-600 dark:text-teal-400 hover:no-underline group`}
+                        >
+                          <span className="group-hover:underline">{t('home.blog.readButton')}</span>
+                          {isRTL ? (
+                            <ArrowRight className="mr-1 transform rotate-180 group-hover:translate-x-1 transition-transform" size={16} />
+                          ) : (
+                            <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform" size={16} />
+                          )}
+                        </Button>
+                      </div>
                     </div>
-
-                    <Button
-                      asChild
-                      variant="link"
-                      className={`mt-3 md:mt-4 ${isRTL ? 'pr-0' : 'pl-0'} text-teal-600 dark:text-teal-400 hover:no-underline`}
-                    >
-                      <Link to="/blog">
-                        {isRTL && <ArrowRight className="mr-1 transform rotate-180" size={16} />}
-                        {t('home.blog.readButton')}
-                        {!isRTL && <ArrowRight className="ml-1" size={16} />}
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                  </motion.div>
+                ))}
               </motion.div>
-            ))}
+            </AnimatePresence>
           </div>
 
           <div className="text-center mt-10 md:mt-12">
@@ -706,6 +763,18 @@ const Accueil = () => {
             </Button>
           </div>
         </div>
+
+        {/* Post Detail Modal */}
+        {selectedPost && (
+          <BlogDetail
+            selectedPost={selectedPost}
+            onClose={closePostDetail}
+            t={t}
+            formatDate={formatDate}
+            isRTL={isRTL}
+            categories={categories}
+          />
+        )}
       </section>
 
       {/* Section Process - Arrière-plan néon avec dégradé vert */}
@@ -713,7 +782,7 @@ const Accueil = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-10 md:mb-12">
             <motion.h2
-              className={`text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4`}
+              className={`text-3xl font-bold text-slate-800 dark:text-white mb-4`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -775,7 +844,7 @@ const Accueil = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <AnimatedSection>
             <motion.h2
-              className="text-3xl md:text-4xl font-bold mb-4"
+              className="text-3xl font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
