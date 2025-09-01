@@ -1,253 +1,253 @@
- {
-    "developer": "Developer",
-    "slogan": "Bring your digital ideas to life",
-    "description": "Creator of unique and high-performance web experiences. Master's degree in software engineering. Specialized in modern development.",
-    "see_projects": "See my projects",
-    "request_quote": "Request a quote",
-    "experience": "2+ years of experience",
-    "delivered_projects": "Projects delivered",
-    "satisfied_clients": "Satisfied clients",
-    "skills_title": "My Skills",
-    "skills_subtitle": "Complete expertise to carry out your web projects from A to Z",
-    "recent_projects": "Recent Projects",
-    "recent_projects_sub": "Discover some of my most notable achievements",
-    "see_all_projects": "See all projects",
-    "cta_title": "Ready to start your project?",
-    "cta_sub": "Contact me today to discuss your needs and get a free personalized quote.",
-    "cta_button": "Request a free quote",
-    "project1_desc": "Creation of multi-page websites with forms, APIs, and SEO optimization.",
-    "project2_desc": "Web application for tracking port calls with a modern interface.",
-    "project3_desc": "Desktop real estate management software with an intuitive interface.",
-    "project_not_found": "Project not found",
-    "project_not_found_message": "The project you are looking for does not exist or has been moved.",
-    "back_to_projects": "Back to projects",
-    "about_project": "About the project",
-    "challenges": "Challenges and solutions",
-    "results": "Results achieved",
-    "gallery": "Project gallery",
-    "project_details": "Project details",
-    "launch_date": "Launch date",
-    "duration": "Project duration",
-    "team": "Team",
-    "featured_project": "Featured project",
-    "featured_project_desc": "Selected as an outstanding project",
-    "technologies": "Technologies used",
-    "project_links": "Project links",
-    "visit_site": "Visit site",
-    "source_code": "Source code",
-    "prev_project": "Previous project",
-    "next_project": "Next project",
-    "click_to_gallery": "Click to view gallery",
-    "view_large": "View large",
-    "cta_title": "Ready to materialize your project?",
-    "cta_sub": "Let's discuss your vision and create something extraordinary together",
-    "cta_button": "Start now",
-    "cta_hint": "Let's turn your ideas into reality",
+{
+    "developer": "مطور",
+    "slogan": "أحْيِ أفكارك الرقمية",
+    "description": "مصمم تجارب ويب فريدة وعالية الأداء. حاصل على ماجستير في هندسة البرمجيات. متخصص في التطوير الحديث.",
+    "see_projects": "عرض مشاريعي",
+    "request_quote": "طلب عرض سعر",
+    "experience": "أكثر من سنتين من الخبرة",
+    "delivered_projects": "مشاريع تم تسليمها",
+    "satisfied_clients": "عملاء راضون",
+    "skills_title": "مهاراتي",
+    "skills_subtitle": "خبرة شاملة لتنفيذ مشاريعك الإلكترونية من الألف إلى الياء",
+    "recent_projects": "المشاريع الحديثة",
+    "recent_projects_sub": "اكتشف بعضًا من أبرز إنجازاتي",
+    "see_all_projects": "عرض جميع المشاريع",
+    "cta_title": "مستعد لبدء مشروعك؟",
+    "cta_sub": "اتصل بي اليوم لمناقشة احتياجاتك والحصول على عرض سعر مجاني مخصص.",
+    "cta_button": "طلب عرض سعر مجاني",
+    "project1_desc": "إنشاء مواقع ويب متعددة الصفحات مع نماذج وواجهات برمجة تطبيقات وتحسين محركات البحث.",
+    "project2_desc": "تطبيق ويب لمتابعة مراسي الموانئ بواجهة مستخدم حديثة.",
+    "project3_desc": "برنامج سطح مكتب لإدارة العقارات بواجهة مستخدم بديهية.",
+    "project_not_found": "المشروع غير موجود",
+    "project_not_found_message": "المشروع الذي تبحث عنه غير موجود أو تم نقله.",
+    "back_to_projects": "العودة إلى المشاريع",
+    "about_project": "حول المشروع",
+    "challenges": "التحديات والحلول",
+    "results": "النتائج المحققة",
+    "gallery": "معرض المشروع",
+    "project_details": "تفاصيل المشروع",
+    "launch_date": "تاريخ الإطلاق",
+    "duration": "مدة المشروع",
+    "team": "الفريق",
+    "featured_project": "مشروع مميز",
+    "featured_project_desc": "تم اختياره كمشروع استثنائي",
+    "technologies": "التقنيات المستخدمة",
+    "project_links": "روابط المشروع",
+    "visit_site": "زيارة الموقع",
+    "source_code": "الكود المصدري",
+    "prev_project": "المشروع السابق",
+    "next_project": "المشروع التالي",
+    "click_to_gallery": "انقر لعرض المعرض",
+    "view_large": "عرض بحجم كبير",
+    "cta_title": "مستعد لتحقيق مشروعك؟",
+    "cta_sub": "لنتناقش حول رؤيتك ونخلق شيئًا استثنائيًا معًا",
+    "cta_button": "ابدأ الآن",
+    "cta_hint": "لنحول أفكارك إلى واقع",
     "header": {
-      "home": "Home",
-      "services": "Services",
-      "projects": "Projects",
-      "blog": "Blog",
-      "contact": "Contact",
-      "quoteButton": "Free Quote",
-      "openMenu": "Open menu",
-      "closeMenu": "Close menu"
+      "home": "الرئيسية",
+      "services": "الخدمات",
+      "projects": "المشاريع",
+      "blog": "المدونة",
+      "contact": "اتصل",
+      "quoteButton": "عرض سعر مجاني",
+      "openMenu": "فتح القائمة",
+      "closeMenu": "إغلاق القائمة"
     },
     "home": {
       "hero": {
-        "welcome": "Creative Fullstack Developer",
-        "title1": "Transform your ideas into",
+        "welcome": "مطور كامل المكدس مبدع",
+        "title1": "حول أفكارك إلى",
         "flipWords": [
-          "Digital Experiences",
-          "Captivating Websites",
-          "Innovative Solutions",
-          "High-Performance Platforms"
+          "تجارب رقمية",
+          "مواقع ويب جذابة",
+          "حلول مبتكرة",
+          "منصات عالية الأداء"
         ],
-        "description": "I create custom web and mobile solutions that combine elegant design, technical performance, and exceptional user experience. Every project is an opportunity for innovation.",
-        "button1": "Explore my achievements",
-        "button2": "Let's discuss your project",
+        "description": "أقوم بإنشاء حلول ويب وجوال مخصصة تجمع بين التصميم الأنيق والأداء الفني وتجربة مستخدم استثنائية. كل مشروع هو فرصة للابتكار.",
+        "button1": "استكشف إنجازاتي",
+        "button2": "لنتناقش حول مشروعك",
         "stats": [
           {
             "value": "5+",
-            "label": "Years of experience"
+            "label": "سنوات من الخبرة"
           },
           {
             "value": "50+",
-            "label": "Projects delivered"
+            "label": "مشروع تم تسليمه"
           },
           {
             "value": "100%",
-            "label": "Satisfied clients"
+            "label": "عملاء راضون"
           }
         ]
       },
       "skills": {
-        "title": "My",
-        "titleHighlight": "Skills",
-        "subtitle": "Technical and creative expertise to turn your ideas into reality",
+        "title": "م",
+        "titleHighlight": "هاراتي",
+        "subtitle": "خبرة تقنية وإبداعية لتحويل أفكارك إلى واقع",
         "frontend": {
-          "name": "Frontend",
+          "name": "واجهة أمامية",
           "tech": "HTML/CSS/JS, Bootstrap, Tailwind, React, Vue.js"
         },
         "backend": {
-          "name": "Backend",
+          "name": "واجهة خلفية",
           "tech": "PHP, Laravel, Java"
         },
         "design": {
-          "name": "Design",
+          "name": "تصميم",
           "tech": "UX/UI, Photoshop, Illustrator, Canva"
         },
         "seo": {
           "name": "SEO",
-          "tech": "Analytics, Search Console, Referencing, Accessibility, Optimization"
+          "tech": "Analytics, Search Console, تحسين محركات البحث, إمكانية الوصول, تحسين"
         },
         "mobile": {
-          "name": "Mobile",
-          "tech": "Responsive Design, Flutter Apps, Android"
+          "name": "جوال",
+          "tech": "تصميم متجاوب, تطبيقات Flutter, Android"
         },
         "methodology": {
-          "name": "Methodology",
+          "name": "منهجية",
           "tech": "Agile, Scrum"
         }
       },
       "services": {
-        "title": "My",
-        "titleHighlight": "Expertise",
-        "subtitle": "Custom solutions to transform your digital challenges into success",
+        "title": "خ",
+        "titleHighlight": "براتي",
+        "subtitle": "حلول مخصصة لتحويل تحدياتك الرقمية إلى نجاح",
         "website": {
-          "title": "Websites",
-          "description": "Elegant designs and optimal performance for high-performance digital showcase sites to boost your credibility and generate leads 24/7."
+          "title": "مواقع ويب",
+          "description": "تصاميم أنيقة وأداء مثالي لمواقع عرض رقمية عالية الأداء لتعزيز مصداقيتك وتوليد عملاء محتملين على مدار الساعة."
         },
         "webapp": {
-          "title": "Web applications",
-          "description": "Custom solutions to automate your business processes and transform your operational challenges into competitive advantages."
+          "title": "تطبيقات ويب",
+          "description": "حلول مخصصة لأتمتة عملياتك التجارية وتحويل تحدياتك التشغيلية إلى مزايا تنافسية."
         },
         "mobile": {
-          "title": "Mobile Applications",
-          "description": "Intuitive mobile solutions, native and fluid mobile experiences published on stores."
+          "title": "تطبيقات جوال",
+          "description": "حلول جوال بديهية، تجارب جوال أصلية وسلسة منشورة على المتاجر."
         },
         "marketing": {
-          "title": "Digital Strategy & Marketing",
-          "description": "Custom roadmaps to dominate your market and accelerate your growth in the digital age."
+          "title": "استراتيجية رقمية وتسويق",
+          "description": "خطط طريق مخصصة للهيمنة على سوقك وتسريع نموك في العصر الرقمي."
         },
-        "button": "Discover all my expertise"
+        "button": "اكتشف جميع خبراتي"
       },
       "projects": {
-        "title": "My",
-        "titleHighlight": "Recent Projects",
-        "subtitle": "Discover my latest achievements and case studies",
-        "button": "See all projects"
+        "title": "مش",
+        "titleHighlight": "اريعي الحديثة",
+        "subtitle": "اكتشف أحدث إنجازاتي ودراسات الحالة",
+        "button": "عرض جميع المشاريع"
       },
       "blog": {
-        "title": "My",
-        "titleHighlight": "Latest Articles",
-        "subtitle": "Tips, tutorials, and thoughts on web development",
-        "readButton": "Read article",
-        "button": "See all articles"
+        "title": "أ",
+        "titleHighlight": "حدث مقالاتي",
+        "subtitle": "نصائح، دروس، وأفكار حول تطوير الويب",
+        "readButton": "قراءة المقال",
+        "button": "عرض جميع المقالات"
       },
       "slides": {
         "slide1": {
-          "title": "Digital Experiences",
-          "description": "Creation of high-performance web applications with React and Next.js",
-          "alt": "Digital Experiences"
+          "title": "تجارب رقمية",
+          "description": "إنشاء تطبيقات ويب عالية الأداء باستخدام React و Next.js",
+          "alt": "تجارب رقمية"
         },
         "slide2": {
-          "title": "Captivating Websites",
-          "description": "Cross-platform development with React Native and Flutter",
-          "alt": "Captivating Websites"
+          "title": "مواقع ويب جذابة",
+          "description": "تطوير عبر المنصات باستخدام React Native و Flutter",
+          "alt": "مواقع ويب جذابة"
         },
         "slide3": {
-          "title": "Innovative Solutions",
-          "description": "Technical and semantic strategies for natural referencing",
-          "alt": "Innovative Solutions"
+          "title": "حلول مبتكرة",
+          "description": "استراتيجيات تقنية ودلالية للتحسين الطبيعي لمحركات البحث",
+          "alt": "حلول مبتكرة"
         },
         "slide4": {
-          "title": "High-Performance Platforms",
-          "description": "Technical and semantic strategies for natural referencing",
-          "alt": "High-Performance Platforms"
+          "title": "منصات عالية الأداء",
+          "description": "استراتيجيات تقنية ودلالية للتحسين الطبيعي لمحركات البحث",
+          "alt": "منصات عالية الأداء"
         },
         "slide5": {
-          "title": "High-Performance Platforms",
-          "description": "Technical and semantic strategies for natural referencing",
-          "alt": "High-Performance Platforms"
+          "title": "منصات عالية الأداء",
+          "description": "استراتيجيات تقنية ودلالية للتحسين الطبيعي لمحركات البحث",
+          "alt": "منصات عالية الأداء"
         },
         "slide6": {
-          "title": "High-Performance Platforms",
-          "description": "Technical and semantic strategies for natural referencing",
-          "alt": "High-Performance Platforms"
+          "title": "منصات عالية الأداء",
+          "description": "استراتيجيات تقنية ودلالية للتحسين الطبيعي لمحركات البحث",
+          "alt": "منصات عالية الأداء"
         }
       },
       "process": {
-        "title": "My",
-        "titleHighlight": "Work Process",
-        "subtitle": "A transparent methodology for exceptional results",
+        "title": "ع",
+        "titleHighlight": "ملية عملي",
+        "subtitle": "منهجية شفافة لنتائج استثنائية",
         "steps": [
           {
             "icon": "Users",
-            "step": "Design",
-            "title": "Digital Blueprint",
-            "description": "Definition of objectives and technical architecture"
+            "step": "تصميم",
+            "title": "المخطط الرقمي",
+            "description": "تحديد الأهداف والهندسة المعمارية التقنية"
           },
           {
             "icon": "Code",
-            "step": "Development",
-            "title": "Technical Creation",
-            "description": "Agile implementation with weekly reviews"
+            "step": "تطوير",
+            "title": "إبداع تقني",
+            "description": "تنفيذ رشيق مع مراجعات أسبوعية"
           },
           {
             "icon": "BarChart",
-            "step": "Optimization",
-            "title": "Fine Tuning",
-            "description": "User testing and precise adjustments"
+            "step": "تحسين",
+            "title": "ضبط دقيق",
+            "description": "اختبار المستخدم وتعديلات دقيقة"
           },
           {
             "icon": "Shield",
-            "step": "Delivery",
-            "title": "Support",
-            "description": "Training and post-delivery support"
+            "step": "تسليم",
+            "title": "دعم",
+            "description": "تدريب ودعم ما بعد التسليم"
           }
         ]
       },
       "cta": {
-        "title": "Ready to materialize your project?",
-        "subtitle": "Let's discuss your vision together and create something extraordinary.",
-        "button": "Start my project"
+        "title": "مستعد لتحقيق مشروعك؟",
+        "subtitle": "لنتناقش حول رؤيتك معًا ونخلق شيئًا استثنائيًا.",
+        "button": "بدء مشروعي"
       }
     },
     "projectPopup": {
-      "newBadge": "New",
-      "visitButton": "Visit",
-      "codeButton": "Code",
-      "descriptionTitle": "Description",
-      "challengesTitle": "Challenges",
-      "resultsTitle": "Results",
-      "detailsTitle": "Details",
-      "teamLabel": "Team",
-      "technologiesTitle": "Technologies",
-      "galleryTitle": "Gallery"
+      "newBadge": "جديد",
+      "visitButton": "زيارة",
+      "codeButton": "كود",
+      "descriptionTitle": "وصف",
+      "challengesTitle": "تحديات",
+      "resultsTitle": "نتائج",
+      "detailsTitle": "تفاصيل",
+      "teamLabel": "فريق",
+      "technologiesTitle": "تقنيات",
+      "galleryTitle": "معرض"
     },
     "footer": {
-      "description": "I create exceptional digital experiences that transform ideas into high-performance solutions. Specialized in fullstack development and UX/UI design.",
-      "newsletterTitle": "Stay informed",
-      "emailPlaceholder": "Your email",
-      "subscriptionSuccess": "Thank you for subscribing!",
-      "navigationTitle": "Navigation",
+      "description": "أقوم بإنشاء تجارب رقمية استثنائية تحول الأفكار إلى حلول عالية الأداء. متخصص في التطوير الكامل وتصميم UX/UI.",
+      "newsletterTitle": "ابق على اطلاع",
+      "emailPlaceholder": "بريدك الإلكتروني",
+      "subscriptionSuccess": "شكرًا لك على الاشتراك!",
+      "navigationTitle": "تنقل",
       "navigationItems": [
-        { "name": "Home", "path": "/" },
-        { "name": "Services", "path": "/services" },
-        { "name": "Projects", "path": "/projects" },
-        { "name": "Blog", "path": "/blog" },
-        { "name": "Contact", "path": "/contact" }
+        { "name": "الرئيسية", "path": "/" },
+        { "name": "الخدمات", "path": "/services" },
+        { "name": "المشاريع", "path": "/projects" },
+        { "name": "المدونة", "path": "/blog" },
+        { "name": "اتصل", "path": "/contact" }
       ],
-      "legalTitle": "Legal",
+      "legalTitle": "قانوني",
       "legalItems": [
-        { "name": "Privacy", "path": "/privacy" },
-        { "name": "Terms", "path": "/terms" },
-        { "name": "Cookies", "path": "/cookies" },
-        { "name": "FAQs", "path": "/faqs" }
+        { "name": "خصوصية", "path": "/privacy" },
+        { "name": "شروط", "path": "/terms" },
+        { "name": "كوكيز", "path": "/cookies" },
+        { "name": "أسئلة شائعة", "path": "/faqs" }
       ],
-      "contactTitle": "Contact",
-      "platformsTitle": "Platforms",
+      "contactTitle": "اتصال",
+      "platformsTitle": "منصات",
       "freelancePlatforms": {
         "fiverr": "Fiverr",
         "upwork": "Upwork",
@@ -255,72 +255,72 @@
       },
       "socialNetworks": {
         "whatsapp": "WhatsApp",
-        "email": "Email",
+        "email": "بريد إلكتروني",
         "linkedin": "LinkedIn",
         "facebook": "Facebook",
         "tiktok": "TikTok",
         "instagram": "Instagram"
       },
-      "copyright": "All rights reserved."
+      "copyright": "جميع الحقوق محفوظة."
     },
     "projects": {
       "hero": {
-        "title1": "My",
-        "title2": "Achievements",
-        "subtitle": "Discover my projects and the technical expertise used to create innovative and high-performance solutions",
-        "searchPlaceholder": "Search projects, technologies..."
+        "title1": "إ",
+        "title2": "نجازاتي",
+        "subtitle": "اكتشف مشاريعي والخبرة التقنية المستخدمة لإنشاء حلول مبتكرة وعالية الأداء",
+        "searchPlaceholder": "ابحث عن مشاريع، تقنيات..."
       },
       "filters": {
-        "filterLabel": "Filter:",
-        "all": "All projects",
-        "web": "Web",
-        "desktop": "Desktop",
-        "mobile": "Mobile",
-        "moreFilters": "More filters",
-        "projectStatus": "Project status",
-        "statusAll": "All statuses",
-        "statusCompleted": "Completed",
-        "statusInProgress": "In progress",
-        "technologies": "Technologies",
-        "applyFilters": "Apply filters",
-        "reset": "Reset"
+        "filterLabel": "تصفية:",
+        "all": "جميع المشاريع",
+        "web": "ويب",
+        "desktop": "سطح مكتب",
+        "mobile": "جوال",
+        "moreFilters": "مزيد من الفلاتر",
+        "projectStatus": "حالة المشروع",
+        "statusAll": "جميع الحالات",
+        "statusCompleted": "مكتمل",
+        "statusInProgress": "قيد التقدم",
+        "technologies": "التقنيات",
+        "applyFilters": "تطبيق الفلاتر",
+        "reset": "إعادة تعيين"
       },
       "noProjects": {
-        "title": "No projects found",
-        "message": "No projects match your search. Try changing your filters or search."
+        "title": "لم يتم العثور على مشاريع",
+        "message": "لا توجد مشاريع تطابق بحثك. حاول تغيير الفلاتر أو البحث."
       },
-      "viewDetails": "View details",
+      "viewDetails": "عرض التفاصيل",
       "technologies": {
-        "title1": "Technologies",
-        "title2": "Mastered",
-        "subtitle": "Tools and technologies I use to create high-performance solutions"
+        "title1": "الت",
+        "title2": "قنيات التي أتقنها",
+        "subtitle": "الأدوات والتقنيات التي أستخدمها لإنشاء حلول عالية الأداء"
       },
       "cta": {
-        "title": "Ready to materialize your project?",
-        "subtitle": "Let's discuss your vision together and create something extraordinary",
-        "button": "Start a project"
+        "title": "مستعد لتحقيق مشروعك؟",
+        "subtitle": "لنتناقش حول رؤيتك معًا ونخلق شيئًا استثنائيًا",
+        "button": "بدء مشروع"
       },
       "status": {
-        "completed": "Completed",
-        "inProgress": "In progress"
+        "completed": "مكتمل",
+        "inProgress": "قيد التقدم"
       },
       "categories": {
-        "web": "Web",
-        "desktop": "Desktop",
-        "mobile": "Mobile"
+        "web": "ويب",
+        "desktop": "سطح مكتب",
+        "mobile": "جوال"
       },
       "projectDetails": {
-        "title": "Project details",
-        "description": "Full description",
-        "client": "Client",
-        "period": "Period",
-        "status": "Status",
-        "category": "Category",
-        "technologies": "Technologies used",
-        "results": "Results obtained",
-        "features": "Features",
-        "visitSite": "Visit site",
-        "viewCode": "View code"
+        "title": "تفاصيل المشروع",
+        "description": "وصف كامل",
+        "client": "عميل",
+        "period": "فترة",
+        "status": "حالة",
+        "category": "فئة",
+        "technologies": "التقنيات المستخدمة",
+        "results": "النتائج المتحصل عليها",
+        "features": "ميزات",
+        "visitSite": "زيارة الموقع",
+        "viewCode": "عرض الكود"
       }
     },
     "projectsData": [],
@@ -346,36 +346,36 @@
       { "name": "Figma", "icon": "SiFigma" }
     ],
     "blog": {
-      "title": "Tech Blog",
-      "subtitle": "Discover my thoughts on web development, new technologies, and industry best practices.",
-      "searchPlaceholder": "Search for an article, tag, or topic...",
-      "categoriesButton": "Categories",
-      "resetButton": "Reset",
-      "featuredPostTitle": "Featured Post",
-      "recentPostsTitle": "Recent Posts",
-      "foundPostsTitle": "Articles found",
-      "noPostsFound": "No articles found for your search.",
-      "viewAllPosts": "View all articles",
-      "aboutTitle": "About the blog",
-      "aboutDescription": "Passionate Full Stack Developer, I share here my experiences, discoveries, and thoughts on the world of web development. Explore the latest trends, tips, and best practices.",
-      "popularTagsTitle": "Popular Tags",
-      "newsletterTitle": "Tech Newsletter",
-      "newsletterDescription": "Receive the latest articles and resources directly in your inbox.",
-      "newsletterPlaceholder": "Your email",
-      "newsletterButton": "Subscribe",
-      "readMore": "Read more",
-      "read": "Read",
-      "close": "Close",
-      "leaveComment": "Leave a comment",
-      "articles": "Articles",
-      "article": "Article",
+      "title": "مدونة تقنية",
+      "subtitle": "اكتشف أفكاري حول تطوير الويب، التقنيات الجديدة، وأفضل ممارسات القطاع.",
+      "searchPlaceholder": "ابحث عن مقال، وسم، أو موضوع...",
+      "categoriesButton": "فئات",
+      "resetButton": "إعادة تعيين",
+      "featuredPostTitle": "مقال مميز",
+      "recentPostsTitle": "مقالات حديثة",
+      "foundPostsTitle": "مقالات تم العثور عليها",
+      "noPostsFound": "لم يتم العثور على مقالات لبحثك.",
+      "viewAllPosts": "عرض جميع المقالات",
+      "aboutTitle": "حول المدونة",
+      "aboutDescription": "مطور كامل المكدس شغوف، أشارك هنا تجاربي، اكتشافاتي، وأفكاري حول عالم تطوير الويب. استكشف أحدث الاتجاهات، النصائح، وأفضل الممارسات.",
+      "popularTagsTitle": "وسوم شائعة",
+      "newsletterTitle": "نشرة تقنية",
+      "newsletterDescription": "استلم أحدث المقالات والموارد مباشرة في بريدك الوارد.",
+      "newsletterPlaceholder": "بريدك الإلكتروني",
+      "newsletterButton": "اشتراك",
+      "readMore": "قراءة المزيد",
+      "read": "قراءة",
+      "close": "إغلاق",
+      "leaveComment": "ترك تعليق",
+      "articles": "مقالات",
+      "article": "مقال",
       "categories": {
-        "all": "All articles",
-        "development": "Development",
-        "design": "Design",
+        "all": "جميع المقالات",
+        "development": "تطوير",
+        "design": "تصميم",
         "seo": "SEO",
-        "methodology": "Methodology",
-        "security": "Security"
+        "methodology": "منهجية",
+        "security": "أمان"
       },
       "categoriesList": [
         { "id": "all", "icon": "LayoutGrid" },
@@ -399,103 +399,103 @@
         "Responsive",
         "Performance"
       ],
-      "readTimeSuffix": "read",
-      "shareArticle": "Share this article",
-      "share": "Share",
-      "save": "Save",
-      "like": "Like"
+      "readTimeSuffix": "قراءة",
+      "shareArticle": "مشاركة هذا المقال",
+      "share": "مشاركة",
+      "save": "حفظ",
+      "like": "إعجاب"
     },
     "cookies": {
       "hero": {
-        "title": "Privacy Policy and Cookie Management",
-        "subtitle": "Transparency and control of your personal data on our platform"
+        "title": "سياسة الخصوصية وإدارة ملفات تعريف الارتباط",
+        "subtitle": "شفافية وتحكم في بياناتك الشخصية على منصتنا"
       },
       "commitment": {
-        "title": "Our commitment to your privacy",
-        "text1": "At our company, the protection of your personal data is an absolute priority. This policy explains how we collect, use, and protect your information.",
-        "text2": "We are committed to complying with GDPR and French regulations on data protection."
+        "title": "التزامنا تجاه خصوصيتك",
+        "text1": "في شركتنا، حماية بياناتك الشخصية هي أولوية مطلقة. تشرح هذه السياسة كيف نجمع ونستخدم ونحمي معلوماتك.",
+        "text2": "نحن ملتزمون باحترام اللائحة العامة لحماية البيانات (GDPR) واللوائح الفرنسية حول حماية البيانات."
       },
       "cookiesSection": {
-        "title": "Cookie Policy",
-        "subtitle": "Management of trackers and similar technologies",
-        "whatAreCookies": "What are cookies?",
-        "cookiesDefinition": "Cookies are small text files placed on your device when you browse. They are used to remember your preferences, analyze traffic, and personalize your experience.",
-        "typesTitle": "Types of cookies used",
+        "title": "سياسة ملفات تعريف الارتباط",
+        "subtitle": "إدارة أداء التتبع والتقنيات المشابهة",
+        "whatAreCookies": "ما هي ملفات تعريف الارتباط؟",
+        "cookiesDefinition": "ملفات تعريف الارتباط هي ملفات نصية صغيرة يتم وضعها على جهازك عند التصفح. تُستخدم لتذكر تفضيلاتك، وتحليل حركة المرور، وتخصيص تجربتك.",
+        "typesTitle": "أنواع ملفات تعريف الارتباط المستخدمة",
         "essential": {
-          "title": "Essential",
-          "description": "Necessary for the functioning of the site (security, cart, account)"
+          "title": "أساسية",
+          "description": "ضرورية لعمل الموقع (الأمان، سلة التسوق، الحساب)"
         },
         "performance": {
-          "title": "Performance",
-          "description": "Analysis of site usage (pages visited, loading times)"
+          "title": "أداء",
+          "description": "تحليل استخدام الموقع (الصفحات التي تمت زيارتها، أوقات التحميل)"
         },
         "functional": {
-          "title": "Functional",
-          "description": "Personalization of experience (language, regional preferences)"
+          "title": "وظيفية",
+          "description": "تخصيص التجربة (اللغة، التفضيلات الإقليمية)"
         },
         "marketing": {
-          "title": "Marketing",
-          "description": "Personalized advertising and remarketing campaigns"
+          "title": "تسويق",
+          "description": "إعلانات مخصصة وحملات إعادة استهداف"
         },
         "management": {
-          "title": "Management of your consent",
-          "text": "You have full control over non-essential cookies. You can change your preferences at any time.",
-          "button": "Manage my cookie preferences"
+          "title": "إدارة موافقتك",
+          "text": "لديك تحكم كامل في ملفات تعريف الارتباط غير الأساسية. يمكنك تغيير تفضيلاتك في أي وقت.",
+          "button": "إدارة تفضيلات ملفات تعريف الارتباط"
         }
       },
       "dataSection": {
-        "title": "Processing of personal data",
-        "subtitle": "How we collect and use your information",
-        "collectedData": "Collected data",
+        "title": "معالجة البيانات الشخصية",
+        "subtitle": "كيف نجمع ونستخدم معلوماتك",
+        "collectedData": "البيانات المجمعة",
         "dataList": [
-          "Account information (name, email, address)",
-          "Navigation data (IP address, pages viewed)",
-          "Transaction information (purchase history)",
-          "Preferences and interests"
+          "معلومات الحساب (الاسم، البريد الإلكتروني، العنوان)",
+          "بيانات التصفح (عنوان IP، الصفحات التي تمت زيارتها)",
+          "معلومات المعاملة (سجل المشتريات)",
+          "التفضيلات ومراكز الاهتمام"
         ],
-        "purposesTitle": "Purposes of processing",
+        "purposesTitle": "أغراض المعالجة",
         "purposesList": [
-          "Execution of orders and services",
-          "Personalization of user experience",
-          "Improvement of our products and services",
-          "Marketing communication (with your consent)",
-          "Compliance with legal obligations"
+          "تنفيذ الطلبات والخدمات",
+          "تخصيص تجربة المستخدم",
+          "تحسين منتجاتنا وخدماتنا",
+          "الاتصال التسويقي (بموافقتك)",
+          "الامتثال للالتزامات القانونية"
         ],
-        "protectionTitle": "Data protection",
-        "protectionText": "We implement advanced security measures including:",
+        "protectionTitle": "حماية البيانات",
+        "protectionText": "ننفذ إجراءات أمنية متقدمة تشمل:",
         "protectionList": [
-          "AES-256 encryption of sensitive data",
-          "Regular security audits",
-          "Restricted access to personal data",
-          "Limited retention policy"
+          "تشفير AES-256 للبيانات الحساسة",
+          "مراجعات أمنية منتظمة",
+          "وصول مقيد إلى البيانات الشخصية",
+          "سياسة احتفاظ محدودة زمنيًا"
         ]
       },
       "rightsSection": {
-        "title": "Your GDPR rights",
-        "subtitle": "Control of your personal data",
+        "title": "حقوقك بموجب اللائحة العامة لحماية البيانات (GDPR)",
+        "subtitle": "التحكم في بياناتك الشخصية",
         "access": {
-          "title": "Right of access",
-          "description": "Obtain a copy of your personal data"
+          "title": "حق الوصول",
+          "description": "الحصول على نسخة من بياناتك الشخصية"
         },
         "rectification": {
-          "title": "Right to rectification",
-          "description": "Correct inaccurate information"
+          "title": "حق التصحيح",
+          "description": "تصحيح المعلومات غير الدقيقة"
         },
         "erasure": {
-          "title": "Right to erasure",
-          "description": "Delete your data ('right to be forgotten')"
+          "title": "حق المحو",
+          "description": "حذف بياناتك ('حق النسيان')"
         },
         "objection": {
-          "title": "Right to object",
-          "description": "Object to processing for legitimate reasons"
+          "title": "حق الاعتراض",
+          "description": "الاعتراض على المعالجة لأسباب مشروعة"
         },
-        "howToExercise": "How to exercise your rights",
-        "exerciseText": "For any request regarding your personal data, please contact us at the address below. We will respond within a maximum of 30 days."
+        "howToExercise": "كيفية ممارسة حقوقك",
+        "exerciseText": "لأي طلب يتعلق ببياناتك الشخصية، يرجى الاتصال بنا على العنوان أدناه. سنرد في غضون 30 يومًا كحد أقصى."
       },
       "disableSection": {
-        "title": "Disabling cookies",
-        "subtitle": "How to manage your browser settings",
-        "text": "You can control cookies through your browser settings. Here are the guides for popular browsers:",
+        "title": "تعطيل ملفات تعريف الارتباط",
+        "subtitle": "كيفية إدارة إعدادات متصفحك",
+        "text": "يمكنك التحكم في ملفات تعريف الارتباط من خلال إعدادات متصفحك. إليك أدلة المتصفحات الشائعة:",
         "browsers": {
           "chrome": "Google Chrome",
           "firefox": "Mozilla Firefox",
@@ -504,81 +504,81 @@
         }
       },
       "contactSection": {
-        "title": "Contact and DPO",
-        "subtitle": "Our Data Protection Officer",
-        "text": "For any questions regarding this policy or the exercise of your rights, contact our DPO:",
-        "dpoName": "Mr. Jean Dupont",
-        "dpoRole": "Data Protection Officer",
+        "title": "الاتصال ومسؤول حماية البيانات (DPO)",
+        "subtitle": "مسؤول حماية البيانات لدينا",
+        "text": "لأي أسئلة regarding هذه السياسة أو ممارسة حقوقك، اتصل بمسؤول حماية البيانات لدينا:",
+        "dpoName": "السيد جان دوبون",
+        "dpoRole": "مسؤول حماية البيانات",
         "email": "dpo@yourcompany.com",
         "phone": "+33 1 23 45 67 89",
-        "mailingAddress": "By mail:",
+        "mailingAddress": "عن طريق البريد:",
         "address": [
-          "Company XYZ",
-          "Data Protection Service",
-          "123 Avenue de la République",
-          "75011 Paris, France"
+          "شركة XYZ",
+          "خدمة حماية البيانات",
+          "123 شارع الجمهورية",
+          "75011 باريس، فرنسا"
         ]
       },
-      "lastUpdated": "Last updated: "
+      "lastUpdated": "آخر تحديث: "
     },
     "contact": {
-      "faqTitle1": "Frequently",
-      "faqTitle2": "Asked Questions",
-      "faqSubtitle": "Find answers to the most common questions",
+      "faqTitle1": "أسئلة",
+      "faqTitle2": "شائعة",
+      "faqSubtitle": "ابحث عن إجابات للأسئلة الأكثر شيوعًا",
       "hero": {
-        "title1": "Contact",
-        "title2": "Me",
-        "subtitle": "A question, a project, or just want to chat? I'm here to listen.",
-        "contactButton": "Contact me",
-        "devisButton": "Request a quote"
+        "title1": "ات",
+        "title2": "صل بي",
+        "subtitle": "هل لديك سؤال، مشروع، أو فقط تريد الدردشة؟ أنا هنا للاستماع.",
+        "contactButton": "اتصل بي",
+        "devisButton": "طلب عرض سعر"
       },
       "whatsapp": {
-        "title": "WhatsApp Contact",
-        "description": "Let's discuss your project directly on WhatsApp",
-        "button": "Open WhatsApp",
+        "title": "اتصال واتساب",
+        "description": "لنتناقش حول مشروعك مباشرة على واتساب",
+        "button": "فتح واتساب",
         "link": "https://wa.me/yourphonenumber"
       },
       "devis": {
-        "title": "Free Quote",
-        "description": "Get a personalized estimate for your project",
-        "button": "Request a quote"
+        "title": "عرض سعر مجاني",
+        "description": "احصل على تقدير مخصص لمشروعك",
+        "button": "طلب عرض سعر"
       },
       "guarantees": [
         {
-          "title": "Response within 24h",
-          "text": "I commit to responding to all requests within 24 hours"
+          "title": "رد خلال 24 ساعة",
+          "text": "أتعهد بالرد على جميع الطلبات خلال 24 ساعة"
         },
         {
-          "title": "Smooth communication",
-          "text": "Regular follow-up and transparent communication throughout the project"
+          "title": "تواصل سلس",
+          "text": "متابعة منتظمة وتواصل شفاف طوال المشروع"
         },
         {
-          "title": "Satisfaction guaranteed",
-          "text": "Modifications included until you are completely satisfied"
+          "title": "رضا مضمون",
+          "text": "تعديلات مشمولة حتى تكون راضيًا تمامًا"
         }
       ],
-      "errorMessage": "An error occurred, please try again.",
-      "successTitle": "Message sent!",
-      "successMessage": "Thank you for your message. I will get back to you very quickly.",
-      "sending": "Sending...",
-      "sendMessage": "Send message",
-      "formFooter": "* Required fields. Your data is protected and will never be shared.",
+      "errorMessage": "حدث خطأ، يرجى المحاولة مرة أخرى.",
+      "successTitle": "تم إرسال الرسالة!",
+      "successMessage": "شكرًا لك على رسالتك. سأرد عليك بسرعة كبيرة.",
+      "sending": "جاري الإرسال...",
+      "sendMessage": "إرسال الرسالة",
+      "formFooter": "* الحقول الإلزامية. بياناتك محمية ولن يتم مشاركتها أبدًا.",
       "contactInfo": [
         {
-          "title": "Email",
+          "title": "بريد إلكتروني",
           "details": ["contact@mysite.com", "support@mysite.com"]
         },
         {
-          "title": "Phone",
+          "title": "هاتف",
           "details": ["+33 6 12 34 56 78"]
         },
         {
-          "title": "Location",
-          "details": ["Paris, France"]
+          "title": "موقع",
+          "details": ["باريس، فرنسا"]
         },
         {
-          "title": "Availability",
-          "details": ["Mon-Fri: 9am-6pm", "Response within 24h"]
+          "title": "التوافر",
+          "details": ["الإثنين-الجمعة: 9 صباحًا-6 مساءً", "رد خلال 24 ساعة"]
         }
       ],
       "socialLinks": [
@@ -595,89 +595,89 @@
       ],
       "faqItems": [
         {
-          "question": "What is your average response time?",
-          "answer": "I commit to responding to all messages within 24 business hours."
+          "question": "ما هو متوسط وقت استجابتك؟",
+          "answer": "أتعهد بالرد على جميع الرسائل خلال 24 ساعة عمل."
         },
         {
-          "question": "Can I contact you for free advice?",
-          "answer": "Absolutely! I offer free 15-minute consultations to discuss your needs."
+          "question": "هل يمكنني الاتصال بك للحصول على استشارة مجانية؟",
+          "answer": "بالتأكيد! أقدم استشارات مجانية لمدة 15 دقيقة لمناقشة احتياجاتك."
         },
         {
-          "question": "Do you handle urgent requests?",
-          "answer": "Yes, for urgent requests, please mention it in your message and I will do my best to respond quickly."
+          "question": "هل تتعامل مع الطلبات العاجلة؟",
+          "answer": "نعم، للطلبات العاجلة، يرجى ذكر ذلك في رسالتك وسأبذل قصارى جهدي للرد بسرعة."
         },
         {
-          "question": "What topics can I discuss?",
-          "answer": "All topics are welcome: technical questions, advice requests, collaborations, or just to say hello!"
+          "question": "ما هي المواضيع التي يمكنني مناقشتها؟",
+          "answer": "جميع المواضيع مرحب بها: أسئلة تقنية، طلبات نصيحة، تعاون، أو فقط لقول مرحبًا!"
         },
         {
-          "question": "What are your response times?",
-          "answer": "I commit to responding to all requests within a maximum of 24 business hours. For complex projects, I will send an initial response within 24h and a detailed quote within 48h."
+          "question": "ما هي أوقات استجابتك؟",
+          "answer": "أتعهد بالرد على جميع الطلبات في غضون 24 ساعة عمل كحد أقصى. للمشاريع المعقدة، سأرسل ردًا أوليًا خلال 24 ساعة وعرض سعر مفصل خلال 48 ساعة."
         },
         {
-          "question": "Can I meet you in person?",
-          "answer": "Absolutely! I am based in Paris and available for in-person meetings. For international or remote clients, I offer consultations via Zoom, Teams, or Google Meet."
+          "question": "هل يمكنني مقابلتك شخصيًا؟",
+          "answer": "بالتأكيد! أنا مقيم في باريس ومتاح للقاءات شخصية. للعملاء الدوليين أو البعيدين، أقدم استشارات عبر Zoom أو Teams أو Google Meet."
         },
         {
-          "question": "What types of projects do you accept?",
-          "answer": "I work on a wide range of projects: showcase sites, e-commerce, web applications, redesigns, UI/UX design, and SEO optimization. If your project requires specific expertise, I can refer you to trusted partners."
+          "question": "ما أنواع المشاريع التي تقبلها؟",
+          "answer": "أعمل على مجموعة واسعة من المشاريع: مواقع عرض، تجارة إلكترونية، تطبيقات ويب، إعادة تصميم، تصميم واجهة المستخدم/تجربة المستخدم، وتحسين محركات البحث. إذا كان مشروعك يتطلب خبرة محددة، يمكنني إحالتك إلى شركاء موثوق بهم."
         },
         {
-          "question": "Do you offer support after delivery?",
-          "answer": "Yes, I offer different levels of post-delivery support, ranging from minor bug fixes to comprehensive maintenance contracts including updates, backups, and continuous improvements."
+          "question": "هل تقدم دعماً بعد التسليم؟",
+          "answer": "نعم، أقدم مستويات مختلفة من الدعم بعد التسليم، تتراوح من تصحيح الأخطاء البسيطة إلى عقود الصيانة الشاملة التي تشمل التحديثات والنسخ الاحتياطية والتحسينات المستمرة."
         }
       ],
       "form": {
-        "nameLabel": "Your name",
-        "namePlaceholder": "Your full name",
-        "emailLabel": "Your email",
+        "nameLabel": "اسمك",
+        "namePlaceholder": "اسمك الكامل",
+        "emailLabel": "بريدك الإلكتروني",
         "emailPlaceholder": "your@email.com",
-        "subjectLabel": "Subject",
-        "subjectPlaceholder": "Subject of your message",
-        "messageLabel": "Your message",
-        "messagePlaceholder": "Describe your request here..."
+        "subjectLabel": "الموضوع",
+        "subjectPlaceholder": "موضوع رسالتك",
+        "messageLabel": "رسالتك",
+        "messagePlaceholder": "صف طلبك هنا..."
       },
       "sectionTitles": {
-        "sendMessage": "Send a message",
-        "sendMessageDesc": "Fill out this form and I will respond as soon as possible.",
-        "myContactInfo": "My contact information",
-        "socialNetworks": "Social networks",
-        "findMe": "Where to find me",
-        "findMeDesc": "Based in Paris, I work with clients all over the world"
+        "sendMessage": "أرسل رسالة",
+        "sendMessageDesc": "املأ هذا النموذج وسأرد في أسرع وقت ممكن.",
+        "myContactInfo": "معلومات الاتصال بي",
+        "socialNetworks": "الشبكات الاجتماعية",
+        "findMe": "أين تجدني",
+        "findMeDesc": "مقيم في باريس، أعمل مع عملاء من جميع أنحاء العالم"
       },
-      "ctaTitle": "Ready to start your project?",
-      "ctaSubtitle": "Contact me today to discuss your needs and see how I can help you."
+      "ctaTitle": "مستعد لبدء مشروعك؟",
+      "ctaSubtitle": "اتصل بي اليوم لمناقشة احتياجاتك ومعرفة كيف يمكنني مساعدتك."
     },
     "services": {
       "meta": {
-        "title": "Custom Web Services | Website and Application Creation",
-        "description": "Expert in web development and UX/UI design. Complete solutions for showcase sites, web applications, and digital strategy."
+        "title": "خدمات ويب مخصصة | إنشاء مواقع وتطبيقات",
+        "description": "خبير في تطوير الويب وتصميم UX/UI. حلول كاملة لمواقع العرض، تطبيقات الويب، والاستراتيجية الرقمية."
       },
       "hero": {
-        "title1": "Custom",
-        "title2": "Digital Solutions",
-        "subtitle": "Transform your ideas into exceptional digital experiences with technical expertise combined with innovative design.",
-        "button": "Discuss your project"
+        "title1": "حلول",
+        "title2": "رقمية مخصصة",
+        "subtitle": "حول أفكارك إلى تجارب رقمية استثنائية بخبرة تقنية مجتمعة مع تصميم مبتكر.",
+        "button": "ناقش مشروعك"
       },
       "services": {
-        "title1": "My",
-        "title2": "Expertise",
-        "subtitle": "Custom solutions to transform your digital challenges into success",
-        "featuresTitle": "Proposed solutions",
-        "techTitle": "Key technologies",
-        "ctaButton": "Describe your project",
+        "title1": "خ",
+        "title2": "براتي",
+        "subtitle": "حلول مخصصة لتحويل تحدياتك الرقمية إلى نجاح",
+        "featuresTitle": "الحلول المقترحة",
+        "techTitle": "التقنيات الرئيسية",
+        "ctaButton": "صف مشروعك",
         "web": {
-          "title": "Websites",
-          "description": "Creation of high-performance and secure sites adapted to your business needs.",
+          "title": "مواقع ويب",
+          "description": "إنشاء مواقع عالية الأداء وآمنة ومكيفة مع احتياجاتك التجارية.",
           "features": [
-            "Custom showcase sites",
-            "Mobile/tablet compatible",
-            "Smooth animations",
-            "Optimization for Google",
-            "Ultra-fast loading",
-            "Protection against cyber threats",
-            "Secure hosting with backups",
-            "Permanent technical assistance"
+            "مواقع عرض مخصصة",
+            "متوافقة مع الجوال/اللوحي",
+            "حركات سلسة",
+            "محسنة لجوجل",
+            "تحميل فائق السرعة",
+            "حماية ضد التهديدات الإلكترونية",
+            "استضافة آمنة مع نسخ احتياطية",
+            "مساعدة تقنية دائمة"
           ],
           "technologies": [
             "Bootstrap",
@@ -689,32 +689,32 @@
           ]
         },
         "app": {
-          "title": "Web applications",
-          "description": "Complete solutions to automate your business processes.",
+          "title": "تطبيقات ويب",
+          "description": "حلول كاملة لأتمتة عملياتك التجارية.",
           "features": [
-            "Custom dashboards",
-            "Custom SaaS platforms",
-            "Secure online stores",
-            "Connection to your existing tools",
-            "Automation of repetitive tasks",
-            "Real-time data analysis",
-            "Multi-device synchronization",
-            "User training"
+            "لوحات تحكم مخصصة",
+            "منصات SaaS مخصصة",
+            "متاجر إلكترونية آمنة",
+            "اتصال بأدواتك الحالية",
+            "أتمتة المهام المتكررة",
+            "تحليل البيانات في الوقت الحقيقي",
+            "مزامنة متعددة الأجهزة",
+            "تدريب المستخدمين"
           ],
           "technologies": ["Wordpress", "PHP", "Laravel", "MySQL"]
         },
         "mobile": {
-          "title": "Mobile Applications",
-          "description": "Native applications for smartphones published on official stores.",
+          "title": "تطبيقات جوال",
+          "description": "تطبيقات أصلية للهواتف الذكية منشورة على المتاجر الرسمية.",
           "features": [
-            "High-performance iOS and Android",
-            "Publication on App Store/Google Play",
-            "Offline functionality",
-            "Instant notifications",
-            "Protection of personal data",
-            "Simple and intuitive interfaces",
-            "Testing on all devices",
-            "Regular updates"
+            "iOS و Android عالي الأداء",
+            "النشر على App Store/Google Play",
+            "وظائف دون اتصال",
+            "إشعارات فورية",
+            "حماية البيانات الشخصية",
+            "واجهات بسيطة وبديهية",
+            "اختبار على جميع الأجهزة",
+            "تحديثات منتظمة"
           ],
           "technologies": [
             "Flutter",
@@ -725,16 +725,16 @@
           ]
         },
         "marketing": {
-          "title": "Digital Strategy & Marketing",
-          "description": "Solutions to attract customers and increase your online sales.",
+          "title": "استراتيجية رقمية وتسويق",
+          "description": "حلول لجذب العملاء وزيادة مبيعاتك عبر الإنترنت.",
           "features": [
-            "Creation of visual identity (logos, posters)",
-            "Management of your social networks",
-            "Production of attractive content",
-            "Targeted Google ads",
-            "Loyalty strategies",
-            "Marketing automation",
-            "Performance analysis"
+            "إنشاء هوية بصرية (شعارات، ملصقات)",
+            "إدارة شبكاتك الاجتماعية",
+            "إنتاج محتوى جذاب",
+            "إعلانات جوجل المستهدفة",
+            "استراتيجيات الولاء",
+            "أتمتة التسويق",
+            "تحليل الأداء"
           ],
           "technologies": [
             "Google Ads",
@@ -746,202 +746,202 @@
         }
       },
       "process": {
-        "title1": "Creative",
-        "title2": "Process",
-        "subtitle": "A transparent methodology for exceptional results"
+        "title1": "ع",
+        "title2": "ملية إبداعية",
+        "subtitle": "منهجية شفافة لنتائج استثنائية"
       },
       "processSteps": [
         {
-          "step": "Design",
-          "title": "Digital Blueprint",
-          "description": "Definition of objectives and technical architecture"
+          "step": "تصميم",
+          "title": "المخطط الرقمي",
+          "description": "تحديد الأهداف والهندسة المعمارية التقنية"
         },
         {
-          "step": "Development",
-          "title": "Technical Creation",
-          "description": "Agile implementation with weekly reviews"
+          "step": "تطوير",
+          "title": "إبداع تقني",
+          "description": "تنفيذ رشيق مع مراجعات أسبوعية"
         },
         {
-          "step": "Optimization",
-          "title": "Fine Tuning",
-          "description": "User testing and precise adjustments"
+          "step": "تحسين",
+          "title": "ضبط دقيق",
+          "description": "اختبار المستخدم وتعديلات دقيقة"
         },
         {
-          "step": "Delivery",
-          "title": "Support",
-          "description": "Training and post-delivery support"
+          "step": "تسليم",
+          "title": "دعم",
+          "description": "تدريب ودعم ما بعد التسليم"
         }
       ],
       "why": {
-        "title1": "Committed",
-        "title2": "Expertise",
-        "subtitle": "An approach centered on your business objectives and transparent collaboration",
-        "imageAlt": "Professional team collaborating on a technology project",
+        "title1": "خ",
+        "title2": "برة ملتزمة",
+        "subtitle": "نهج مرتكز على أهدافك التجارية وتعاون شفاف",
+        "imageAlt": "فريق محترف يتعاون على مشروع تكنولوجي",
         "features": [
           {
-            "title": "Enhanced security",
-            "description": "Data protection and GDPR compliance integrated from design"
+            "title": "أمان معزز",
+            "description": "حماية البيانات والامتثال للائحة العامة لحماية البيانات (GDPR) مدمج منذ التصميم"
           },
           {
-            "title": "Respect for deadlines",
-            "description": "Agile methodology with regular intermediate deliveries"
+            "title": "احترام المواعيد النهائية",
+            "description": "منهجية رشيقة مع تسليمات وسيطة منتظمة"
           },
           {
-            "title": "Technical innovation",
-            "description": "Constant technological watch for cutting-edge solutions"
+            "title": "ابتكار تقني",
+            "description": "مراقبة تكنولوجية مستمرة لحلول مبتكرة"
           },
           {
-            "title": "Continuous support",
-            "description": "Post-delivery support and future evolutions"
+            "title": "دعم مستمر",
+            "description": "دعم ما بعد التسليم وتطورات مستقبلية"
           }
         ]
       },
       "cta": {
-        "title": "Ready to transform your digital vision?",
-        "subtitle": "Contact me for a free consultation and let's explore the possibilities together.",
-        "button1": "Schedule a call",
-        "button2": "See my achievements"
+        "title": "مستعد لتحويل رؤيتك الرقمية؟",
+        "subtitle": "اتصل بي للحصول على استشارة مجانية ودعنا نستكشف الإمكانيات معًا.",
+        "button1": "جدولة مكالمة",
+        "button2": "شاهد إنجازاتي"
       }
     },
     "devis": {
-      "documentTitle": "Quote Request | Website and Application Creation",
+      "documentTitle": "طلب عرض سعر | إنشاء مواقع ويب وتطبيقات",
       "hero": {
-        "title1": "Request a",
-        "title2": "Personalized Quote",
-        "subtitle": "Fill out this detailed form to receive an accurate estimate for your web or mobile project.",
-        "contactButton": "Contact me"
+        "title1": "طلب",
+        "title2": "عرض سعر مخصص",
+        "subtitle": "املأ هذا النموذج المفصل لاستلام تقدير دقيق لمشروعك على الويب أو الجوال.",
+        "contactButton": "اتصل بي"
       },
       "form": {
-        "title": "Quote Request",
-        "step": "Step {{step}}/{{total}}",
+        "title": "طلب عرض سعر",
+        "step": "خطوة {{step}}/{{total}}",
         "success": {
-          "title": "Request sent!",
-          "message": "Thank you for your request. I will contact you within 24 hours with a personalized quote.",
-          "button": "Return to home"
+          "title": "تم إرسال الطلب!",
+          "message": "شكرًا لك على طلبك. سأتصل بك خلال 24 ساعة بعرض سعر مخصص.",
+          "button": "العودة إلى الرئيسية"
         }
       },
       "step1": {
-        "title": "Personal Information",
-        "firstName": "First name",
-        "firstNamePlaceholder": "Your first name",
-        "lastName": "Last name",
-        "lastNamePlaceholder": "Your last name",
-        "email": "Email Address",
+        "title": "معلومات شخصية",
+        "firstName": "الاسم الأول",
+        "firstNamePlaceholder": "اسمك الأول",
+        "lastName": "الاسم الأخير",
+        "lastNamePlaceholder": "اسمك الأخير",
+        "email": "عنوان البريد الإلكتروني",
         "emailPlaceholder": "your@email.com",
-        "phone": "Phone",
-        "phonePlaceholder": "Your number",
-        "company": "Company",
-        "companyPlaceholder": "Your company name",
-        "website": "Website",
+        "phone": "هاتف",
+        "phonePlaceholder": "رقمك",
+        "company": "شركة",
+        "companyPlaceholder": "اسم شركتك",
+        "website": "موقع ويب",
         "websitePlaceholder": "https://yoursite.com",
-        "nextButton": "Next"
+        "nextButton": "التالي"
       },
       "step2": {
-        "title": "Project Details",
-        "projectName": "Project name",
-        "projectNamePlaceholder": "Ex: E-commerce site redesign",
-        "service": "Type of service",
-        "servicePlaceholder": "Select a service",
-        "serviceOtherPlaceholder": "Specify the type of service",
-        "projectType": "Project type",
-        "projectTypePlaceholder": "Select the project type",
-        "projectTypeOtherPlaceholder": "Specify the project type",
-        "prevButton": "Previous",
-        "nextButton": "Next"
+        "title": "تفاصيل المشروع",
+        "projectName": "اسم المشروع",
+        "projectNamePlaceholder": "مثال: إعادة تصميم موقع تجارة إلكترونية",
+        "service": "نوع الخدمة",
+        "servicePlaceholder": "اختر خدمة",
+        "serviceOtherPlaceholder": "حدد نوع الخدمة",
+        "projectType": "نوع المشروع",
+        "projectTypePlaceholder": "اختر نوع المشروع",
+        "projectTypeOtherPlaceholder": "حدد نوع المشروع",
+        "prevButton": "السابق",
+        "nextButton": "التالي"
       },
       "step3": {
-        "title": "Requirements & Files",
-        "featuresLabel": "Desired features",
-        "projectGoals": "Project goals",
-        "projectGoalsPlaceholder": "What are the main goals of your project? What problems does it solve?",
-        "targetAudience": "Target audience",
-        "targetAudiencePlaceholder": "Describe your target audience (age, profession, interests...)",
-        "technicalRequirements": "Technical requirements",
-        "technicalRequirementsPlaceholder": "Technical specifications, necessary integrations, particular constraints...",
+        "title": "متطلبات وملفات",
+        "featuresLabel": "الميزات المطلوبة",
+        "projectGoals": "أهداف المشروع",
+        "projectGoalsPlaceholder": "ما هي الأهداف الرئيسية لمشروعك؟ ما هي المشاكل التي يحلها؟",
+        "targetAudience": "الجمهور المستهدف",
+        "targetAudiencePlaceholder": "صف جمهورك المستهدف (العمر، المهنة، الاهتمامات...)",
+        "technicalRequirements": "المتطلبات التقنية",
+        "technicalRequirementsPlaceholder": "مواصفات تقنية، تكاملات ضرورية، قيود خاصة...",
         "fileUpload": {
-          "title": "Upload files",
-          "instruction1": "Drag and drop your files or",
-          "instruction2": "click to browse",
-          "formats": "Accepted formats: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (Max 10MB)",
-          "attachments": "{count} file(s) attached"
+          "title": "تحميل الملفات",
+          "instruction1": "اسحب وأفلت ملفاتك أو",
+          "instruction2": "انقر للتصفح",
+          "formats": "الصيغ المقبولة: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (الحد الأقصى 10MB)",
+          "attachments": "{{count}} ملف مرفق"
         },
-        "prevButton": "Previous",
-        "nextButton": "Next"
+        "prevButton": "السابق",
+        "nextButton": "التالي"
       },
       "step4": {
-        "title": "Timeline, Budget & Finalization",
-        "timeline": "Desired timeline",
-        "timelinePlaceholder": "Select a timeline",
-        "timelineOtherPlaceholder": "Specify your timeline",
-        "budget": "Estimated budget",
-        "budgetPlaceholder": "Select your budget",
-        "budgetOtherPlaceholder": "Specify your budget",
-        "message": "Additional information",
-        "messagePlaceholder": "Any other useful information to understand your project...",
-        "prevButton": "Previous",
-        "submitButton": "Send my request",
-        "sending": "Sending...",
-        "disclaimer": "* Required fields. Your data is protected and will never be shared."
+        "title": "الجدول الزمني، الميزانية والإنهاء",
+        "timeline": "الجدول الزمني المطلوب",
+        "timelinePlaceholder": "اختر جدولًا زمنيًا",
+        "timelineOtherPlaceholder": "حدد جدولك الزمني",
+        "budget": "الميزانية المقدرة",
+        "budgetPlaceholder": "اختر ميزانيتك",
+        "budgetOtherPlaceholder": "حدد ميزانيتك",
+        "message": "معلومات إضافية",
+        "messagePlaceholder": "أي معلومات أخرى مفيدة لفهم مشروعك...",
+        "prevButton": "السابق",
+        "submitButton": "إرسال طلبي",
+        "sending": "جاري الإرسال...",
+        "disclaimer": "* الحقول الإلزامية. بياناتك محمية ولن يتم مشاركتها أبدًا."
       },
-      "otherOption": "Other",
+      "otherOption": "أخرى",
       "validation": {
-        "step1": "Please fill in the required fields (First name, Last name, Email)",
-        "step2": "Please select a service type"
+        "step1": "يرجى ملء الحقول الإلزامية (الاسم الأول، الاسم الأخير، البريد الإلكتروني)",
+        "step2": "يرجى اختيار نوع الخدمة"
       },
-      "submitError": "Sending error:",
-      "submitErrorMessage": "An error occurred, please try again.",
+      "submitError": "خطأ في الإرسال:",
+      "submitErrorMessage": "حدث خطأ، يرجى المحاولة مرة أخرى.",
       "services": [
-        "Showcase Site",
-        "E-commerce Site",
-        "Web Application",
-        "Mobile Application",
-        "Site Redesign",
-        "SEO & Marketing",
-        "Other"
+        "موقع عرض",
+        "موقع تجارة إلكترونية",
+        "تطبيق ويب",
+        "تطبيق جوال",
+        "إعادة تصميم موقع",
+        "SEO وتسويق",
+        "أخرى"
       ],
       "projectTypes": [
-        "New Project Creation",
-        "Complete Redesign",
-        "Feature Addition",
-        "Bug Fixing",
-        "Performance Optimization",
-        "Data Migration",
-        "Other"
+        "إنشاء مشروع جديد",
+        "إعادة تصميم كاملة",
+        "إضافة ميزات",
+        "تصحيح أخطاء",
+        "تحسين الأداء",
+        "هجرة بيانات",
+        "أخرى"
       ],
       "timelines": [
-        "Less than 1 month",
-        "1 to 3 months",
-        "3 to 6 months",
-        "More than 6 months",
-        "Urgent (less than 2 weeks)",
-        "Other"
+        "أقل من شهر",
+        "1 إلى 3 أشهر",
+        "3 إلى 6 أشهر",
+        "أكثر من 6 أشهر",
+        "عاجل (أقل من أسبوعين)",
+        "أخرى"
       ],
       "budgetRanges": [
-        "Less than 1000€",
-        "1000€ - 3000€",
-        "3000€ - 5000€",
-        "5000€ - 10000€",
-        "10000€ - 20000€",
-        "More than 20000€",
-        "I don't know",
-        "Other"
+        "أقل من 1000 يورو",
+        "1000 يورو - 3000 يورو",
+        "3000 يورو - 5000 يورو",
+        "5000 يورو - 10000 يورو",
+        "10000 يورو - 20000 يورو",
+        "أكثر من 20000 يورو",
+        "لا أعرف",
+        "أخرى"
       ],
       "featuresList": [
-        "Responsive interface",
-        "Member area",
-        "Online payment",
-        "Multilingual",
-        "Blog/News",
-        "Online reservations",
-        "Comment system",
-        "Third-party API integration",
-        "Admin dashboard",
-        "Advanced search",
-        "Media gallery",
-        "Live chat",
-        "Newsletter",
-        "Statistics and reports",
-        "Social media integration"
+        "واجهة متجاوبة",
+        "منطقة أعضاء",
+        "دفع عبر الإنترنت",
+        "متعدد اللغات",
+        "مدونة/أخبار",
+        "حجوزات عبر الإنترنت",
+        "نظام تعليقات",
+        "دمج واجهة برمجة تطبيقات طرف ثالث",
+        "لوحة تحكم المشرف",
+        "بحث متقدم",
+        "معرض وسائط",
+        "دردشة مباشرة",
+        "نشرة إخبارية",
+        "إحصائيات وتقارير",
+        "دمج الشبكات الاجتماعية"
       ],
       "fileTypes": [
         "JPG",
@@ -956,20 +956,20 @@
       ],
       "contactInfo": [
         {
-          "title": "Email",
+          "title": "بريد إلكتروني",
           "details": ["contact@example.com"],
           "action": "mailto:contact@example.com",
           "icon": "Mail"
         },
         {
-          "title": "Phone",
+          "title": "هاتف",
           "details": ["+33 6 12 34 56 78"],
           "action": "tel:+33612345678",
           "icon": "Phone"
         },
         {
-          "title": "Address",
-          "details": ["Paris, France", "Remote Worldwide"],
+          "title": "عنوان",
+          "details": ["باريس، فرنسا", "عن بعد حول العالم"],
           "icon": "MapPin"
         }
       ],
@@ -988,52 +988,52 @@
         }
       ],
       "contactSection": {
-        "title": "Direct Contact"
+        "title": "اتصال مباشر"
       },
       "socialSection": {
-        "title": "Social Networks"
+        "title": "الشبكات الاجتماعية"
       },
       "guarantees": [
         {
-          "title": "Response within 24h",
-          "text": "I process each request within a maximum of 24 hours."
+          "title": "رد خلال 24 ساعة",
+          "text": "أعالج كل طلب في غضون 24 ساعة كحد أقصى."
         },
         {
-          "title": "Detailed quote",
-          "text": "You will receive a complete quote with options and timeline."
+          "title": "عرض سعر مفصل",
+          "text": "ستتلقى عرض سعر كامل مع خيارات وجدول زمني."
         },
         {
-          "title": "No commitment",
-          "text": "The quote request is free and without obligation to purchase."
+          "title": "بدون التزام",
+          "text": "طلب عرض السعر مجاني وبدون أي التزام بالشراء."
         }
       ],
       "faq": {
-        "title": "Frequently Asked Questions",
-        "subtitle": "Useful information on the quote process",
+        "title": "أسئلة شائعة",
+        "subtitle": "معلومات مفيدة حول عملية عرض السعر",
         "items": [
           {
-            "question": "What files can I attach to my request?",
-            "answer": "You can attach any useful document: images, mockups, PDF, design files (PSD, AI, FIG, SKETCH), Word/Excel documents, or any other file helping to understand your project."
+            "question": "ما هي الملفات التي يمكنني إرفاقها بطلبي؟",
+            "answer": "يمكنك إرفاق أي مستند مفيد: صور، نماذج، PDF، ملفات تصميم (PSD, AI, FIG, SKETCH)، مستندات Word/Excel، أو أي ملف آخر يساعد في فهم مشروعك."
           },
           {
-            "question": "How are my attached files processed?",
-            "answer": "Your files are stored temporarily for the evaluation of your project and deleted after the quote is generated. They are never shared with third parties."
+            "question": "كيف يتم معالجة ملفاتي المرفقة؟",
+            "answer": "يتم تخزين ملفاتك مؤقتًا لتقييم مشروعك وحذفها بعد إنشاء عرض السعر. لا يتم مشاركتها مطلقًا مع أطراف ثالثة."
           },
           {
-            "question": "Can I modify my request after sending it?",
-            "answer": "Yes, if you need to make changes, simply reply to the confirmation email you will receive or contact me directly."
+            "question": "هل يمكنني تعديل طلبي بعد إرساله؟",
+            "answer": "نعم، إذا كنت بحاجة إلى إجراء تعديلات، ما عليك سوى الرد على بريد التأكيد الإلكتروني الذي ستحصل عليه أو الاتصال بي مباشرة."
           },
           {
-            "question": "What happens after the quote is sent?",
-            "answer": "I will contact you to discuss the details of your project, refine the quote if necessary, and establish a realization schedule."
+            "question": "ماذا يحدث بعد إرسال عرض السعر؟",
+            "answer": "سأتصل بك لمناقشة تفاصيل مشروعك، وتحسين عرض السعر إذا لزم الأمر، وإنشاء جدول زمني للتنفيذ."
           }
         ]
       },
       "stepTitles": [
-        "Personal Information",
-        "Project Details",
-        "Requirements & Files",
-        "Timeline, Budget & Finalization"
+        "معلومات شخصية",
+        "تفاصيل المشروع",
+        "متطلبات وملفات",
+        "الجدول الزمني، الميزانية والإنهاء"
       ]
     }
   }
