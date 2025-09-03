@@ -203,16 +203,16 @@ const ProjectPopup = () => {
                 </div>
 
                 {project.new && (
-                  <span className="absolute top-4 right-4 px-3 py-1 bg-teal-500 text-white text-xs font-medium rounded-full z-20">
+                  <span className="absolute top-4 right-4 px-3 py-1 bg-[#055BA4] text-white text-xs font-medium rounded-full z-20">
                     {t('projectPopup.newBadge')}
                   </span>
                 )}
 
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#031A3D]/90 via-[#031A3D]/40 to-transparent"></div>
 
                 <div className="relative z-20 p-6 h-full flex flex-col justify-end">
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-white/90 dark:bg-gray-900/90 text-slate-800 dark:text-white text-sm font-medium rounded-full backdrop-blur-sm">
+                    <span className="px-3 py-1 bg-white/90 dark:bg-[#031A3D]/90 text-[#031A3D] dark:text-white text-sm font-medium rounded-full backdrop-blur-sm">
                       {project.category}
                     </span>
                   </div>
@@ -221,7 +221,7 @@ const ProjectPopup = () => {
                     {project.technologies.slice(0, 3).map((tech, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 bg-slate-800/70 text-slate-200 text-xs rounded-full backdrop-blur"
+                        className="px-3 py-1 bg-[#031A3D]/70 text-white text-xs rounded-full backdrop-blur"
                       >
                         {tech}
                       </span>
@@ -229,7 +229,7 @@ const ProjectPopup = () => {
                   </div>
 
                   <h3 className="text-xl font-bold text-white mb-1">{project.title}</h3>
-                  <p className="text-slate-300 text-sm line-clamp-2">{project.shortDescription}</p>
+                  <p className="text-[#41ADE8] text-sm line-clamp-2">{project.shortDescription}</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -251,20 +251,20 @@ const ProjectPopup = () => {
             >
               <motion.div
                 ref={popupRef}
-                className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+                className="bg-white dark:bg-[#031A3D] rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
                 variants={popupVariants}
                 initial="hidden"
                 animate="visible"
                 exit="exit"
               >
                 {/* En-tête de la popup */}
-                <div className={`sticky top-0 bg-white dark:bg-gray-800 z-10 p-4 border-b border-slate-200 dark:border-gray-700 flex justify-between items-center`}>
-                  <h2 className={`text-xl font-bold text-slate-800 dark:text-white ${textAlign}`}>
+                <div className={`sticky top-0 bg-white dark:bg-[#031A3D] z-10 p-4 border-b border-[#41ADE8]/30 flex justify-between items-center`}>
+                  <h2 className={`text-xl font-bold text-[#031A3D] dark:text-white ${textAlign}`}>
                     {selectedProject.title}
                   </h2>
                   <button
                     onClick={closePopup}
-                    className="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white p-1 rounded-full hover:bg-slate-100 dark:hover:bg-gray-700"
+                    className="text-[#055BA4] dark:text-[#41ADE8] hover:text-[#031A3D] dark:hover:text-white p-1 rounded-full hover:bg-[#41ADE8]/10 dark:hover:bg-[#055BA4]/30"
                   >
                     <FiX size={24} />
                   </button>
@@ -287,13 +287,13 @@ const ProjectPopup = () => {
                           <div className="absolute inset-0 flex items-center justify-between px-2" dir="ltr">
                             <button
                               onClick={handlePrevImage}
-                              className="bg-black/30 hover:bg-black/50 text-white p-2 rounded-full"
+                              className="bg-[#031A3D]/30 hover:bg-[#031A3D]/50 text-white p-2 rounded-full"
                             >
                               <FiChevronLeft size={24} />
                             </button>
                             <button
                               onClick={handleNextImage}
-                              className="bg-black/30 hover:bg-black/50 text-white p-2 rounded-full"
+                              className="bg-[#031A3D]/30 hover:bg-[#031A3D]/50 text-white p-2 rounded-full"
                             >
                               <FiChevronRight size={24} />
                             </button>
@@ -305,7 +305,7 @@ const ProjectPopup = () => {
                             <button
                               key={index}
                               className={`w-2 h-2 rounded-full ${index === activeImage
-                                ? 'bg-indigo-600 dark:bg-indigo-400'
+                                ? 'bg-[#055BA4] dark:bg-[#41ADE8]'
                                 : 'bg-white/50'
                                 }`}
                               onClick={() => setActiveImage(index)}
@@ -319,17 +319,17 @@ const ProjectPopup = () => {
                   {/* Détails du projet */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="md:col-span-2">
-                      <h3 className={`text-lg font-bold text-slate-800 dark:text-white mb-3 ${textAlign}`}>
+                      <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
                         {t('projectPopup.descriptionTitle')}
                       </h3>
-                      <p className={`text-slate-600 dark:text-slate-400 mb-6 ${textAlign}`}>
+                      <p className={`text-[#055BA4] dark:text-[#41ADE8] mb-6 ${textAlign}`}>
                         {selectedProject.fullDescription}
                       </p>
 
-                      <h3 className={`text-lg font-bold text-slate-800 dark:text-white mb-3 ${textAlign}`}>
+                      <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
                         {t('projectPopup.challengesTitle')}
                       </h3>
-                      <ul className={`list-disc ${isRTL ? 'pr-5' : 'pl-5'} text-slate-600 dark:text-slate-400 mb-6 space-y-2 ${textAlign}`}>
+                      <ul className={`list-disc ${isRTL ? 'pr-5' : 'pl-5'} text-[#055BA4] dark:text-[#41ADE8] mb-6 space-y-2 ${textAlign}`}>
                         {selectedProject.challenges.map((challenge, index) => (
                           <li key={index}>{challenge}</li>
                         ))}
@@ -337,10 +337,10 @@ const ProjectPopup = () => {
 
                       {selectedProject.results && selectedProject.results.length > 0 && (
                         <>
-                          <h3 className={`text-lg font-bold text-slate-800 dark:text-white mb-3 ${textAlign}`}>
+                          <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
                             {t('projectPopup.resultsTitle')}
                           </h3>
-                          <ul className={`list-disc ${isRTL ? 'pr-5' : 'pl-5'} text-slate-600 dark:text-slate-400 mb-6 space-y-2 ${textAlign}`}>
+                          <ul className={`list-disc ${isRTL ? 'pr-5' : 'pl-5'} text-[#055BA4] dark:text-[#41ADE8] mb-6 space-y-2 ${textAlign}`}>
                             {selectedProject.results.slice(0, 3).map((result, index) => (
                               <li key={index}>{result}</li>
                             ))}
@@ -350,18 +350,18 @@ const ProjectPopup = () => {
                     </div>
 
                     <div>
-                      <div className="bg-slate-50 dark:bg-gray-700/30 rounded-xl p-4 mb-4">
-                        <h3 className={`text-lg font-bold text-slate-800 dark:text-white mb-3 ${textAlign}`}>
+                      <div className="bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-xl p-4 mb-4">
+                        <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
                           {t('projectPopup.detailsTitle')}
                         </h3>
 
                         <div className="space-y-3">
                           <div className={`flex items-center`}>
-                            <div className={`flex-shrink-0 bg-indigo-100 dark:bg-indigo-900/30 p-2 rounded-lg ${isRTL ? 'ml-3' : 'mr-3'}`}>
-                              <FiCalendar className="text-indigo-600 dark:text-indigo-400" />
+                            <div className={`flex-shrink-0 bg-[#055BA4]/10 dark:bg-[#055BA4]/30 p-2 rounded-lg ${isRTL ? 'ml-3' : 'mr-3'}`}>
+                              <FiCalendar className="text-[#055BA4] dark:text-[#41ADE8]" />
                             </div>
                             <div className={textAlign}>
-                              <p className="font-medium text-slate-800 dark:text-white">
+                              <p className="font-medium text-[#031A3D] dark:text-white">
                                 {selectedProject.period}
                               </p>
                             </div>
@@ -369,15 +369,15 @@ const ProjectPopup = () => {
                         </div>
                       </div>
 
-                      <div className="bg-slate-50 dark:bg-gray-700/30 rounded-xl p-4 mb-4">
-                        <h3 className={`text-lg font-bold text-slate-800 dark:text-white mb-3 ${textAlign}`}>
+                      <div className="bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-xl p-4 mb-4">
+                        <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
                           {t('projectPopup.technologiesTitle')}
                         </h3>
                         <div className="flex flex-wrap gap-2">
                           {selectedProject.technologies.map((tech, index) => (
                             <span
                               key={index}
-                              className="px-3 py-1 bg-white dark:bg-gray-600 text-slate-700 dark:text-slate-300 rounded-full text-xs font-medium"
+                              className="px-3 py-1 bg-white dark:bg-[#055BA4] text-[#031A3D] dark:text-white rounded-full text-xs font-medium"
                             >
                               {tech}
                             </span>
@@ -392,7 +392,7 @@ const ProjectPopup = () => {
                             href={selectedProject.demoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center px-4 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors font-medium text-center"
+                            className="flex items-center justify-center px-4 py-3 bg-[#055BA4] hover:bg-[#054A85] text-white rounded-lg transition-colors font-medium text-center"
                           >
                             {isRTL ? (
                               <span className="flex items-center">
@@ -414,7 +414,7 @@ const ProjectPopup = () => {
                             href={selectedProject.githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center px-4 py-3 bg-slate-200 dark:bg-gray-700 hover:bg-slate-300 dark:hover:bg-gray-600 text-slate-800 dark:text-white rounded-lg transition-colors font-medium text-center"
+                            className="flex items-center justify-center px-4 py-3 bg-[#41ADE8] hover:bg-[#2E8BC0] text-white rounded-lg transition-colors font-medium text-center"
                           >
                             {isRTL ? (
                               <span className="flex items-center">
@@ -436,7 +436,7 @@ const ProjectPopup = () => {
                   {/* Miniatures de la galerie */}
                   {selectedProject.images && selectedProject.images.length > 1 && (
                     <div className="mt-6">
-                      <h3 className={`text-lg font-bold text-slate-800 dark:text-white mb-3 ${textAlign}`}>
+                      <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
                         {t('projectPopup.galleryTitle')}
                       </h3>
                       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -444,7 +444,7 @@ const ProjectPopup = () => {
                           <button
                             key={index}
                             className={`rounded-lg overflow-hidden border-2 transition-all ${index === activeImage
-                              ? 'border-indigo-500 dark:border-indigo-400'
+                              ? 'border-[#055BA4] dark:border-[#41ADE8]'
                               : 'border-transparent'
                               }`}
                             onClick={() => setActiveImage(index)}
@@ -490,7 +490,7 @@ const ProjectPopup = () => {
         .swiper-pagination-bullet-active {
           width: 20px;
           border-radius: 4px;
-          background: #4f46e5;
+          background: #055BA4;
           opacity: 1;
         }
         

@@ -109,9 +109,9 @@ const LanguageSelector = () => {
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center px-3 py-1.5 rounded-full cursor-pointer transition-all duration-300 ${
           isScrolled 
-            ? "bg-white/90" 
-            : "bg-white/5"
-        } dark:bg-slate-800/80 dark:hover:bg-slate-700/90 hover:bg-gray-100 ring-gray-200 dark:ring-gray-700`}
+            ? "bg-white/90 text-[#031A3D]" 
+            : "bg-[#055BA4]/10 text-[#055BA4] dark:text-white"
+        } dark:bg-[#031A3D]/80 dark:hover:bg-[#055BA4] hover:bg-[#055BA4] hover:text-white ring-gray-200 dark:ring-[#055BA4]`}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         aria-haspopup="true"
@@ -134,9 +134,9 @@ const LanguageSelector = () => {
           <motion.div
             className={`absolute ${isRTL ? 'left-0' : 'right-0'} ${
               isMobile 
-                ? 'bottom-full mb-2'  // Positionnement mobile : au-dessus du bouton
-                : 'top-full mt-2'     // Positionnement desktop : en dessous du bouton
-            } min-w-[120px] bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-gray-200 dark:border-slate-700 overflow-hidden`}
+                ? 'bottom-full mb-2'
+                : 'top-full mt-2'
+            } min-w-[120px] bg-white dark:bg-[#031A3D] rounded-xl shadow-lg border border-[#41ADE8] dark:border-[#055BA4] overflow-hidden`}
             variants={dropdownVariants}
             initial="hidden"
             animate="visible"
@@ -150,8 +150,8 @@ const LanguageSelector = () => {
                   onClick={() => handleChange(lang)}
                   className={`cursor-pointer w-full flex items-center gap-3 px-4 py-2.5 text-left ${
                     lang.key === i18n.language 
-                      ? "bg-teal-50 dark:bg-teal-900/50 font-semibold text-teal-600 dark:text-teal-400" 
-                      : "hover:bg-gray-50 dark:hover:bg-slate-700/70"
+                      ? "bg-[#055BA4]/20 dark:bg-[#055BA4]/40 font-semibold text-[#055BA4] dark:text-[#41ADE8]" 
+                      : "hover:bg-[#41ADE8]/10 dark:hover:bg-[#055BA4]/30 text-[#031A3D] dark:text-white"
                   }`}
                   variants={itemVariants}
                   custom={index}
@@ -164,7 +164,7 @@ const LanguageSelector = () => {
                   />
                   <div className="flex flex-col">
                     <span>{lang.label}</span>
-                    <span className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                    <span className="text-xs text-[#055BA4] dark:text-[#41ADE8] mt-0.5">
                       {lang.name}
                     </span>
                   </div>

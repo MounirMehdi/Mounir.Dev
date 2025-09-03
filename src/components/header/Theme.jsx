@@ -72,7 +72,7 @@ const ThemeToggle = () => {
               animate="visible"
               exit="exit"
             >
-              <Sun className="text-amber-500 w-full h-full" />
+              <Sun className="text-[#055BA4] w-full h-full" />
             </motion.div>
           ) : (
             <motion.div 
@@ -82,7 +82,7 @@ const ThemeToggle = () => {
               animate="visible"
               exit="exit"
             >
-              <Moon className="text-indigo-300 w-full h-full" />
+              <Moon className="text-[#41ADE8] w-full h-full" />
             </motion.div>
           )}
         </AnimatePresence>
@@ -90,7 +90,7 @@ const ThemeToggle = () => {
 
       {isAnimating && (
         <motion.div 
-          className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-400 to-indigo-500"
+          className="absolute inset-0 rounded-full bg-gradient-to-r from-[#055BA4] to-[#41ADE8]"
           initial={{ scale: 0, opacity: 0.7 }}
           animate={{ scale: 2, opacity: 0 }}
           transition={{ duration: 0.5 }}

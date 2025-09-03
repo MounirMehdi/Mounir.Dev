@@ -117,16 +117,16 @@ const Contact = () => {
 
   return (
     <div 
-      className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
+      className="min-h-screen bg-gradient-to-b from-white to-slate-50 dark:from-[#031A3D] dark:to-[#031A3D]/90"
       dir={direction}
     >
       {/* Hero Section - Améliorée */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-teal-50 dark:from-slate-900 dark:via-blue-900/10 dark:to-teal-900/10 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-slate-50 via-[#41ADE8]/20 to-[#055BA4]/20 dark:from-[#031A3D] dark:via-[#055BA4]/10 dark:to-[#41ADE8]/10 relative overflow-hidden">
         {/* Effets de fond animés */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-0 left-1/4 w-72 h-72 bg-teal-400/10 rounded-full filter blur-3xl animate-pulse-slow" />
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-blue-400/10 rounded-full filter blur-3xl animate-pulse-slow animation-delay-2000" />
-          <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-purple-400/10 rounded-full filter blur-3xl animate-pulse-slow animation-delay-4000" />
+          <div className="absolute top-0 left-1/4 w-72 h-72 bg-[#41ADE8]/10 rounded-full filter blur-3xl animate-pulse-slow" />
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#055BA4]/10 rounded-full filter blur-3xl animate-pulse-slow animation-delay-2000" />
+          <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-[#031A3D]/10 rounded-full filter blur-3xl animate-pulse-slow animation-delay-4000" />
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -137,12 +137,12 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.h1 
-              className="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-6"
+              className="text-4xl md:text-5xl font-bold text-[#031A3D] dark:text-white mb-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              {t('contact.hero.title1')} <span className="text-teal-600 dark:text-teal-400">{t('contact.hero.title2')}</span>
+              {t('contact.hero.title1')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('contact.hero.title2')}</span>
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, width: 0 }}
@@ -150,10 +150,10 @@ const Contact = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
             <motion.p 
-              className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto"
+              className="text-xl text-[#055BA4] dark:text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -167,14 +167,14 @@ const Contact = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white">
+              <Button asChild className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] text-white">
                 <a href="#contact-form" className="flex items-center gap-2">
                   <MessageCircle size={18} />
                   {t('contact.hero.contactButton')}
                 </a>
               </Button>
               
-              <Button asChild variant="secondary" className="bg-white dark:bg-slate-800">
+              <Button asChild variant="secondary" className="bg-white dark:bg-[#031A3D] text-[#055BA4] dark:text-[#41ADE8] border border-[#055BA4]/20 dark:border-[#41ADE8]/20">
                 <Link to="/devis" className="flex items-center gap-2">
                   <FileText size={18} />
                   {t('contact.hero.devisButton')}
@@ -187,18 +187,18 @@ const Contact = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12" id="contact-form">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:order-1"
+            className="lg:col-span-2"
           >
-            <div className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xl p-8">
+            <div className="bg-white dark:bg-[#031A3D]/60 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-[#055BA4]/30 shadow-xl p-8">
               <div className="mb-8">
                 <motion.h2 
-                  className="text-2xl font-bold text-slate-800 dark:text-white mb-2"
+                  className="text-2xl font-bold text-[#031A3D] dark:text-white mb-2"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
@@ -206,7 +206,7 @@ const Contact = () => {
                   {sectionTitles.sendMessage}
                 </motion.h2>
                 <motion.p 
-                  className="text-slate-600 dark:text-slate-400"
+                  className="text-[#055BA4] dark:text-slate-400"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
@@ -225,10 +225,10 @@ const Contact = () => {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full mb-6">
                     <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-3">
+                  <h3 className="text-2xl font-bold text-[#031A3D] dark:text-white mb-3">
                     {t('contact.successTitle')}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-md mx-auto">
+                  <p className="text-[#055BA4] dark:text-slate-400 mb-8 max-w-md mx-auto">
                     {t('contact.successMessage')}
                   </p>
                 </motion.div>
@@ -240,12 +240,12 @@ const Contact = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4 }}
                     >
-                      <Label htmlFor="name" className="block mb-2 text-slate-700 dark:text-slate-300">
+                      <Label htmlFor="name" className="block mb-2 text-[#055BA4] dark:text-slate-300">
                         {formLabels.nameLabel} *
                       </Label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                          <User className="h-5 w-5 text-slate-400" />
+                          <User className="h-5 w-5 text-[#055BA4]/60" />
                         </div>
                         <Input
                           id="name"
@@ -255,7 +255,7 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleInputChange}
                           placeholder={formLabels.namePlaceholder}
-                          className="pl-10"
+                          className="pl-10 border-[#055BA4]/20 focus:border-[#055BA4]"
                         />
                       </div>
                     </motion.div>
@@ -265,12 +265,12 @@ const Contact = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.5 }}
                     >
-                      <Label htmlFor="email" className="block mb-2 text-slate-700 dark:text-slate-300">
+                      <Label htmlFor="email" className="block mb-2 text-[#055BA4] dark:text-slate-300">
                         {formLabels.emailLabel} *
                       </Label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                          <Mail className="h-5 w-5 text-slate-400" />
+                          <Mail className="h-5 w-5 text-[#055BA4]/60" />
                         </div>
                         <Input
                           id="email"
@@ -280,7 +280,7 @@ const Contact = () => {
                           value={formData.email}
                           onChange={handleInputChange}
                           placeholder={formLabels.emailPlaceholder}
-                          className="pl-10"
+                          className="pl-10 border-[#055BA4]/20 focus:border-[#055BA4]"
                         />
                       </div>
                     </motion.div>
@@ -290,12 +290,12 @@ const Contact = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.6 }}
                     >
-                      <Label htmlFor="subject" className="block mb-2 text-slate-700 dark:text-slate-300">
+                      <Label htmlFor="subject" className="block mb-2 text-[#055BA4] dark:text-slate-300">
                         {formLabels.subjectLabel} *
                       </Label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                          <MessageCircle className="h-5 w-5 text-slate-400" />
+                          <MessageCircle className="h-5 w-5 text-[#055BA4]/60" />
                         </div>
                         <Input
                           id="subject"
@@ -305,7 +305,7 @@ const Contact = () => {
                           value={formData.subject}
                           onChange={handleInputChange}
                           placeholder={formLabels.subjectPlaceholder}
-                          className="pl-10"
+                          className="pl-10 border-[#055BA4]/20 focus:border-[#055BA4]"
                         />
                       </div>
                     </motion.div>
@@ -315,7 +315,7 @@ const Contact = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.7 }}
                     >
-                      <Label htmlFor="message" className="block mb-2 text-slate-700 dark:text-slate-300">
+                      <Label htmlFor="message" className="block mb-2 text-[#055BA4] dark:text-slate-300">
                         {formLabels.messageLabel} *
                       </Label>
                       <Textarea
@@ -326,7 +326,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         placeholder={formLabels.messagePlaceholder}
                         rows={6}
-                        className="min-h-[150px]"
+                        className="min-h-[150px] border-[#055BA4]/20 focus:border-[#055BA4]"
                       />
                     </motion.div>
                     
@@ -337,7 +337,7 @@ const Contact = () => {
                     >
                       <Button 
                         type="submit" 
-                        className="w-full bg-teal-600 hover:bg-teal-700 dark:bg-teal-700 dark:hover:bg-teal-600 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                        className="w-full bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] text-white transition-all transform hover:-translate-y-0.5 cursor-pointer"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
@@ -355,7 +355,7 @@ const Contact = () => {
                     </motion.div>
                     
                     <motion.p 
-                      className="text-sm text-slate-500 dark:text-slate-400 text-center"
+                      className="text-sm text-[#055BA4] dark:text-slate-400 text-center"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.9 }}
@@ -373,7 +373,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:order-2"
+            className="space-y-8"
           >
             <div className="sticky top-24 space-y-10">
               {/* WhatsApp Contact Card */}
@@ -422,7 +422,7 @@ const Contact = () => {
               
               {/* Free Quote Card */}
               <motion.div 
-                className="bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-700 dark:to-indigo-800 text-white rounded-2xl shadow-xl overflow-hidden"
+                className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] dark:from-[#055BA4] dark:to-[#41ADE8] text-white rounded-2xl shadow-xl overflow-hidden"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
@@ -450,7 +450,7 @@ const Contact = () => {
                   <motion.div variants={itemVariants}>
                     <Button 
                       asChild 
-                      className="w-full bg-white text-blue-700 hover:bg-blue-50 dark:bg-white dark:text-blue-700 mt-4"
+                      className="w-full bg-white text-[#055BA4] hover:bg-[#055BA4]/10 dark:bg-white dark:text-[#055BA4] mt-4"
                     >
                       <Link to="/devis">
                         {t('contact.devis.button')}
@@ -467,7 +467,7 @@ const Contact = () => {
                 animate="visible"
               >
                 <motion.h2 
-                  className="text-2xl font-bold text-slate-800 dark:text-white mb-6"
+                  className="text-2xl font-bold text-[#031A3D] dark:text-white mb-6"
                   variants={itemVariants}
                 >
                   {sectionTitles.guarantees}
@@ -481,25 +481,25 @@ const Contact = () => {
                   {guarantees.map((guarantee, index) => (
                     <motion.div 
                       key={index}
-                      className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 p-5"
+                      className="bg-white dark:bg-[#031A3D]/60 backdrop-blur-sm rounded-xl border border-[#055BA4]/20 dark:border-[#055BA4]/30 p-5"
                       whileHover="hover"
                       variants={hoverVariants}
                     >
                       <div className="flex items-start gap-4">
                         <div className={`p-2 rounded-lg ${
-                          index === 0 ? 'bg-teal-100 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400' :
-                          index === 1 ? 'bg-blue-100 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400' :
-                          'bg-purple-100 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400'
+                          index === 0 ? 'bg-[#055BA4]/10 dark:bg-[#055BA4]/20 text-[#055BA4] dark:text-[#41ADE8]' :
+                          index === 1 ? 'bg-[#41ADE8]/10 dark:bg-[#41ADE8]/20 text-[#055BA4] dark:text-[#41ADE8]' :
+                          'bg-[#031A3D]/10 dark:bg-[#031A3D]/20 text-[#055BA4] dark:text-[#41ADE8]'
                         }`}>
                           {index === 0 && <Clock className="h-5 w-5" />}
                           {index === 1 && <Send className="h-5 w-5" />}
                           {index === 2 && <CheckCircle className="h-5 w-5" />}
                         </div>
                         <div>
-                          <h3 className="font-semibold text-slate-800 dark:text-slate-200 mb-1">
+                          <h3 className="font-semibold text-[#031A3D] dark:text-slate-200 mb-1">
                             {guarantee.title}
                           </h3>
-                          <p className="text-slate-600 dark:text-slate-400 text-sm">
+                          <p className="text-[#055BA4] dark:text-slate-400 text-sm">
                             {guarantee.text}
                           </p>
                         </div>
@@ -514,17 +514,17 @@ const Contact = () => {
       </div>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-slate-50 dark:bg-slate-900/20">
+      <section className="py-20 bg-[#41ADE8]/10 dark:bg-[#031A3D]/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <motion.h2 
-              className="text-3xl font-bold text-slate-800 dark:text-white mb-4"
+              className="text-3xl font-bold text-[#031A3D] dark:text-white mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              {t('contact.faqTitle1')} <span className="text-teal-600 dark:text-teal-400">{t('contact.faqTitle2')}</span>
+              {t('contact.faqTitle1')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('contact.faqTitle2')}</span>
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, width: 0 }}
@@ -532,10 +532,10 @@ const Contact = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
             <motion.p 
-              className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto"
+              className="text-lg text-[#055BA4] dark:text-slate-300 max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -549,7 +549,7 @@ const Contact = () => {
             {faqItems.map((faq, index) => (
               <motion.div 
                 key={index}
-                className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 p-6"
+                className="bg-white dark:bg-[#031A3D]/60 backdrop-blur-sm rounded-2xl border border-[#055BA4]/20 dark:border-[#055BA4]/30 p-6"
                 variants={itemVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -560,8 +560,8 @@ const Contact = () => {
                 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <h3 className="font-semibold text-lg text-slate-800 dark:text-slate-200 mb-2">{faq.question}</h3>
-                <p className="text-slate-600 dark:text-slate-400">{faq.answer}</p>
+                <h3 className="font-semibold text-lg text-[#031A3D] dark:text-slate-200 mb-2">{faq.question}</h3>
+                <p className="text-[#055BA4] dark:text-slate-400">{faq.answer}</p>
               </motion.div>
             ))}
           </div>

@@ -1034,16 +1034,6 @@
         "Project Details",
         "Requirements & Files",
         "Timeline, Budget & Finalization"
-      ],
-      "whatsapp": {
-      "title": "WhatsApp Quote",
-      "description": "Let's discuss your project directly on WhatsApp",
-      "button": "Open WhatsApp"
-    },
-    "contactPage": {
-      "title": "Free Quote",
-      "description": "Get a personalized estimate for your project",
-      "button": "Request a quote"
-    }
+      ]
     }
   }

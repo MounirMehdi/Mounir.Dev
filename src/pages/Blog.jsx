@@ -184,19 +184,19 @@ const Blog = () => {
 
   return (
     <motion.div 
-      className="pt-16 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 min-h-screen"
+      className="pt-16 bg-gradient-to-b from-white to-slate-50 dark:from-[#031A3D] dark:to-[#031A3D]/90 min-h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       dir={direction}
     >
       {/* Hero Section améliorée */}
-      <section className="relative py-24 bg-gradient-to-br from-indigo-50 to-teal-50 dark:from-slate-900 dark:to-teal-900/10 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-[#41ADE8]/20 to-[#055BA4]/20 dark:from-[#031A3D] dark:to-[#055BA4]/30 overflow-hidden">
         {/* Shapes décoratifs */}
         <div className="absolute top-0 left-0 w-full h-full opacity-20 dark:opacity-10">
-          <div className="absolute top-20 right-20 w-64 h-64 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-          <div className="absolute bottom-20 left-20 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="absolute top-20 right-20 w-64 h-64 bg-[#41ADE8] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+          <div className="absolute bottom-20 left-20 w-72 h-72 bg-[#055BA4] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-[#031A3D] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -208,12 +208,12 @@ const Blog = () => {
           >
             
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#031A3D] dark:text-white mb-6 leading-tight"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              <span className="bg-gradient-to-r from-teal-600 to-indigo-600 dark:from-teal-400 dark:to-indigo-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] dark:from-[#055BA4] dark:to-[#41ADE8] bg-clip-text text-transparent">
                 {blogTitle}
               </span>
             </motion.h1>
@@ -223,11 +223,11 @@ const Blog = () => {
                           transition={{ delay: 0.3, duration: 0.8 }}
                           className="flex justify-center mb-6"
                         >
-                          <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+                          <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
                         </motion.div>
             
             <motion.p 
-              className="text-xl text-slate-700 dark:text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto"
+              className="text-xl text-[#055BA4] dark:text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -241,14 +241,14 @@ const Blog = () => {
               transition={{ delay: 0.6 }}
               className="relative max-w-xl mx-auto"
             >
-              <Search className={`absolute ${isRTL ? 'right-4' : 'left-4'} top-1/2 transform -translate-y-1/2 text-slate-500`} size={20} />
+              <Search className={`absolute ${isRTL ? 'right-4' : 'left-4'} top-1/2 transform -translate-y-1/2 text-[#055BA4]`} size={20} />
               <input
                 id="search-input"
                 type="text"
                 placeholder={searchPlaceholder}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className={`w-full ${isRTL ? 'pr-12' : 'pl-12'} py-4 bg-white dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all shadow-lg`}
+                className={`w-full ${isRTL ? 'pr-12' : 'pl-12'} py-4 bg-white dark:bg-[#031A3D]/80 backdrop-blur-sm border border-[#41ADE8]/20 dark:border-[#055BA4]/30 rounded-xl focus:ring-2 focus:ring-[#055BA4] focus:border-transparent transition-all shadow-lg`}
               />
             </motion.div>
           </motion.div>
@@ -257,7 +257,7 @@ const Blog = () => {
 
       {/* Filtres améliorés avec sticky header */}
       <motion.section 
-        className={`sticky top-0 z-30 py-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 transition-all duration-300 ${
+        className={`sticky top-0 z-30 py-4 bg-white/90 dark:bg-[#031A3D]/90 backdrop-blur-md border-b border-[#41ADE8]/20 dark:border-[#055BA4]/30 transition-all duration-300 ${
           isHeaderScrolled ? 'shadow-md' : ''
         }`}
         initial={{ y: -100 }}
@@ -270,7 +270,7 @@ const Blog = () => {
             <div className="relative" ref={categoriesRef}>
               <button 
                 onClick={() => setShowCategories(!showCategories)}
-                className={`flex items-center gap-2 px-4 py-2.5 bg-slate-50 dark:bg-slate-800/70 text-slate-800 dark:text-slate-200 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors cursor-pointer`}
+                className={`flex items-center gap-2 px-4 py-2.5 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 text-[#031A3D] dark:text-slate-200 rounded-xl hover:bg-[#41ADE8]/20 dark:hover:bg-[#055BA4]/30 transition-colors cursor-pointer`}
               >
                 <LayoutGrid size={18} />
                 <span className="font-medium">{categoriesButton}</span>
@@ -280,7 +280,7 @@ const Blog = () => {
               <AnimatePresence>
                 {showCategories && (
                   <motion.div 
-                    className={`absolute z-40 mt-2 w-64 bg-white dark:bg-slate-800/95 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 shadow-2xl py-2 ${textAlign}`}
+                    className={`absolute z-40 mt-2 w-64 bg-white dark:bg-[#031A3D]/95 backdrop-blur-sm rounded-xl border border-[#41ADE8]/20 dark:border-[#055BA4]/30 shadow-2xl py-2 ${textAlign}`}
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
@@ -296,15 +296,15 @@ const Blog = () => {
                           }}
                           className={`w-full px-4 py-3 flex items-center gap-3 ${
                             selectedCategory === category.id 
-                              ? 'bg-teal-50 dark:bg-teal-900/40 text-teal-700 dark:text-teal-400' 
-                              : 'hover:bg-slate-100 dark:hover:bg-slate-700'
+                              ? 'bg-[#055BA4]/10 dark:bg-[#055BA4]/40 text-[#055BA4] dark:text-[#41ADE8]' 
+                              : 'hover:bg-[#41ADE8]/10 dark:hover:bg-[#055BA4]/20'
                           } transition-colors`}
                         >
                           {IconComponent && <IconComponent size={18} className="flex-shrink-0" />}
                           <span className="font-medium">{categories[category.id]}</span>
                           {selectedCategory === category.id && (
                             <div className={`ml-auto ${isRTL ? 'mr-auto' : 'ml-auto'}`}>
-                              <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                              <div className="w-2 h-2 bg-[#055BA4] dark:bg-[#41ADE8] rounded-full"></div>
                             </div>
                           )}
                         </button>
@@ -320,7 +320,7 @@ const Blog = () => {
               {(selectedCategory !== 'all' || selectedTags.length > 0 || searchTerm) && (
                 <motion.button 
                   onClick={resetFilters}
-                  className={`px-3 py-1.5 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 text-sm flex items-center gap-1.5 bg-slate-100 dark:bg-slate-800 rounded-lg font-medium`}
+                  className={`px-3 py-1.5 text-[#055BA4] dark:text-slate-300 hover:text-[#031A3D] dark:hover:text-slate-100 text-sm flex items-center gap-1.5 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-lg font-medium`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -332,12 +332,12 @@ const Blog = () => {
                 <motion.div
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
-                  className={`px-3 py-1.5 bg-teal-100 dark:bg-teal-900/40 text-teal-800 dark:text-teal-200 rounded-lg text-sm flex items-center gap-2 font-medium`}
+                  className={`px-3 py-1.5 bg-[#055BA4]/10 dark:bg-[#055BA4]/40 text-[#055BA4] dark:text-[#41ADE8] rounded-lg text-sm flex items-center gap-2 font-medium`}
                 >
                   {categories[selectedCategory]}
                   <button 
                     onClick={() => setSelectedCategory('all')}
-                    className="text-teal-700 dark:text-teal-300 hover:text-teal-900 dark:hover:text-teal-100"
+                    className="text-[#055BA4] dark:text-[#41ADE8] hover:text-[#031A3D] dark:hover:text-white"
                   >
                     <X size={14} />
                   </button>
@@ -349,12 +349,12 @@ const Blog = () => {
                   key={tag}
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
-                  className={`px-3 py-1.5 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 rounded-lg text-sm flex items-center gap-2 font-medium`}
+                  className={`px-3 py-1.5 bg-[#41ADE8]/10 dark:bg-[#41ADE8]/40 text-[#055BA4] dark:text-[#41ADE8] rounded-lg text-sm flex items-center gap-2 font-medium`}
                 >
                   #{tag}
                   <button 
                     onClick={() => toggleTag(tag)}
-                    className="text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100"
+                    className="text-[#055BA4] dark:text-[#41ADE8] hover:text-[#031A3D] dark:hover:text-white"
                   >
                     <X size={14} />
                   </button>
@@ -377,12 +377,12 @@ const Blog = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
               >
-                <h2 className={`text-2xl font-bold text-slate-800 dark:text-white mb-6 ${textAlign}`}>
+                <h2 className={`text-2xl font-bold text-[#031A3D] dark:text-white mb-6 ${textAlign}`}>
                   {featuredPostTitle}
                 </h2>
                 <motion.div
                   whileHover={{ y: -5 }}
-                  className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-xl hover:shadow-2xl transition-all cursor-pointer group"
+                  className="bg-white dark:bg-[#031A3D]/50 backdrop-blur-sm rounded-2xl border border-[#41ADE8]/20 dark:border-[#055BA4]/30 overflow-hidden shadow-xl hover:shadow-2xl transition-all cursor-pointer group"
                   onClick={() => openPostDetail(featuredPost)}
                 >
                   <div className="relative h-64 md:h-80 lg:h-96">
@@ -391,11 +391,11 @@ const Blog = () => {
                       alt={featuredPost.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#031A3D]/80 to-transparent"></div>
                     <div className={`absolute bottom-0 left-0 right-0 p-6 ${textAlign}`}>
                       <div className={`flex items-center gap-3 mb-3`}>
-                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${featuredPost.color} shadow-md`}>
-                          <BookOpen className={`${featuredPost.iconColor}`} size={20} />
+                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center bg-[#055BA4] shadow-md`}>
+                          <BookOpen className="text-white" size={20} />
                         </div>
                         <div>
                           <span className="text-sm font-medium text-white">
@@ -439,7 +439,7 @@ const Blog = () => {
                             </motion.span>
                           ))}
                         </div>
-                        <Button className="bg-white text-teal-600 hover:bg-slate-100 shadow-md group-hover:bg-teal-600 group-hover:text-white transition-colors cursor-pointer">
+                        <Button className="bg-white text-[#055BA4] hover:bg-slate-100 shadow-md group-hover:bg-[#055BA4] group-hover:text-white transition-colors cursor-pointer">
                           {readMore}
                           <ArrowRight className={`ml-2 transition-transform group-hover:translate-x-1 ${isRTL ? 'transform rotate-180' : ''}`} size={16} />
                         </Button>
@@ -457,10 +457,10 @@ const Blog = () => {
               animate={isVisible ? "visible" : "hidden"}
             >
               <div className={`flex flex-wrap items-center justify-between mb-6 gap-4 ${textAlign}`}>
-                <h2 className="text-2xl font-bold text-slate-800 dark:text-white">
+                <h2 className="text-2xl font-bold text-[#031A3D] dark:text-white">
                   {searchTerm || selectedCategory !== 'all' || selectedTags.length > 0 ? foundPostsTitle : recentPostsTitle}
                 </h2>
-                <span className="text-slate-600 dark:text-slate-400 font-medium">
+                <span className="text-[#055BA4] dark:text-slate-400 font-medium">
                   {filteredPosts.length} {filteredPosts.length !== 1 ? t('blog.articles') : t('blog.article')}
                 </span>
               </div>
@@ -474,7 +474,7 @@ const Blog = () => {
                       whileHover={{ y: -10 }}
                     >
                       <div 
-                        className="bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden group hover:shadow-xl transition-all h-full cursor-pointer"
+                        className="bg-white dark:bg-[#031A3D]/50 backdrop-blur-sm border border-[#41ADE8]/20 dark:border-[#055BA4]/30 rounded-xl overflow-hidden group hover:shadow-xl transition-all h-full cursor-pointer"
                         onClick={() => openPostDetail(post)}
                       >
                         <div className="relative h-48">
@@ -484,7 +484,7 @@ const Blog = () => {
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           />
                           <div className={`absolute top-3 ${isRTL ? 'left-3' : 'right-3'}`}>
-                            <span className={`px-3 py-1.5 text-xs font-medium text-white rounded-full ${post?.color || 'bg-gray-500'} shadow-md`}>
+                            <span className={`px-3 py-1.5 text-xs font-medium text-white rounded-full bg-[#055BA4] shadow-md`}>
                               {categories[post.category]}
                             </span>
                           </div>
@@ -492,11 +492,11 @@ const Blog = () => {
                         
                         <div className={`p-5 h-full flex flex-col ${textAlign}`}>
                           <div className={`flex items-center gap-3 mb-4`}>
-                            <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${post.color} shadow-md`}>
-                              <BookOpen className={`${post.iconColor}`} size={20} />
+                            <div className={`w-10 h-10 rounded-lg flex items-center justify-center bg-[#055BA4] shadow-md`}>
+                              <BookOpen className="text-white" size={20} />
                             </div>
                             <div>
-                              <div className={`flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400`}>
+                              <div className={`flex items-center gap-2 text-xs text-[#055BA4] dark:text-slate-400`}>
                                 <span className="flex items-center gap-1">
                                   <Calendar size={12} />
                                   {formatDate(post.date)}
@@ -509,11 +509,11 @@ const Blog = () => {
                             </div>
                           </div>
                           
-                          <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors line-clamp-2">
+                          <h3 className="text-xl font-bold text-[#031A3D] dark:text-white mb-3 group-hover:text-[#055BA4] dark:group-hover:text-[#41ADE8] transition-colors line-clamp-2">
                             {post.title}
                           </h3>
                           
-                          <p className="text-slate-600 dark:text-slate-300 mb-4 flex-grow line-clamp-3">
+                          <p className="text-[#055BA4] dark:text-slate-300 mb-4 flex-grow line-clamp-3">
                             {post.excerpt}
                           </p>
                           
@@ -522,7 +522,7 @@ const Blog = () => {
                               {post.tags.slice(0, 2).map((tag, index) => (
                                 <motion.span 
                                   key={index}
-                                  className="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-xs font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
+                                  className="px-2.5 py-1 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 text-[#055BA4] dark:text-[#41ADE8] rounded-lg text-xs font-medium hover:bg-[#41ADE8]/20 dark:hover:bg-[#055BA4]/30 transition-colors"
                                   whileHover={{ scale: 1.05 }}
                                   whileTap={{ scale: 0.95 }}
                                   onClick={(e) => {
@@ -537,7 +537,7 @@ const Blog = () => {
                             <Button 
                               size="sm" 
                               variant="ghost" 
-                              className="text-teal-600 dark:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 group-hover:bg-teal-100 dark:group-hover:bg-teal-900/30"
+                              className="text-[#055BA4] dark:text-[#41ADE8] hover:bg-[#055BA4]/10 dark:hover:bg-[#055BA4]/20 group-hover:bg-[#055BA4]/10 dark:group-hover:bg-[#055BA4]/20"
                             >
                               {read}
                               <ArrowRight className={`ml-1.5 transition-transform group-hover:translate-x-1 ${isRTL ? 'transform rotate-180' : ''}`} size={14} />
@@ -554,10 +554,10 @@ const Blog = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                 >
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-slate-100 dark:bg-slate-800 rounded-full mb-6">
-                    <Search className="text-slate-600 dark:text-slate-400" size={32} />
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-full mb-6">
+                    <Search className="text-[#055BA4] dark:text-[#41ADE8]" size={32} />
                   </div>
-                  <p className="text-slate-600 dark:text-slate-300 text-xl mb-4 font-medium">
+                  <p className="text-[#055BA4] dark:text-slate-300 text-xl mb-4 font-medium">
                     {noPostsFound}
                   </p>
                   <Button 
@@ -581,17 +581,17 @@ const Blog = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
               >
-                <div className={`bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 p-6 ${textAlign}`}>
-                  <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">
+                <div className={`bg-white dark:bg-[#031A3D]/50 backdrop-blur-sm rounded-xl border border-[#41ADE8]/20 dark:border-[#055BA4]/30 p-6 ${textAlign}`}>
+                  <h3 className="text-lg font-semibold text-[#031A3D] dark:text-white mb-4">
                     {aboutTitle}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
+                  <p className="text-[#055BA4] dark:text-slate-300 text-sm leading-relaxed mb-4">
                     {aboutDescription}
                   </p>
                   <div className="flex gap-3">
                     {[1, 2, 3, 4].map((item) => (
-                      <div key={item} className="w-10 h-10 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center transition-transform hover:scale-110 cursor-pointer">
-                        <div className="bg-slate-300 dark:bg-slate-600 rounded-full w-8 h-8"></div>
+                      <div key={item} className="w-10 h-10 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-full flex items-center justify-center transition-transform hover:scale-110 cursor-pointer">
+                        <div className="bg-[#055BA4] dark:bg-[#41ADE8] rounded-full w-8 h-8"></div>
                       </div>
                     ))}
                   </div>
@@ -604,8 +604,8 @@ const Blog = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.0 }}
               >
-                <div className={`bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 p-6 ${textAlign}`}>
-                  <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">
+                <div className={`bg-white dark:bg-[#031A3D]/50 backdrop-blur-sm rounded-xl border border-[#41ADE8]/20 dark:border-[#055BA4]/30 p-6 ${textAlign}`}>
+                  <h3 className="text-lg font-semibold text-[#031A3D] dark:text-white mb-4">
                     {popularTagsTitle}
                   </h3>
                   <div className="flex flex-wrap gap-2">
@@ -617,8 +617,8 @@ const Blog = () => {
                         onClick={() => toggleTag(tag)}
                         className={`cursor-pointer px-3 py-1.5 rounded-lg text-sm font-medium transition-colors flex items-center ${
                           selectedTags.includes(tag)
-                            ? 'bg-teal-600 text-white shadow-md'
-                            : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
+                            ? 'bg-[#055BA4] text-white shadow-md'
+                            : 'bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 text-[#055BA4] dark:text-[#41ADE8] hover:bg-[#41ADE8]/20 dark:hover:bg-[#055BA4]/30'
                         }`}
                       >
                         <Tag size={14} className={`${isRTL ? 'ml-1.5' : 'mr-1.5'}`} />
@@ -635,8 +635,8 @@ const Blog = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.1 }}
               >
-                <div className={`bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 p-6 ${textAlign}`}>
-                  <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">
+                <div className={`bg-white dark:bg-[#031A3D]/50 backdrop-blur-sm rounded-xl border border-[#41ADE8]/20 dark:border-[#055BA4]/30 p-6 ${textAlign}`}>
+                  <h3 className="text-lg font-semibold text-[#031A3D] dark:text-white mb-4">
                     {recentPostsTitle}
                   </h3>
                   <div className="space-y-4">
@@ -658,10 +658,10 @@ const Blog = () => {
                             />
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-sm font-medium text-slate-800 dark:text-slate-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors line-clamp-2 mb-1">
+                            <h4 className="text-sm font-medium text-[#031A3D] dark:text-slate-200 group-hover:text-[#055BA4] dark:group-hover:text-[#41ADE8] transition-colors line-clamp-2 mb-1">
                               {post.title}
                             </h4>
-                            <div className={`flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400`}>
+                            <div className={`flex items-center gap-2 text-xs text-[#055BA4] dark:text-slate-400`}>
                               <Calendar size={12} />
                               <span>{formatDate(post.date)}</span>
                             </div>
@@ -679,25 +679,25 @@ const Blog = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2 }}
               >
-                <div className={`bg-gradient-to-br from-indigo-500 to-teal-500 dark:from-indigo-600 dark:to-teal-700 rounded-xl p-6 text-white ${textAlign} shadow-lg`}>
+                <div className={`bg-gradient-to-br from-[#055BA4] to-[#41ADE8] dark:from-[#055BA4] dark:to-[#41ADE8] rounded-xl p-6 text-white ${textAlign} shadow-lg`}>
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4">
                     <Mail className="w-5 h-5" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">
                     {newsletterTitle}
                   </h3>
-                  <p className="text-indigo-100 text-sm mb-4">
+                  <p className="text-blue-100 text-sm mb-4">
                     {newsletterDescription}
                   </p>
                   <div className="relative mb-3">
                     <input 
                       type="email" 
                       placeholder={newsletterPlaceholder}
-                      className={`w-full py-3 bg-white/20 backdrop-blur-sm text-white placeholder-indigo-200 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent border border-indigo-300 transition-all ${isRTL ? 'pr-4 pl-10' : 'pl-4 pr-10'}`}
+                      className={`w-full py-3 bg-white/20 backdrop-blur-sm text-white placeholder-blue-200 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent border border-blue-300 transition-all ${isRTL ? 'pr-4 pl-10' : 'pl-4 pr-10'}`}
                     />
-                    <Mail className={`absolute top-1/2 transform -translate-y-1/2 text-indigo-200 ${isRTL ? 'left-3' : 'right-3'}`} size={16} />
+                    <Mail className={`absolute top-1/2 transform -translate-y-1/2 text-blue-200 ${isRTL ? 'left-3' : 'right-3'}`} size={16} />
                   </div>
-                  <Button className="w-full bg-white text-indigo-600 hover:bg-slate-100 font-medium shadow-md">
+                  <Button className="w-full bg-white text-[#055BA4] hover:bg-slate-100 font-medium shadow-md">
                     {newsletterButton}
                   </Button>
                 </div>

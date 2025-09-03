@@ -6,17 +6,17 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useTranslation } from "react-i18next";
-import { 
-  Select, 
-  SelectContent, 
-  SelectItem, 
-  SelectTrigger, 
-  SelectValue 
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue
 } from '@/components/ui/select';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
   Clock,
   Send,
   CheckCircle,
@@ -63,7 +63,7 @@ const Devis = () => {
     attachments: [],
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
@@ -79,8 +79,8 @@ const Devis = () => {
   };
 
   const handleSelectChange = (name, value) => {
-    setFormData(prev => ({ 
-      ...prev, 
+    setFormData(prev => ({
+      ...prev,
       [name]: value,
       [`${name}Other`]: value === t('devis.otherOption') ? prev[`${name}Other`] : ''
     }));
@@ -121,21 +121,21 @@ const Devis = () => {
 
   const nextStep = () => {
     let isValid = true;
-    
+
     if (currentStep === 1) {
       if (!formData.firstName || !formData.lastName || !formData.email) {
         isValid = false;
         alert(t('devis.validation.step1'));
       }
     }
-    
+
     if (currentStep === 2) {
       if (!formData.service) {
         isValid = false;
         alert(t('devis.validation.step2'));
       }
     }
-    
+
     if (isValid) {
       setCurrentStep(prev => Math.min(prev + 1, 4));
     }
@@ -246,11 +246,11 @@ const Devis = () => {
 
   return (
     <div
-      className="pt-16 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
+      className="pt-16 bg-gradient-to-b from-slate-50 to-white dark:from-[#031A3D] dark:to-[#031A3D]/90"
       dir={direction}
     >
       {/* Hero Section - Améliorée */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-teal-50 dark:from-slate-900 dark:to-teal-900/10">
+      <section className="py-20 bg-gradient-to-br from-[#41ADE8]/10 to-[#055BA4]/10 dark:from-[#031A3D] dark:to-[#055BA4]/20">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center max-w-4xl mx-auto"
@@ -258,13 +258,13 @@ const Devis = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.h1 
-              className="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-4"
+            <motion.h1
+              className="text-4xl md:text-5xl font-bold text-[#031A3D] dark:text-white mb-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              {t('devis.hero.title1')} <span className="text-teal-600 dark:text-teal-400">{t('devis.hero.title2')}</span>
+              {t('devis.hero.title1')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('devis.hero.title2')}</span>
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, width: 0 }}
@@ -272,10 +272,10 @@ const Devis = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
-            <motion.p 
-              className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto"
+            <motion.p
+              className="text-xl text-[#055BA4] dark:text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -288,7 +288,7 @@ const Devis = () => {
               transition={{ delay: 0.6 }}
               className="flex justify-center gap-4"
             >
-              <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white">
+              <Button asChild className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] text-white">
                 <Link to="/contact" className="flex items-center gap-2">
                   <MessageCircle size={18} />
                   {t('devis.hero.contactButton')}
@@ -308,32 +308,32 @@ const Devis = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <Card className="border border-slate-200 dark:border-slate-700 shadow-xl overflow-hidden">
-                <div className="bg-gradient-to-r from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 text-white py-6 px-6">
+              <Card className="border border-slate-200 dark:border-[#055BA4]/30 shadow-xl overflow-hidden">
+                <div className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] dark:from-[#055BA4] dark:to-[#41ADE8] text-white py-6 px-6">
                   <CardHeader className="p-0">
                     <CardTitle className="text-2xl flex items-center gap-3">
                       <FileText size={28} />
                       <span>{t('devis.form.title')}</span>
                     </CardTitle>
-                    <p className="text-teal-100 dark:text-teal-200 mt-2">
-                      {t('devis.form.step', { 
-                        step: currentStep, 
+                    <p className="text-[#41ADE8] dark:text-[#41ADE8] mt-2">
+                      {t('devis.form.step', {
+                        step: currentStep,
                         total: 4,
-                        interpolation: { escapeValue: false } 
+                        interpolation: { escapeValue: false }
                       })}: {stepTitles[currentStep - 1]}
                     </p>
                   </CardHeader>
                 </div>
-                
-                <div className="relative h-2 bg-slate-100 dark:bg-slate-800">
+
+                <div className="relative h-2 bg-slate-100 dark:bg-[#031A3D]">
                   <motion.div
-                    className="absolute top-0 left-0 h-full bg-teal-600"
+                    className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#055BA4] to-[#41ADE8]"
                     initial={{ width: `${(currentStep - 1) * 25}%` }}
                     animate={{ width: `${(currentStep - 1) * 25}%` }}
                     transition={{ duration: 0.5 }}
                   />
                 </div>
-                
+
                 <CardContent className="p-6">
                   {isSubmitted ? (
                     <motion.div
@@ -343,14 +343,14 @@ const Devis = () => {
                       transition={{ duration: 0.5 }}
                     >
                       <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-6" />
-                      <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-3">
+                      <h3 className="text-2xl font-bold text-[#031A3D] dark:text-white mb-3">
                         {t('devis.form.success.title')}
                       </h3>
-                      <p className="text-slate-600 dark:text-slate-300 mb-8 max-w-md mx-auto">
+                      <p className="text-[#055BA4] dark:text-slate-300 mb-8 max-w-md mx-auto">
                         {t('devis.form.success.message')}
                       </p>
-                      <Button asChild>
-                        <Link to="/" className="bg-teal-600 hover:bg-teal-700">
+                      <Button asChild className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0]">
+                        <Link to="/">
                           {t('devis.form.success.button')}
                         </Link>
                       </Button>
@@ -365,11 +365,11 @@ const Devis = () => {
                           animate="visible"
                           className="space-y-6"
                         >
-                          <motion.h3 className="text-xl font-semibold text-slate-800 dark:text-white flex items-center gap-2 mb-6" variants={itemVariants}>
+                          <motion.h3 className="text-xl font-semibold text-[#031A3D] dark:text-white flex items-center gap-2 mb-6" variants={itemVariants}>
                             <User size={20} />
                             <span>{t('devis.step1.title')}</span>
                           </motion.h3>
-                          
+
                           <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-4" variants={itemVariants}>
                             <div className="space-y-2">
                               <Label htmlFor="firstName">{t('devis.step1.firstName')} *</Label>
@@ -448,7 +448,7 @@ const Devis = () => {
                             <Button
                               type="button"
                               onClick={nextStep}
-                              className="bg-teal-600 hover:bg-teal-700"
+                              className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0]"
                             >
                               {t('devis.step1.nextButton')}
                               <ChevronRight className={`${isRTL ? 'mr-2 transform rotate-180' : 'ml-2'}`} size={16} />
@@ -465,11 +465,11 @@ const Devis = () => {
                           animate="visible"
                           className="space-y-6"
                         >
-                          <motion.h3 className="text-xl font-semibold text-slate-800 dark:text-white flex items-center gap-2 mb-6" variants={itemVariants}>
+                          <motion.h3 className="text-xl font-semibold text-[#031A3D] dark:text-white flex items-center gap-2 mb-6" variants={itemVariants}>
                             <Briefcase size={20} />
                             <span>{t('devis.step2.title')}</span>
                           </motion.h3>
-                          
+
                           <motion.div className="space-y-4" variants={itemVariants}>
                             <div className="space-y-2">
                               <Label htmlFor="projectName">{t('devis.step2.projectName')} *</Label>
@@ -482,12 +482,12 @@ const Devis = () => {
                                 placeholder={t('devis.step2.projectNamePlaceholder')}
                               />
                             </div>
-                            
+
                             <div className="space-y-2">
                               <Label htmlFor="service">{t('devis.step2.service')} *</Label>
-                              <Select 
-                                value={formData.service} 
-                                onValueChange={(value) => handleSelectChange('service', value)} 
+                              <Select
+                                value={formData.service}
+                                onValueChange={(value) => handleSelectChange('service', value)}
                                 required
                               >
                                 <SelectTrigger>
@@ -502,7 +502,7 @@ const Devis = () => {
                                 </SelectContent>
                               </Select>
                               {formData.service === t('devis.otherOption') && (
-                                <motion.div 
+                                <motion.div
                                   initial={{ opacity: 0, height: 0 }}
                                   animate={{ opacity: 1, height: 'auto' }}
                                   className="mt-2"
@@ -517,12 +517,12 @@ const Devis = () => {
                                 </motion.div>
                               )}
                             </div>
-                            
+
                             <div className="space-y-2">
                               <Label htmlFor="projectType">{t('devis.step2.projectType')} *</Label>
-                              <Select 
-                                value={formData.projectType} 
-                                onValueChange={(value) => handleSelectChange('projectType', value)} 
+                              <Select
+                                value={formData.projectType}
+                                onValueChange={(value) => handleSelectChange('projectType', value)}
                                 required
                               >
                                 <SelectTrigger>
@@ -537,7 +537,7 @@ const Devis = () => {
                                 </SelectContent>
                               </Select>
                               {formData.projectType === t('devis.otherOption') && (
-                                <motion.div 
+                                <motion.div
                                   initial={{ opacity: 0, height: 0 }}
                                   animate={{ opacity: 1, height: 'auto' }}
                                   className="mt-2"
@@ -575,7 +575,7 @@ const Devis = () => {
                             <Button
                               type="button"
                               onClick={nextStep}
-                              className="bg-teal-600 hover:bg-teal-700"
+                              className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0]"
                             >
                               {isRTL ? (
                                 <>
@@ -601,11 +601,11 @@ const Devis = () => {
                           animate="visible"
                           className="space-y-6"
                         >
-                          <motion.h3 className="text-xl font-semibold text-slate-800 dark:text-white flex items-center gap-2 mb-6" variants={itemVariants}>
+                          <motion.h3 className="text-xl font-semibold text-[#031A3D] dark:text-white flex items-center gap-2 mb-6" variants={itemVariants}>
                             <Layers size={20} />
                             <span>{t('devis.step3.title')}</span>
                           </motion.h3>
-                          
+
                           <motion.div variants={itemVariants}>
                             <Label className="block mb-3">{t('devis.step3.featuresLabel')}</Label>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -616,9 +616,9 @@ const Devis = () => {
                                     id={`feature-${index}`}
                                     checked={formData.features.includes(feature)}
                                     onChange={() => handleCheckboxChange(feature)}
-                                    className="h-4 w-4 text-teal-600 border-slate-300 rounded focus:ring-teal-500"
+                                    className="h-4 w-4 text-[#055BA4] border-slate-300 rounded focus:ring-[#055BA4]"
                                   />
-                                  <label htmlFor={`feature-${index}`} className="text-slate-700 dark:text-slate-300">
+                                  <label htmlFor={`feature-${index}`} className="text-[#055BA4] dark:text-slate-300">
                                     {feature}
                                   </label>
                                 </div>
@@ -664,16 +664,16 @@ const Devis = () => {
 
                           <motion.div className="space-y-4" variants={itemVariants}>
                             <Label>{t('devis.step3.fileUpload.title')}</Label>
-                            <div className="border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-lg p-6 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
-                                 onClick={() => fileInputRef.current.click()}>
+                            <div className="border-2 border-dashed border-slate-300 dark:border-[#055BA4]/30 rounded-lg p-6 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-[#031A3D]/50 transition-colors"
+                              onClick={() => fileInputRef.current.click()}>
                               <Folder className="w-10 h-10 text-slate-400 mx-auto mb-3" />
-                              <p className="text-slate-600 dark:text-slate-400 mb-1">
+                              <p className="text-[#055BA4] dark:text-slate-400 mb-1">
                                 {t('devis.step3.fileUpload.instruction1')}{' '}
-                                <span className="text-teal-600 dark:text-teal-400 font-medium">
+                                <span className="text-[#055BA4] dark:text-[#41ADE8] font-medium">
                                   {t('devis.step3.fileUpload.instruction2')}
                                 </span>
                               </p>
-                              <p className="text-sm text-slate-500 dark:text-slate-500">
+                              <p className="text-sm text-[#055BA4] dark:text-slate-500">
                                 {t('devis.step3.fileUpload.formats')}
                               </p>
                               <input
@@ -685,23 +685,23 @@ const Devis = () => {
                                 accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.xls,.xlsx,.psd,.ai,.fig,.sketch"
                               />
                             </div>
-                            
+
                             {formData.attachments.length > 0 && (
                               <div className="space-y-2">
-                                <p className="text-sm text-slate-600 dark:text-slate-400">
+                                <p className="text-sm text-[#055BA4] dark:text-slate-400">
                                   {t('devis.step3.fileUpload.attachments', { count: formData.attachments.length })}
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                   {formData.attachments.map((file, index) => (
-                                    <div key={index} className="flex items-center justify-between bg-slate-100 dark:bg-slate-800/50 rounded-lg p-3">
+                                    <div key={index} className="flex items-center justify-between bg-slate-100 dark:bg-[#031A3D]/50 rounded-lg p-3">
                                       <div className="flex items-center truncate">
-                                        <File className="text-slate-500 mr-2 flex-shrink-0" size={16} />
+                                        <File className="text-[#055BA4] mr-2 flex-shrink-0" size={16} />
                                         <span className="text-sm truncate">{file.name}</span>
                                       </div>
-                                      <button 
-                                        type="button" 
+                                      <button
+                                        type="button"
                                         onClick={() => removeFile(index)}
-                                        className="text-slate-500 hover:text-red-500"
+                                        className="text-[#055BA4] hover:text-red-500"
                                       >
                                         <XCircle size={18} />
                                       </button>
@@ -713,18 +713,18 @@ const Devis = () => {
                           </motion.div>
 
                           <motion.div className={`pt-6 flex ${isRTL ? 'flex-row-reverse' : 'justify-between'}`} variants={itemVariants}>
-                            <Button 
-                              type="button" 
+                            <Button
+                              type="button"
                               variant="outline"
                               onClick={prevStep}
                             >
                               <ChevronLeft className={`${isRTL ? 'ml-2' : 'mr-2'}`} size={16} />
                               {t('devis.step3.prevButton')}
                             </Button>
-                            <Button 
-                              type="button" 
+                            <Button
+                              type="button"
                               onClick={nextStep}
-                              className="bg-teal-600 hover:bg-teal-700"
+                              className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0]"
                             >
                               {t('devis.step3.nextButton')}
                               <ChevronRight className={`${isRTL ? 'mr-2' : 'ml-2'}`} size={16} />
@@ -741,17 +741,17 @@ const Devis = () => {
                           animate="visible"
                           className="space-y-6"
                         >
-                          <motion.h3 className="text-xl font-semibold text-slate-800 dark:text-white flex items-center gap-2 mb-6" variants={itemVariants}>
+                          <motion.h3 className="text-xl font-semibold text-[#031A3D] dark:text-white flex items-center gap-2 mb-6" variants={itemVariants}>
                             <Calendar size={20} />
                             <span>{t('devis.step4.title')}</span>
                           </motion.h3>
-                          
+
                           <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-4" variants={itemVariants}>
                             <div className="space-y-2">
                               <Label htmlFor="timeline">{t('devis.step4.timeline')} *</Label>
-                              <Select 
-                                value={formData.timeline} 
-                                onValueChange={(value) => handleSelectChange('timeline', value)} 
+                              <Select
+                                value={formData.timeline}
+                                onValueChange={(value) => handleSelectChange('timeline', value)}
                                 required
                               >
                                 <SelectTrigger>
@@ -766,7 +766,7 @@ const Devis = () => {
                                 </SelectContent>
                               </Select>
                               {formData.timeline === t('devis.otherOption') && (
-                                <motion.div 
+                                <motion.div
                                   initial={{ opacity: 0, height: 0 }}
                                   animate={{ opacity: 1, height: 'auto' }}
                                   className="mt-2"
@@ -783,9 +783,9 @@ const Devis = () => {
                             </div>
                             <div className="space-y-2">
                               <Label htmlFor="budget">{t('devis.step4.budget')} *</Label>
-                              <Select 
-                                value={formData.budget} 
-                                onValueChange={(value) => handleSelectChange('budget', value)} 
+                              <Select
+                                value={formData.budget}
+                                onValueChange={(value) => handleSelectChange('budget', value)}
                                 required
                               >
                                 <SelectTrigger>
@@ -800,7 +800,7 @@ const Devis = () => {
                                 </SelectContent>
                               </Select>
                               {formData.budget === t('devis.otherOption') && (
-                                <motion.div 
+                                <motion.div
                                   initial={{ opacity: 0, height: 0 }}
                                   animate={{ opacity: 1, height: 'auto' }}
                                   className="mt-2"
@@ -830,17 +830,17 @@ const Devis = () => {
                           </motion.div>
 
                           <motion.div className={`pt-6 flex ${isRTL ? 'flex-row-reverse' : 'justify-between'}`} variants={itemVariants}>
-                            <Button 
-                              type="button" 
+                            <Button
+                              type="button"
                               variant="outline"
                               onClick={prevStep}
                             >
                               <ChevronLeft className={`${isRTL ? 'ml-2' : 'mr-2'}`} size={16} />
                               {t('devis.step4.prevButton')}
                             </Button>
-                            <Button 
-                              type="submit" 
-                              className="bg-teal-600 hover:bg-teal-700"
+                            <Button
+                              type="submit"
+                              className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0]"
                               disabled={isSubmitting}
                             >
                               {isSubmitting ? (
@@ -856,8 +856,8 @@ const Devis = () => {
                               )}
                             </Button>
                           </motion.div>
-                          
-                          <motion.p className="text-sm text-slate-500 dark:text-slate-400 text-center pt-6" variants={itemVariants}>
+
+                          <motion.p className="text-sm text-[#055BA4] dark:text-slate-400 text-center pt-6" variants={itemVariants}>
                             {t('devis.step4.disclaimer')}
                           </motion.p>
                         </motion.div>
@@ -877,28 +877,28 @@ const Devis = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <Card className="border border-slate-200 dark:border-slate-700">
+              <Card className="border border-slate-200 dark:border-[#055BA4]/30">
                 <CardHeader className="pb-3">
                   <CardTitle className="text-xl flex items-center gap-2">
                     <Phone size={20} />
-                    <span>{t('devis.whatsapp.title')}</span>
+                    <span>{t('contact.whatsapp.title')}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-col items-center text-center p-4">
-                    <p className="text-slate-600 dark:text-slate-400 mb-6">
-                      {t('devis.whatsapp.description')}
+                    <p className="text-[#055BA4] dark:text-slate-400 mb-6">
+                      {t('contact.whatsapp.description')}
                     </p>
-                    <Button 
-                      asChild 
+                    <Button
+                      asChild
                       className="bg-green-600 hover:bg-green-700 w-full"
                     >
-                      <a 
-                        href={t('devis.whatsapp.link')} 
+                      <a
+                        href={t('contact.whatsapp.link')}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {t('devis.whatsapp.button')}
+                        {t('contact.whatsapp.button')}
                       </a>
                     </Button>
                   </div>
@@ -912,24 +912,24 @@ const Devis = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <Card className="border border-slate-200 dark:border-slate-700">
+              <Card className="border border-slate-200 dark:border-[#055BA4]/30">
                 <CardHeader className="pb-3">
                   <CardTitle className="text-xl flex items-center gap-2">
                     <Mail size={20} />
-                    <span>{t('devis.contactPage.title')}</span>
+                    <span>{t('contact.contactPage.title')}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-col items-center text-center p-4">
-                    <p className="text-slate-600 dark:text-slate-400 mb-6">
-                      {t('devis.contactPage.description')}
+                    <p className="text-[#055BA4] dark:text-slate-400 mb-6">
+                      {t('contact.contactPage.description')}
                     </p>
-                    <Button 
-                      asChild 
-                      className="bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-800 w-full"
+                    <Button
+                      asChild
+                      className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] w-full"
                     >
                       <Link to="/contact">
-                        {t('devis.contactPage.button')}
+                        {t('contact.contactPage.button')}
                       </Link>
                     </Button>
                   </div>
@@ -945,21 +945,20 @@ const Devis = () => {
               className="space-y-4"
             >
               {guarantees.map((guarantee, index) => (
-                <div 
-                  key={index} 
-                  className={`border rounded-xl p-5 ${
-                    index === 0 ? 'bg-teal-50 dark:bg-teal-900/20 border-teal-200 dark:border-teal-700' :
-                    index === 1 ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-700' :
-                    'bg-purple-50 dark:bg-purple-900/20 border-purple-200 dark:border-purple-700'
-                  }`}
+                <div
+                  key={index}
+                  className={`border rounded-xl p-5 ${index === 0 ? 'bg-[#41ADE8]/10 dark:bg-[#41ADE8]/20 border-[#41ADE8]/20' :
+                      index === 1 ? 'bg-[#055BA4]/10 dark:bg-[#055BA4]/20 border-[#055BA4]/20' :
+                        'bg-[#031A3D]/10 dark:bg-[#031A3D]/20 border-[#031A3D]/20'
+                    }`}
                 >
                   <div className="flex items-start space-x-3">
-                    {index === 0 && <Clock className={`${index === 0 ? 'text-teal-600 dark:text-teal-400' : index === 1 ? 'text-blue-600 dark:text-blue-400' : 'text-purple-600 dark:text-purple-400'} mt-0.5 flex-shrink-0`} size={20} />}
-                    {index === 1 && <File className={`${index === 0 ? 'text-teal-600 dark:text-teal-400' : index === 1 ? 'text-blue-600 dark:text-blue-400' : 'text-purple-600 dark:text-purple-400'} mt-0.5 flex-shrink-0`} size={20} />}
-                    {index === 2 && <CheckCircle className={`${index === 0 ? 'text-teal-600 dark:text-teal-400' : index === 1 ? 'text-blue-600 dark:text-blue-400' : 'text-purple-600 dark:text-purple-400'} mt-0.5 flex-shrink-0`} size={20} />}
+                    {index === 0 && <Clock className="text-[#055BA4] dark:text-[#41ADE8] mt-0.5 flex-shrink-0" size={20} />}
+                    {index === 1 && <File className="text-[#055BA4] dark:text-[#41ADE8] mt-0.5 flex-shrink-0" size={20} />}
+                    {index === 2 && <CheckCircle className="text-[#055BA4] dark:text-[#41ADE8] mt-0.5 flex-shrink-0" size={20} />}
                     <div>
-                      <h3 className="font-semibold text-slate-800 dark:text-slate-200">{guarantee.title}</h3>
-                      <p className="text-sm text-slate-600 dark:text-slate-400">
+                      <h3 className="font-semibold text-[#031A3D] dark:text-slate-200">{guarantee.title}</h3>
+                      <p className="text-sm text-[#055BA4] dark:text-slate-400">
                         {guarantee.text}
                       </p>
                     </div>
@@ -972,11 +971,11 @@ const Devis = () => {
       </div>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-slate-50 dark:bg-slate-900/30">
+      <section className="py-20 bg-[#41ADE8]/10 dark:bg-[#031A3D]/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <motion.h2 
-              className="text-3xl font-bold text-slate-800 dark:text-white mb-4"
+            <motion.h2
+              className="text-3xl font-bold text-[#031A3D] dark:text-white mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -990,10 +989,10 @@ const Devis = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
-            <motion.p 
-              className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto"
+            <motion.p
+              className="text-lg text-[#055BA4] dark:text-slate-300 max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -1005,16 +1004,16 @@ const Devis = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {faqItems.map((faq, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
-                className="bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-slate-200 dark:border-slate-700"
+                className="bg-white dark:bg-[#031A3D]/60 p-6 rounded-xl border border-slate-200 dark:border-[#055BA4]/30"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
               >
-                <h3 className="font-semibold text-lg text-slate-800 dark:text-white mb-3">{faq.question}</h3>
-                <p className="text-slate-600 dark:text-slate-400">{faq.answer}</p>
+                <h3 className="font-semibold text-lg text-[#031A3D] dark:text-white mb-3">{faq.question}</h3>
+                <p className="text-[#055BA4] dark:text-slate-400">{faq.answer}</p>
               </motion.div>
             ))}
           </div>

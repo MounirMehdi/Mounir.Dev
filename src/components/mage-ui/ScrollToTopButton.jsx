@@ -27,10 +27,24 @@ const ScrollToTopButton = () => {
           className="scroll-to-top-button"
           aria-label="Retour en haut"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ 
+            opacity: 1, 
+            y: 0,
+            transition: { type: "spring", damping: 10, stiffness: 200 }
+          }}
           exit={{ opacity: 0, y: 20 }}
-          whileHover={{ scale: 1.1, backgroundColor: "var(--color-teal-500)" }}
+          whileHover={{ 
+            scale: 1.1, 
+            backgroundColor: "#055BA4" // Lapis Lazuli
+          }}
           whileTap={{ scale: 0.9 }}
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            zIndex: 1000,
+          }}
         >
           <KeyboardArrowUp sx={{ fontSize: 24 }} />
         </motion.button>

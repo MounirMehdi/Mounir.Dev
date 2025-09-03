@@ -1035,16 +1035,6 @@
       "Détails du Projet",
       "Exigences & Fichiers",
       "Délais, Budget & Finalisation"
-    ],
-    "whatsapp": {
-      "title": "Devis WhatsApp",
-      "description": "Discutons de votre projet directement sur WhatsApp",
-      "button": "Ouvrir WhatsApp"
-    },
-    "contactPage": {
-      "title": "Devis Gratuit",
-      "description": "Obtenez une estimation personnalisée de votre projet",
-      "button": "Demander un devis"
-    }
+    ]
   }
 }

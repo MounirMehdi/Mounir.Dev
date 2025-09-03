@@ -200,7 +200,7 @@ const Accueil = () => {
       id: 3,
       title: t('home.slides.slide3.title'),
       description: t('home.slides.slide3.description'),
-      image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=1400",
+      image: "https://images.pexels.com/photos-267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=1400",
       alt: t('home.slides.slide3.alt')
     },
     {
@@ -214,7 +214,7 @@ const Accueil = () => {
       id: 5,
       title: t('home.slides.slide5.title'),
       description: t('home.slides.slide5.description'),
-      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1400",
+      image: "https://images.pexels.com/photos-1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1400",
       alt: t('home.slides.slide5.alt')
     },
     {
@@ -279,10 +279,10 @@ const Accueil = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-950"
+      className="bg-gradient-to-b from-slate-50 to-slate-100 dark:from-[#031A3D] dark:to-[#031A3D]/90"
       dir={direction}
     >
-      {/* Section Hero - Arrière-plan néon avec dégradé vert/bleu */}
+      {/* Section Hero - Arrière-plan avec dégradé Oxford Blue */}
       <section className="pt-30 lg:pt-30 pb-16 lg:pb-20 min-h-[650px] md:max-h-[1200px] max-h-[990px] lg:max-h-[690px] flex items-center overflow-hidden relative">
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-cover bg-center" style={{
@@ -290,7 +290,7 @@ const Accueil = () => {
             backgroundPosition: "center center",
             backgroundAttachment: 'fixed'
           }}>
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-teal-900/60"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#031A3D]/90 to-[#055BA4]/80"></div>
           </div>
         </div>
 
@@ -304,7 +304,7 @@ const Accueil = () => {
             >
               <div className="space-y-4 md:space-y-6">
                 <motion.div
-                  className="inline-block px-4 py-1 bg-gradient-to-r from-teal-400 to-teal-600 text-white rounded-full text-sm font-medium backdrop-blur-sm shadow-teal-500/20 shadow-md"
+                  className="inline-block px-4 py-1 bg-gradient-to-r from-[#055BA4] to-[#41ADE8] text-white rounded-full text-sm font-medium backdrop-blur-sm shadow-[#055BA4]/20 shadow-md"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.4 }}
@@ -322,7 +322,7 @@ const Accueil = () => {
                   </motion.span>
                   <br />
                   <FlipWords
-                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-teal-300 block mt-2"
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#41ADE8] block mt-2"
                     words={t('home.hero.flipWords', { returnObjects: true })}
                     duration={3000}
                   />
@@ -348,7 +348,7 @@ const Accueil = () => {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white shadow-lg shadow-teal-500/30 backdrop-blur-sm w-full sm:w-auto"
+                  className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] text-white shadow-lg shadow-[#055BA4]/30 backdrop-blur-sm w-full sm:w-auto"
                 >
                   <Link to="/projects">
                     {t('home.hero.button1')}
@@ -377,7 +377,7 @@ const Accueil = () => {
                     className="p-3 md:p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10 text-center"
                     whileHover={{ y: -5 }}
                   >
-                    <div className="text-xl md:text-2xl font-bold text-teal-400">{stat.value}</div>
+                    <div className="text-xl md:text-2xl font-bold text-[#41ADE8]">{stat.value}</div>
                     <div className="text-xs md:text-sm text-slate-200 mt-1">{stat.label}</div>
                   </motion.div>
                 ))}
@@ -391,8 +391,8 @@ const Accueil = () => {
               dir="ltr"
             >
               <div className="relative z-10 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-3 md:p-4 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-blue-500/5 dark:from-teal-700/5 dark:to-blue-700/5 z-0">
-                  <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-teal-900/60"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#055BA4]/5 to-[#41ADE8]/5 dark:from-[#055BA4]/10 dark:to-[#41ADE8]/10 z-0">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#031A3D]/80 to-[#055BA4]/60"></div>
                 </div>
 
                 <div className="relative z-10 rounded-xl overflow-hidden">
@@ -406,25 +406,25 @@ const Accueil = () => {
                             alt={slide.alt}
                             className="w-full h-full object-cover"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/30 to-teal-900/40"></div>
+                          <div className="absolute inset-0 bg-gradient-to-r from-[#031A3D]/30 to-[#055BA4]/40"></div>
                         </div>
                       ))}
                     </div>
                   </div>
                 </div>
 
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-teal-500 rounded-full blur-2xl opacity-30 dark:opacity-20"></div>
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-500 rounded-full blur-2xl opacity-30 dark:opacity-20"></div>
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#055BA4] rounded-full blur-2xl opacity-30 dark:opacity-20"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#41ADE8] rounded-full blur-2xl opacity-30 dark:opacity-20"></div>
               </div>
 
-              <div className="absolute -top-4 -right-4 w-full h-full bg-teal-500/10 dark:bg-teal-700/10 rounded-2xl"></div>
+              <div className="absolute -top-4 -right-4 w-full h-full bg-[#055BA4]/10 dark:bg-[#055BA4]/20 rounded-2xl"></div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Section Compétences - Arrière-plan néon avec dégradé vert */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 dark:from-slate-900 dark:via-teal-900/20 dark:to-slate-800">
+      {/* Section Compétences - Arrière-plan avec dégradé Oxford Blue */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-[#031A3D]/10 to-slate-100 dark:from-[#031A3D] dark:via-[#031A3D]/80 dark:to-[#031A3D]/90">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10 md:mb-12">
             <motion.h2
@@ -433,7 +433,7 @@ const Accueil = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              {t('home.skills.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.skills.titleHighlight')}</span>
+              {t('home.skills.title')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('home.skills.titleHighlight')}</span>
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, width: 0 }}
@@ -441,7 +441,7 @@ const Accueil = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
             <motion.p
               className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
@@ -467,13 +467,13 @@ const Accueil = () => {
                 }}
                 viewport={{ once: true, margin: "-50px" }}
               >
-                <div className="group h-full border border-slate-200 dark:border-gray-800 hover:border-teal-300 dark:hover:border-teal-500 transition-all duration-300 bg-white/80 dark:bg-gray-800/50 backdrop-blur-lg rounded-xl overflow-hidden p-5 hover:shadow-lg hover:-translate-y-1.5 hover:shadow-teal-500/20 dark:hover:shadow-teal-400/30">
+                <div className="group h-full border border-slate-200 dark:border-gray-800 hover:border-[#055BA4] dark:hover:border-[#41ADE8] transition-all duration-300 bg-white/80 dark:bg-[#031A3D]/50 backdrop-blur-lg rounded-xl overflow-hidden p-5 hover:shadow-lg hover:-translate-y-1.5 hover:shadow-[#055BA4]/20 dark:hover:shadow-[#41ADE8]/30">
                   <motion.div
-                    className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-teal-100 to-teal-50 dark:from-teal-900/30 dark:to-teal-800/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-gradient-to-br group-hover:from-teal-500 group-hover:to-teal-400 transition-all duration-300"
+                    className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#055BA4]/10 to-[#41ADE8]/10 dark:from-[#055BA4]/30 dark:to-[#41ADE8]/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-gradient-to-br group-hover:from-[#055BA4] group-hover:to-[#41ADE8] transition-all duration-300"
                     whileHover={{ rotate: 5, scale: 1.05 }}
                   >
                     <skill.icon
-                      className="text-teal-600 dark:text-teal-400 group-hover:text-white transition-colors duration-300"
+                      className="text-[#055BA4] dark:text-[#41ADE8] group-hover:text-white transition-colors duration-300"
                       size={24}
                     />
                   </motion.div>
@@ -486,7 +486,7 @@ const Accueil = () => {
                     {skill.tech.split(',').map((tech, i) => (
                       <motion.span
                         key={i}
-                        className="px-2 py-1 text-xs font-medium bg-slate-100 dark:bg-gray-700 text-slate-700 dark:text-slate-300 rounded-full"
+                        className="px-2 py-1 text-xs font-medium bg-slate-100 dark:bg-[#055BA4]/20 text-slate-700 dark:text-slate-300 rounded-full"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
@@ -505,8 +505,8 @@ const Accueil = () => {
         </div>
       </section>
 
-      {/* Section Services - Arrière-plan néon avec dégradé bleu */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900/20 dark:to-slate-800">
+      {/* Section Services - Arrière-plan avec dégradé Oxford Blue */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-[#055BA4]/10 to-slate-100 dark:from-[#031A3D] dark:via-[#031A3D]/80 dark:to-[#031A3D]/90">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <motion.h2
@@ -515,7 +515,7 @@ const Accueil = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              {t('home.services.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.services.titleHighlight')}</span>
+              {t('home.services.title')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('home.services.titleHighlight')}</span>
             </motion.h2>
 
             <motion.div
@@ -524,7 +524,7 @@ const Accueil = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
 
             <motion.p
@@ -551,23 +551,23 @@ const Accueil = () => {
                 className="h-full"
                 whileHover="hover"
               >
-                <div className="group h-full bg-white dark:bg-slate-800/30 backdrop-blur-sm border border-slate-200 dark:border-slate-700/60 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-teal-300/50 dark:hover:border-teal-500/50 relative">
+                <div className="group h-full bg-white dark:bg-[#031A3D]/30 backdrop-blur-sm border border-slate-200 dark:border-slate-700/60 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-[#055BA4]/50 dark:hover:border-[#41ADE8]/50 relative">
                   <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-blue-500/5 dark:from-teal-700/5 dark:to-blue-700/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#055BA4]/5 to-[#41ADE8]/5 dark:from-[#055BA4]/10 dark:to-[#41ADE8]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute inset-0 border border-slate-200 dark:border-slate-700/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
 
                   <div className="relative z-10 p-5 md:p-6 h-full flex flex-col">
                     <div className="text-center mb-4">
                       <motion.div
-                        className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-teal-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:rotate-6 transition-transform duration-300"
+                        className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#055BA4] to-[#41ADE8] rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:rotate-6 transition-transform duration-300"
                         whileHover={{ rotate: 10, scale: 1.1 }}
                       >
                         <service.icon className="text-white text-xl md:text-2xl" />
                       </motion.div>
                       <motion.h3
                         className="text-lg md:text-xl font-bold text-slate-800 dark:text-white"
-                        whileHover={{ color: "#0d9488" }}
+                        whileHover={{ color: "#055BA4" }}
                         transition={{ duration: 0.2 }}
                       >
                         {service.title}
@@ -594,7 +594,7 @@ const Accueil = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 font-medium group"
+              className="border-[#055BA4] text-[#055BA4] dark:text-[#41ADE8] dark:border-[#41ADE8] hover:bg-[#055BA4]/10 dark:hover:bg-[#41ADE8]/20 font-medium group"
             >
               <Link to="/services">
                 <span className="group-hover:translate-x-1 transition-transform">
@@ -607,8 +607,8 @@ const Accueil = () => {
         </div>
       </section>
 
-      {/* Section Projets - Arrière-plan néon avec dégradé vert */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 dark:from-slate-900 dark:via-teal-900/20 dark:to-slate-800">
+      {/* Section Projets - Arrière-plan avec dégradé Oxford Blue */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-[#031A3D]/10 to-slate-100 dark:from-[#031A3D] dark:via-[#031A3D]/80 dark:to-[#031A3D]/90">
         <div className="container mx-auto px-4">
           <div className="text-center mb-5 md:mb-6">
             <motion.h2
@@ -616,7 +616,7 @@ const Accueil = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              {t('home.projects.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.projects.titleHighlight')}</span>
+              {t('home.projects.title')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('home.projects.titleHighlight')}</span>
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, width: 0 }}
@@ -624,7 +624,7 @@ const Accueil = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
             <motion.p
               className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
@@ -643,7 +643,7 @@ const Accueil = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 font-medium"
+              className="border-[#055BA4] text-[#055BA4] dark:text-[#41ADE8] dark:border-[#41ADE8] hover:bg-[#055BA4]/10 dark:hover:bg-[#41ADE8]/20 font-medium"
             >
               <Link to="/projects">
                 {t('home.projects.button')}
@@ -654,8 +654,8 @@ const Accueil = () => {
         </div>
       </section>
 
-      {/* Section Blog - Arrière-plan néon avec dégradé bleu */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900/20 dark:to-slate-800">
+      {/* Section Blog - Arrière-plan avec dégradé Oxford Blue */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-[#055BA4]/10 to-slate-100 dark:from-[#031A3D] dark:via-[#031A3D]/80 dark:to-[#031A3D]/90">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10 md:mb-12">
             <motion.h2
@@ -664,7 +664,7 @@ const Accueil = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              {t('home.blog.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.blog.titleHighlight')}</span>
+              {t('home.blog.title')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('home.blog.titleHighlight')}</span>
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, width: 0 }}
@@ -672,7 +672,7 @@ const Accueil = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
             <motion.p
               className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
@@ -703,13 +703,13 @@ const Accueil = () => {
                     transition={{ delay: index * 0.1 + 0.2 }}
                     onClick={() => openPostDetail(post)}
                   >
-                    <div className="group h-full flex flex-col bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:shadow-xl transition-all hover:shadow-blue-500/20 dark:hover:shadow-blue-400/30">
+                    <div className="group h-full flex flex-col bg-white dark:bg-[#031A3D]/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:shadow-xl transition-all hover:shadow-[#055BA4]/20 dark:hover:shadow-[#41ADE8]/30">
                       <div className="p-5 md:p-6 flex-grow">
-                        <span className="inline-block px-3 py-1 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-700 dark:to-blue-800 text-blue-700 dark:text-blue-200 rounded-full text-xs font-medium mb-3 md:mb-4">
+                        <span className="inline-block px-3 py-1 bg-gradient-to-r from-[#055BA4]/10 to-[#41ADE8]/10 dark:from-[#055BA4] dark:to-[#41ADE8] text-[#055BA4] dark:text-[#41ADE8] rounded-full text-xs font-medium mb-3 md:mb-4">
                           {post.category}
                         </span>
 
-                        <h3 className={`text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 md:mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors ${textAlign}`}>
+                        <h3 className={`text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 md:mb-3 group-hover:text-[#055BA4] dark:group-hover:text-[#41ADE8] transition-colors ${textAlign}`}>
                           {post.title}
                         </h3>
 
@@ -732,7 +732,7 @@ const Accueil = () => {
                       <div className="px-5 pb-5 md:px-6 md:pb-6 pt-0 mt-auto">
                         <Button
                           variant="link"
-                          className={`w-full justify-center ${isRTL ? 'pr-0' : 'pl-0'} text-teal-600 dark:text-teal-400 hover:no-underline group`}
+                          className={`w-full justify-center ${isRTL ? 'pr-0' : 'pl-0'} text-[#055BA4] dark:text-[#41ADE8] hover:no-underline group`}
                         >
                           <span className="group-hover:underline">{t('home.blog.readButton')}</span>
                           {isRTL ? (
@@ -754,7 +754,7 @@ const Accueil = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 font-medium"
+              className="border-[#055BA4] text-[#055BA4] dark:text-[#41ADE8] dark:border-[#41ADE8] hover:bg-[#055BA4]/10 dark:hover:bg-[#41ADE8]/20 font-medium"
             >
               <Link to="/blog">
                 {t('home.blog.button')}
@@ -777,8 +777,8 @@ const Accueil = () => {
         )}
       </section>
 
-      {/* Section Process - Arrière-plan néon avec dégradé vert */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 dark:from-slate-900 dark:via-teal-900/20 dark:to-slate-800">
+      {/* Section Process - Arrière-plan avec dégradé Oxford Blue */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-[#031A3D]/10 to-slate-100 dark:from-[#031A3D] dark:via-[#031A3D]/80 dark:to-[#031A3D]/90">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10 md:mb-12">
             <motion.h2
@@ -787,7 +787,7 @@ const Accueil = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              {t('home.process.title')} <span className="text-teal-600 dark:text-teal-400">{t('home.process.titleHighlight')}</span>
+              {t('home.process.title')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('home.process.titleHighlight')}</span>
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, width: 0 }}
@@ -795,7 +795,7 @@ const Accueil = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="flex justify-center mb-6"
             >
-              <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent w-48"></div>
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
             <motion.p
               className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto`}
@@ -811,19 +811,19 @@ const Accueil = () => {
             {t('home.process.steps', { returnObjects: true }).map((step, index) => (
               <motion.div
                 key={index}
-                className="bg-white dark:bg-slate-800/50 backdrop-blur-sm p-5 md:p-6 rounded-xl border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:shadow-teal-500/20 dark:hover:shadow-teal-400/30"
+                className="bg-white dark:bg-[#031A3D]/50 backdrop-blur-sm p-5 md:p-6 rounded-xl border border-slate-200 dark:border-slate-700 text-center hover:shadow-lg hover:shadow-[#055BA4]/20 dark:hover:shadow-[#41ADE8]/30"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.6 }}
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
               >
-                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-teal-100 to-teal-200 dark:from-teal-900/30 dark:to-teal-800/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4">
-                  {step.icon === 'Users' && <Users className="text-teal-600 dark:text-teal-400" size={24} />}
-                  {step.icon === 'Code' && <Code className="text-teal-600 dark:text-teal-400" size={24} />}
-                  {step.icon === 'BarChart' && <BarChart className="text-teal-600 dark:text-teal-400" size={24} />}
-                  {step.icon === 'Shield' && <Shield className="text-teal-600 dark:text-teal-400" size={24} />}
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#055BA4]/10 to-[#41ADE8]/10 dark:from-[#055BA4]/30 dark:to-[#41ADE8]/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4">
+                  {step.icon === 'Users' && <Users className="text-[#055BA4] dark:text-[#41ADE8]" size={24} />}
+                  {step.icon === 'Code' && <Code className="text-[#055BA4] dark:text-[#41ADE8]" size={24} />}
+                  {step.icon === 'BarChart' && <BarChart className="text-[#055BA4] dark:text-[#41ADE8]" size={24} />}
+                  {step.icon === 'Shield' && <Shield className="text-[#055BA4] dark:text-[#41ADE8]" size={24} />}
                 </div>
-                <span className="inline-block bg-gradient-to-r from-teal-100 to-teal-200 dark:from-teal-900 dark:to-teal-800 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-full text-xs md:text-sm font-medium mb-2 md:mb-3">
+                <span className="inline-block bg-gradient-to-r from-[#055BA4]/10 to-[#41ADE8]/10 dark:from-[#055BA4] dark:to-[#41ADE8] text-[#055BA4] dark:text-[#41ADE8] px-3 py-1 rounded-full text-xs md:text-sm font-medium mb-2 md:mb-3">
                   {step.step}
                 </span>
                 <h3 className={`text-lg md:text-xl font-semibold text-slate-800 dark:text-white mb-2 ${textAlign}`}>{step.title}</h3>
@@ -834,11 +834,11 @@ const Accueil = () => {
         </div>
       </section>
 
-      {/* Section CTA - Dégradé vert néon avec effet lumineux */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-teal-500 to-teal-600 dark:from-teal-600 dark:to-teal-700 text-white relative overflow-hidden">
+      {/* Section CTA - Dégradé Lapis Lazuli et Picton Blue */}
+      <section className="py-16 md:py-20 bg-gradient-to-r from-[#055BA4] to-[#41ADE8] dark:from-[#055BA4] dark:to-[#41ADE8] text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute -top-1/2 -left-1/4 w-[150%] h-[150%] bg-[radial-gradient(circle,var(--tw-gradient-stops))] from-teal-400/10 to-transparent"></div>
-          <div className="absolute -bottom-1/3 -right-1/4 w-[120%] h-[120%] bg-[radial-gradient(circle,var(--tw-gradient-stops))] from-teal-600/10 to-transparent"></div>
+          <div className="absolute -top-1/2 -left-1/4 w-[150%] h-[150%] bg-[radial-gradient(circle,var(--tw-gradient-stops))] from-[#055BA4]/10 to-transparent"></div>
+          <div className="absolute -bottom-1/3 -right-1/4 w-[120%] h-[120%] bg-[radial-gradient(circle,var(--tw-gradient-stops))] from-[#41ADE8]/10 to-transparent"></div>
         </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -875,7 +875,7 @@ const Accueil = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-white to-slate-100 text-teal-600 hover:text-teal-700 shadow-lg shadow-teal-500/30 dark:shadow-teal-600/40 hover:shadow-teal-500/40 font-bold"
+                className="bg-gradient-to-r from-white to-slate-100 text-[#055BA4] hover:text-[#054A85] shadow-lg shadow-[#055BA4]/30 dark:shadow-[#41ADE8]/40 hover:shadow-[#055BA4]/40 font-bold"
               >
                 <Link to="/devis">
                   {t('home.cta.button')}

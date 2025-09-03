@@ -73,7 +73,7 @@ const Services = () => {
 
   return (
     <div
-      className="pt-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950"
+      className="pt-16 bg-gradient-to-b from-white to-slate-50 dark:from-[#031A3D] dark:to-[#031A3D]/90"
       dir={direction}
     >
       {/* ================= HERO ================= */}
@@ -85,19 +85,19 @@ const Services = () => {
         />
         <div className="relative z-10">
           <motion.h1
-            className="text-5xl font-extrabold text-slate-900 dark:text-white mb-6 leading-tight"
+            className="text-5xl font-extrabold text-[#031A3D] dark:text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             {t("services.hero.title1")}{" "}
-            <span className="text-teal-600 dark:text-teal-400">
+            <span className="text-[#055BA4] dark:text-[#41ADE8]">
               {t("services.hero.title2")}
             </span>
           </motion.h1>
 
           <motion.p
-            className="text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto"
+            className="text-xl text-[#055BA4] dark:text-slate-300 mb-10 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -113,7 +113,7 @@ const Services = () => {
             <Button
               asChild
               size="lg"
-              className="px-8 py-6 text-lg bg-teal-600 hover:bg-teal-700 dark:bg-teal-700 dark:hover:bg-teal-600 rounded-full shadow-lg hover:shadow-xl transition"
+              className="px-8 py-6 text-lg bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] dark:from-[#055BA4] dark:to-[#41ADE8] dark:hover:from-[#054A85] dark:hover:to-[#2E8BC0] text-white rounded-full shadow-lg hover:shadow-xl transition"
             >
               <Link to="/contact">
                 {t("services.hero.button")}
@@ -128,14 +128,14 @@ const Services = () => {
       <section className="py-24 relative">
         <div className="container mx-auto px-6">
           <motion.h2
-            className="text-3xl font-bold text-center text-slate-900 dark:text-white mb-16"
+            className="text-3xl font-bold text-center text-[#031A3D] dark:text-white mb-16"
             initial="hidden"
             whileInView="visible"
             variants={fadeUp}
             viewport={{ once: true }}
           >
             {t("services.services.title1")}{" "}
-            <span className="text-teal-600 dark:text-teal-400">
+            <span className="text-[#055BA4] dark:text-[#41ADE8]">
               {t("services.services.title2")}
             </span>
           </motion.h2>
@@ -144,7 +144,7 @@ const Services = () => {
             {services.map((s, i) => (
               <motion.div
                 key={i}
-                className="p-8 rounded-2xl bg-white/70 dark:bg-slate-800/50 backdrop-blur-xl border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-xl transition group"
+                className="p-8 rounded-2xl bg-white/70 dark:bg-[#031A3D]/60 backdrop-blur-xl border border-slate-200 dark:border-[#055BA4]/30 shadow-lg hover:shadow-xl transition group"
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
@@ -152,35 +152,35 @@ const Services = () => {
                 viewport={{ once: true }}
               >
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-teal-500 to-teal-700 text-white rounded-xl mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-[#055BA4] to-[#41ADE8] text-white rounded-xl mb-6 group-hover:scale-110 transition-transform">
                     <s.icon size={28} />
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
+                  <h3 className="text-xl font-semibold text-[#031A3D] dark:text-white mb-3">
                     {s.title}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 mb-6">
+                  <p className="text-[#055BA4] dark:text-slate-400 mb-6">
                     {s.description}
                   </p>
 
-                  <h4 className="font-medium text-slate-700 dark:text-slate-300 mb-2">
+                  <h4 className="font-medium text-[#031A3D] dark:text-slate-300 mb-2">
                     {t("services.services.featuresTitle")}
                   </h4>
-                  <ul className="text-sm text-slate-600 dark:text-slate-400 mb-6 space-y-1">
+                  <ul className="text-sm text-[#055BA4] dark:text-slate-400 mb-6 space-y-1">
                     {s.features.map((f, idx) => (
                       <li key={idx} className="flex items-center justify-center">
-                        <FiCheck className="text-teal-600 mr-2" /> {f}
+                        <FiCheck className="text-[#055BA4] dark:text-[#41ADE8] mr-2" /> {f}
                       </li>
                     ))}
                   </ul>
 
-                  <h4 className="font-medium text-slate-700 dark:text-slate-300 mb-3">
+                  <h4 className="font-medium text-[#031A3D] dark:text-slate-300 mb-3">
                     {t("services.services.techTitle")}
                   </h4>
                   <div className="flex flex-wrap gap-2 justify-center">
                     {s.technologies.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-slate-100 dark:bg-slate-700/40 rounded-full text-xs text-slate-700 dark:text-slate-300"
+                        className="px-3 py-1 bg-[#41ADE8]/10 dark:bg-[#055BA4]/40 rounded-full text-xs text-[#055BA4] dark:text-[#41ADE8]"
                       >
                         {tech}
                       </span>
@@ -194,17 +194,17 @@ const Services = () => {
       </section>
 
       {/* ================= PROCESS ================= */}
-      <section className="py-24 bg-slate-50 dark:bg-slate-900/40">
+      <section className="py-24 bg-[#41ADE8]/10 dark:bg-[#031A3D]/50">
         <div className="container mx-auto px-6">
           <motion.h2
-            className="text-3xl font-bold text-center mb-16 text-slate-900 dark:text-white"
+            className="text-3xl font-bold text-center mb-16 text-[#031A3D] dark:text-white"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
             {t("services.process.title1")}{" "}
-            <span className="text-teal-600 dark:text-teal-400">
+            <span className="text-[#055BA4] dark:text-[#41ADE8]">
               {t("services.process.title2")}
             </span>
           </motion.h2>
@@ -213,20 +213,20 @@ const Services = () => {
             {processSteps.map((step, i) => (
               <motion.div
                 key={i}
-                className="bg-white dark:bg-slate-800/60 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 text-center shadow hover:shadow-lg transition"
+                className="bg-white dark:bg-[#031A3D]/60 p-6 rounded-2xl border border-[#41ADE8]/20 dark:border-[#055BA4]/30 text-center shadow hover:shadow-lg transition"
                 initial="hidden"
                 whileInView="visible"
                 variants={fadeUp}
                 whileHover={{ y: -8 }}
                 viewport={{ once: true }}
               >
-                <div className="w-14 h-14 mx-auto flex items-center justify-center bg-teal-100 dark:bg-teal-900/40 text-teal-600 dark:text-teal-400 rounded-xl mb-4">
+                <div className="w-14 h-14 mx-auto flex items-center justify-center bg-[#055BA4]/10 dark:bg-[#055BA4]/40 text-[#055BA4] dark:text-[#41ADE8] rounded-xl mb-4">
                   <span className="font-bold text-lg">{i + 1}</span>
                 </div>
-                <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
+                <h3 className="text-lg font-semibold text-[#031A3D] dark:text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-slate-600 dark:text-slate-400 text-sm">
+                <p className="text-[#055BA4] dark:text-slate-400 text-sm">
                   {step.description}
                 </p>
               </motion.div>
@@ -239,7 +239,7 @@ const Services = () => {
       <section className="py-24 container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <motion.div
           style={{ y: whyUsY }}
-          className="rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700"
+          className="rounded-2xl overflow-hidden shadow-lg border border-[#41ADE8]/20 dark:border-[#055BA4]/30"
         >
           <img
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1170&q=80"
@@ -254,13 +254,13 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
+          <h2 className="text-3xl font-bold text-[#031A3D] dark:text-white mb-6">
             {t("services.why.title1")}{" "}
-            <span className="text-teal-600 dark:text-teal-400">
+            <span className="text-[#055BA4] dark:text-[#41ADE8]">
               {t("services.why.title2")}
             </span>
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 mb-8">
+          <p className="text-lg text-[#055BA4] dark:text-slate-300 mb-8">
             {t("services.why.subtitle")}
           </p>
 
@@ -272,12 +272,12 @@ const Services = () => {
                   className="flex items-start"
                   whileHover={{ x: 6 }}
                 >
-                  <ShieldCheck className="text-teal-600 dark:text-teal-400 mr-3 mt-1" />
+                  <ShieldCheck className="text-[#055BA4] dark:text-[#41ADE8] mr-3 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white">
+                    <h3 className="font-semibold text-[#031A3D] dark:text-white">
                       {item.title}
                     </h3>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm">
+                    <p className="text-[#055BA4] dark:text-slate-400 text-sm">
                       {item.description}
                     </p>
                   </div>
@@ -289,7 +289,7 @@ const Services = () => {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-24 bg-gradient-to-r from-teal-600 to-teal-700 text-white text-center">
+      <section className="py-24 bg-gradient-to-r from-[#055BA4] to-[#41ADE8] text-white text-center">
         <motion.h2
           className="text-4xl font-bold mb-6"
           initial="hidden"
@@ -318,7 +318,7 @@ const Services = () => {
           <Button
             asChild
             size="lg"
-            className="bg-white text-teal-600 hover:bg-slate-100 rounded-full px-8 py-6 shadow-lg hover:shadow-xl"
+            className="bg-white text-[#055BA4] hover:bg-slate-100 rounded-full px-8 py-6 shadow-lg hover:shadow-xl"
           >
             <Link to="/contact">
               {t("services.cta.button1")}
@@ -328,7 +328,7 @@ const Services = () => {
           <Button
             asChild
             size="lg"
-            className="border border-white text-white hover:bg-white/10 rounded-full px-8 py-6"
+            className="border border-white px-8 py-6  bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] dark:from-[#055BA4] dark:to-[#41ADE8] dark:hover:from-[#054A85] dark:hover:to-[#2E8BC0] text-white rounded-full shadow-lg hover:shadow-xl transition"
           >
             <Link to="/projects">{t("services.cta.button2")}</Link>
           </Button>

@@ -208,21 +208,21 @@ const CookieConsent = () => {
       {hasChoice && !showBanner && (
         <motion.button
           onClick={reopenConsent}
-          className="fixed bottom-6 left-6 sm:left-6 z-[9998] bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-700 rounded-full shadow-md p-3 hover:bg-gray-100 dark:hover:bg-slate-700 transition flex items-center justify-center"
+          className="fixed bottom-6 left-6 sm:left-6 z-[9998] bg-white dark:bg-[#031A3D] border border-gray-300 dark:border-[#055BA4]/30 rounded-full shadow-md p-3 hover:bg-gray-100 dark:hover:bg-[#031A3D]/80 transition flex items-center justify-center"
           title="Modifier mes préférences de cookies"
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"
           aria-label="Paramètres des cookies"
         >
-          <Cookie className="text-amber-500" size={20} />
+          <Cookie className="text-[#055BA4] dark:text-[#41ADE8]" size={20} />
         </motion.button>
       )}
 
       <AnimatePresence>
         {showBanner && (
           <motion.div
-            className="fixed bottom-0 sm:bottom-6 left-1/2 transform -translate-x-1/2 sm:translate-x-0 sm:left-6 z-[9999] bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-700 shadow-xl w-full max-w-[95vw] sm:max-w-md sm:w-[480px] p-4 sm:p-5 rounded-t-xl sm:rounded-xl backdrop-blur-sm"
+            className="fixed bottom-0 sm:bottom-6 left-1/2 transform -translate-x-1/2 sm:translate-x-0 sm:left-6 z-[9999] bg-white dark:bg-[#031A3D] border border-gray-300 dark:border-[#055BA4]/30 shadow-xl w-full max-w-[95vw] sm:max-w-md sm:w-[480px] p-4 sm:p-5 rounded-t-xl sm:rounded-xl backdrop-blur-sm"
             variants={bannerVariants}
             initial="hidden"
             animate="visible"
@@ -230,36 +230,36 @@ const CookieConsent = () => {
           >
             <div className="flex justify-between items-start mb-3">
               <div className="flex items-center">
-                <Cookie className="text-amber-500 mr-3" size={24} />
-                <h2 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-white">
+                <Cookie className="text-[#055BA4] dark:text-[#41ADE8] mr-3" size={24} />
+                <h2 className="text-lg sm:text-xl font-bold text-[#031A3D] dark:text-white">
                   Votre vie privée nous importe
                 </h2>
               </div>
               <button 
                 onClick={() => handleConsent('necessary')}
-                className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                className="text-[#055BA4] hover:text-[#031A3D] dark:text-[#41ADE8] dark:hover:text-white"
                 aria-label="Fermer"
               >
                 <X size={20} />
               </button>
             </div>
 
-            <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">
+            <p className="text-xs sm:text-sm text-[#055BA4] dark:text-gray-300 mb-3 sm:mb-4">
               Nous utilisons des cookies pour améliorer votre expérience. 
               {isMobile ? ' ' : ' Vous pouvez choisir vos préférences ci-dessous.'}
             </p>
 
             {isMobile && !showDetails && (
-              <div className="mb-3 p-2 bg-gray-50 dark:bg-slate-700/50 rounded text-xs">
-                <p className="font-medium">Préférences actuelles:</p>
-                <p className="mt-1">{getSummary()}</p>
+              <div className="mb-3 p-2 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded text-xs">
+                <p className="font-medium text-[#031A3D] dark:text-white">Préférences actuelles:</p>
+                <p className="mt-1 text-[#055BA4] dark:text-[#41ADE8]">{getSummary()}</p>
               </div>
             )}
 
             <div className="mb-3 sm:mb-4">
               <button 
                 onClick={toggleDetails}
-                className="flex items-center text-xs sm:text-sm font-medium text-teal-600 dark:text-teal-400"
+                className="flex items-center text-xs sm:text-sm font-medium text-[#055BA4] dark:text-[#41ADE8]"
               >
                 {showDetails ? (
                   <>
@@ -277,7 +277,7 @@ const CookieConsent = () => {
               <AnimatePresence>
                 {showDetails && (
                   <motion.div 
-                    className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-slate-700/50 rounded-lg p-2 sm:p-3 overflow-hidden"
+                    className="mt-2 sm:mt-3 text-xs sm:text-sm text-[#055BA4] dark:text-gray-400 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-lg p-2 sm:p-3 overflow-hidden"
                     variants={detailVariants}
                     initial="hidden"
                     animate="visible"
@@ -285,8 +285,8 @@ const CookieConsent = () => {
                   >
                     <div className="mb-3">
                       <div className="flex justify-between items-center mb-1 sm:mb-2">
-                        <span className="font-medium text-sm">Cookies nécessaires</span>
-                        <div className="bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 text-xs px-2 py-0.5 rounded">
+                        <span className="font-medium text-sm text-[#031A3D] dark:text-white">Cookies nécessaires</span>
+                        <div className="bg-[#055BA4]/20 dark:bg-[#055BA4]/40 text-[#055BA4] dark:text-[#41ADE8] text-xs px-2 py-0.5 rounded">
                           Toujours activés
                         </div>
                       </div>
@@ -297,10 +297,10 @@ const CookieConsent = () => {
 
                     <div className="mb-3">
                       <div className="flex justify-between items-center mb-1 sm:mb-2">
-                        <span className="font-medium text-sm">Performance</span>
+                        <span className="font-medium text-sm text-[#031A3D] dark:text-white">Performance</span>
                         <button 
                           onClick={() => togglePreference('performance')}
-                          className={`w-8 h-4 sm:w-10 sm:h-5 rounded-full relative ${selectedPreferences.performance ? 'bg-teal-500' : 'bg-gray-300 dark:bg-slate-600'} transition-colors`}
+                          className={`w-8 h-4 sm:w-10 sm:h-5 rounded-full relative ${selectedPreferences.performance ? 'bg-[#055BA4]' : 'bg-gray-300 dark:bg-[#055BA4]/40'} transition-colors`}
                           aria-label={selectedPreferences.performance ? "Désactiver" : "Activer"}
                         >
                           <span className={`absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-full transition-transform ${selectedPreferences.performance ? 'translate-x-4 sm:translate-x-5' : ''}`}></span>
@@ -313,10 +313,10 @@ const CookieConsent = () => {
 
                     <div className="mb-3">
                       <div className="flex justify-between items-center mb-1 sm:mb-2">
-                        <span className="font-medium text-sm">Analytique</span>
+                        <span className="font-medium text-sm text-[#031A3D] dark:text-white">Analytique</span>
                         <button 
                           onClick={() => togglePreference('analytics')}
-                          className={`w-8 h-4 sm:w-10 sm:h-5 rounded-full relative ${selectedPreferences.analytics ? 'bg-teal-500' : 'bg-gray-300 dark:bg-slate-600'} transition-colors`}
+                          className={`w-8 h-4 sm:w-10 sm:h-5 rounded-full relative ${selectedPreferences.analytics ? 'bg-[#055BA4]' : 'bg-gray-300 dark:bg-[#055BA4]/40'} transition-colors`}
                           aria-label={selectedPreferences.analytics ? "Désactiver" : "Activer"}
                         >
                           <span className={`absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-full transition-transform ${selectedPreferences.analytics ? 'translate-x-4 sm:translate-x-5' : ''}`}></span>
@@ -329,10 +329,10 @@ const CookieConsent = () => {
 
                     <div>
                       <div className="flex justify-between items-center mb-1 sm:mb-2">
-                        <span className="font-medium text-sm">Marketing</span>
+                        <span className="font-medium text-sm text-[#031A3D] dark:text-white">Marketing</span>
                         <button 
                           onClick={() => togglePreference('marketing')}
-                          className={`w-8 h-4 sm:w-10 sm:h-5 rounded-full relative ${selectedPreferences.marketing ? 'bg-teal-500' : 'bg-gray-300 dark:bg-slate-600'} transition-colors`}
+                          className={`w-8 h-4 sm:w-10 sm:h-5 rounded-full relative ${selectedPreferences.marketing ? 'bg-[#055BA4]' : 'bg-gray-300 dark:bg-[#055BA4]/40'} transition-colors`}
                           aria-label={selectedPreferences.marketing ? "Désactiver" : "Activer"}
                         >
                           <span className={`absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-full transition-transform ${selectedPreferences.marketing ? 'translate-x-4 sm:translate-x-5' : ''}`}></span>
@@ -348,22 +348,9 @@ const CookieConsent = () => {
             </div>
 
             <div className={`flex flex-wrap gap-2 ${isMobile ? 'mt-2' : 'mt-4'}`}>
-              {/*{!isMobile && (
-                <motion.button
-                  onClick={() => handleConsent('custom')}
-                  className="flex items-center bg-white dark:bg-slate-700 border border-teal-600 dark:border-teal-500 text-teal-600 dark:text-teal-400 text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg flex-1 min-w-[120px]"
-                  variants={buttonVariants}
-                  whileHover="hover"
-                  whileTap="tap"
-                >
-                  <Settings className="mr-1 sm:mr-2" size={14} />
-                  Personnaliser
-                </motion.button>
-              )}*/}
-              
               <motion.button
                 onClick={() => handleConsent('reject')}
-                className={`bg-gray-200 dark:bg-slate-700 hover:bg-gray-300 dark:hover:bg-slate-600 text-gray-700 dark:text-gray-300 text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg ${isMobile ? 'flex-1' : 'flex-1 min-w-[120px]'}`}
+                className={`bg-gray-200 dark:bg-[#055BA4]/30 hover:bg-gray-300 dark:hover:bg-[#055BA4]/40 text-[#031A3D] dark:text-white text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg ${isMobile ? 'flex-1' : 'flex-1 min-w-[120px]'}`}
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
@@ -373,12 +360,11 @@ const CookieConsent = () => {
               
               <motion.button
                 onClick={() => handleConsent('all')}
-                className={`bg-teal-600 hover:bg-teal-700 text-white text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg flex items-center justify-center ${isMobile ? 'flex-1' : 'flex-1 min-w-[120px]'}`}
+                className={`bg-[#055BA4] hover:bg-[#054A85] text-white text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg flex items-center justify-center ${isMobile ? 'flex-1' : 'flex-1 min-w-[120px]'}`}
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
               >
-                {/*{!isMobile && <Check className="mr-1 sm:mr-2" size={14} />}*/}
                 Accepter tout
               </motion.button>
             </div>
@@ -386,7 +372,7 @@ const CookieConsent = () => {
             <div className="mt-3 sm:mt-4 text-center">
               <Link
                 to="/privacy"
-                className="text-xs text-gray-500 dark:text-gray-400 hover:underline"
+                className="text-xs text-[#055BA4] dark:text-[#41ADE8] hover:underline"
                 onClick={() => setShowBanner(false)}
               >
                 Politique de confidentialité

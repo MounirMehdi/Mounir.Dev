@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import LanguageSelector from './LanguageSelector';
 import ThemeToggle from "./Theme";
 import { useTranslation } from "react-i18next";
+import logo from '@/assets/logo/MMD_business_card.png';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -102,14 +103,14 @@ const Header = () => {
 
   // Styles conditionnels basés sur le thème
   const bgColor = theme === 'dark' 
-    ? (isScrolled ? 'rgba(15, 23, 42, 0.95)' : 'rgba(15, 23, 42, 0.85)')
+    ? (isScrolled ? 'rgba(3, 26, 61, 0.95)' : 'rgba(3, 26, 61, 0.85)')
     : (isScrolled ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.85)');
     
-  const textColor = theme === 'dark' ? 'text-gray-100' : 'text-gray-900';
-  const navTextColor = theme === 'dark' ? 'text-gray-300' : 'text-gray-600';
-  const navHoverColor = theme === 'dark' ? 'hover:text-teal-400' : 'hover:text-teal-500';
-  const activeColor = theme === 'dark' ? 'text-teal-400' : 'text-teal-500';
-  const borderColor = theme === 'dark' ? 'border-gray-700' : 'border-gray-300';
+  const textColor = theme === 'dark' ? 'text-white' : 'text-[#031A3D]';
+  const navTextColor = theme === 'dark' ? 'text-gray-300' : 'text-[#055BA4]';
+  const navHoverColor = theme === 'dark' ? 'hover:text-[#41ADE8]' : 'hover:text-[#055BA4]';
+  const activeColor = theme === 'dark' ? 'text-[#41ADE8]' : 'text-[#055BA4]';
+  const borderColor = theme === 'dark' ? 'border-[#055BA4]' : 'border-[#41ADE8]';
 
   return (
     <motion.header
@@ -134,15 +135,18 @@ const Header = () => {
             className="text-2xl font-bold transition-colors"
             aria-label={t('header.home')}
           >
-            <motion.span 
+            <motion.div 
               whileHover={{ scale: 1.05 }}
-              className="flex items-center gap-1"
+              className="flex items-center gap-3"
               dir="ltr"
             >
-              <span className="text-teal-400 font-bold">&lt;</span>
-              <span className={`${textColor} ${isRTL ? 'ml-2' : 'mr-2'}`}>MM.Dev</span>
-              <span className="text-teal-400 font-bold">/&gt;</span>
-            </motion.span>
+              <img 
+                src={logo} 
+                alt="MM.Dev Logo" 
+                className="h-10 w-auto"
+              />
+              <span className={`font-bold text-xl ${textColor}`}>MM.dev</span>
+            </motion.div>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
@@ -163,7 +167,7 @@ const Header = () => {
                   {location.pathname === item.path && (
                     <motion.div
                       layoutId="activeIndicator"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-teal-500 dark:bg-teal-400"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#055BA4] dark:bg-[#41ADE8]"
                       initial={false}
                       transition={{ 
                         type: "spring", 
@@ -185,7 +189,7 @@ const Header = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 asChild
-                className={`bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white shadow-lg shadow-teal-500/20 dark:shadow-teal-700/30`}
+                className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] text-white shadow-lg shadow-[#055BA4]/20 dark:shadow-[#41ADE8]/30"
               >
                 <Link to="/devis">{t('header.quoteButton')}</Link>
               </Button>
@@ -213,7 +217,7 @@ const Header = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className={`md:hidden overflow-hidden bg-gray-100 dark:bg-gray-900 border-t ${borderColor}`}
+            className={`md:hidden overflow-hidden bg-gray-100 dark:bg-[#031A3D] border-t ${borderColor}`}
             dir={direction}
           >
             <motion.div 
@@ -248,7 +252,7 @@ const Header = () => {
                 <LanguageSelector />
                 <Button
                   asChild
-                  className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white"
+                  className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] text-white"
                 >
                   <Link to="/devis" onClick={() => setIsMenuOpen(false)}>
                     {t('header.quoteButton')}

@@ -12,7 +12,7 @@ const Chat = () => {
   const fileInputRef = useRef(null);
   const [showChatbot, setShowChatbot] = useState(false);
   const [chatHistory, setChatHistory] = useState([]);
-  const [pendingFile, setPendingFile] = useState(null); // Nouvel état pour le fichier en attente
+  const [pendingFile, setPendingFile] = useState(null);
   const [isTyping, setIsTyping] = useState(false);
   const [error, setError] = useState(null);
 
@@ -21,9 +21,9 @@ const Chat = () => {
     const message = messageInputRef.current.value.trim();
     if (!message && !pendingFile) return;
     if (!message && pendingFile) {
-    setError("Veuillez ajouter du texte avec votre image");
-    return;
-  }
+      setError("Veuillez ajouter du texte avec votre image");
+      return;
+    }
 
     setError(null);
     setIsTyping(true);
@@ -186,8 +186,12 @@ const Chat = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="fade-in-bounceup"
+            style={{
+              background: "linear-gradient(135deg, #055BA4 0%, #41ADE8 100%)",
+              boxShadow: "0 4px 14px 0 rgba(5, 91, 164, 0.4)"
+            }}
           >
-            <SmartToy sx={{ fontSize: 40, color: "white" }} />
+            <SmartToy sx={{ fontSize: 25, color: "white" }} />
           </motion.button>
         )}
       </AnimatePresence>
@@ -200,16 +204,32 @@ const Chat = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.5, y: 100 }}
             transition={{ type: "spring", damping: 20 }}
+            style={{
+              background: "linear-gradient(135deg, #031A3D 0%, #055BA4 100%)",
+              border: "1px solid #41ADE8",
+              boxShadow: "0 10px 30px rgba(3, 26, 61, 0.5)"
+            }}
           >
             {/* Header */}
-            <div className="chat-header">
+            <div 
+              className="chat-header"
+              style={{
+                background: "#031A3D",
+                borderBottom: "1px solid #41ADE8"
+              }}
+            >
               <div className="header-info">
-                <SmartToy sx={{ fontSize: 40, color: "white" }} />
-                <h2 className="logo-text">AI Assist</h2>
+                <SmartToy sx={{ fontSize: 25, color: "#41ADE8" }} />
+                <h2 className="logo-text" style={{ color: "white" }}>AI Assist</h2>
               </div>
               
               <div className="header-actions">
-                <button onClick={clearChat} className="header-btn" title="Nouvelle conversation">
+                <button 
+                  onClick={clearChat} 
+                  className="header-btn" 
+                  title="Nouvelle conversation"
+                  style={{ color: "#41ADE8" }}
+                >
                   <span className="material-symbols-rounded">refresh</span>
                 </button>
                 <button 
@@ -217,14 +237,19 @@ const Chat = () => {
                   className="header-btn" 
                   id="close-chatbot"
                   title="Fermer"
+                  style={{ color: "white" }}
                 >
-                  <Close sx={{ fontSize: 28, color: "white" }} />
+                  <Close sx={{ fontSize: 20, color: "#41ADE8" }} />
                 </button>
               </div>
             </div>
 
             {/* Body */}
-            <div className="chat-body" ref={chatBodyRef}>
+            <div 
+              className="chat-body" 
+              ref={chatBodyRef}
+              style={{ backgroundColor: "#f8fafc" }}
+            >
               {chatHistory.map((msg) => (
                 <motion.div
                   key={msg.id}
@@ -232,10 +257,13 @@ const Chat = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
+                  style={{
+                    color: "white"
+                  }}
                 >
                   {msg.role === "model" && !msg.loading && (
                     <div className="bot-avatar">
-                      <SmartToy sx={{ fontSize: 30, color: "white" }} />
+                      <SmartToy sx={{ fontSize: 20, color: "white" }} />
                     </div>
                   )}
                   
@@ -243,9 +271,9 @@ const Chat = () => {
                     <div className={`message-text ${msg.error ? "error" : ""}`}>
                       {msg.loading ? (
                         <div className="thinking-indicator">
-                          <div className="dot"></div>
-                          <div className="dot"></div>
-                          <div className="dot"></div>
+                          <div className="dot" style={{ backgroundColor: "white" }}></div>
+                          <div className="dot" style={{ backgroundColor: "white" }}></div>
+                          <div className="dot" style={{ backgroundColor: "white" }}></div>
                         </div>
                       ) : (
                         msg.parts?.[0]?.text || ""
@@ -263,16 +291,34 @@ const Chat = () => {
                       </div>
                     )}
                     
-                    <div className="message-time">{msg.timestamp}</div>
+                    <div 
+                      className="message-time"
+                      style={{ color: "rgba(15, 0, 99, 0.7)" }}
+                    >
+                      {msg.timestamp}
+                    </div>
                   </div>
                 </motion.div>
               ))}
             </div>
 
             {/* Footer */}
-            <div className="chat-footer">
+            <div 
+              className="chat-footer"
+              style={{
+                backgroundColor: "#031A3D",
+                borderTop: "1px solid #41ADE8"
+              }}
+            >
               {error && (
-                <div className="error-message">
+                <div 
+                  className="error-message"
+                  style={{
+                    backgroundColor: "rgba(239, 68, 68, 0.2)",
+                    color: "#fef2f2",
+                    border: "1px solid rgba(239, 68, 68, 0.5)"
+                  }}
+                >
                   <span className="material-symbols-rounded">error</span>
                   {error}
                 </div>
@@ -292,11 +338,15 @@ const Chat = () => {
                     <button
                       type="button"
                       onClick={() => {
-                        fileInputRef.current.value = ""; // Réinitialiser le champ fichier
+                        fileInputRef.current.value = "";
                         fileInputRef.current.click();
                       }}
                       className={`file-btn ${pendingFile ? "active" : ""}`}
                       title="Joindre une image"
+                      style={{
+                        color: pendingFile ? "#41ADE8" : "#055BA4",
+                        backgroundColor: "white"
+                      }}
                     >
                       <AttachFile sx={{ fontSize: 22 }} />
                     </button>
@@ -308,6 +358,11 @@ const Chat = () => {
                     placeholder="Écrivez votre message..."
                     required={!pendingFile}
                     rows={1}
+                    style={{
+                      backgroundColor: "white",
+                      color: "#031A3D",
+                      border: "1px solid #41ADE8"
+                    }}
                     onInput={(e) => {
                       e.target.style.height = "auto";
                       e.target.style.height = (e.target.scrollHeight) + "px";
@@ -325,6 +380,10 @@ const Chat = () => {
                     id="send-message" 
                     className="send-btn"
                     disabled={isTyping}
+                    style={{
+                      backgroundColor: "#41ADE8",
+                      color: "white"
+                    }}
                   >
                     <Send sx={{ fontSize: 22 }} />
                   </button>
@@ -341,6 +400,10 @@ const Chat = () => {
                       type="button"
                       onClick={() => setPendingFile(null)}
                       className="remove-file"
+                      style={{
+                        backgroundColor: "#031A3D",
+                        color: "white"
+                      }}
                     >
                       <Close sx={{ fontSize: 18 }} />
                     </button>
@@ -348,7 +411,10 @@ const Chat = () => {
                 )}
               </form>
               
-              <div className="chat-footer-note">
+              <div 
+                className="chat-footer-note"
+                style={{ color: "rgba(255, 255, 255, 0.7)" }}
+              >
                 <small>AI Assist peut faire des erreurs. Vérifiez les informations importantes.</small>
               </div>
             </div>
