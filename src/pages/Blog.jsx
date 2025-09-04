@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { 
-  Calendar, 
-  Clock, 
-  User, 
+import {
+  Calendar,
+  Clock,
+  User,
   Search,
   ArrowRight,
   Tag,
@@ -36,7 +36,7 @@ const Blog = () => {
   const [showCategories, setShowCategories] = useState(false);
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
   const categoriesRef = useRef(null);
-  
+
   const isRTL = i18n.language === 'ar';
   const direction = isRTL ? 'rtl' : 'ltr';
   const textAlign = isRTL ? 'text-right' : 'text-left';
@@ -44,7 +44,7 @@ const Blog = () => {
 
   // Récupération des données de traduction
   const blogData = t('blog', { returnObjects: true });
-  
+
   // Extraction des données
   const {
     title: blogTitle,
@@ -76,7 +76,7 @@ const Blog = () => {
   const blogPosts = t('blogPosts', { returnObjects: true });
   useEffect(() => {
     setIsVisible(true);
-    
+
     const timer = setTimeout(() => {
       const searchInput = document.getElementById('search-input');
       if (searchInput) {
@@ -89,7 +89,7 @@ const Blog = () => {
       setIsHeaderScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       clearTimeout(timer);
       window.removeEventListener('scroll', handleScroll);
@@ -112,16 +112,16 @@ const Blog = () => {
 
   const filteredPosts = useMemo(() => {
     return blogPosts.filter(post => {
-      const matchesSearch = 
+      const matchesSearch =
         post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
         post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
-      
+
       const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory;
-      
-      const matchesTags = selectedTags.length === 0 || 
-                         selectedTags.every(tag => post.tags.includes(tag));
-      
+
+      const matchesTags = selectedTags.length === 0 ||
+        selectedTags.every(tag => post.tags.includes(tag));
+
       return matchesSearch && matchesCategory && matchesTags;
     });
   }, [blogPosts, searchTerm, selectedCategory, selectedTags]);
@@ -183,7 +183,7 @@ const Blog = () => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="pt-16 bg-gradient-to-b from-white to-slate-50 dark:from-[#031A3D] dark:to-[#031A3D]/90 min-h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -198,43 +198,41 @@ const Blog = () => {
           <div className="absolute bottom-20 left-20 w-72 h-72 bg-[#055BA4] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
           <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-[#031A3D] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
-          <motion.div 
+          <motion.div
             className={`text-center max-w-3xl mx-auto`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            
-            <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#031A3D] dark:text-white mb-6 leading-tight"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
+
+            <motion.h1
+              className="text-4xl font-extrabold text-[#031A3D] dark:text-white mb-6 leading-tight"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
             >
-              <span className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] dark:from-[#055BA4] dark:to-[#41ADE8] bg-clip-text text-transparent">
-                {blogTitle}
-              </span>
+             {blogTitle}
             </motion.h1>
-                        <motion.div
-                          initial={{ opacity: 0, width: 0 }}
-                          animate={{ opacity: 1, width: "100%" }}
-                          transition={{ delay: 0.3, duration: 0.8 }}
-                          className="flex justify-center mb-6"
-                        >
-                          <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
-                        </motion.div>
-            
-            <motion.p 
-              className="text-xl text-[#055BA4] dark:text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
+            <motion.div
+              initial={{ opacity: 0, width: 0 }}
+              animate={{ opacity: 1, width: "100%" }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+              className="flex justify-center mb-6"
+            >
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
+            </motion.div>
+
+            <motion.p
+              className="text-xl text-[#055BA4] dark:text-slate-300 mb-10 max-w-2xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
             >
               {subtitle}
             </motion.p>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -256,10 +254,9 @@ const Blog = () => {
       </section>
 
       {/* Filtres améliorés avec sticky header */}
-      <motion.section 
-        className={`sticky top-0 z-30 py-4 bg-white/90 dark:bg-[#031A3D]/90 backdrop-blur-md border-b border-[#41ADE8]/20 dark:border-[#055BA4]/30 transition-all duration-300 ${
-          isHeaderScrolled ? 'shadow-md' : ''
-        }`}
+      <motion.section
+        className={`sticky top-0 z-30 py-4 bg-white/90 dark:bg-[#031A3D]/90 backdrop-blur-md border-b border-[#41ADE8]/20 dark:border-[#055BA4]/30 transition-all duration-300 ${isHeaderScrolled ? 'shadow-md' : ''
+          }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -268,7 +265,7 @@ const Blog = () => {
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
             {/* Catégories */}
             <div className="relative" ref={categoriesRef}>
-              <button 
+              <button
                 onClick={() => setShowCategories(!showCategories)}
                 className={`flex items-center gap-2 px-4 py-2.5 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 text-[#031A3D] dark:text-slate-200 rounded-xl hover:bg-[#41ADE8]/20 dark:hover:bg-[#055BA4]/30 transition-colors cursor-pointer`}
               >
@@ -276,10 +273,10 @@ const Blog = () => {
                 <span className="font-medium">{categoriesButton}</span>
                 {showCategories ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
               </button>
-              
+
               <AnimatePresence>
                 {showCategories && (
-                  <motion.div 
+                  <motion.div
                     className={`absolute z-40 mt-2 w-64 bg-white dark:bg-[#031A3D]/95 backdrop-blur-sm rounded-xl border border-[#41ADE8]/20 dark:border-[#055BA4]/30 shadow-2xl py-2 ${textAlign}`}
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -294,11 +291,10 @@ const Blog = () => {
                             setSelectedCategory(category.id);
                             setShowCategories(false);
                           }}
-                          className={`w-full px-4 py-3 flex items-center gap-3 ${
-                            selectedCategory === category.id 
-                              ? 'bg-[#055BA4]/10 dark:bg-[#055BA4]/40 text-[#055BA4] dark:text-[#41ADE8]' 
+                          className={`w-full px-4 py-3 flex items-center gap-3 ${selectedCategory === category.id
+                              ? 'bg-[#055BA4]/10 dark:bg-[#055BA4]/40 text-[#055BA4] dark:text-[#41ADE8]'
                               : 'hover:bg-[#41ADE8]/10 dark:hover:bg-[#055BA4]/20'
-                          } transition-colors`}
+                            } transition-colors`}
                         >
                           {IconComponent && <IconComponent size={18} className="flex-shrink-0" />}
                           <span className="font-medium">{categories[category.id]}</span>
@@ -314,11 +310,11 @@ const Blog = () => {
                 )}
               </AnimatePresence>
             </div>
-            
+
             {/* Filtres actifs */}
             <div className={`flex flex-wrap gap-3`}>
               {(selectedCategory !== 'all' || selectedTags.length > 0 || searchTerm) && (
-                <motion.button 
+                <motion.button
                   onClick={resetFilters}
                   className={`px-3 py-1.5 text-[#055BA4] dark:text-slate-300 hover:text-[#031A3D] dark:hover:text-slate-100 text-sm flex items-center gap-1.5 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-lg font-medium`}
                   whileHover={{ scale: 1.05 }}
@@ -327,7 +323,7 @@ const Blog = () => {
                   <X size={16} /> {filters?.resetButton || "Réinitialiser"}
                 </motion.button>
               )}
-              
+
               {selectedCategory !== 'all' && (
                 <motion.div
                   initial={{ scale: 0.8, opacity: 0 }}
@@ -335,7 +331,7 @@ const Blog = () => {
                   className={`px-3 py-1.5 bg-[#055BA4]/10 dark:bg-[#055BA4]/40 text-[#055BA4] dark:text-[#41ADE8] rounded-lg text-sm flex items-center gap-2 font-medium`}
                 >
                   {categories[selectedCategory]}
-                  <button 
+                  <button
                     onClick={() => setSelectedCategory('all')}
                     className="text-[#055BA4] dark:text-[#41ADE8] hover:text-[#031A3D] dark:hover:text-white"
                   >
@@ -343,7 +339,7 @@ const Blog = () => {
                   </button>
                 </motion.div>
               )}
-              
+
               {selectedTags.map(tag => (
                 <motion.div
                   key={tag}
@@ -352,7 +348,7 @@ const Blog = () => {
                   className={`px-3 py-1.5 bg-[#41ADE8]/10 dark:bg-[#41ADE8]/40 text-[#055BA4] dark:text-[#41ADE8] rounded-lg text-sm flex items-center gap-2 font-medium`}
                 >
                   #{tag}
-                  <button 
+                  <button
                     onClick={() => toggleTag(tag)}
                     className="text-[#055BA4] dark:text-[#41ADE8] hover:text-[#031A3D] dark:hover:text-white"
                   >
@@ -371,7 +367,7 @@ const Blog = () => {
           <div className="lg:col-span-3">
             {/* Featured Article */}
             {searchTerm === '' && selectedCategory === 'all' && selectedTags.length === 0 && featuredPost && (
-              <motion.div 
+              <motion.div
                 className="mb-12"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -386,8 +382,8 @@ const Blog = () => {
                   onClick={() => openPostDetail(featuredPost)}
                 >
                   <div className="relative h-64 md:h-80 lg:h-96">
-                    <img 
-                      src={featuredPost.image} 
+                    <img
+                      src={featuredPost.image}
                       alt={featuredPost.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -413,19 +409,19 @@ const Blog = () => {
                           </div>
                         </div>
                       </div>
-                      
+
                       <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                         {featuredPost.title}
                       </h3>
-                      
+
                       <p className="text-slate-200 mb-4 max-w-3xl">
                         {featuredPost.excerpt}
                       </p>
-                      
+
                       <div className={`flex flex-wrap items-center justify-between gap-3`}>
                         <div className="flex flex-wrap gap-2">
                           {featuredPost.tags.map((tag, index) => (
-                            <motion.span 
+                            <motion.span
                               key={index}
                               className="px-3 py-1 bg-white/20 text-white rounded-full text-xs font-medium hover:bg-white/30 transition-colors cursor-pointer"
                               whileHover={{ scale: 1.05 }}
@@ -464,22 +460,22 @@ const Blog = () => {
                   {filteredPosts.length} {filteredPosts.length !== 1 ? t('blog.articles') : t('blog.article')}
                 </span>
               </div>
-              
+
               {filteredPosts.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {filteredPosts.map((post) => (
-                    <motion.div 
+                    <motion.div
                       key={post.id}
                       variants={itemVariants}
                       whileHover={{ y: -10 }}
                     >
-                      <div 
+                      <div
                         className="bg-white dark:bg-[#031A3D]/50 backdrop-blur-sm border border-[#41ADE8]/20 dark:border-[#055BA4]/30 rounded-xl overflow-hidden group hover:shadow-xl transition-all h-full cursor-pointer"
                         onClick={() => openPostDetail(post)}
                       >
                         <div className="relative h-48">
-                          <img 
-                            src={post.image} 
+                          <img
+                            src={post.image}
                             alt={post.title}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           />
@@ -489,7 +485,7 @@ const Blog = () => {
                             </span>
                           </div>
                         </div>
-                        
+
                         <div className={`p-5 h-full flex flex-col ${textAlign}`}>
                           <div className={`flex items-center gap-3 mb-4`}>
                             <div className={`w-10 h-10 rounded-lg flex items-center justify-center bg-[#055BA4] shadow-md`}>
@@ -508,19 +504,19 @@ const Blog = () => {
                               </div>
                             </div>
                           </div>
-                          
+
                           <h3 className="text-xl font-bold text-[#031A3D] dark:text-white mb-3 group-hover:text-[#055BA4] dark:group-hover:text-[#41ADE8] transition-colors line-clamp-2">
                             {post.title}
                           </h3>
-                          
+
                           <p className="text-[#055BA4] dark:text-slate-300 mb-4 flex-grow line-clamp-3">
                             {post.excerpt}
                           </p>
-                          
+
                           <div className={`flex items-center justify-between mt-auto`}>
                             <div className="flex flex-wrap gap-2">
                               {post.tags.slice(0, 2).map((tag, index) => (
-                                <motion.span 
+                                <motion.span
                                   key={index}
                                   className="px-2.5 py-1 bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 text-[#055BA4] dark:text-[#41ADE8] rounded-lg text-xs font-medium hover:bg-[#41ADE8]/20 dark:hover:bg-[#055BA4]/30 transition-colors"
                                   whileHover={{ scale: 1.05 }}
@@ -534,9 +530,9 @@ const Blog = () => {
                                 </motion.span>
                               ))}
                             </div>
-                            <Button 
-                              size="sm" 
-                              variant="ghost" 
+                            <Button
+                              size="sm"
+                              variant="ghost"
                               className="text-[#055BA4] dark:text-[#41ADE8] hover:bg-[#055BA4]/10 dark:hover:bg-[#055BA4]/20 group-hover:bg-[#055BA4]/10 dark:group-hover:bg-[#055BA4]/20"
                             >
                               {read}
@@ -549,7 +545,7 @@ const Blog = () => {
                   ))}
                 </div>
               ) : (
-                <motion.div 
+                <motion.div
                   className={`text-center py-16 ${textAlign}`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -560,7 +556,7 @@ const Blog = () => {
                   <p className="text-[#055BA4] dark:text-slate-300 text-xl mb-4 font-medium">
                     {noPostsFound}
                   </p>
-                  <Button 
+                  <Button
                     onClick={resetFilters}
                     className="mt-4"
                     variant="outline"
@@ -615,11 +611,10 @@ const Blog = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => toggleTag(tag)}
-                        className={`cursor-pointer px-3 py-1.5 rounded-lg text-sm font-medium transition-colors flex items-center ${
-                          selectedTags.includes(tag)
+                        className={`cursor-pointer px-3 py-1.5 rounded-lg text-sm font-medium transition-colors flex items-center ${selectedTags.includes(tag)
                             ? 'bg-[#055BA4] text-white shadow-md'
                             : 'bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 text-[#055BA4] dark:text-[#41ADE8] hover:bg-[#41ADE8]/20 dark:hover:bg-[#055BA4]/30'
-                        }`}
+                          }`}
                       >
                         <Tag size={14} className={`${isRTL ? 'ml-1.5' : 'mr-1.5'}`} />
                         {tag}
@@ -641,18 +636,18 @@ const Blog = () => {
                   </h3>
                   <div className="space-y-4">
                     {recentPosts.map((post) => (
-                      <motion.div 
-                        key={post.id} 
+                      <motion.div
+                        key={post.id}
                         className="group"
                         whileHover={{ x: isRTL ? -5 : 5 }}
                       >
-                        <div 
+                        <div
                           className={`flex items-start gap-3 cursor-pointer`}
                           onClick={() => openPostDetail(post)}
                         >
                           <div className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden shadow-sm">
-                            <img 
-                              src={post.image} 
+                            <img
+                              src={post.image}
                               alt={post.title}
                               className="w-full h-full object-cover transition-transform group-hover:scale-110"
                             />
@@ -690,8 +685,8 @@ const Blog = () => {
                     {newsletterDescription}
                   </p>
                   <div className="relative mb-3">
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
                       placeholder={newsletterPlaceholder}
                       className={`w-full py-3 bg-white/20 backdrop-blur-sm text-white placeholder-blue-200 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent border border-blue-300 transition-all ${isRTL ? 'pr-4 pl-10' : 'pl-4 pr-10'}`}
                     />
@@ -708,13 +703,16 @@ const Blog = () => {
       </div>
 
       {/* Post Detail Modal */}
-      <BlogDetail 
-        selectedPost={selectedPost} 
+      <BlogDetail
+        selectedPost={selectedPost}
         onClose={closePostDetail}
         t={t}
         formatDate={formatDate}
         isRTL={isRTL}
         categories={categories}
+        style={{
+          zIndex: 9999,
+        }}
       />
     </motion.div>
   )

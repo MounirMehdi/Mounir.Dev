@@ -250,19 +250,25 @@ const Devis = () => {
       dir={direction}
     >
       {/* Hero Section - Améliorée */}
-      <section className="py-20 bg-gradient-to-br from-[#41ADE8]/10 to-[#055BA4]/10 dark:from-[#031A3D] dark:to-[#055BA4]/20">
-        <div className="container mx-auto px-4">
+      <section className="relative py-25 bg-gradient-to-br from-[#41ADE8]/20 to-[#055BA4]/20 dark:from-[#031A3D] dark:to-[#055BA4]/30 overflow-hidden pt-25">
+        {/* Effets de fond animés */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-20 dark:opacity-10">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-[#41ADE8] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+          <div className="absolute bottom-20 left-20 w-72 h-72 bg-[#055BA4] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-[#031A3D] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
-            className="text-center max-w-4xl mx-auto"
+            className="text-center max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <motion.h1
-              className="text-4xl md:text-5xl font-bold text-[#031A3D] dark:text-white mb-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
+            className="text-4xl font-extrabold text-[#031A3D] dark:text-white mb-6 leading-tight"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
             >
               {t('devis.hero.title1')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('devis.hero.title2')}</span>
             </motion.h1>
@@ -275,10 +281,10 @@ const Devis = () => {
               <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
             <motion.p
-              className="text-xl text-[#055BA4] dark:text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
+            className="text-xl text-[#055BA4] dark:text-slate-300 mb-10 max-w-2xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
             >
               {t('devis.hero.subtitle')}
             </motion.p>
@@ -916,20 +922,20 @@ const Devis = () => {
                 <CardHeader className="pb-3">
                   <CardTitle className="text-xl flex items-center gap-2">
                     <Mail size={20} />
-                    <span>{t('contact.contactPage.title')}</span>
+                    <span>{t('devis.contactPage.title')}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-col items-center text-center p-4">
                     <p className="text-[#055BA4] dark:text-slate-400 mb-6">
-                      {t('contact.contactPage.description')}
+                      {t('devis.contactPage.description')}
                     </p>
                     <Button
                       asChild
                       className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] hover:from-[#054A85] hover:to-[#2E8BC0] w-full"
                     >
                       <Link to="/contact">
-                        {t('contact.contactPage.button')}
+                        {t('devis.contactPage.button')}
                       </Link>
                     </Button>
                   </div>

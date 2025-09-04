@@ -917,12 +917,12 @@
         "Other"
       ],
       "budgetRanges": [
-        "Less than 1000€",
-        "1000€ - 3000€",
-        "3000€ - 5000€",
-        "5000€ - 10000€",
-        "10000€ - 20000€",
-        "More than 20000€",
+      "Moins de 50€",
+      "50€ - 150€",
+      "150€ - 300€",
+      "300€ - 600€",
+      "600€ - 1500€",
+      "Plus de 1500€",
         "I don't know",
         "Other"
       ],
@@ -1034,6 +1034,11 @@
         "Project Details",
         "Requirements & Files",
         "Timeline, Budget & Finalization"
-      ]
+      ],
+    "contactPage": {
+      "title": "Free Quote",
+      "description": "Get a personalized estimate for your project",
+      "button": "Request a quote"
+    }
     }
   }

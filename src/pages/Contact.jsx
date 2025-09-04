@@ -121,12 +121,12 @@ const Contact = () => {
       dir={direction}
     >
       {/* Hero Section - Améliorée */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 via-[#41ADE8]/20 to-[#055BA4]/20 dark:from-[#031A3D] dark:via-[#055BA4]/10 dark:to-[#41ADE8]/10 relative overflow-hidden">
+      <section className="relative py-30 bg-gradient-to-br from-[#41ADE8]/20 to-[#055BA4]/20 dark:from-[#031A3D] dark:to-[#055BA4]/30 overflow-hidden pt-40">
         {/* Effets de fond animés */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute top-0 left-1/4 w-72 h-72 bg-[#41ADE8]/10 rounded-full filter blur-3xl animate-pulse-slow" />
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#055BA4]/10 rounded-full filter blur-3xl animate-pulse-slow animation-delay-2000" />
-          <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-[#031A3D]/10 rounded-full filter blur-3xl animate-pulse-slow animation-delay-4000" />
+        <div className="absolute top-0 left-0 w-full h-full opacity-20 dark:opacity-10">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-[#41ADE8] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+          <div className="absolute bottom-20 left-20 w-72 h-72 bg-[#055BA4] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-[#031A3D] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -137,10 +137,10 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.h1 
-              className="text-4xl md:text-5xl font-bold text-[#031A3D] dark:text-white mb-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
+            className="text-4xl font-extrabold text-[#031A3D] dark:text-white mb-6 leading-tight"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
             >
               {t('contact.hero.title1')} <span className="text-[#055BA4] dark:text-[#41ADE8]">{t('contact.hero.title2')}</span>
             </motion.h1>
@@ -153,10 +153,10 @@ const Contact = () => {
               <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
             </motion.div>
             <motion.p 
-              className="text-xl text-[#055BA4] dark:text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
+            className="text-xl text-[#055BA4] dark:text-slate-300 mb-10 max-w-2xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
             >
               {t('contact.hero.subtitle')}
             </motion.p>
@@ -187,7 +187,7 @@ const Contact = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12" id="contact-form">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 z">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

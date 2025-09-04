@@ -773,6 +773,9 @@ const Accueil = () => {
             formatDate={formatDate}
             isRTL={isRTL}
             categories={categories}
+        style={{
+            zIndex: 9999,
+          }}
           />
         )}
       </section>

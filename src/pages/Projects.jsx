@@ -140,14 +140,11 @@ const Projects = () => {
 
   return (
     <motion.div
-      className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-[#031A3D] dark:to-[#031A3D]/90 overflow-x-hidden"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+    className="pt-16 bg-gradient-to-b from-white to-slate-50 dark:from-[#031A3D] dark:to-[#031A3D]/90"
       dir={direction}
     >
       {/* Hero Section Moderne */}
-      <section className="py-32 md:py-40 text-center relative overflow-hidden">
+      <section className="py-32 text-center relative overflow-hidden">
         {/* Background avec parallaxe */}
         <motion.div
           style={{
@@ -156,22 +153,15 @@ const Projects = () => {
           }}
           className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center opacity-30 dark:opacity-20"
         />
-
-        <div className="absolute inset-0 z-0">
-          <div className="absolute top-20 left-1/4 w-64 h-64 bg-[#41ADE8]/30 dark:bg-[#055BA4]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-[#055BA4]/30 dark:bg-[#031A3D]/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-[#41ADE8]/20 dark:bg-[#055BA4]/20 rounded-full blur-3xl"></div>
-        </div>
-
         <div className="relative z-10">
           <motion.h1
-            className="text-4xl md:text-5xl font-extrabold text-[#031A3D] dark:text-white mb-6 leading-tight"
+            className="text-5xl font-extrabold text-[#031A3D] dark:text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="block mb-2">{t('projects.hero.title1')}</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#055BA4] to-[#41ADE8] dark:from-[#055BA4] dark:to-[#41ADE8]">
+            {t('projects.hero.title1')}{" "}
+            <span className="text-[#055BA4] dark:text-[#41ADE8]">
               {t('projects.hero.title2')}
             </span>
           </motion.h1>
@@ -186,10 +176,10 @@ const Projects = () => {
           </motion.div>
 
           <motion.p
-            className="text-lg md:text-xl text-[#055BA4] dark:text-slate-300 mb-10 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-xl text-[#055BA4] dark:text-slate-300 mb-10 max-w-2xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
           >
             {t('projects.hero.subtitle')}
           </motion.p>
@@ -637,6 +627,9 @@ const Projects = () => {
         marginIcon={marginIcon}
         textAlign={textAlign}
         t={t}
+        style={{
+            zIndex: 9999,
+          }}
       />
     </motion.div>
   );

@@ -918,12 +918,12 @@
       "Autre"
     ],
     "budgetRanges": [
-      "Moins de 1000€",
-      "1000€ - 3000€",
-      "3000€ - 5000€",
-      "5000€ - 10000€",
-      "10000€ - 20000€",
-      "Plus de 20000€",
+      "Moins de 50€",
+      "50€ - 150€",
+      "150€ - 300€",
+      "300€ - 600€",
+      "600€ - 1500€",
+      "Plus de 1500€",
       "Je ne sais pas",
       "Autre"
     ],
@@ -1035,6 +1035,11 @@
       "Détails du Projet",
       "Exigences & Fichiers",
       "Délais, Budget & Finalisation"
-    ]
+    ],
+    "contactPage": {
+      "title": "Devis Gratuit",
+      "description": "Obtenez une estimation personnalisée de votre projet",
+      "button": "Demander un devis"
+    }
   }
 }

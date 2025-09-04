@@ -188,7 +188,8 @@ const Chat = () => {
             className="fade-in-bounceup"
             style={{
               background: "linear-gradient(135deg, #055BA4 0%, #41ADE8 100%)",
-              boxShadow: "0 4px 14px 0 rgba(5, 91, 164, 0.4)"
+              boxShadow: "0 4px 14px 0 rgba(5, 91, 164, 0.4)",
+            zIndex: 9998,
             }}
           >
             <SmartToy sx={{ fontSize: 25, color: "white" }} />
@@ -207,7 +208,8 @@ const Chat = () => {
             style={{
               background: "linear-gradient(135deg, #031A3D 0%, #055BA4 100%)",
               border: "1px solid #41ADE8",
-              boxShadow: "0 10px 30px rgba(3, 26, 61, 0.5)"
+              boxShadow: "0 10px 30px rgba(3, 26, 61, 0.5)",
+            zIndex: 9998,
             }}
           >
             {/* Header */}

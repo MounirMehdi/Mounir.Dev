@@ -43,10 +43,10 @@ const ScrollToTopButton = () => {
             bottom: "20px",
             left: "50%",
             transform: "translateX(-50%)",
-            zIndex: 1000,
+            zIndex: 9997,
           }}
         >
-          <KeyboardArrowUp sx={{ fontSize: 24 }} />
+          <KeyboardArrowUp sx={{ fontSize: 20 }} />
         </motion.button>
       )}
     </AnimatePresence>

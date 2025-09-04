@@ -80,12 +80,13 @@ const Services = () => {
       <section className="py-32 text-center relative overflow-hidden">
         {/* Background avec parallaxe */}
         <motion.div
-          style={{ y: heroY }}
+          style={{ y: heroY,
+            backgroundAttachment: 'fixed' }}
           className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center opacity-20"
         />
         <div className="relative z-10">
           <motion.h1
-            className="text-5xl font-extrabold text-[#031A3D] dark:text-white mb-6 leading-tight"
+            className="text-4xl font-extrabold text-[#031A3D] dark:text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -95,6 +96,15 @@ const Services = () => {
               {t("services.hero.title2")}
             </span>
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, width: 0 }}
+            animate={{ opacity: 1, width: "100%" }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="flex justify-center mb-6"
+          >
+            <div className="h-1 bg-gradient-to-r from-transparent via-[#055BA4] to-transparent w-48"></div>
+          </motion.div>
 
           <motion.p
             className="text-xl text-[#055BA4] dark:text-slate-300 mb-10 max-w-2xl mx-auto"

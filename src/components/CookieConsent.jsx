@@ -213,7 +213,9 @@ const CookieConsent = () => {
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"
-          aria-label="Paramètres des cookies"
+          aria-label="Paramètres des cookies"style={{
+            zIndex: 9998,
+          }}
         >
           <Cookie className="text-[#055BA4] dark:text-[#41ADE8]" size={20} />
         </motion.button>
@@ -227,6 +229,10 @@ const CookieConsent = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
+            
+          style={{
+            zIndex: 9998,
+          }}
           >
             <div className="flex justify-between items-start mb-3">
               <div className="flex items-center">
