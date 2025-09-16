@@ -17,6 +17,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { useTranslation } from 'react-i18next';
+import ProjectDetailModal from './ProjectDetailModal';
 
 const ProjectPopup = () => {
   const { t, i18n } = useTranslation();
@@ -29,6 +30,8 @@ const ProjectPopup = () => {
   const isRTL = i18n.language === 'ar';
   const direction = isRTL ? 'rtl' : 'ltr';
   const textAlign = isRTL ? 'text-right' : 'text-left';
+  const flexDirection = isRTL ? 'flex-row-reverse' : 'flex-row';
+  const marginIcon = isRTL ? 'ml-2' : 'mr-2';
   
   const projects = t('projectsData', { returnObjects: true });
   const canLoop = projects.length >= 2;
@@ -237,235 +240,19 @@ const ProjectPopup = () => {
         </Swiper>
       </div>
 
-      {/* Fenêtre Popup */}
-      <AnimatePresence dir={direction}>
-        {selectedProject && (
-          <>
-            <motion.div
-              className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50"
-              style={{ zIndex: 9999 }}
-              variants={overlayVariants}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-            >
-              <motion.div
-                ref={popupRef}
-                className="bg-white dark:bg-[#031A3D] rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
-                variants={popupVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-              >
-                {/* En-tête de la popup */}
-                <div className={`sticky top-0 bg-white dark:bg-[#031A3D] z-10 p-4 border-b border-[#41ADE8]/30 flex justify-between items-center`}>
-                  <h2 className={`text-xl font-bold text-[#031A3D] dark:text-white ${textAlign}`}>
-                    {selectedProject.title}
-                  </h2>
-                  <button
-                    onClick={closePopup}
-                    className="text-[#055BA4] dark:text-[#41ADE8] hover:text-[#031A3D] dark:hover:text-white p-1 rounded-full hover:bg-[#41ADE8]/10 dark:hover:bg-[#055BA4]/30"
-                  >
-                    <FiX size={24} />
-                  </button>
-                </div>
-
-                {/* Contenu de la popup */}
-                <div className="p-6">
-                  {/* Galerie d'images */}
-                  <div className="relative rounded-xl overflow-hidden mb-6">
-                    {selectedProject.images && selectedProject.images.length > 0 && (
-                      <>
-                        <img
-                          src={selectedProject.images[activeImage].url}
-                          alt={selectedProject.images[activeImage].alt || selectedProject.title}
-                          className="w-full h-64 md:h-80 object-cover"
-                          loading="lazy"
-                        />
-
-                        {selectedProject.images.length > 1 && (
-                          <div className="absolute inset-0 flex items-center justify-between px-2" dir="ltr">
-                            <button
-                              onClick={handlePrevImage}
-                              className="bg-[#031A3D]/30 hover:bg-[#031A3D]/50 text-white p-2 rounded-full"
-                            >
-                              <FiChevronLeft size={24} />
-                            </button>
-                            <button
-                              onClick={handleNextImage}
-                              className="bg-[#031A3D]/30 hover:bg-[#031A3D]/50 text-white p-2 rounded-full"
-                            >
-                              <FiChevronRight size={24} />
-                            </button>
-                          </div>
-                        )}
-
-                        <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-1">
-                          {selectedProject.images.map((_, index) => (
-                            <button
-                              key={index}
-                              className={`w-2 h-2 rounded-full ${index === activeImage
-                                ? 'bg-[#055BA4] dark:bg-[#41ADE8]'
-                                : 'bg-white/50'
-                                }`}
-                              onClick={() => setActiveImage(index)}
-                            />
-                          ))}
-                        </div>
-                      </>
-                    )}
-                  </div>
-
-                  {/* Détails du projet */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="md:col-span-2">
-                      <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
-                        {t('projectPopup.descriptionTitle')}
-                      </h3>
-                      <p className={`text-[#055BA4] dark:text-[#41ADE8] mb-6 ${textAlign}`}>
-                        {selectedProject.fullDescription}
-                      </p>
-
-                      <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
-                        {t('projectPopup.challengesTitle')}
-                      </h3>
-                      <ul className={`list-disc ${isRTL ? 'pr-5' : 'pl-5'} text-[#055BA4] dark:text-[#41ADE8] mb-6 space-y-2 ${textAlign}`}>
-                        {selectedProject.challenges.map((challenge, index) => (
-                          <li key={index}>{challenge}</li>
-                        ))}
-                      </ul>
-
-                      {selectedProject.results && selectedProject.results.length > 0 && (
-                        <>
-                          <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
-                            {t('projectPopup.resultsTitle')}
-                          </h3>
-                          <ul className={`list-disc ${isRTL ? 'pr-5' : 'pl-5'} text-[#055BA4] dark:text-[#41ADE8] mb-6 space-y-2 ${textAlign}`}>
-                            {selectedProject.results.slice(0, 3).map((result, index) => (
-                              <li key={index}>{result}</li>
-                            ))}
-                          </ul>
-                        </>
-                      )}
-                    </div>
-
-                    <div>
-                      <div className="bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-xl p-4 mb-4">
-                        <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
-                          {t('projectPopup.detailsTitle')}
-                        </h3>
-
-                        <div className="space-y-3">
-                          <div className={`flex items-center`}>
-                            <div className={`flex-shrink-0 bg-[#055BA4]/10 dark:bg-[#055BA4]/30 p-2 rounded-lg ${isRTL ? 'ml-3' : 'mr-3'}`}>
-                              <FiCalendar className="text-[#055BA4] dark:text-[#41ADE8]" />
-                            </div>
-                            <div className={textAlign}>
-                              <p className="font-medium text-[#031A3D] dark:text-white">
-                                {selectedProject.period}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="bg-[#41ADE8]/10 dark:bg-[#055BA4]/20 rounded-xl p-4 mb-4">
-                        <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
-                          {t('projectPopup.technologiesTitle')}
-                        </h3>
-                        <div className="flex flex-wrap gap-2">
-                          {selectedProject.technologies.map((tech, index) => (
-                            <span
-                              key={index}
-                              className="px-3 py-1 bg-white dark:bg-[#055BA4] text-[#031A3D] dark:text-white rounded-full text-xs font-medium"
-                            >
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-
-                      <div className={`flex flex-wrap gap-3 ${isRTL ? 'flex-row-reverse justify-end' : ''}`}>
-                        {/* Bouton Demo - affiché seulement si l'URL existe */}
-                        {selectedProject.demoUrl && (
-                          <a
-                            href={selectedProject.demoUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center px-4 py-3 bg-[#055BA4] hover:bg-[#054A85] text-white rounded-lg transition-colors font-medium text-center"
-                          >
-                            {isRTL ? (
-                              <span className="flex items-center">
-                                {t('projectPopup.visitButton')}
-                                <FiExternalLink className="mr-2" />
-                              </span>
-                            ) : (
-                              <span className="flex items-center">
-                                <FiExternalLink className="ml-2" />
-                                {t('projectPopup.visitButton')}
-                              </span>
-                            )}
-                          </a>
-                        )}
-
-                        {/* Bouton Code - affiché seulement si l'URL existe */}
-                        {selectedProject.githubUrl && (
-                          <a
-                            href={selectedProject.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center px-4 py-3 bg-[#41ADE8] hover:bg-[#2E8BC0] text-white rounded-lg transition-colors font-medium text-center"
-                          >
-                            {isRTL ? (
-                              <span className="flex items-center">
-                                {t('projectPopup.codeButton')}
-                                <FiGithub className="mr-2" />
-                              </span>
-                            ) : (
-                              <span className="flex items-center">
-                                <FiGithub className="ml-2" />
-                                {t('projectPopup.codeButton')}
-                              </span>
-                            )}
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Miniatures de la galerie */}
-                  {selectedProject.images && selectedProject.images.length > 1 && (
-                    <div className="mt-6">
-                      <h3 className={`text-lg font-bold text-[#031A3D] dark:text-white mb-3 ${textAlign}`}>
-                        {t('projectPopup.galleryTitle')}
-                      </h3>
-                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-                        {selectedProject.images.map((img, index) => (
-                          <button
-                            key={index}
-                            className={`rounded-lg overflow-hidden border-2 transition-all ${index === activeImage
-                              ? 'border-[#055BA4] dark:border-[#41ADE8]'
-                              : 'border-transparent'
-                              }`}
-                            onClick={() => setActiveImage(index)}
-                          >
-                            <img
-                              src={img.url}
-                              alt={img.alt || `${selectedProject.title} - ${index + 1}`}
-                              className="w-full h-24 object-cover"
-                              loading="lazy"
-                            />
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </motion.div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+      <ProjectDetailModal
+        selectedProject={selectedProject}
+        setSelectedProject={setSelectedProject}
+        isRTL={isRTL}
+        direction={direction}
+        flexDirection={flexDirection}
+        marginIcon={marginIcon}
+        textAlign={textAlign}
+        t={t}
+        style={{
+            zIndex: 9999,
+          }}
+      />
 
       {/* Styles pour le carrousel*/}
       <style jsx="true">{`

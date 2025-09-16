@@ -324,8 +324,145 @@
     }
   },
   "projectsData": [
+    {
+      "id": 2,
+      "title": "Système de Gestion des Escales de Navires",
+      "category": "Application Web",
+      "client": "Port de Béjaïa",
+      "period": "2022",
+      "shortDescription": "Application web complète de suivi et gestion des escales des navires",
+      "fullDescription": "Solution ERP de suivi intégral des navires depuis l'annonce jusqu'à la sortie finale, incluant tous les mouvements portuaires, avec système de gestion des utilisateurs, des réunions et des décisions.",
+      "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "API REST"],
+      "features": [
+        "Suivi temps réel des navires depuis l'annonce jusqu'à la sortie",
+        "Visualisation de tous les mouvements au port et état des mouvements",
+        "Dashboard personnalisé avec indicateurs clés",
+        "Gestion des utilisateurs par directions avec rôles et permissions",
+        "Système de notifications et alertes",
+        "Journal détaillé des activités utilisateurs sur l'application",
+        "Fonctionnalités d'impression et génération de documents",
+        "Gestion des réunions et suivi des décisions"
+      ],
+      "status": "completed",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "images": [
+        {
+          "url": "src/assets/projets/suivi_des_escales/1.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/2.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/3.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/4.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/5.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/6.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/7.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/8.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/9.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/10.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/11.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/12.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/13.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/14.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/15.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/16.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/17.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/18.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/19.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/20.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/21.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "src/assets/projets/suivi_des_escales/22.JPG",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    }
   ],
-  "blogPosts": [  ],
+  "blogPosts": [],
   "technologies": [
     { "name": "React", "icon": "SiReact" },
     { "name": "Vue.js", "icon": "SiVuedotjs" },

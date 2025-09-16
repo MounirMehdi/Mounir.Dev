@@ -12,7 +12,7 @@ const COOKIES_CONFIG = {
 };
 
 const CookieConsent = () => {
-  const [showBanner, setShowBanner] = useState(true);
+  const [showBanner, setShowBanner] = useState(false);
   const [hasConsent, setHasConsent] = useState(false);
   const [hasChoice, setHasChoice] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
@@ -78,7 +78,7 @@ const CookieConsent = () => {
         COOKIES_CONFIG[category].forEach(cookieName => {
           const expiration = new Date();
           expiration.setFullYear(expiration.getFullYear() + 1);
-          document.cookie = `${cookieName}=active; expires=${expiration.toUTCString()}; path=/;`;
+          document.cookie = `${cookieName}=active; expires=${expiration.toUTCString()}; path=/; SameSite=Lax`;
         });
       }
     });
@@ -99,6 +99,7 @@ const CookieConsent = () => {
             marketing: true
           }
         };
+        setSelectedPreferences(consentData.preferences);
         break;
         
       case 'reject':
@@ -112,6 +113,7 @@ const CookieConsent = () => {
             marketing: false
           }
         };
+        setSelectedPreferences(consentData.preferences);
         break;
         
       case 'custom':
@@ -133,6 +135,7 @@ const CookieConsent = () => {
             marketing: false
           }
         };
+        setSelectedPreferences(consentData.preferences);
     }
     
     localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
@@ -155,10 +158,28 @@ const CookieConsent = () => {
 
   const togglePreference = (pref) => {
     if (pref !== 'necessary') {
-      setSelectedPreferences(prev => ({
-        ...prev,
-        [pref]: !prev[pref]
-      }));
+      const newPreferences = {
+        ...selectedPreferences,
+        [pref]: !selectedPreferences[pref]
+      };
+      
+      setSelectedPreferences(newPreferences);
+      
+      // Mettre à jour les cookies immédiatement
+      manageCookies(newPreferences);
+      
+      // Sauvegarder les préférences
+      const consentData = {
+        accepted: Object.values(newPreferences).some(v => v),
+        date: new Date().toISOString(),
+        preferences: newPreferences
+      };
+      
+      localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
+      
+      // Informer les autres composants
+      const event = new CustomEvent('cookieConsentUpdate', { detail: consentData });
+      window.dispatchEvent(event);
     }
   };
 
@@ -213,9 +234,8 @@ const CookieConsent = () => {
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"
-          aria-label="Paramètres des cookies"style={{
-            zIndex: 9998,
-          }}
+          aria-label="Paramètres des cookies"
+          style={{ zIndex: 9998 }}
         >
           <Cookie className="text-[#055BA4] dark:text-[#41ADE8]" size={20} />
         </motion.button>
@@ -229,10 +249,7 @@ const CookieConsent = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            
-          style={{
-            zIndex: 9998,
-          }}
+            style={{ zIndex: 9999 }}
           >
             <div className="flex justify-between items-start mb-3">
               <div className="flex items-center">

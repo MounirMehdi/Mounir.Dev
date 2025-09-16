@@ -140,7 +140,7 @@ const Projects = () => {
 
   return (
     <motion.div
-    className="pt-16 bg-gradient-to-b from-white to-slate-50 dark:from-[#031A3D] dark:to-[#031A3D]/90"
+      className="pt-16 bg-gradient-to-b from-white to-slate-50 dark:from-[#031A3D] dark:to-[#031A3D]/90"
       dir={direction}
     >
       {/* Hero Section Moderne */}
@@ -350,7 +350,16 @@ const Projects = () => {
                       onClick={() => setSelectedProject(project)}
                     >
                       <div className="relative overflow-hidden flex-shrink-0">
-                        <div className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] w-full h-64" />
+
+                        {project.images && project.images.length > 0 ? (
+                          <img
+                            src={project.images[0].url}
+                            alt={project.images[0].alt}
+                            className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        ) : (
+                          <div className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] w-full h-64" />
+                        )}
                         <div className={`absolute top-4 ${isRTL ? 'left-4' : 'right-4'}`}>
                           <span className={`px-3 py-1 rounded-full text-xs font-medium ${project.status === 'inProgress'
                             ? 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300'
@@ -359,7 +368,7 @@ const Projects = () => {
                             {t(`projects.status.${project.status}`)}
                           </span>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity flex items-end p-6">
                           <div>
                             <h3 className="text-xl font-bold text-white">{project.title}</h3>
                             <div className="flex items-center space-x-3 text-sm text-slate-200 mt-2">
@@ -368,7 +377,7 @@ const Projects = () => {
                                 <span>{project.period}</span>
                               </div>
                               <span className="px-2 py-1 bg-[#41ADE8]/20 text-[#41ADE8] rounded-full">
-                                {t(`projects.categories.${project.category}`)}
+                                {t(`${project.category}`)}
                               </span>
                             </div>
                           </div>
@@ -628,8 +637,8 @@ const Projects = () => {
         textAlign={textAlign}
         t={t}
         style={{
-            zIndex: 9999,
-          }}
+          zIndex: 9999,
+        }}
       />
     </motion.div>
   );
