@@ -200,7 +200,7 @@ const Accueil = () => {
       id: 3,
       title: t('home.slides.slide3.title'),
       description: t('home.slides.slide3.description'),
-      image: "https://images.pexels.com/photos-267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=1400",
+      image: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg",
       alt: t('home.slides.slide3.alt')
     },
     {
@@ -214,15 +214,8 @@ const Accueil = () => {
       id: 5,
       title: t('home.slides.slide5.title'),
       description: t('home.slides.slide5.description'),
-      image: "https://images.pexels.com/photos-1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1400",
-      alt: t('home.slides.slide5.alt')
-    },
-    {
-      id: 6,
-      title: t('home.slides.slide6.title'),
-      description: t('home.slides.slide6.description'),
       image: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1600",
-      alt: t('home.slides.slide6.alt')
+      alt: t('home.slides.slide5.alt')
     }
   ];
 

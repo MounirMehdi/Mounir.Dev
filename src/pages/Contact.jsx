@@ -514,7 +514,7 @@ const Contact = () => {
       </div>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-[#41ADE8]/10 dark:bg-[#031A3D]/50">
+      <section id="faqs" className="py-20 bg-[#41ADE8]/10 dark:bg-[#031A3D]/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <motion.h2 

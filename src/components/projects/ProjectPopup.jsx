@@ -195,10 +195,10 @@ const ProjectPopup = () => {
                 onClick={() => openPopup(project)}
               >
                 <div className="bg-gray-200 dark:bg-gray-700 w-full h-full absolute inset-0">
-                  {project.images?.[0]?.url && (
+                  {project.img?.url && (
                     <img
-                      src={project.images[0].url}
-                      alt={project.images[0].alt || project.title}
+                      src={project.img.url}
+                      alt={project.img.alt || project.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
                     />

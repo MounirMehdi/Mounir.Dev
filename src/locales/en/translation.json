@@ -256,10 +256,7 @@
       "socialNetworks": {
         "whatsapp": "WhatsApp",
         "email": "Email",
-        "linkedin": "LinkedIn",
-        "facebook": "Facebook",
-        "tiktok": "TikTok",
-        "instagram": "Instagram"
+        "linkedin": "LinkedIn"
       },
       "copyright": "All rights reserved."
     },
@@ -323,7 +320,150 @@
         "viewCode": "View code"
       }
     },
-    "projectsData": [],
+    "projectsData": [
+      {
+  "id": 2,
+  "title": "Ship Call Management System",
+  "category": "Web Application",
+  "client": "Port of Béjaïa",
+  "period": "2022",
+  "shortDescription": "Complete web application for tracking and managing ship calls",
+  "fullDescription": "ERP solution for comprehensive ship tracking from announcement to final departure, including all port movements, with user management system, meetings and decisions.",
+  "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+  "features": [
+    "Real-time ship tracking from announcement to departure",
+    "Visualization of all port movements and movement status",
+    "Custom dashboard with key indicators",
+    "User management by departments with roles and permissions",
+    "Notification and alert system",
+    "Detailed log of user activities on the application",
+    "Printing features and document generation",
+    "Meeting management and decision tracking"
+  ],
+  "status": "completed",
+  "demoUrl": null,
+  "githubUrl": null,
+  "featured": true,
+  "new": false,
+  "img": {
+          "url": "/projets/suivi_des_escales/9.JPG",
+          "alt": "",
+          "caption": ""
+        },
+      "images": [
+        {
+          "url": "/projets/suivi_des_escales/1.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/2.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/3.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/4.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/5.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/6.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/7.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/8.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/9.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/10.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/11.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/12.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/13.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/14.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/15.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/16.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/17.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/18.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/19.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/20.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/21.JPG",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "/projets/suivi_des_escales/22.JPG",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    }
+    ],
     "blogPosts": [],
     "technologies": [
       { "name": "React", "icon": "SiReact" },
