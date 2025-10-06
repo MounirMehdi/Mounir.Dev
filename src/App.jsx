@@ -10,11 +10,13 @@ import Contact from './pages/Contact'
 import Devis from './pages/Devis'
 import Cookies from './pages/Cookies'
 import './App.css'
+import ScrollToTop from "./components/mage-ui/ScrollUp";
 
 function App() {
   return (
       <div className="min-h-screen bg-background">
         <Header />
+        <ScrollToTop />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

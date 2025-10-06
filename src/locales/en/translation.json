@@ -1,1184 +1,1287 @@
- {
-    "developer": "Developer",
-    "slogan": "Bring your digital ideas to life",
-    "description": "Creator of unique and high-performance web experiences. Master's degree in software engineering. Specialized in modern development.",
-    "see_projects": "See my projects",
-    "request_quote": "Request a quote",
-    "experience": "2+ years of experience",
-    "delivered_projects": "Projects delivered",
-    "satisfied_clients": "Satisfied clients",
-    "skills_title": "My Skills",
-    "skills_subtitle": "Complete expertise to carry out your web projects from A to Z",
-    "recent_projects": "Recent Projects",
-    "recent_projects_sub": "Discover some of my most notable achievements",
-    "see_all_projects": "See all projects",
-    "cta_title": "Ready to start your project?",
-    "cta_sub": "Contact me today to discuss your needs and get a free personalized quote.",
-    "cta_button": "Request a free quote",
-    "project1_desc": "Creation of multi-page websites with forms, APIs, and SEO optimization.",
-    "project2_desc": "Web application for tracking port calls with a modern interface.",
-    "project3_desc": "Desktop real estate management software with an intuitive interface.",
-    "project_not_found": "Project not found",
-    "project_not_found_message": "The project you are looking for does not exist or has been moved.",
-    "back_to_projects": "Back to projects",
-    "about_project": "About the project",
-    "challenges": "Challenges and solutions",
-    "results": "Results achieved",
-    "gallery": "Project gallery",
-    "project_details": "Project details",
-    "launch_date": "Launch date",
-    "duration": "Project duration",
-    "team": "Team",
-    "featured_project": "Featured project",
-    "featured_project_desc": "Selected as an outstanding project",
-    "technologies": "Technologies used",
-    "project_links": "Project links",
-    "visit_site": "Visit site",
-    "source_code": "Source code",
-    "prev_project": "Previous project",
-    "next_project": "Next project",
-    "click_to_gallery": "Click to view gallery",
-    "view_large": "View large",
-    "cta_title": "Ready to materialize your project?",
-    "cta_sub": "Let's discuss your vision and create something extraordinary together",
-    "cta_button": "Start now",
-    "cta_hint": "Let's turn your ideas into reality",
-    "header": {
-      "home": "Home",
-      "services": "Services",
-      "projects": "Projects",
-      "blog": "Blog",
-      "contact": "Contact",
-      "quoteButton": "Free Quote",
-      "openMenu": "Open menu",
-      "closeMenu": "Close menu"
-    },
-    "home": {
-      "hero": {
-        "welcome": "Creative Fullstack Developer",
-        "title1": "Transform your ideas into",
-        "flipWords": [
-          "Digital Experiences",
-          "Captivating Websites",
-          "Innovative Solutions",
-          "High-Performance Platforms"
-        ],
-        "description": "I create custom web and mobile solutions that combine elegant design, technical performance, and exceptional user experience. Every project is an opportunity for innovation.",
-        "button1": "Explore my achievements",
-        "button2": "Let's discuss your project",
-        "stats": [
-          {
-            "value": "5+",
-            "label": "Years of experience"
-          },
-          {
-            "value": "50+",
-            "label": "Projects delivered"
-          },
-          {
-            "value": "100%",
-            "label": "Satisfied clients"
-          }
-        ]
-      },
-      "skills": {
-        "title": "My",
-        "titleHighlight": "Skills",
-        "subtitle": "Technical and creative expertise to turn your ideas into reality",
-        "frontend": {
-          "name": "Frontend",
-          "tech": "HTML/CSS/JS, Bootstrap, Tailwind, React, Vue.js"
-        },
-        "backend": {
-          "name": "Backend",
-          "tech": "PHP, Laravel, Java"
-        },
-        "design": {
-          "name": "Design",
-          "tech": "UX/UI, Photoshop, Illustrator, Canva"
-        },
-        "seo": {
-          "name": "SEO",
-          "tech": "Analytics, Search Console, Referencing, Accessibility, Optimization"
-        },
-        "mobile": {
-          "name": "Mobile",
-          "tech": "Responsive Design, Flutter Apps, Android"
-        },
-        "methodology": {
-          "name": "Methodology",
-          "tech": "Agile, Scrum"
-        }
-      },
-      "services": {
-        "title": "My",
-        "titleHighlight": "Expertise",
-        "subtitle": "Custom solutions to transform your digital challenges into success",
-        "website": {
-          "title": "Websites",
-          "description": "Elegant designs and optimal performance for high-performance digital showcase sites to boost your credibility and generate leads 24/7."
-        },
-        "webapp": {
-          "title": "Web applications",
-          "description": "Custom solutions to automate your business processes and transform your operational challenges into competitive advantages."
-        },
-        "mobile": {
-          "title": "Mobile Applications",
-          "description": "Intuitive mobile solutions, native and fluid mobile experiences published on stores."
-        },
-        "marketing": {
-          "title": "Digital Strategy & Marketing",
-          "description": "Custom roadmaps to dominate your market and accelerate your growth in the digital age."
-        },
-        "button": "Discover all my expertise"
-      },
-      "projects": {
-        "title": "My",
-        "titleHighlight": "Recent Projects",
-        "subtitle": "Discover my latest achievements and case studies",
-        "button": "See all projects"
-      },
-      "blog": {
-        "title": "My",
-        "titleHighlight": "Latest Articles",
-        "subtitle": "Tips, tutorials, and thoughts on web development",
-        "readButton": "Read article",
-        "button": "See all articles"
-      },
-      "slides": {
-        "slide1": {
-          "title": "Digital Experiences",
-          "description": "Creation of high-performance web applications with React and Next.js",
-          "alt": "Digital Experiences"
-        },
-        "slide2": {
-          "title": "Captivating Websites",
-          "description": "Cross-platform development with React Native and Flutter",
-          "alt": "Captivating Websites"
-        },
-        "slide3": {
-          "title": "Innovative Solutions",
-          "description": "Technical and semantic strategies for natural referencing",
-          "alt": "Innovative Solutions"
-        },
-        "slide4": {
-          "title": "High-Performance Platforms",
-          "description": "Technical and semantic strategies for natural referencing",
-          "alt": "High-Performance Platforms"
-        },
-        "slide5": {
-          "title": "High-Performance Platforms",
-          "description": "Technical and semantic strategies for natural referencing",
-          "alt": "High-Performance Platforms"
-        },
-        "slide6": {
-          "title": "High-Performance Platforms",
-          "description": "Technical and semantic strategies for natural referencing",
-          "alt": "High-Performance Platforms"
-        }
-      },
-      "process": {
-        "title": "My",
-        "titleHighlight": "Work Process",
-        "subtitle": "A transparent methodology for exceptional results",
-        "steps": [
-          {
-            "icon": "Users",
-            "step": "Design",
-            "title": "Digital Blueprint",
-            "description": "Definition of objectives and technical architecture"
-          },
-          {
-            "icon": "Code",
-            "step": "Development",
-            "title": "Technical Creation",
-            "description": "Agile implementation with weekly reviews"
-          },
-          {
-            "icon": "BarChart",
-            "step": "Optimization",
-            "title": "Fine Tuning",
-            "description": "User testing and precise adjustments"
-          },
-          {
-            "icon": "Shield",
-            "step": "Delivery",
-            "title": "Support",
-            "description": "Training and post-delivery support"
-          }
-        ]
-      },
-      "cta": {
-        "title": "Ready to materialize your project?",
-        "subtitle": "Let's discuss your vision together and create something extraordinary.",
-        "button": "Start my project"
-      }
-    },
-    "projectPopup": {
-      "newBadge": "New",
-      "visitButton": "Visit",
-      "codeButton": "Code",
-      "descriptionTitle": "Description",
-      "challengesTitle": "Challenges",
-      "resultsTitle": "Results",
-      "detailsTitle": "Details",
-      "teamLabel": "Team",
-      "technologiesTitle": "Technologies",
-      "galleryTitle": "Gallery"
-    },
-    "footer": {
-      "description": "I create exceptional digital experiences that transform ideas into high-performance solutions. Specialized in fullstack development and UX/UI design.",
-      "newsletterTitle": "Stay informed",
-      "emailPlaceholder": "Your email",
-      "subscriptionSuccess": "Thank you for subscribing!",
-      "navigationTitle": "Navigation",
-      "navigationItems": [
-        { "name": "Home", "path": "/" },
-        { "name": "Services", "path": "/services" },
-        { "name": "Projects", "path": "/projects" },
-        { "name": "Blog", "path": "/blog" },
-        { "name": "Contact", "path": "/contact" }
+{
+  "developer": "Developer",
+  "slogan": "Bring your digital ideas to life",
+  "description": "Creator of unique and high-performance web experiences. Master's degree in software engineering. Specialized in modern development.",
+  "see_projects": "View my projects",
+  "request_quote": "Request a quote",
+  "experience": "2+ years of experience",
+  "delivered_projects": "Projects delivered",
+  "satisfied_clients": "Satisfied clients",
+  "skills_title": "My Skills",
+  "skills_subtitle": "Complete expertise to carry out your web projects from A to Z",
+  "recent_projects": "Recent Projects",
+  "recent_projects_sub": "Discover some of my most notable achievements",
+  "see_all_projects": "View all projects",
+  "cta_title": "Ready to start your project?",
+  "cta_sub": "Contact me today to discuss your needs and get a free personalized quote.",
+  "cta_button": "Request a free quote",
+  "project1_desc": "Creation of multi-page websites with forms, APIs and SEO optimization.",
+  "project2_desc": "Web application for tracking port calls with modern interface.",
+  "project3_desc": "Desktop real estate management software with intuitive interface.",
+  "project_not_found": "Project not found",
+  "project_not_found_message": "The project you are looking for does not exist or has been moved.",
+  "back_to_projects": "Back to projects",
+  "about_project": "About the project",
+  "challenges": "Challenges and solutions",
+  "results": "Results obtained",
+  "gallery": "Project gallery",
+  "project_details": "Project details",
+  "launch_date": "Launch date",
+  "duration": "Project duration",
+  "team": "Team",
+  "featured_project": "Featured project",
+  "featured_project_desc": "Selected as exceptional project",
+  "technologies": "Technologies used",
+  "project_links": "Project links",
+  "visit_site": "Visit site",
+  "source_code": "Source code",
+  "prev_project": "Previous project",
+  "next_project": "Next project",
+  "click_to_gallery": "Click to view gallery",
+  "view_large": "View large",
+  "cta_title": "Ready to bring your project to life?",
+  "cta_sub": "Let's discuss your vision and create something extraordinary together",
+  "cta_button": "Get started now",
+  "cta_hint": "Let's turn your ideas into reality",
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quoteButton": "Free Quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Creative Fullstack Developer",
+      "title1": "Transform your ideas into",
+      "flipWords": [
+        "Digital Experiences",
+        "Captivating Websites",
+        "Innovative Solutions",
+        "High-Performance Platforms"
       ],
-      "legalTitle": "Legal",
-      "legalItems": [
-        { "name": "Privacy", "path": "/privacy" },
-        { "name": "Terms", "path": "/terms" },
-        { "name": "Cookies", "path": "/cookies" },
-        { "name": "FAQs", "path": "/faqs" }
-      ],
-      "contactTitle": "Contact",
-      "platformsTitle": "Platforms",
-      "freelancePlatforms": {
-        "fiverr": "Fiverr",
-        "upwork": "Upwork",
-        "freelance": "Freelance.com"
-      },
-      "socialNetworks": {
-        "whatsapp": "WhatsApp",
-        "email": "Email",
-        "linkedin": "LinkedIn"
-      },
-      "copyright": "All rights reserved."
-    },
-    "projects": {
-      "hero": {
-        "title1": "My",
-        "title2": "Achievements",
-        "subtitle": "Discover my projects and the technical expertise used to create innovative and high-performance solutions",
-        "searchPlaceholder": "Search projects, technologies..."
-      },
-      "filters": {
-        "filterLabel": "Filter:",
-        "all": "All projects",
-        "web": "Web",
-        "desktop": "Desktop",
-        "mobile": "Mobile",
-        "moreFilters": "More filters",
-        "projectStatus": "Project status",
-        "statusAll": "All statuses",
-        "statusCompleted": "Completed",
-        "statusInProgress": "In progress",
-        "technologies": "Technologies",
-        "applyFilters": "Apply filters",
-        "reset": "Reset"
-      },
-      "noProjects": {
-        "title": "No projects found",
-        "message": "No projects match your search. Try changing your filters or search."
-      },
-      "viewDetails": "View details",
-      "technologies": {
-        "title1": "Technologies",
-        "title2": "Mastered",
-        "subtitle": "Tools and technologies I use to create high-performance solutions"
-      },
-      "cta": {
-        "title": "Ready to materialize your project?",
-        "subtitle": "Let's discuss your vision together and create something extraordinary",
-        "button": "Start a project"
-      },
-      "status": {
-        "completed": "Completed",
-        "inProgress": "In progress"
-      },
-      "categories": {
-        "web": "Web",
-        "desktop": "Desktop",
-        "mobile": "Mobile"
-      },
-      "projectDetails": {
-        "title": "Project details",
-        "description": "Full description",
-        "client": "Client",
-        "period": "Period",
-        "status": "Status",
-        "category": "Category",
-        "technologies": "Technologies used",
-        "results": "Results obtained",
-        "features": "Features",
-        "visitSite": "Visit site",
-        "viewCode": "View code"
-      }
-    },
-    "projectsData": [
-      {
-  "id": 2,
-  "title": "Ship Call Management System",
-  "category": "Web Application",
-  "client": "Port of Béjaïa",
-  "period": "2022",
-  "shortDescription": "Complete web application for tracking and managing ship calls",
-  "fullDescription": "ERP solution for comprehensive ship tracking from announcement to final departure, including all port movements, with user management system, meetings and decisions.",
-  "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
-  "features": [
-    "Real-time ship tracking from announcement to departure",
-    "Visualization of all port movements and movement status",
-    "Custom dashboard with key indicators",
-    "User management by departments with roles and permissions",
-    "Notification and alert system",
-    "Detailed log of user activities on the application",
-    "Printing features and document generation",
-    "Meeting management and decision tracking"
-  ],
-  "status": "completed",
-  "demoUrl": null,
-  "githubUrl": null,
-  "featured": true,
-  "new": false,
-  "img": {
-          "url": "/projets/suivi_des_escales/9.JPG",
-          "alt": "",
-          "caption": ""
-        },
-      "images": [
+      "description": "I create custom web and mobile solutions that combine elegant design, technical performance and exceptional user experience. Every project is an opportunity for innovation.",
+      "button1": "Explore my work",
+      "button2": "Let's discuss your project",
+      "stats": [
         {
-          "url": "/projets/suivi_des_escales/1.JPG",
-          "alt": "",
-          "caption": ""
+          "value": "5+",
+          "label": "Years of experience"
         },
         {
-          "url": "/projets/suivi_des_escales/2.JPG",
-          "alt": "",
-          "caption": ""
+          "value": "50+",
+          "label": "Projects delivered"
         },
         {
-          "url": "/projets/suivi_des_escales/3.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/4.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/5.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/6.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/7.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/8.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/9.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/10.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/11.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/12.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/13.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/14.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/15.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/16.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/17.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/18.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/19.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/20.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/21.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/22.JPG",
-          "alt": "",
-          "caption": ""
+          "value": "100%",
+          "label": "Satisfied clients"
         }
       ]
-    }
-    ],
-    "blogPosts": [],
-    "technologies": [
-      { "name": "React", "icon": "SiReact" },
-      { "name": "Vue.js", "icon": "SiVuedotjs" },
-      { "name": "Tailwind", "icon": "SiTailwindcss" },
-      { "name": "JavaScript", "icon": "FiCode" },
-      { "name": "HTML", "icon": "FiCode" },
-      { "name": "CSS", "icon": "FiCode" },
-      { "name": "PHP", "icon": "FiCode" },
-      { "name": "Laravel", "icon": "SiLaravel" },
-      { "name": "Node.js", "icon": "SiNodedotjs" },
-      { "name": "Java", "icon": "FaJava" },
-      { "name": "MySQL", "icon": "SiMysql" },
-      { "name": "Git", "icon": "FiCode" },
-      { "name": "GitHub", "icon": "FiCode" },
-      { "name": "Bitbucket", "icon": "FiCode" },
-      { "name": "Photoshop", "icon": "FiCode" },
-      { "name": "Illustrator", "icon": "FiCode" },
-      { "name": "Canva", "icon": "FiCode" },
-      { "name": "Figma", "icon": "SiFigma" }
-    ],
-    "blog": {
-      "title": "Tech Blog",
-      "subtitle": "Discover my thoughts on web development, new technologies, and industry best practices.",
-      "searchPlaceholder": "Search for an article, tag, or topic...",
-      "categoriesButton": "Categories",
-      "resetButton": "Reset",
-      "featuredPostTitle": "Featured Post",
-      "recentPostsTitle": "Recent Posts",
-      "foundPostsTitle": "Articles found",
-      "noPostsFound": "No articles found for your search.",
-      "viewAllPosts": "View all articles",
-      "aboutTitle": "About the blog",
-      "aboutDescription": "Passionate Full Stack Developer, I share here my experiences, discoveries, and thoughts on the world of web development. Explore the latest trends, tips, and best practices.",
-      "popularTagsTitle": "Popular Tags",
-      "newsletterTitle": "Tech Newsletter",
-      "newsletterDescription": "Receive the latest articles and resources directly in your inbox.",
-      "newsletterPlaceholder": "Your email",
-      "newsletterButton": "Subscribe",
-      "readMore": "Read more",
-      "read": "Read",
-      "close": "Close",
-      "leaveComment": "Leave a comment",
-      "articles": "Articles",
-      "article": "Article",
-      "categories": {
-        "all": "All articles",
-        "development": "Development",
-        "design": "Design",
-        "seo": "SEO",
-        "methodology": "Methodology",
-        "security": "Security"
-      },
-      "categoriesList": [
-        { "id": "all", "icon": "LayoutGrid" },
-        { "id": "development", "icon": "BookOpen" },
-        { "id": "design", "icon": "LayoutGrid" },
-        { "id": "seo", "icon": "TrendingUp" },
-        { "id": "methodology", "icon": "LayoutGrid" },
-        { "id": "security", "icon": "LayoutGrid" }
-      ],
-      "popularTags": [
-        "React",
-        "Laravel",
-        "JavaScript",
-        "SEO",
-        "UX/UI",
-        "Agile",
-        "PHP",
-        "CSS",
-        "NextJS",
-        "TypeScript",
-        "Responsive",
-        "Performance"
-      ],
-      "readTimeSuffix": "read",
-      "shareArticle": "Share this article",
-      "share": "Share",
-      "save": "Save",
-      "like": "Like"
     },
-    "cookies": {
-      "hero": {
-        "title": "Privacy Policy and Cookie Management",
-        "subtitle": "Transparency and control of your personal data on our platform"
+    "skills": {
+      "title": "My",
+      "titleHighlight": "Skills",
+      "subtitle": "Technical and creative expertise to turn your ideas into reality",
+      "frontend": {
+        "name": "Frontend",
+        "tech": "HTML/CSS/JS, Bootstrap, Tailwind, React, Vue.js"
       },
-      "commitment": {
-        "title": "Our commitment to your privacy",
-        "text1": "At our company, the protection of your personal data is an absolute priority. This policy explains how we collect, use, and protect your information.",
-        "text2": "We are committed to complying with GDPR and French regulations on data protection."
+      "backend": {
+        "name": "Backend",
+        "tech": "PHP, Laravel, Java"
       },
-      "cookiesSection": {
-        "title": "Cookie Policy",
-        "subtitle": "Management of trackers and similar technologies",
-        "whatAreCookies": "What are cookies?",
-        "cookiesDefinition": "Cookies are small text files placed on your device when you browse. They are used to remember your preferences, analyze traffic, and personalize your experience.",
-        "typesTitle": "Types of cookies used",
-        "essential": {
-          "title": "Essential",
-          "description": "Necessary for the functioning of the site (security, cart, account)"
-        },
-        "performance": {
-          "title": "Performance",
-          "description": "Analysis of site usage (pages visited, loading times)"
-        },
-        "functional": {
-          "title": "Functional",
-          "description": "Personalization of experience (language, regional preferences)"
-        },
-        "marketing": {
-          "title": "Marketing",
-          "description": "Personalized advertising and remarketing campaigns"
-        },
-        "management": {
-          "title": "Management of your consent",
-          "text": "You have full control over non-essential cookies. You can change your preferences at any time.",
-          "button": "Manage my cookie preferences"
-        }
+      "design": {
+        "name": "Design",
+        "tech": "UX/UI, Photoshop, Illustrator, Canva"
       },
-      "dataSection": {
-        "title": "Processing of personal data",
-        "subtitle": "How we collect and use your information",
-        "collectedData": "Collected data",
-        "dataList": [
-          "Account information (name, email, address)",
-          "Navigation data (IP address, pages viewed)",
-          "Transaction information (purchase history)",
-          "Preferences and interests"
-        ],
-        "purposesTitle": "Purposes of processing",
-        "purposesList": [
-          "Execution of orders and services",
-          "Personalization of user experience",
-          "Improvement of our products and services",
-          "Marketing communication (with your consent)",
-          "Compliance with legal obligations"
-        ],
-        "protectionTitle": "Data protection",
-        "protectionText": "We implement advanced security measures including:",
-        "protectionList": [
-          "AES-256 encryption of sensitive data",
-          "Regular security audits",
-          "Restricted access to personal data",
-          "Limited retention policy"
-        ]
+      "seo": {
+        "name": "SEO",
+        "tech": "Analytics, Search Console, SEO, Accessibility, Optimization"
       },
-      "rightsSection": {
-        "title": "Your GDPR rights",
-        "subtitle": "Control of your personal data",
-        "access": {
-          "title": "Right of access",
-          "description": "Obtain a copy of your personal data"
-        },
-        "rectification": {
-          "title": "Right to rectification",
-          "description": "Correct inaccurate information"
-        },
-        "erasure": {
-          "title": "Right to erasure",
-          "description": "Delete your data ('right to be forgotten')"
-        },
-        "objection": {
-          "title": "Right to object",
-          "description": "Object to processing for legitimate reasons"
-        },
-        "howToExercise": "How to exercise your rights",
-        "exerciseText": "For any request regarding your personal data, please contact us at the address below. We will respond within a maximum of 30 days."
+      "mobile": {
+        "name": "Mobile",
+        "tech": "Responsive Design, Flutter Apps, Android"
       },
-      "disableSection": {
-        "title": "Disabling cookies",
-        "subtitle": "How to manage your browser settings",
-        "text": "You can control cookies through your browser settings. Here are the guides for popular browsers:",
-        "browsers": {
-          "chrome": "Google Chrome",
-          "firefox": "Mozilla Firefox",
-          "safari": "Safari",
-          "edge": "Microsoft Edge"
-        }
-      },
-      "contactSection": {
-        "title": "Contact and DPO",
-        "subtitle": "Our Data Protection Officer",
-        "text": "For any questions regarding this policy or the exercise of your rights, contact our DPO:",
-        "dpoName": "Mr. Jean Dupont",
-        "dpoRole": "Data Protection Officer",
-        "email": "dpo@yourcompany.com",
-        "phone": "+33 1 23 45 67 89",
-        "mailingAddress": "By mail:",
-        "address": [
-          "Company XYZ",
-          "Data Protection Service",
-          "123 Avenue de la République",
-          "75011 Paris, France"
-        ]
-      },
-      "lastUpdated": "Last updated: "
-    },
-    "contact": {
-      "faqTitle1": "Frequently",
-      "faqTitle2": "Asked Questions",
-      "faqSubtitle": "Find answers to the most common questions",
-      "hero": {
-        "title1": "Contact",
-        "title2": "Me",
-        "subtitle": "A question, a project, or just want to chat? I'm here to listen.",
-        "contactButton": "Contact me",
-        "devisButton": "Request a quote"
-      },
-      "whatsapp": {
-        "title": "WhatsApp Contact",
-        "description": "Let's discuss your project directly on WhatsApp",
-        "button": "Open WhatsApp",
-        "link": "https://wa.me/yourphonenumber"
-      },
-      "devis": {
-        "title": "Free Quote",
-        "description": "Get a personalized estimate for your project",
-        "button": "Request a quote"
-      },
-      "guarantees": [
-        {
-          "title": "Response within 24h",
-          "text": "I commit to responding to all requests within 24 hours"
-        },
-        {
-          "title": "Smooth communication",
-          "text": "Regular follow-up and transparent communication throughout the project"
-        },
-        {
-          "title": "Satisfaction guaranteed",
-          "text": "Modifications included until you are completely satisfied"
-        }
-      ],
-      "errorMessage": "An error occurred, please try again.",
-      "successTitle": "Message sent!",
-      "successMessage": "Thank you for your message. I will get back to you very quickly.",
-      "sending": "Sending...",
-      "sendMessage": "Send message",
-      "formFooter": "* Required fields. Your data is protected and will never be shared.",
-      "contactInfo": [
-        {
-          "title": "Email",
-          "details": ["contact@mysite.com", "support@mysite.com"]
-        },
-        {
-          "title": "Phone",
-          "details": ["+33 6 12 34 56 78"]
-        },
-        {
-          "title": "Location",
-          "details": ["Paris, France"]
-        },
-        {
-          "title": "Availability",
-          "details": ["Mon-Fri: 9am-6pm", "Response within 24h"]
-        }
-      ],
-      "socialLinks": [
-        {
-          "name": "GitHub",
-          "username": "myprofile",
-          "url": "https://github.com/myprofile"
-        },
-        {
-          "name": "LinkedIn",
-          "username": "myprofile",
-          "url": "https://linkedin.com/in/myprofile"
-        }
-      ],
-      "faqItems": [
-        {
-          "question": "What is your average response time?",
-          "answer": "I commit to responding to all messages within 24 business hours."
-        },
-        {
-          "question": "Can I contact you for free advice?",
-          "answer": "Absolutely! I offer free 15-minute consultations to discuss your needs."
-        },
-        {
-          "question": "Do you handle urgent requests?",
-          "answer": "Yes, for urgent requests, please mention it in your message and I will do my best to respond quickly."
-        },
-        {
-          "question": "What topics can I discuss?",
-          "answer": "All topics are welcome: technical questions, advice requests, collaborations, or just to say hello!"
-        },
-        {
-          "question": "What are your response times?",
-          "answer": "I commit to responding to all requests within a maximum of 24 business hours. For complex projects, I will send an initial response within 24h and a detailed quote within 48h."
-        },
-        {
-          "question": "Can I meet you in person?",
-          "answer": "Absolutely! I am based in Paris and available for in-person meetings. For international or remote clients, I offer consultations via Zoom, Teams, or Google Meet."
-        },
-        {
-          "question": "What types of projects do you accept?",
-          "answer": "I work on a wide range of projects: showcase sites, e-commerce, web applications, redesigns, UI/UX design, and SEO optimization. If your project requires specific expertise, I can refer you to trusted partners."
-        },
-        {
-          "question": "Do you offer support after delivery?",
-          "answer": "Yes, I offer different levels of post-delivery support, ranging from minor bug fixes to comprehensive maintenance contracts including updates, backups, and continuous improvements."
-        }
-      ],
-      "form": {
-        "nameLabel": "Your name",
-        "namePlaceholder": "Your full name",
-        "emailLabel": "Your email",
-        "emailPlaceholder": "your@email.com",
-        "subjectLabel": "Subject",
-        "subjectPlaceholder": "Subject of your message",
-        "messageLabel": "Your message",
-        "messagePlaceholder": "Describe your request here..."
-      },
-      "sectionTitles": {
-        "sendMessage": "Send a message",
-        "sendMessageDesc": "Fill out this form and I will respond as soon as possible.",
-        "myContactInfo": "My contact information",
-        "socialNetworks": "Social networks",
-        "findMe": "Where to find me",
-        "findMeDesc": "Based in Paris, I work with clients all over the world"
-      },
-      "ctaTitle": "Ready to start your project?",
-      "ctaSubtitle": "Contact me today to discuss your needs and see how I can help you."
+      "methodology": {
+        "name": "Methodology",
+        "tech": "Agile, Scrum"
+      }
     },
     "services": {
-      "meta": {
-        "title": "Custom Web Services | Website and Application Creation",
-        "description": "Expert in web development and UX/UI design. Complete solutions for showcase sites, web applications, and digital strategy."
+      "title": "My",
+      "titleHighlight": "Expertise",
+      "subtitle": "Custom solutions to transform your digital challenges into success",
+      "website": {
+        "title": "Websites",
+        "description": "Elegant designs and optimal performance for high-performance digital showcase websites to boost your credibility and generate leads 24/7."
       },
-      "hero": {
-        "title1": "Custom",
-        "title2": "Digital Solutions",
-        "subtitle": "Transform your ideas into exceptional digital experiences with technical expertise combined with innovative design.",
-        "button": "Discuss your project"
+      "webapp": {
+        "title": "Web applications",
+        "description": "Custom solutions to automate your business processes and transform your operational challenges into competitive advantages."
       },
-      "services": {
-        "title1": "My",
-        "title2": "Expertise",
-        "subtitle": "Custom solutions to transform your digital challenges into success",
-        "featuresTitle": "Proposed solutions",
-        "techTitle": "Key technologies",
-        "ctaButton": "Describe your project",
-        "web": {
-          "title": "Websites",
-          "description": "Creation of high-performance and secure sites adapted to your business needs.",
-          "features": [
-            "Custom showcase sites",
-            "Mobile/tablet compatible",
-            "Smooth animations",
-            "Optimization for Google",
-            "Ultra-fast loading",
-            "Protection against cyber threats",
-            "Secure hosting with backups",
-            "Permanent technical assistance"
-          ],
-          "technologies": [
-            "Bootstrap",
-            "Tailwind CSS",
-            "React",
-            "MUI",
-            "VueJS",
-            "Vuetify"
-          ]
-        },
-        "app": {
-          "title": "Web applications",
-          "description": "Complete solutions to automate your business processes.",
-          "features": [
-            "Custom dashboards",
-            "Custom SaaS platforms",
-            "Secure online stores",
-            "Connection to your existing tools",
-            "Automation of repetitive tasks",
-            "Real-time data analysis",
-            "Multi-device synchronization",
-            "User training"
-          ],
-          "technologies": ["Wordpress", "PHP", "Laravel", "MySQL"]
-        },
-        "mobile": {
-          "title": "Mobile Applications",
-          "description": "Native applications for smartphones published on official stores.",
-          "features": [
-            "High-performance iOS and Android",
-            "Publication on App Store/Google Play",
-            "Offline functionality",
-            "Instant notifications",
-            "Protection of personal data",
-            "Simple and intuitive interfaces",
-            "Testing on all devices",
-            "Regular updates"
-          ],
-          "technologies": [
-            "Flutter",
-            "React Native",
-            "Firebase",
-            "MYSQL",
-            "NoSQL"
-          ]
-        },
-        "marketing": {
-          "title": "Digital Strategy & Marketing",
-          "description": "Solutions to attract customers and increase your online sales.",
-          "features": [
-            "Creation of visual identity (logos, posters)",
-            "Management of your social networks",
-            "Production of attractive content",
-            "Targeted Google ads",
-            "Loyalty strategies",
-            "Marketing automation",
-            "Performance analysis"
-          ],
-          "technologies": [
-            "Google Ads",
-            "Google Analytics",
-            "Canva",
-            "Photoshop",
-            "Illustrator"
-          ]
-        }
+      "mobile": {
+        "title": "Mobile Applications",
+        "description": "Intuitive mobile solutions, native and fluid mobile experiences published on app stores."
       },
-      "process": {
-        "title1": "Creative",
-        "title2": "Process",
-        "subtitle": "A transparent methodology for exceptional results"
+      "marketing": {
+        "title": "Digital Strategy & Marketing",
+        "description": "Custom roadmaps to dominate your market and accelerate your growth in the digital age."
       },
-      "processSteps": [
+      "button": "Discover all my expertise"
+    },
+    "projects": {
+      "title": "My",
+      "titleHighlight": "Recent Projects",
+      "subtitle": "Discover my latest achievements and case studies",
+      "button": "View all projects"
+    },
+    "blog": {
+      "title": "My",
+      "titleHighlight": "Latest Articles",
+      "subtitle": "Tips, tutorials and thoughts on web development",
+      "readButton": "Read article",
+      "button": "View all articles"
+    },
+    "slides": {
+      "slide1": {
+        "title": "Digital Experiences",
+        "description": "Creation of high-performance web applications with React and Next.js",
+        "alt": "Digital Experiences"
+      },
+      "slide2": {
+        "title": "Captivating Websites",
+        "description": "Cross-platform development with React Native and Flutter",
+        "alt": "Captivating Websites"
+      },
+      "slide3": {
+        "title": "Innovative Solutions",
+        "description": "Technical and semantic strategies for natural SEO",
+        "alt": "Innovative Solutions"
+      },
+      "slide4": {
+        "title": "High-Performance Platforms1",
+        "description": "Technical and semantic strategies for natural SEO",
+        "alt": "High-Performance Platforms1"
+      },
+      "slide5": {
+        "title": "High-Performance Platforms3",
+        "description": "Technical and semantic strategies for natural SEO",
+        "alt": "High-Performance Platforms3"
+      }
+    },
+    "process": {
+      "title": "My",
+      "titleHighlight": "Work Process",
+      "subtitle": "A transparent methodology for exceptional results",
+      "steps": [
         {
+          "icon": "Users",
           "step": "Design",
           "title": "Digital Blueprint",
-          "description": "Definition of objectives and technical architecture"
+          "description": "Goal definition and technical architecture"
         },
         {
+          "icon": "Code",
           "step": "Development",
           "title": "Technical Creation",
           "description": "Agile implementation with weekly reviews"
         },
         {
+          "icon": "BarChart",
           "step": "Optimization",
           "title": "Fine Tuning",
           "description": "User testing and precise adjustments"
         },
         {
+          "icon": "Shield",
           "step": "Delivery",
           "title": "Support",
           "description": "Training and post-delivery support"
         }
+      ]
+    },
+    "cta": {
+      "title": "Ready to bring your project to life?",
+      "subtitle": "Let's discuss your vision together and create something extraordinary.",
+      "button": "Start my project"
+    }
+  },
+  "projectPopup": {
+    "newBadge": "New",
+    "visitButton": "Visit",
+    "codeButton": "Code",
+    "descriptionTitle": "Description",
+    "challengesTitle": "Challenges",
+    "resultsTitle": "Results",
+    "detailsTitle": "Details",
+    "teamLabel": "Team",
+    "technologiesTitle": "Technologies",
+    "galleryTitle": "Gallery"
+  },
+  "footer": {
+    "description": "I create exceptional digital experiences that transform ideas into high-performance solutions. Specialized in fullstack development and UX/UI design.",
+    "newsletterTitle": "Stay informed",
+    "emailPlaceholder": "Your email",
+    "subscriptionSuccess": "Thank you for subscribing!",
+    "navigationTitle": "Navigation",
+    "navigationItems": [
+      { "name": "Home", "path": "/" },
+      { "name": "Services", "path": "/services" },
+      { "name": "Projects", "path": "/projects" },
+      { "name": "Blog", "path": "/blog" },
+      { "name": "Contact", "path": "/contact" }
+    ],
+    "legalTitle": "Legal",
+    "legalItems": [
+      { "name": "Privacy", "path": "/privacy" },
+      { "name": "Terms", "path": "/terms" },
+      { "name": "Cookies", "path": "/cookies" },
+      { "name": "FAQs", "path": "/contact#faqs" }
+    ],
+    "contactTitle": "Contact",
+    "platformsTitle": "Platforms",
+    "freelancePlatforms": {
+      "fiverr": "Fiverr",
+      "upwork": "Upwork",
+      "freelance": "Freelance.com"
+    },
+    "socialNetworks": {
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "All rights reserved."
+  },
+  "projects": {
+    "hero": {
+      "title1": "My",
+      "title2": "Achievements",
+      "subtitle": "Discover my projects and the technical expertise implemented to create innovative and high-performance solutions",
+      "searchPlaceholder": "Search projects, technologies..."
+    },
+    "filters": {
+      "filterLabel": "Filter:",
+      "all": "All projects",
+      "web": "Web",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "moreFilters": "More filters",
+      "projectStatus": "Project status",
+      "statusAll": "All statuses",
+      "statusCompleted": "Completed",
+      "statusInProgress": "In progress",
+      "technologies": "Technologies",
+      "applyFilters": "Apply filters",
+      "reset": "Reset"
+    },
+    "noProjects": {
+      "title": "No projects found",
+      "message": "No projects match your search. Try modifying your filters or search."
+    },
+    "viewDetails": "View details",
+    "technologies": {
+      "title1": "Technologies",
+      "title2": "Mastered",
+      "subtitle": "Tools and technologies I use to create high-performance solutions"
+    },
+    "cta": {
+      "title": "Ready to bring your project to life?",
+      "subtitle": "Let's discuss your vision together and create something extraordinary",
+      "button": "Start a project"
+    },
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In progress"
+    },
+    "categories": {
+      "web": "Web",
+      "desktop": "Desktop",
+      "mobile": "Mobile"
+    },
+    "projectDetails": {
+      "title": "Project details",
+      "description": "Full description",
+      "client": "Client",
+      "period": "Period",
+      "status": "Status",
+      "category": "Category",
+      "technologies": "Technologies used",
+      "results": "Results obtained",
+      "features": "Features",
+      "visitSite": "Visit site",
+      "viewCode": "View code"
+    }
+  },
+  "projectsData": [
+    {
+      "id": 6,
+      "title": "Cleaning Company",
+      "category": "Website",
+      "client": "CleanSolution",
+      "period": "2024",
+      "shortDescription": "Modern website for cleaning company with online appointment booking and custom quote requests",
+      "fullDescription": "Development of a complete website for a professional cleaning company. The platform presents all residential and commercial cleaning services, with an online appointment booking system and fully customized quote request forms. The responsive and clean design reinforces the company's professional image.",
+      "technologies": ["Tailwind", "HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "features": [
+        "Presentation of residential and commercial cleaning services",
+        "Online appointment booking system with time slot selection",
+        "Custom quote request forms by service type",
+        "Mobile-first responsive and adaptive design",
+        "Photo gallery of achievements",
+        "Contact page with geolocation",
+        "SEO optimization for local visibility"
       ],
-      "why": {
-        "title1": "Committed",
-        "title2": "Expertise",
-        "subtitle": "An approach centered on your business objectives and transparent collaboration",
-        "imageAlt": "Professional team collaborating on a technology project",
-        "features": [
-          {
-            "title": "Enhanced security",
-            "description": "Data protection and GDPR compliance integrated from design"
-          },
-          {
-            "title": "Respect for deadlines",
-            "description": "Agile methodology with regular intermediate deliveries"
-          },
-          {
-            "title": "Technical innovation",
-            "description": "Constant technological watch for cutting-edge solutions"
-          },
-          {
-            "title": "Continuous support",
-            "description": "Post-delivery support and future evolutions"
-          }
-        ]
+      "status": "completed",
+      "completionDate": "2024",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/clean_company/vid_clean_company.webm"
+    },
+    {
+      "id": 5,
+      "title": "Modern Fast Food",
+      "category": "Website",
+      "client": "Fast Food",
+      "period": "2024",
+      "shortDescription": "Attractive website for fast food with interactive menu and online ordering system",
+      "fullDescription": "Creation of a dynamic website for a fast food restaurant, showcasing the entire menu and promotions. The site includes an interactive menu with categories, appetizing product photos, and a direct contact system for takeout orders. The user interface is designed to stimulate appetite and facilitate navigation.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "Complete menu with categorization (burgers, fries, drinks, desserts)",
+        "High-quality product photo gallery",
+        "Promotions and special menus display system",
+        "Contact page with order form",
+        "Colorful and attractive design suited for young audience",
+        "Social media integration",
+        "Optimization for mobile and tablet"
+      ],
+      "status": "completed",
+      "completionDate": "2024",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/fast_food/vid_fast_food.webm"
+    },
+    {
+      "id": 4,
+      "title": "Chicken Restaurant",
+      "category": "Website",
+      "client": "Chicken Restaurant",
+      "period": "2023",
+      "shortDescription": "Elegant website for specialized restaurant with menu presentation and online reservation",
+      "fullDescription": "Creation of a sophisticated website for a restaurant specialized in chicken-based dishes. The platform presents the complete gastronomic menu, the restaurant's history, and allows customers to order quickly or in advance. The warm and elegant design reflects the establishment's friendly atmosphere.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "Complete presentation of the menu and specialties",
+        "Gallery of signature dishes",
+        "'About' section with restaurant history",
+        "Practical information (hours, location, contact)",
+        "Elegant design with warm ambiance"
+      ],
+      "status": "completed",
+      "completionDate": "2023",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/chicken_food/vid_chicken_food.webm"
+    },
+    {
+      "id": 3,
+      "title": "Construction and Renovation Company",
+      "category": "Website",
+      "client": "Construction company",
+      "period": "2023",
+      "shortDescription": "Professional website for construction company presenting services and achievements",
+      "fullDescription": "Development of a corporate website for a construction and renovation company. The platform presents all services (new construction, renovation, development), showcase of achievements with photo gallery, and customized quote request system. The robust and professional design inspires trust and expertise.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "Presentation of construction and renovation services",
+        "Portfolio gallery of achievements with filters by project type",
+        "Detailed quote request form",
+        "Certifications and guarantees section",
+        "Professional design inspiring trust"
+      ],
+      "status": "completed",
+      "completionDate": "2023",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/building_construction/vid_building_construction.webm"
+    },
+    {
+      "id": 2,
+      "title": "Ship Call Monitoring",
+      "category": "Web App",
+      "client": "Port of Béjaïa",
+      "period": "2022",
+      "shortDescription": "Complete ERP solution for real-time management and monitoring of ship calls",
+      "fullDescription": "Development of a complete ERP web application dedicated to comprehensive management of ship calls. This solution covers the entire process from arrival announcement to ship departure, including real-time monitoring of all port movements, multi-user management by departments, and tracking of collegial decisions. The system includes customized dashboards, a complete audit log and advanced reporting features.",
+      "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+      "features": [
+        "Real-time ship tracking from announcement to departure",
+        "Complete visualization of port movements and operation statuses",
+        "Customized dashboard with key performance indicators",
+        "User management by departments with role and permission system",
+        "Automated notifications and alerts system",
+        "Detailed audit log of all user activities",
+        "Generation and printing of official documents",
+        "Meeting management and collegial decision tracking",
+        "Advanced reporting and statistics module",
+        "Responsive interface adapted to different port services"
+      ],
+      "status": "completed",
+      "completionDate": "2022",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": {
+        "url": "/projets/suivi_des_escales/9.JPG",
+        "alt": "Main dashboard of the call management system"
       },
-      "cta": {
-        "title": "Ready to transform your digital vision?",
-        "subtitle": "Contact me for a free consultation and let's explore the possibilities together.",
-        "button1": "Schedule a call",
-        "button2": "See my achievements"
+      "images": [
+        {
+          "url": "/projets/suivi_des_escales/1.JPG",
+          "alt": "Real-time ship tracking interface"
+        },
+        {
+          "url": "/projets/suivi_des_escales/2.JPG",
+          "alt": "Port movements management"
+        },
+        {
+          "url": "/projets/suivi_des_escales/3.JPG",
+          "alt": "Customized dashboard with KPI indicators"
+        },
+        {
+          "url": "/projets/suivi_des_escales/4.JPG",
+          "alt": "User management and permissions system"
+        },
+        {
+          "url": "/projets/suivi_des_escales/5.JPG",
+          "alt": "Official documents generation module"
+        },
+        {
+          "url": "/projets/suivi_des_escales/6.JPG",
+          "alt": "Meeting and decision management interface"
+        },
+        {
+          "url": "/projets/suivi_des_escales/7.JPG",
+          "alt": "User activities audit log"
+        },
+        {
+          "url": "/projets/suivi_des_escales/8.JPG",
+          "alt": "Notifications and alerts system"
+        },
+        {
+          "url": "/projets/suivi_des_escales/9.JPG",
+          "alt": "Overview of main dashboard"
+        },
+        {
+          "url": "/projets/suivi_des_escales/10.JPG",
+          "alt": "Reporting and statistics module"
+        }
+      ],
+      "video": null
+    },
+    {
+      "id": 1,
+      "title": "Real Estate Agency Management",
+      "category": "Software",
+      "client": "Real Estate",
+      "period": "2019",
+      "shortDescription": "Complete desktop real estate management application with property, client and transaction management",
+      "fullDescription": "Development of complete desktop software for real estate agency allowing centralized management of real estate properties, buyer and seller clients, and transaction tracking. The application includes a mandate management module, visit calendar, commission financial tracking, and advanced property search and filtering features.",
+      "technologies": ["Java", "OOP", "Swing", "SQLite"],
+      "features": [
+        "Complete management of real estate property portfolio",
+        "Client database (buyers and sellers) with history",
+        "Sales and rental mandate tracking",
+        "Visit and appointment management",
+        "Financial management module and commission calculation",
+        "Advanced search system with multiple criteria",
+        "Generation of contracts and legal documents",
+        "Database backup and restoration",
+        "Intuitive user interface in French",
+        "Property documentation management"
+      ],
+      "status": "completed",
+      "completionDate": "2019",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": {
+        "url": "/projets/agence_immobiliere/2.JPG",
+        "alt": "Main interface of real estate management software"
+      },
+      "images": [
+        {
+          "url": "/projets/agence_immobiliere/1.JPG",
+          "alt": "Real estate property portfolio management"
+        },
+        {
+          "url": "/projets/agence_immobiliere/2.JPG",
+          "alt": "Client and prospect management interface"
+        },
+        {
+          "url": "/projets/agence_immobiliere/3.JPG",
+          "alt": "Mandate and transaction tracking module"
+        },
+        {
+          "url": "/projets/agence_immobiliere/4.JPG",
+          "alt": "Visit management calendar"
+        },
+        {
+          "url": "/projets/agence_immobiliere/5.JPG",
+          "alt": "Advanced property search system"
+        },
+        {
+          "url": "/projets/agence_immobiliere/6.JPG",
+          "alt": "Financial management and commissions module"
+        },
+        {
+          "url": "/projets/agence_immobiliere/7.JPG",
+          "alt": "Document and contract generation"
+        },
+        {
+          "url": "/projets/agence_immobiliere/8.JPG",
+          "alt": "System settings and backup"
+        }
+      ],
+      "video": null
+    }
+  ],
+  "blogPosts": [],
+  "technologies": [
+    { "name": "React", "icon": "SiReact" },
+    { "name": "Vue.js", "icon": "SiVuedotjs" },
+    { "name": "Tailwind", "icon": "SiTailwindcss" },
+    { "name": "JavaScript", "icon": "FiCode" },
+    { "name": "HTML", "icon": "FiCode" },
+    { "name": "CSS", "icon": "FiCode" },
+    { "name": "PHP", "icon": "FiCode" },
+    { "name": "Laravel", "icon": "SiLaravel" },
+    { "name": "Node.js", "icon": "SiNodedotjs" },
+    { "name": "Java", "icon": "FaJava" },
+    { "name": "MySQL", "icon": "SiMysql" },
+    { "name": "Git", "icon": "FiCode" },
+    { "name": "GitHub", "icon": "FiCode" },
+    { "name": "Bitbucket", "icon": "FiCode" },
+    { "name": "Photoshop", "icon": "FiCode" },
+    { "name": "Illustrator", "icon": "FiCode" },
+    { "name": "Canva", "icon": "FiCode" },
+    { "name": "Figma", "icon": "SiFigma" }
+  ],
+  "blog": {
+    "title": "Tech Blog",
+    "subtitle": "Discover my thoughts on web development, new technologies and industry best practices.",
+    "searchPlaceholder": "Search for an article, tag or topic...",
+    "categoriesButton": "Categories",
+    "resetButton": "Reset",
+    "featuredPostTitle": "Featured Article",
+    "recentPostsTitle": "Recent Articles",
+    "foundPostsTitle": "Articles found",
+    "noPostsFound": "No articles found for your search.",
+    "viewAllPosts": "View all articles",
+    "aboutTitle": "About the blog",
+    "aboutDescription": "Passionate Full Stack Developer, I share here my experiences, discoveries and thoughts on the world of web development. Explore the latest trends, tips and best practices.",
+    "popularTagsTitle": "Popular Tags",
+    "newsletterTitle": "Tech Newsletter",
+    "newsletterDescription": "Receive the latest articles and resources directly in your mailbox.",
+    "newsletterPlaceholder": "Your email",
+    "newsletterButton": "Subscribe",
+    "readMore": "Read more",
+    "read": "Read",
+    "close": "Close",
+    "leaveComment": "Leave a comment",
+    "articles": "Articles",
+    "article": "Article",
+    "categories": {
+      "all": "All articles",
+      "development": "Development",
+      "design": "Design",
+      "seo": "SEO",
+      "methodology": "Methodology",
+      "security": "Security"
+    },
+    "categoriesList": [
+      { "id": "all", "icon": "LayoutGrid" },
+      { "id": "development", "icon": "BookOpen" },
+      { "id": "design", "icon": "LayoutGrid" },
+      { "id": "seo", "icon": "TrendingUp" },
+      { "id": "methodology", "icon": "LayoutGrid" },
+      { "id": "security", "icon": "LayoutGrid" }
+    ],
+    "popularTags": [
+      "React",
+      "Laravel",
+      "JavaScript",
+      "SEO",
+      "UX/UI",
+      "Agile",
+      "PHP",
+      "CSS",
+      "NextJS",
+      "TypeScript",
+      "Responsive",
+      "Performance"
+    ],
+    "readTimeSuffix": "read",
+    "shareArticle": "Share this article",
+    "share": "Share",
+    "save": "Save",
+    "like": "Like"
+  },
+  "cookies": {
+    "hero": {
+      "title": "Privacy Policy and Cookies Management",
+      "subtitle": "Transparency and control of your personal data on our platform"
+    },
+    "commitment": {
+      "title": "Our commitment to your privacy",
+      "text1": "At our company, protecting your personal data is an absolute priority. This policy explains how we collect, use and protect your information.",
+      "text2": "We are committed to complying with GDPR and French regulations on data protection."
+    },
+    "cookiesSection": {
+      "title": "Cookies Policy",
+      "subtitle": "Management of trackers and similar technologies",
+      "whatAreCookies": "What are cookies?",
+      "cookiesDefinition": "Cookies are small text files placed on your device when you browse. They are used to remember your preferences, analyze traffic and personalize your experience.",
+      "typesTitle": "Types of cookies used",
+      "essential": {
+        "title": "Essential",
+        "description": "Necessary for website operation (security, cart, account)"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Website usage analysis (pages visited, loading times)"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "Experience personalization (language, regional preferences)"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Personalized advertising and remarketing campaigns"
+      },
+      "management": {
+        "title": "Consent management",
+        "text": "You have full control over non-essential cookies. You can modify your preferences at any time.",
+        "button": "Manage my cookie preferences"
       }
     },
+    "dataSection": {
+      "title": "Personal data processing",
+      "subtitle": "How we collect and use your information",
+      "collectedData": "Data collected",
+      "dataList": [
+        "Account information (name, email, address)",
+        "Navigation data (IP address, pages viewed)",
+        "Transaction information (purchase history)",
+        "Preferences and interests"
+      ],
+      "purposesTitle": "Processing purposes",
+      "purposesList": [
+        "Order and service execution",
+        "User experience personalization",
+        "Improvement of our products and services",
+        "Marketing communication (with your consent)",
+        "Compliance with legal obligations"
+      ],
+      "protectionTitle": "Data protection",
+      "protectionText": "We implement advanced security measures including:",
+      "protectionList": [
+        "AES-256 encryption of sensitive data",
+        "Regular security audits",
+        "Restricted access to personal data",
+        "Limited retention policy over time"
+      ]
+    },
+    "rightsSection": {
+      "title": "Your GDPR rights",
+      "subtitle": "Control of your personal data",
+      "access": {
+        "title": "Right of access",
+        "description": "Obtain copy of your personal data"
+      },
+      "rectification": {
+        "title": "Right to rectification",
+        "description": "Correct inaccurate information"
+      },
+      "erasure": {
+        "title": "Right to erasure",
+        "description": "Delete your data ('right to be forgotten')"
+      },
+      "objection": {
+        "title": "Right to object",
+        "description": "Object to processing for legitimate reasons"
+      },
+      "howToExercise": "How to exercise your rights",
+      "exerciseText": "For any request regarding your personal data, please contact us at the address below. We will respond within a maximum of 30 days."
+    },
+    "disableSection": {
+      "title": "Cookies deactivation",
+      "subtitle": "How to manage your browser settings",
+      "text": "You can control cookies through your browser settings. Here are guides for popular browsers:",
+      "browsers": {
+        "chrome": "Google Chrome",
+        "firefox": "Mozilla Firefox",
+        "safari": "Safari",
+        "edge": "Microsoft Edge"
+      }
+    },
+    "contactSection": {
+      "title": "Contact and DPO",
+      "subtitle": "Our Data Protection Officer",
+      "text": "For any questions regarding this policy or exercising your rights, contact our DPO:",
+      "dpoName": "Mr. Jean Dupont",
+      "dpoRole": "Data Protection Officer",
+      "email": "dpo@yourcompany.com",
+      "phone": "+33 1 23 45 67 89",
+      "mailingAddress": "By mail:",
+      "address": [
+        "Company XYZ",
+        "Data Protection Service",
+        "123 Avenue de la République",
+        "75011 Paris, France"
+      ]
+    },
+    "lastUpdated": "Last updated: "
+  },
+  "contact": {
+    "faqTitle1": "Frequently",
+    "faqTitle2": "Asked Questions",
+    "faqSubtitle": "Find answers to the most common questions",
+    "hero": {
+      "title1": "Contact",
+      "title2": "Me",
+      "subtitle": "A question, a project or just want to chat? I'm here to listen.",
+      "contactButton": "Contact me",
+      "devisButton": "Request a quote"
+    },
+    "whatsapp": {
+      "title": "WhatsApp Contact",
+      "description": "Let's discuss your project directly on WhatsApp",
+      "button": "Open WhatsApp",
+      "link": "https://wa.me/yourphonenumber"
+    },
     "devis": {
-      "documentTitle": "Quote Request | Website and Application Creation",
-      "hero": {
-        "title1": "Request a",
-        "title2": "Personalized Quote",
-        "subtitle": "Fill out this detailed form to receive an accurate estimate for your web or mobile project.",
-        "contactButton": "Contact me"
+      "title": "Free Quote",
+      "description": "Get a personalized estimate of your project",
+      "button": "Request a quote"
+    },
+    "guarantees": [
+      {
+        "title": "Response within 24h",
+        "text": "I commit to respond to all requests within 24 hours"
       },
-      "form": {
-        "title": "Quote Request",
-        "step": "Step {{step}}/{{total}}",
-        "success": {
-          "title": "Request sent!",
-          "message": "Thank you for your request. I will contact you within 24 hours with a personalized quote.",
-          "button": "Return to home"
-        }
+      {
+        "title": "Smooth communication",
+        "text": "Regular follow-up and transparent communication throughout the project"
       },
-      "step1": {
-        "title": "Personal Information",
-        "firstName": "First name",
-        "firstNamePlaceholder": "Your first name",
-        "lastName": "Last name",
-        "lastNamePlaceholder": "Your last name",
-        "email": "Email Address",
-        "emailPlaceholder": "your@email.com",
-        "phone": "Phone",
-        "phonePlaceholder": "Your number",
-        "company": "Company",
-        "companyPlaceholder": "Your company name",
-        "website": "Website",
-        "websitePlaceholder": "https://yoursite.com",
-        "nextButton": "Next"
+      {
+        "title": "Satisfaction guaranteed",
+        "text": "Included modifications until you are completely satisfied"
+      }
+    ],
+    "errorMessage": "An error occurred, please try again.",
+    "successTitle": "Message sent!",
+    "successMessage": "Thank you for your message. I will respond to you very quickly.",
+    "sending": "Sending...",
+    "sendMessage": "Send message",
+    "formFooter": "* Required fields. Your data is protected and will never be shared.",
+    "contactInfo": [
+      {
+        "title": "Email",
+        "details": ["contact@mysite.com", "support@mysite.com"]
       },
-      "step2": {
-        "title": "Project Details",
-        "projectName": "Project name",
-        "projectNamePlaceholder": "Ex: E-commerce site redesign",
-        "service": "Type of service",
-        "servicePlaceholder": "Select a service",
-        "serviceOtherPlaceholder": "Specify the type of service",
-        "projectType": "Project type",
-        "projectTypePlaceholder": "Select the project type",
-        "projectTypeOtherPlaceholder": "Specify the project type",
-        "prevButton": "Previous",
-        "nextButton": "Next"
+      {
+        "title": "Phone",
+        "details": ["+33 6 12 34 56 78"]
       },
-      "step3": {
-        "title": "Requirements & Files",
-        "featuresLabel": "Desired features",
-        "projectGoals": "Project goals",
-        "projectGoalsPlaceholder": "What are the main goals of your project? What problems does it solve?",
-        "targetAudience": "Target audience",
-        "targetAudiencePlaceholder": "Describe your target audience (age, profession, interests...)",
-        "technicalRequirements": "Technical requirements",
-        "technicalRequirementsPlaceholder": "Technical specifications, necessary integrations, particular constraints...",
-        "fileUpload": {
-          "title": "Upload files",
-          "instruction1": "Drag and drop your files or",
-          "instruction2": "click to browse",
-          "formats": "Accepted formats: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (Max 10MB)",
-          "attachments": "{count} file(s) attached"
+      {
+        "title": "Location",
+        "details": ["Paris, France"]
+      },
+      {
+        "title": "Availability",
+        "details": ["Mon-Fri: 9am-6pm", "Response within 24h"]
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "username": "myprofile",
+        "url": "https://github.com/myprofile"
+      },
+      {
+        "name": "LinkedIn",
+        "username": "myprofile",
+        "url": "https://linkedin.com/in/myprofile"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "What is your average response time?",
+        "answer": "I commit to respond to all messages within 24 business hours."
+      },
+      {
+        "question": "Can I contact you for free advice?",
+        "answer": "Absolutely! I offer free 15-minute consultations to discuss your needs."
+      },
+      {
+        "question": "Do you handle urgent requests?",
+        "answer": "Yes, for urgent requests, please mention it in your message and I will do my best to respond quickly."
+      },
+      {
+        "question": "What topics can I discuss?",
+        "answer": "All topics are welcome: technical questions, advice requests, collaborations, or just to say hello!"
+      },
+      {
+        "question": "What are your response times?",
+        "answer": "I commit to respond to all requests within a maximum of 24 business hours. For complex projects, I will send you an initial response within 24h and a detailed quote within 48h."
+      },
+      {
+        "question": "Can I meet you in person?",
+        "answer": "Absolutely! I am based in Paris and available for in-person meetings. For international or remote clients, I offer consultations via Zoom, Teams or Google Meet."
+      },
+      {
+        "question": "What types of projects do you accept?",
+        "answer": "I work on a wide range of projects: showcase sites, e-commerce, web applications, redesigns, UI/UX design and SEO optimization. If your project requires specific expertise, I can refer you to trusted partners."
+      },
+      {
+        "question": "Do you offer support after delivery?",
+        "answer": "Yes, I offer different levels of post-delivery support, ranging from minor bug fixes to comprehensive maintenance contracts including updates, backups and continuous improvements."
+      }
+    ],
+    "form": {
+      "nameLabel": "Your name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Your email",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "messageLabel": "Your message",
+      "messagePlaceholder": "Describe your request here..."
+    },
+    "sectionTitles": {
+      "sendMessage": "Send a message",
+      "sendMessageDesc": "Fill out this form and I will respond as soon as possible.",
+      "myContactInfo": "My contact information",
+      "socialNetworks": "Social networks",
+      "findMe": "Where to find me",
+      "findMeDesc": "Based in Paris, I work with clients worldwide"
+    },
+    "ctaTitle": "Ready to start your project?",
+    "ctaSubtitle": "Contact me today to discuss your needs and see how I can help you."
+  },
+  "services": {
+    "meta": {
+      "title": "Custom Web Services | Website and Application Creation",
+      "description": "Expert in web development and UX/UI design. Complete solutions for showcase websites, web applications and digital strategy."
+    },
+    "hero": {
+      "title1": "Custom Digital",
+      "title2": "Solutions",
+      "subtitle": "Transform your ideas into exceptional digital experiences with technical expertise combined with innovative design.",
+      "button": "Discuss your project"
+    },
+    "services": {
+      "title1": "My",
+      "title2": "Expertise",
+      "subtitle": "Custom solutions to transform your digital challenges into success",
+      "featuresTitle": "Proposed solutions",
+      "techTitle": "Key technologies",
+      "ctaButton": "Describe your project",
+      "web": {
+        "title": "Websites",
+        "description": "Creation of secure and high-performance websites adapted to your business needs.",
+        "features": [
+          "Custom showcase sites",
+          "Mobile/tablet compatible",
+          "Smooth animations",
+          "Google optimization",
+          "Ultra-fast loading",
+          "Protection against cyber threats",
+          "Secure hosting with backups",
+          "Permanent technical assistance"
+        ],
+        "technologies": [
+          "Bootstrap",
+          "Tailwind CSS",
+          "React",
+          "MUI",
+          "VueJS",
+          "Vuetify"
+        ]
+      },
+      "app": {
+        "title": "Web applications",
+        "description": "Complete solutions to automate your business processes.",
+        "features": [
+          "Custom dashboards",
+          "Custom SaaS platforms",
+          "Secure online stores",
+          "Connection to your existing tools",
+          "Automation of repetitive tasks",
+          "Real-time data analysis",
+          "Multi-device synchronization",
+          "User training"
+        ],
+        "technologies": ["Wordpress", "PHP", "Laravel", "MySQL"]
+      },
+      "mobile": {
+        "title": "Mobile Applications",
+        "description": "Native smartphone applications published on official stores.",
+        "features": [
+          "High-performance iOS and Android",
+          "Publication on App Store/Google Play",
+          "Offline functionality",
+          "Instant notifications",
+          "Personal data protection",
+          "Simple and intuitive interfaces",
+          "Testing on all devices",
+          "Regular updates"
+        ],
+        "technologies": [
+          "Flutter",
+          "React Native",
+          "Firebase",
+          "MYSQL",
+          "NoSQL"
+        ]
+      },
+      "marketing": {
+        "title": "Digital Strategy & Marketing",
+        "description": "Solutions to attract customers and increase your online sales.",
+        "features": [
+          "Visual identity creation (logos, posters)",
+          "Management of your social networks",
+          "Production of attractive content",
+          "Targeted Google advertising",
+          "Loyalty strategies",
+          "Marketing automation",
+          "Performance analysis"
+        ],
+        "technologies": [
+          "Google Ads",
+          "Google Analytics",
+          "Canva",
+          "Photoshop",
+          "Illustrator"
+        ]
+      }
+    },
+    "process": {
+      "title1": "Creative",
+      "title2": "Process",
+      "subtitle": "A transparent methodology for exceptional results"
+    },
+    "processSteps": [
+      {
+        "step": "Design",
+        "title": "Digital Blueprint",
+        "description": "Goal definition and technical architecture"
+      },
+      {
+        "step": "Development",
+        "title": "Technical Creation",
+        "description": "Agile implementation with weekly reviews"
+      },
+      {
+        "step": "Optimization",
+        "title": "Fine Tuning",
+        "description": "User testing and precise adjustments"
+      },
+      {
+        "step": "Delivery",
+        "title": "Support",
+        "description": "Training and post-delivery support"
+      }
+    ],
+    "why": {
+      "title1": "Committed",
+      "title2": "Expertise",
+      "subtitle": "An approach centered on your business objectives and transparent collaboration",
+      "imageAlt": "Professional team collaborating on technology project",
+      "features": [
+        {
+          "title": "Enhanced security",
+          "description": "Data protection and GDPR compliance integrated from design"
         },
-        "prevButton": "Previous",
-        "nextButton": "Next"
+        {
+          "title": "Respect of deadlines",
+          "description": "Agile methodology with regular intermediate deliveries"
+        },
+        {
+          "title": "Technical innovation",
+          "description": "Constant technological watch for avant-garde solutions"
+        },
+        {
+          "title": "Continuous support",
+          "description": "Post-delivery support and future evolutions"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to transform your digital vision?",
+      "subtitle": "Contact me for a free consultation and let's explore possibilities together.",
+      "button1": "Schedule a call",
+      "button2": "View my work"
+    }
+  },
+  "devis": {
+    "documentTitle": "Quote Request | Website and Application Creation",
+    "hero": {
+      "title1": "Personalized",
+      "title2": "Quote Request",
+      "subtitle": "Fill out this detailed form to receive an accurate estimate of your web or mobile project.",
+      "contactButton": "Contact me"
+    },
+    "form": {
+      "title": "Quote Request",
+      "step": "Step {{step}}/{{total}}",
+      "success": {
+        "title": "Request sent!",
+        "message": "Thank you for your request. I will contact you within 24 hours with a personalized quote.",
+        "button": "Back to home"
+      }
+    },
+    "step1": {
+      "title": "Personal Information",
+      "firstName": "First name",
+      "firstNamePlaceholder": "Your first name",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Your last name",
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "Your number",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "website": "Website",
+      "websitePlaceholder": "https://yoursite.com",
+      "nextButton": "Next"
+    },
+    "step2": {
+      "title": "Project Details",
+      "projectName": "Project name",
+      "projectNamePlaceholder": "Ex: E-commerce site redesign",
+      "service": "Service type",
+      "servicePlaceholder": "Select a service",
+      "serviceOtherPlaceholder": "Specify service type",
+      "projectType": "Project type",
+      "projectTypePlaceholder": "Select project type",
+      "projectTypeOtherPlaceholder": "Specify project type",
+      "prevButton": "Previous",
+      "nextButton": "Next"
+    },
+    "step3": {
+      "title": "Requirements & Files",
+      "featuresLabel": "Desired features",
+      "projectGoals": "Project goals",
+      "projectGoalsPlaceholder": "What are the main goals of your project? What problems does it solve?",
+      "targetAudience": "Target audience",
+      "targetAudiencePlaceholder": "Describe your target audience (age, profession, interests...)",
+      "technicalRequirements": "Technical requirements",
+      "technicalRequirementsPlaceholder": "Technical specifications, necessary integrations, particular constraints...",
+      "fileUpload": {
+        "title": "Upload files",
+        "instruction1": "Drag and drop your files or",
+        "instruction2": "click to browse",
+        "formats": "Accepted formats: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (Max 10MB)",
+        "attachments": "{count} file(s) attached"
       },
-      "step4": {
-        "title": "Timeline, Budget & Finalization",
-        "timeline": "Desired timeline",
-        "timelinePlaceholder": "Select a timeline",
-        "timelineOtherPlaceholder": "Specify your timeline",
-        "budget": "Estimated budget",
-        "budgetPlaceholder": "Select your budget",
-        "budgetOtherPlaceholder": "Specify your budget",
-        "message": "Additional information",
-        "messagePlaceholder": "Any other useful information to understand your project...",
-        "prevButton": "Previous",
-        "submitButton": "Send my request",
-        "sending": "Sending...",
-        "disclaimer": "* Required fields. Your data is protected and will never be shared."
-      },
-      "otherOption": "Other",
-      "validation": {
-        "step1": "Please fill in the required fields (First name, Last name, Email)",
-        "step2": "Please select a service type"
-      },
-      "submitError": "Sending error:",
-      "submitErrorMessage": "An error occurred, please try again.",
-      "services": [
-        "Showcase Site",
-        "E-commerce Site",
-        "Web Application",
-        "Mobile Application",
-        "Site Redesign",
-        "SEO & Marketing",
-        "Other"
-      ],
-      "projectTypes": [
-        "New Project Creation",
-        "Complete Redesign",
-        "Feature Addition",
-        "Bug Fixing",
-        "Performance Optimization",
-        "Data Migration",
-        "Other"
-      ],
-      "timelines": [
-        "Less than 1 month",
-        "1 to 3 months",
-        "3 to 6 months",
-        "More than 6 months",
-        "Urgent (less than 2 weeks)",
-        "Other"
-      ],
-      "budgetRanges": [
-      "Moins de 50€",
+      "prevButton": "Previous",
+      "nextButton": "Next"
+    },
+    "step4": {
+      "title": "Timeline, Budget & Finalization",
+      "timeline": "Desired timeline",
+      "timelinePlaceholder": "Select a timeline",
+      "timelineOtherPlaceholder": "Specify your timeline",
+      "budget": "Estimated budget",
+      "budgetPlaceholder": "Select your budget",
+      "budgetOtherPlaceholder": "Specify your budget",
+      "message": "Additional information",
+      "messagePlaceholder": "Any other useful information to understand your project...",
+      "prevButton": "Previous",
+      "submitButton": "Send my request",
+      "sending": "Sending...",
+      "disclaimer": "* Required fields. Your data is protected and will never be shared."
+    },
+    "otherOption": "Other",
+    "validation": {
+      "step1": "Please fill in required fields (First name, Last name, Email)",
+      "step2": "Please select a service type"
+    },
+    "submitError": "Send error:",
+    "submitErrorMessage": "An error occurred, please try again.",
+    "services": [
+      "Showcase Website",
+      "E-commerce Website",
+      "Web Application",
+      "Mobile Application",
+      "Website Redesign",
+      "SEO & Marketing",
+      "Other"
+    ],
+    "projectTypes": [
+      "New Project Creation",
+      "Complete Redesign",
+      "Feature Addition",
+      "Bug Fixes",
+      "Performance Optimization",
+      "Data Migration",
+      "Other"
+    ],
+    "timelines": [
+      "Less than 1 month",
+      "1 to 3 months",
+      "3 to 6 months",
+      "More than 6 months",
+      "Urgent (less than 2 weeks)",
+      "Other"
+    ],
+    "budgetRanges": [
+      "Less than 50€",
       "50€ - 150€",
       "150€ - 300€",
       "300€ - 600€",
       "600€ - 1500€",
-      "Plus de 1500€",
-        "I don't know",
-        "Other"
-      ],
-      "featuresList": [
-        "Responsive interface",
-        "Member area",
-        "Online payment",
-        "Multilingual",
-        "Blog/News",
-        "Online reservations",
-        "Comment system",
-        "Third-party API integration",
-        "Admin dashboard",
-        "Advanced search",
-        "Media gallery",
-        "Live chat",
-        "Newsletter",
-        "Statistics and reports",
-        "Social media integration"
-      ],
-      "fileTypes": [
-        "JPG",
-        "PNG",
-        "PDF",
-        "DOC",
-        "XLS",
-        "PSD",
-        "AI",
-        "FIG",
-        "SKETCH"
-      ],
-      "contactInfo": [
-        {
-          "title": "Email",
-          "details": ["contact@example.com"],
-          "action": "mailto:contact@example.com",
-          "icon": "Mail"
-        },
-        {
-          "title": "Phone",
-          "details": ["+33 6 12 34 56 78"],
-          "action": "tel:+33612345678",
-          "icon": "Phone"
-        },
-        {
-          "title": "Address",
-          "details": ["Paris, France", "Remote Worldwide"],
-          "icon": "MapPin"
-        }
-      ],
-      "socialLinks": [
-        {
-          "name": "GitHub",
-          "username": "yourusername",
-          "url": "https://github.com/yourusername",
-          "icon": "Github"
-        },
-        {
-          "name": "LinkedIn",
-          "username": "yourname",
-          "url": "https://linkedin.com/in/yourname",
-          "icon": "Linkedin"
-        }
-      ],
-      "contactSection": {
-        "title": "Direct Contact"
+      "More than 1500€",
+      "I don't know",
+      "Other"
+    ],
+    "featuresList": [
+      "Responsive interface",
+      "Member area",
+      "Online payment",
+      "Multilingual",
+      "Blog/News",
+      "Online reservations",
+      "Comment system",
+      "Third-party API integration",
+      "Admin dashboard",
+      "Advanced search",
+      "Media gallery",
+      "Live chat",
+      "Newsletter",
+      "Statistics and reports",
+      "Social media integration"
+    ],
+    "fileTypes": [
+      "JPG",
+      "PNG",
+      "PDF",
+      "DOC",
+      "XLS",
+      "PSD",
+      "AI",
+      "FIG",
+      "SKETCH"
+    ],
+    "contactInfo": [
+      {
+        "title": "Email",
+        "details": ["contact@example.com"],
+        "action": "mailto:contact@example.com",
+        "icon": "Mail"
       },
-      "socialSection": {
-        "title": "Social Networks"
+      {
+        "title": "Phone",
+        "details": ["+33 6 12 34 56 78"],
+        "action": "tel:+33612345678",
+        "icon": "Phone"
       },
-      "guarantees": [
+      {
+        "title": "Address",
+        "details": ["Paris, France", "Remote Worldwide"],
+        "icon": "MapPin"
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "username": "yourusername",
+        "url": "https://github.com/yourusername",
+        "icon": "Github"
+      },
+      {
+        "name": "LinkedIn",
+        "username": "yourname",
+        "url": "https://linkedin.com/in/yourname",
+        "icon": "Linkedin"
+      }
+    ],
+    "contactSection": {
+      "title": "Direct Contact"
+    },
+    "socialSection": {
+      "title": "Social Networks"
+    },
+    "guarantees": [
+      {
+        "title": "Response within 24h",
+        "text": "I process each request within a maximum of 24 hours."
+      },
+      {
+        "title": "Detailed quote",
+        "text": "You will receive a complete quote with options and schedule."
+      },
+      {
+        "title": "No commitment",
+        "text": "The quote request is free and without purchase obligation."
+      }
+    ],
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Useful information about the quote process",
+      "items": [
         {
-          "title": "Response within 24h",
-          "text": "I process each request within a maximum of 24 hours."
+          "question": "What files can I attach to my request?",
+          "answer": "You can attach any useful documents: images, mockups, PDF, design files (PSD, AI, FIG, SKETCH), Word/Excel documents, or any other file helping to understand your project."
         },
         {
-          "title": "Detailed quote",
-          "text": "You will receive a complete quote with options and timeline."
+          "question": "How are my attached files processed?",
+          "answer": "Your files are temporarily stored for project evaluation and deleted after quote generation. They are never shared with third parties."
         },
         {
-          "title": "No commitment",
-          "text": "The quote request is free and without obligation to purchase."
+          "question": "Can I modify my request after sending it?",
+          "answer": "Yes, if you need to make changes, simply reply to the confirmation email you will receive or contact me directly."
+        },
+        {
+          "question": "What happens after sending the quote?",
+          "answer": "I will contact you to discuss your project details, refine the quote if necessary, and establish a realization schedule."
         }
-      ],
-      "faq": {
-        "title": "Frequently Asked Questions",
-        "subtitle": "Useful information on the quote process",
-        "items": [
-          {
-            "question": "What files can I attach to my request?",
-            "answer": "You can attach any useful document: images, mockups, PDF, design files (PSD, AI, FIG, SKETCH), Word/Excel documents, or any other file helping to understand your project."
-          },
-          {
-            "question": "How are my attached files processed?",
-            "answer": "Your files are stored temporarily for the evaluation of your project and deleted after the quote is generated. They are never shared with third parties."
-          },
-          {
-            "question": "Can I modify my request after sending it?",
-            "answer": "Yes, if you need to make changes, simply reply to the confirmation email you will receive or contact me directly."
-          },
-          {
-            "question": "What happens after the quote is sent?",
-            "answer": "I will contact you to discuss the details of your project, refine the quote if necessary, and establish a realization schedule."
-          }
-        ]
-      },
-      "stepTitles": [
-        "Personal Information",
-        "Project Details",
-        "Requirements & Files",
-        "Timeline, Budget & Finalization"
-      ],
+      ]
+    },
+    "stepTitles": [
+      "Personal Information",
+      "Project Details",
+      "Requirements & Files",
+      "Timeline, Budget & Finalization"
+    ],
     "contactPage": {
       "title": "Free Quote",
-      "description": "Get a personalized estimate for your project",
+      "description": "Get a personalized estimate of your project",
       "button": "Request a quote"
     }
-    }
   }
+}

@@ -317,146 +317,254 @@
   },
   "projectsData": [
     {
-      "id": 2,
-      "title": "Système de Gestion des Escales de Navires",
-      "category": "Application Web",
-      "client": "Port de Béjaïa",
-      "period": "2022",
-      "shortDescription": "Application web complète de suivi et gestion des escales des navires",
-      "fullDescription": "Solution ERP de suivi intégral des navires depuis l'annonce jusqu'à la sortie finale, incluant tous les mouvements portuaires, avec système de gestion des utilisateurs, des réunions et des décisions.",
-      "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "API REST"],
+      "id": 6,
+      "title": "Entreprise de Nettoyage",
+      "category": "Site Web",
+      "client": "CleanSolution",
+      "period": "2024",
+      "shortDescription": "Site web moderne pour entreprise de nettoyage avec prise de rendez-vous en ligne et demandes de devis personnalisées",
+      "fullDescription": "Développement d'un site web complet pour une entreprise de nettoyage professionnel. La plateforme présente l'ensemble des services de nettoyage résidentiel et commercial, avec un système de prise de rendez-vous en ligne et des formulaires de demande de devis entièrement personnalisés. Le design responsive et épuré renforce l'image de professionnalisme de l'entreprise.",
+      "technologies": ["Tailwind", "HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       "features": [
-        "Suivi temps réel des navires depuis l'annonce jusqu'à la sortie",
-        "Visualisation de tous les mouvements au port et état des mouvements",
-        "Dashboard personnalisé avec indicateurs clés",
-        "Gestion des utilisateurs par directions avec rôles et permissions",
-        "Système de notifications et alertes",
-        "Journal détaillé des activités utilisateurs sur l'application",
-        "Fonctionnalités d'impression et génération de documents",
-        "Gestion des réunions et suivi des décisions"
+        "Présentation des services de nettoyage résidentiel et commercial",
+        "Système de prise de rendez-vous en ligne avec sélection de créneaux",
+        "Formulaires de demande de devis personnalisés par type de service",
+        "Design responsive et adaptatif mobile-first",
+        "Gallery photo des réalisations",
+        "Page de contact avec géolocalisation",
+        "Optimisation SEO pour visibilité locale"
       ],
       "status": "completed",
+      "completionDate": "2024",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/clean_company/vid_clean_company.webm"
+    },
+    {
+      "id": 5,
+      "title": "Fast Food Moderne",
+      "category": "Site Web",
+      "client": "Fast Food",
+      "period": "2024",
+      "shortDescription": "Site web attractif pour fast food avec menu interactif et système de commande en ligne",
+      "fullDescription": "Création d'un site web dynamique pour un restaurant fast food, mettant en valeur l'ensemble de la carte et des promotions. Le site inclut un menu interactif avec catégories, des photos appétissantes des produits, et un système de contact direct pour les commandes à emporter. L'interface utilisateur est conçue pour stimuler l'appétit et faciliter la navigation.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "Menu complet avec catégorisation (burgers, frites, boissons, desserts)",
+        "Gallery photo haute qualité des produits",
+        "Système d'affichage des promotions et menus spéciaux",
+        "Page de contact avec formulaire de commande",
+        "Design coloré et attractif adapté au public jeune",
+        "Intégration des réseaux sociaux",
+        "Optimisation pour mobile et tablette"
+      ],
+      "status": "completed",
+      "completionDate": "2024",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/fast_food/vid_fast_food.webm"
+    },
+    {
+      "id": 4,
+      "title": "Restaurant Poulet",
+      "category": "Site Web",
+      "client": "Restaurant Poulet",
+      "period": "2023",
+      "shortDescription": "Site web élégant pour restaurant spécialisé avec présentation de la carte et réservation en ligne",
+      "fullDescription": "Réalisation d'un site web sophistiqué pour un restaurant spécialisé dans les plats à base de poulet. La plateforme présente l'ensemble de la carte gastronomique, l'histoire du restaurant, et permet aux clients de commander rapidement ou d'avance. Le design chaleureux et élégant reflète l'ambiance conviviale de l'établissement.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "Présentation complète de la carte et des spécialités",
+        "Gallery des plats signature",
+        "Section 'À propos' avec histoire du restaurant",
+        "Informations pratiques (horaires, localisation, contact)",
+        "Design élégant avec ambiance chaleureuse"
+      ],
+      "status": "completed",
+      "completionDate": "2023",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/chicken_food/vid_chicken_food.webm"
+    },
+    {
+      "id": 3,
+      "title": "Entreprise de Construction et Rénovation",
+      "category": "Site Web",
+      "client": "Construction company",
+      "period": "2023",
+      "shortDescription": "Site web professionnel pour entreprise de construction présentant services et réalisations",
+      "fullDescription": "Développement d'un site web corporate pour une entreprise de construction et rénovation. La plateforme présente l'ensemble des services (construction neuve, rénovation, aménagement), showcase des réalisations avec galerie photo, et système de demande de devis personnalisé. Le design robuste et professionnel inspire confiance et expertise.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "Présentation des services de construction et rénovation",
+        "Galerie portfolio des réalisations avec filtres par type de projet",
+        "Formulaire de demande de devis détaillé",
+        "Section certifications et garanties",
+        "Design professionnel inspirant confiance"
+      ],
+      "status": "completed",
+      "completionDate": "2023",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/building_construction/vid_building_construction.webm"
+    },
+    {
+      "id": 2,
+      "title": "Suivi des Escales de Navires",
+      "category": "App Web",
+      "client": "Port de Béjaïa",
+      "period": "2022",
+      "shortDescription": "Solution ERP complète pour la gestion et le suivi des escales de navires en temps réel",
+      "fullDescription": "Développement d'une application web ERP complète dédiée à la gestion intégrale des escales de navires. Cette solution couvre l'ensemble du processus depuis l'annonce d'arrivée jusqu'à la sortie du navire, incluant le suivi en temps réel de tous les mouvements portuaires, la gestion multi-utilisateurs par directions, et le suivi des décisions collégiales. Le système inclut des tableaux de bord personnalisés, un journal d'audit complet et des fonctionnalités avancées de reporting.",
+      "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "API REST"],
+      "features": [
+        "Suivi temps réel des navires de l'annonce à la sortie",
+        "Visualisation complète des mouvements portuaires et états des opérations",
+        "Dashboard personnalisé avec indicateurs de performance clés",
+        "Gestion des utilisateurs par directions avec système de rôles et permissions",
+        "Système de notifications et alertes automatisées",
+        "Journal d'audit détaillé de toutes les activités utilisateurs",
+        "Génération et impression de documents officiels",
+        "Gestion des réunions et suivi des décisions collégiales",
+        "Module de reporting et statistiques avancées",
+        "Interface responsive adaptée aux différents services portuaires"
+      ],
+      "status": "completed",
+      "completionDate": "2022",
       "demoUrl": null,
       "githubUrl": null,
       "featured": true,
       "new": false,
       "img": {
-          "url": "/projets/suivi_des_escales/9.JPG",
-          "alt": "",
-          "caption": ""
-        },
+        "url": "/projets/suivi_des_escales/9.JPG",
+        "alt": "Dashboard principal du système de gestion des escales"
+      },
       "images": [
         {
           "url": "/projets/suivi_des_escales/1.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Interface de suivi des navires en temps réel"
         },
         {
           "url": "/projets/suivi_des_escales/2.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Gestion des mouvements portuaires"
         },
         {
           "url": "/projets/suivi_des_escales/3.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Tableau de bord personnalisé avec indicateurs KPI"
         },
         {
           "url": "/projets/suivi_des_escales/4.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Système de gestion des utilisateurs et permissions"
         },
         {
           "url": "/projets/suivi_des_escales/5.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Module de génération de documents officiels"
         },
         {
           "url": "/projets/suivi_des_escales/6.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Interface de gestion des réunions et décisions"
         },
         {
           "url": "/projets/suivi_des_escales/7.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Journal d'audit des activités utilisateurs"
         },
         {
           "url": "/projets/suivi_des_escales/8.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Système de notifications et alertes"
         },
         {
           "url": "/projets/suivi_des_escales/9.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Vue d'ensemble du tableau de bord principal"
         },
         {
           "url": "/projets/suivi_des_escales/10.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/11.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/12.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/13.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/14.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/15.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/16.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/17.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/18.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/19.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/20.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/21.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/22.JPG",
-          "alt": "",
-          "caption": ""
+          "alt": "Module de reporting et statistiques"
         }
-      ]
+      ],
+      "video": null
+    },
+    {
+      "id": 1,
+      "title": "Gestion d'Agence Immobilière",
+      "category": "Logiciel",
+      "client": "Immobilière",
+      "period": "2019",
+      "shortDescription": "Application desktop complète de gestion immobilière avec gestion de biens, clients et transactions",
+      "fullDescription": "Développement d'un logiciel desktop complet pour agence immobilière permettant la gestion centralisée des biens immobiliers, des clients acheteurs et vendeurs, et du suivi des transactions. L'application inclut un module de gestion des mandats, un calendrier des visites, un suivi financier des commissions, et des fonctionnalités avancées de recherche et filtrage des propriétés.",
+      "technologies": ["Java", "POO", "Swing", "SQLite"],
+      "features": [
+        "Gestion complète du portefeuille de biens immobiliers",
+        "Base de données clients (acheteurs et vendeurs) avec historique",
+        "Suivi des mandats de vente et locations",
+        "Gestion des visites et rendez-vous",
+        "Module de gestion financière et calcul des commissions",
+        "Système de recherche avancée avec multiples critères",
+        "Génération de contrats et documents légaux",
+        "Sauvegarde et restauration de la base de données",
+        "Interface utilisateur intuitive en français",
+        "Gestion de documentation des biens"
+      ],
+      "status": "completed",
+      "completionDate": "2019",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": {
+        "url": "/projets/agence_immobiliere/2.JPG",
+        "alt": "Interface principale du logiciel de gestion immobilière"
+      },
+      "images": [
+        {
+          "url": "/projets/agence_immobiliere/1.JPG",
+          "alt": "Gestion du portefeuille de biens immobiliers"
+        },
+        {
+          "url": "/projets/agence_immobiliere/2.JPG",
+          "alt": "Interface de gestion des clients et prospects"
+        },
+        {
+          "url": "/projets/agence_immobiliere/3.JPG",
+          "alt": "Module de suivi des mandats et transactions"
+        },
+        {
+          "url": "/projets/agence_immobiliere/4.JPG",
+          "alt": "Calendrier de gestion des visites"
+        },
+        {
+          "url": "/projets/agence_immobiliere/5.JPG",
+          "alt": "Système de recherche avancée de biens"
+        },
+        {
+          "url": "/projets/agence_immobiliere/6.JPG",
+          "alt": "Module de gestion financière et commissions"
+        },
+        {
+          "url": "/projets/agence_immobiliere/7.JPG",
+          "alt": "Génération de documents et contrats"
+        },
+        {
+          "url": "/projets/agence_immobiliere/8.JPG",
+          "alt": "Paramètres et sauvegarde du système"
+        }
+      ],
+      "video": null
     }
   ],
   "blogPosts": [],

@@ -16,6 +16,7 @@ import {
   FiChevronLeft,
   FiChevronRight,
   FiCode,
+  FiPlay
 } from 'react-icons/fi';
 import {
   SiReact,
@@ -45,6 +46,7 @@ const Projects = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedProject, setSelectedProject] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
+  const [videoErrors, setVideoErrors] = useState({});
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -76,6 +78,22 @@ const Projects = () => {
     } else {
       setTechFilters([...techFilters, tech]);
     }
+  };
+
+  // Gestion des erreurs vidéo
+  const handleVideoError = (projectId) => {
+    setVideoErrors(prev => ({
+      ...prev,
+      [projectId]: true
+    }));
+  };
+
+  // Normaliser le chemin de la vidéo
+  const normalizeVideoPath = (path) => {
+    if (!path) return null;
+    if (path.startsWith('/') || path.startsWith('http')) return path;
+    if (path.startsWith('assets/')) return `/${path}`;
+    return `/${path}`;
   };
 
   // ==== SCROLL ANIMATIONS ====
@@ -339,118 +357,146 @@ const Projects = () => {
                 initial="hidden"
                 animate="show"
               >
-                {currentProjects.map((project) => (
-                  <motion.div
-                    key={project.id}
-                    variants={item}
-                    whileHover={{ y: -5 }}
-                  >
-                    <div
-                      className="group hover:shadow-xl transition-all duration-300 overflow-hidden bg-white dark:bg-[#031A3D] border border-slate-200 dark:border-[#055BA4]/30 rounded-xl cursor-pointer h-full flex flex-col"
-                      onClick={() => setSelectedProject(project)}
-                    >
-                      <div className="relative overflow-hidden flex-shrink-0">
+                {currentProjects.map((project) => {
+                  const videoSrc = project.video ? normalizeVideoPath(project.video) : null;
+                  const hasVideoError = videoErrors[project.id];
 
-                        {project.images && project.images.length > 0 ? (
-                          <img
-                            src={project.images[0].url}
-                            alt={project.images[0].alt}
-                            className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                          />
-                        ) : (
-                          <div className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] w-full h-64" />
-                        )}
-                        <div className={`absolute top-4 ${isRTL ? 'left-4' : 'right-4'}`}>
-                          <span className={`px-3 py-1 rounded-full text-xs font-medium ${project.status === 'inProgress'
-                            ? 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300'
-                            : 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
-                            }`}>
-                            {t(`projects.status.${project.status}`)}
-                          </span>
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity flex items-end p-6">
-                          <div>
-                            <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                            <div className="flex items-center space-x-3 text-sm text-slate-200 mt-2">
-                              <div className="flex items-center space-x-1">
-                                <FiCalendar size={14} />
-                                <span>{project.period}</span>
+                  return (
+                    <motion.div
+                      key={project.id}
+                      variants={item}
+                      whileHover={{ y: -5 }}
+                    >
+                      <div
+                        className="group hover:shadow-xl transition-all duration-300 overflow-hidden bg-white dark:bg-[#031A3D] border border-slate-200 dark:border-[#055BA4]/30 rounded-xl cursor-pointer h-full flex flex-col"
+                        onClick={() => setSelectedProject(project)}
+                      >
+                        <div className="relative overflow-hidden flex-shrink-0">
+                          {/* Afficher project.img si disponible, sinon project.video */}
+                          {project.img?.url ? (
+                            <img
+                              src={project.img.url}
+                              alt={project.img.alt || project.title}
+                              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                          ) : project.video && !hasVideoError ? (
+                            <div className="relative w-full h-64">
+                              <video
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="metadata"
+                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                onError={() => handleVideoError(project.id)}
+                              >
+                                <source src={videoSrc} type="video/webm" />
+                                <source src={videoSrc?.replace('.webm', '.mp4')} type="video/mp4" />
+                              </video>
+                              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <div className="bg-black/30 rounded-full p-2">
+                                  <FiPlay className="text-white" size={20} />
+                                </div>
                               </div>
-                              <span className="px-2 py-1 bg-[#41ADE8]/20 text-[#41ADE8] rounded-full">
-                                {t(`${project.category}`)}
+                            </div>
+                          ) : (
+                            <div className="bg-gradient-to-r from-[#055BA4] to-[#41ADE8] w-full h-64 flex items-center justify-center">
+                              <FiCode className="text-white text-4xl opacity-50" />
+                            </div>
+                          )}
+                          
+                          <div className={`absolute top-4 ${isRTL ? 'left-4' : 'right-4'}`}>
+                            <span className={`px-3 py-1 rounded-full text-xs font-medium ${project.status === 'inProgress'
+                              ? 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300'
+                              : 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
+                              }`}>
+                              {t(`projects.status.${project.status}`)}
+                            </span>
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity flex items-end p-6">
+                            <div>
+                              <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                              <div className="flex items-center space-x-3 text-sm text-slate-200 mt-2">
+                                <div className="flex items-center space-x-1">
+                                  <FiCalendar size={14} />
+                                  <span>{project.period}</span>
+                                </div>
+                                <span className="px-2 py-1 bg-[#41ADE8]/20 text-[#41ADE8] rounded-full">
+                                  {t(`${project.category}`)}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="p-6 space-y-4 flex flex-col flex-grow">
+                          <div className="flex items-start">
+                            <div className={`${marginIcon} mt-1 text-[#055BA4] dark:text-[#41ADE8]`}>
+                              <FiBriefcase size={20} />
+                            </div>
+                            <p className="text-[#055BA4] dark:text-slate-400">
+                              {project.client}
+                            </p>
+                          </div>
+
+                          <p className="text-[#055BA4] dark:text-slate-400 leading-relaxed line-clamp-3">
+                            {project.description}
+                          </p>
+
+                          <div className="flex flex-wrap gap-2">
+                            {project.technologies.slice(0, 4).map((tech, index) => (
+                              <span
+                                key={index}
+                                className="px-3 py-1.5 rounded-full text-xs font-medium bg-[#41ADE8]/10 dark:bg-[#055BA4]/30 text-[#055BA4] dark:text-[#41ADE8]"
+                              >
+                                {tech}
                               </span>
+                            ))}
+                            {project.technologies.length > 4 && (
+                              <span className="px-3 py-1.5 rounded-full text-xs font-medium bg-[#41ADE8]/10 dark:bg-[#055BA4]/30 text-[#055BA4] dark:text-[#41ADE8]">
+                                +{project.technologies.length - 4}
+                              </span>
+                            )}
+                          </div>
+
+                          <div className={`flex justify-between items-center pt-4 border-t border-slate-200 dark:border-[#055BA4]/30 ${flexDirection} mt-auto`}>
+                            <button
+                              className="text-[#055BA4] dark:text-[#41ADE8] font-medium flex items-center group"
+                            >
+                              {t('projects.viewDetails')}
+                              <FiArrowRight className={`${marginIcon} transition-transform group-hover:translate-x-1 ${isRTL ? 'rotate-180 mr-2' : 'ml-2'}`} />
+                            </button>
+
+                            <div className={`flex space-x-2 ${isRTL ? 'space-x-reverse' : ''}`}>
+                              {project.demoUrl && (
+                                <button
+                                  className="text-[#055BA4] dark:text-slate-400 hover:text-[#055BA4] dark:hover:text-[#41ADE8] p-2"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    window.open(project.demoUrl, '_blank');
+                                  }}
+                                >
+                                  <FiExternalLink size={16} />
+                                </button>
+                              )}
+                              {project.githubUrl && (
+                                <button
+                                  className="text-[#055BA4] dark:text-slate-400 hover:text-[#055BA4] dark:hover:text-[#41ADE8] p-2"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    window.open(project.githubUrl, '_blank');
+                                  }}
+                                >
+                                  <FiGithub size={16} />
+                                </button>
+                              )}
                             </div>
                           </div>
                         </div>
                       </div>
-
-                      <div className="p-6 space-y-4 flex flex-col flex-grow">
-                        <div className="flex items-start">
-                          <div className={`${marginIcon} mt-1 text-[#055BA4] dark:text-[#41ADE8]`}>
-                            <FiBriefcase size={20} />
-                          </div>
-                          <p className="text-[#055BA4] dark:text-slate-400">
-                            {project.client}
-                          </p>
-                        </div>
-
-                        <p className="text-[#055BA4] dark:text-slate-400 leading-relaxed line-clamp-3">
-                          {project.description}
-                        </p>
-
-                        <div className="flex flex-wrap gap-2">
-                          {project.technologies.slice(0, 4).map((tech, index) => (
-                            <span
-                              key={index}
-                              className="px-3 py-1.5 rounded-full text-xs font-medium bg-[#41ADE8]/10 dark:bg-[#055BA4]/30 text-[#055BA4] dark:text-[#41ADE8]"
-                            >
-                              {tech}
-                            </span>
-                          ))}
-                          {project.technologies.length > 4 && (
-                            <span className="px-3 py-1.5 rounded-full text-xs font-medium bg-[#41ADE8]/10 dark:bg-[#055BA4]/30 text-[#055BA4] dark:text-[#41ADE8]">
-                              +{project.technologies.length - 4}
-                            </span>
-                          )}
-                        </div>
-
-                        <div className={`flex justify-between items-center pt-4 border-t border-slate-200 dark:border-[#055BA4]/30 ${flexDirection} mt-auto`}>
-                          <button
-                            className="text-[#055BA4] dark:text-[#41ADE8] font-medium flex items-center group"
-                          >
-                            {t('projects.viewDetails')}
-                            <FiArrowRight className={`${marginIcon} transition-transform group-hover:translate-x-1 ${isRTL ? 'rotate-180 mr-2' : 'ml-2'}`} />
-                          </button>
-
-                          <div className={`flex space-x-2 ${isRTL ? 'space-x-reverse' : ''}`}>
-                            {project.link && (
-                              <button
-                                className="text-[#055BA4] dark:text-slate-400 hover:text-[#055BA4] dark:hover:text-[#41ADE8] p-2"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  window.open(project.link, '_blank');
-                                }}
-                              >
-                                <FiExternalLink size={16} />
-                              </button>
-                            )}
-                            {project.github && (
-                              <button
-                                className="text-[#055BA4] dark:text-slate-400 hover:text-[#055BA4] dark:hover:text-[#41ADE8] p-2"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  window.open(project.github, '_blank');
-                                }}
-                              >
-                                <FiGithub size={16} />
-                              </button>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+                    </motion.div>
+                  );
+                })}
               </motion.div>
 
               {/* Pagination */}

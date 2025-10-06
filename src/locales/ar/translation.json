@@ -1,1184 +1,1287 @@
 {
-    "developer": "مطور",
-    "slogan": "أحْيِ أفكارك الرقمية",
-    "description": "مصمم تجارب ويب فريدة وعالية الأداء. حاصل على ماجستير في هندسة البرمجيات. متخصص في التطوير الحديث.",
-    "see_projects": "عرض مشاريعي",
-    "request_quote": "طلب عرض سعر",
-    "experience": "أكثر من سنتين من الخبرة",
-    "delivered_projects": "مشاريع تم تسليمها",
-    "satisfied_clients": "عملاء راضون",
-    "skills_title": "مهاراتي",
-    "skills_subtitle": "خبرة شاملة لتنفيذ مشاريعك الإلكترونية من الألف إلى الياء",
-    "recent_projects": "المشاريع الحديثة",
-    "recent_projects_sub": "اكتشف بعضًا من أبرز إنجازاتي",
-    "see_all_projects": "عرض جميع المشاريع",
-    "cta_title": "مستعد لبدء مشروعك؟",
-    "cta_sub": "اتصل بي اليوم لمناقشة احتياجاتك والحصول على عرض سعر مجاني مخصص.",
-    "cta_button": "طلب عرض سعر مجاني",
-    "project1_desc": "إنشاء مواقع ويب متعددة الصفحات مع نماذج وواجهات برمجة تطبيقات وتحسين محركات البحث.",
-    "project2_desc": "تطبيق ويب لمتابعة مراسي الموانئ بواجهة مستخدم حديثة.",
-    "project3_desc": "برنامج سطح مكتب لإدارة العقارات بواجهة مستخدم بديهية.",
-    "project_not_found": "المشروع غير موجود",
-    "project_not_found_message": "المشروع الذي تبحث عنه غير موجود أو تم نقله.",
-    "back_to_projects": "العودة إلى المشاريع",
-    "about_project": "حول المشروع",
-    "challenges": "التحديات والحلول",
-    "results": "النتائج المحققة",
-    "gallery": "معرض المشروع",
-    "project_details": "تفاصيل المشروع",
-    "launch_date": "تاريخ الإطلاق",
-    "duration": "مدة المشروع",
-    "team": "الفريق",
-    "featured_project": "مشروع مميز",
-    "featured_project_desc": "تم اختياره كمشروع استثنائي",
-    "technologies": "التقنيات المستخدمة",
-    "project_links": "روابط المشروع",
-    "visit_site": "زيارة الموقع",
-    "source_code": "الكود المصدري",
-    "prev_project": "المشروع السابق",
-    "next_project": "المشروع التالي",
-    "click_to_gallery": "انقر لعرض المعرض",
-    "view_large": "عرض بحجم كبير",
-    "cta_title": "مستعد لتحقيق مشروعك؟",
-    "cta_sub": "لنتناقش حول رؤيتك ونخلق شيئًا استثنائيًا معًا",
-    "cta_button": "ابدأ الآن",
-    "cta_hint": "لنحول أفكارك إلى واقع",
-    "header": {
-      "home": "الرئيسية",
-      "services": "الخدمات",
-      "projects": "المشاريع",
-      "blog": "المدونة",
-      "contact": "اتصل",
-      "quoteButton": "عرض سعر مجاني",
-      "openMenu": "فتح القائمة",
-      "closeMenu": "إغلاق القائمة"
-    },
-    "home": {
-      "hero": {
-        "welcome": "مطور كامل المكدس مبدع",
-        "title1": "حول أفكارك إلى",
-        "flipWords": [
-          "تجارب رقمية",
-          "مواقع ويب جذابة",
-          "حلول مبتكرة",
-          "منصات عالية الأداء"
-        ],
-        "description": "أقوم بإنشاء حلول ويب وجوال مخصصة تجمع بين التصميم الأنيق والأداء الفني وتجربة مستخدم استثنائية. كل مشروع هو فرصة للابتكار.",
-        "button1": "استكشف إنجازاتي",
-        "button2": "لنتناقش حول مشروعك",
-        "stats": [
-          {
-            "value": "5+",
-            "label": "سنوات من الخبرة"
-          },
-          {
-            "value": "50+",
-            "label": "مشروع تم تسليمه"
-          },
-          {
-            "value": "100%",
-            "label": "عملاء راضون"
-          }
-        ]
-      },
-      "skills": {
-        "title": "م",
-        "titleHighlight": "هاراتي",
-        "subtitle": "خبرة تقنية وإبداعية لتحويل أفكارك إلى واقع",
-        "frontend": {
-          "name": "واجهة أمامية",
-          "tech": "HTML/CSS/JS, Bootstrap, Tailwind, React, Vue.js"
-        },
-        "backend": {
-          "name": "واجهة خلفية",
-          "tech": "PHP, Laravel, Java"
-        },
-        "design": {
-          "name": "تصميم",
-          "tech": "UX/UI, Photoshop, Illustrator, Canva"
-        },
-        "seo": {
-          "name": "SEO",
-          "tech": "Analytics, Search Console, تحسين محركات البحث, إمكانية الوصول, تحسين"
-        },
-        "mobile": {
-          "name": "جوال",
-          "tech": "تصميم متجاوب, تطبيقات Flutter, Android"
-        },
-        "methodology": {
-          "name": "منهجية",
-          "tech": "Agile, Scrum"
-        }
-      },
-      "services": {
-        "title": "خ",
-        "titleHighlight": "براتي",
-        "subtitle": "حلول مخصصة لتحويل تحدياتك الرقمية إلى نجاح",
-        "website": {
-          "title": "مواقع ويب",
-          "description": "تصاميم أنيقة وأداء مثالي لمواقع عرض رقمية عالية الأداء لتعزيز مصداقيتك وتوليد عملاء محتملين على مدار الساعة."
-        },
-        "webapp": {
-          "title": "تطبيقات ويب",
-          "description": "حلول مخصصة لأتمتة عملياتك التجارية وتحويل تحدياتك التشغيلية إلى مزايا تنافسية."
-        },
-        "mobile": {
-          "title": "تطبيقات جوال",
-          "description": "حلول جوال بديهية، تجارب جوال أصلية وسلسة منشورة على المتاجر."
-        },
-        "marketing": {
-          "title": "استراتيجية رقمية وتسويق",
-          "description": "خطط طريق مخصصة للهيمنة على سوقك وتسريع نموك في العصر الرقمي."
-        },
-        "button": "اكتشف جميع خبراتي"
-      },
-      "projects": {
-        "title": "مش",
-        "titleHighlight": "اريعي الحديثة",
-        "subtitle": "اكتشف أحدث إنجازاتي ودراسات الحالة",
-        "button": "عرض جميع المشاريع"
-      },
-      "blog": {
-        "title": "أ",
-        "titleHighlight": "حدث مقالاتي",
-        "subtitle": "نصائح، دروس، وأفكار حول تطوير الويب",
-        "readButton": "قراءة المقال",
-        "button": "عرض جميع المقالات"
-      },
-      "slides": {
-        "slide1": {
-          "title": "تجارب رقمية",
-          "description": "إنشاء تطبيقات ويب عالية الأداء باستخدام React و Next.js",
-          "alt": "تجارب رقمية"
-        },
-        "slide2": {
-          "title": "مواقع ويب جذابة",
-          "description": "تطوير عبر المنصات باستخدام React Native و Flutter",
-          "alt": "مواقع ويب جذابة"
-        },
-        "slide3": {
-          "title": "حلول مبتكرة",
-          "description": "استراتيجيات تقنية ودلالية للتحسين الطبيعي لمحركات البحث",
-          "alt": "حلول مبتكرة"
-        },
-        "slide4": {
-          "title": "منصات عالية الأداء",
-          "description": "استراتيجيات تقنية ودلالية للتحسين الطبيعي لمحركات البحث",
-          "alt": "منصات عالية الأداء"
-        },
-        "slide5": {
-          "title": "منصات عالية الأداء",
-          "description": "استراتيجيات تقنية ودلالية للتحسين الطبيعي لمحركات البحث",
-          "alt": "منصات عالية الأداء"
-        },
-        "slide6": {
-          "title": "منصات عالية الأداء",
-          "description": "استراتيجيات تقنية ودلالية للتحسين الطبيعي لمحركات البحث",
-          "alt": "منصات عالية الأداء"
-        }
-      },
-      "process": {
-        "title": "ع",
-        "titleHighlight": "ملية عملي",
-        "subtitle": "منهجية شفافة لنتائج استثنائية",
-        "steps": [
-          {
-            "icon": "Users",
-            "step": "تصميم",
-            "title": "المخطط الرقمي",
-            "description": "تحديد الأهداف والهندسة المعمارية التقنية"
-          },
-          {
-            "icon": "Code",
-            "step": "تطوير",
-            "title": "إبداع تقني",
-            "description": "تنفيذ رشيق مع مراجعات أسبوعية"
-          },
-          {
-            "icon": "BarChart",
-            "step": "تحسين",
-            "title": "ضبط دقيق",
-            "description": "اختبار المستخدم وتعديلات دقيقة"
-          },
-          {
-            "icon": "Shield",
-            "step": "تسليم",
-            "title": "دعم",
-            "description": "تدريب ودعم ما بعد التسليم"
-          }
-        ]
-      },
-      "cta": {
-        "title": "مستعد لتحقيق مشروعك؟",
-        "subtitle": "لنتناقش حول رؤيتك معًا ونخلق شيئًا استثنائيًا.",
-        "button": "بدء مشروعي"
-      }
-    },
-    "projectPopup": {
-      "newBadge": "جديد",
-      "visitButton": "زيارة",
-      "codeButton": "كود",
-      "descriptionTitle": "وصف",
-      "challengesTitle": "تحديات",
-      "resultsTitle": "نتائج",
-      "detailsTitle": "تفاصيل",
-      "teamLabel": "فريق",
-      "technologiesTitle": "تقنيات",
-      "galleryTitle": "معرض"
-    },
-    "footer": {
-      "description": "أقوم بإنشاء تجارب رقمية استثنائية تحول الأفكار إلى حلول عالية الأداء. متخصص في التطوير الكامل وتصميم UX/UI.",
-      "newsletterTitle": "ابق على اطلاع",
-      "emailPlaceholder": "بريدك الإلكتروني",
-      "subscriptionSuccess": "شكرًا لك على الاشتراك!",
-      "navigationTitle": "تنقل",
-      "navigationItems": [
-        { "name": "الرئيسية", "path": "/" },
-        { "name": "الخدمات", "path": "/services" },
-        { "name": "المشاريع", "path": "/projects" },
-        { "name": "المدونة", "path": "/blog" },
-        { "name": "اتصل", "path": "/contact" }
+  "developer": "مطور",
+  "slogan": "أحي أفكارك الرقمية",
+  "description": "مبدع تجارب ويب فريدة وعالية الأداء. حاصل على ماجستير في هندسة البرمجيات. متخصص في التطوير الحديث.",
+  "see_projects": "عرض مشاريعي",
+  "request_quote": "طلب عرض سعر",
+  "experience": "أكثر من سنتين خبرة",
+  "delivered_projects": "مشاريع تم تسليمها",
+  "satisfied_clients": "عملاء راضون",
+  "skills_title": "مهاراتي",
+  "skills_subtitle": "خبرة شاملة لتنفيذ مشاريعك الإلكترونية من الألف إلى الياء",
+  "recent_projects": "المشاريع الحديثة",
+  "recent_projects_sub": "اكتشف بعض من أبرز إنجازاتي",
+  "see_all_projects": "عرض جميع المشاريع",
+  "cta_title": "مستعد لبدء مشروعك؟",
+  "cta_sub": "اتصل بي اليوم لمناقشة احتياجاتك والحصول على عرض سعر مجاني مخصص.",
+  "cta_button": "طلب عرض سعر مجاني",
+  "project1_desc": "إنشاء مواقع ويب متعددة الصفحات مع نماذج وواجهات برمجة وتحسين محركات البحث.",
+  "project2_desc": "تطبيق ويب لمتابعة موانئ السفن بواجهة حديثة.",
+  "project3_desc": "برنامج سطح مكتب لإدارة العقارات بواجهة بديهية.",
+  "project_not_found": "المشروع غير موجود",
+  "project_not_found_message": "المشروع الذي تبحث عنه غير موجود أو تم نقله.",
+  "back_to_projects": "العودة إلى المشاريع",
+  "about_project": "حول المشروع",
+  "challenges": "التحديات والحلول",
+  "results": "النتائج المتحققة",
+  "gallery": "معرض المشروع",
+  "project_details": "تفاصيل المشروع",
+  "launch_date": "تاريخ الإطلاق",
+  "duration": "مدة المشروع",
+  "team": "الفريق",
+  "featured_project": "مشروع مميز",
+  "featured_project_desc": "تم اختياره كمشروع استثنائي",
+  "technologies": "التقنيات المستخدمة",
+  "project_links": "روابط المشروع",
+  "visit_site": "زيارة الموقع",
+  "source_code": "الكود المصدري",
+  "prev_project": "المشروع السابق",
+  "next_project": "المشروع التالي",
+  "click_to_gallery": "انقر لعرض المعرض",
+  "view_large": "عرض بحجم كبير",
+  "cta_title": "مستعد لتحقيق مشروعك؟",
+  "cta_sub": "لنتناقش حول رؤيتك ونخلق شيئاً استثنائياً معاً",
+  "cta_button": "ابدأ الآن",
+  "cta_hint": "لنحول أفكارك إلى واقع",
+  "header": {
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "projects": "المشاريع",
+    "blog": "المدونة",
+    "contact": "اتصل",
+    "quoteButton": "عرض سعر مجاني",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
+  },
+  "home": {
+    "hero": {
+      "welcome": "مطور Fullstack مبدع",
+      "title1": "حول أفكارك إلى",
+      "flipWords": [
+        "تجارب رقمية",
+        "مواقع ويب جذابة",
+        "حلول مبتكرة",
+        "منصات عالية الأداء"
       ],
-      "legalTitle": "قانوني",
-      "legalItems": [
-        { "name": "خصوصية", "path": "/privacy" },
-        { "name": "شروط", "path": "/terms" },
-        { "name": "كوكيز", "path": "/cookies" },
-        { "name": "أسئلة شائعة", "path": "/faqs" }
-      ],
-      "contactTitle": "اتصال",
-      "platformsTitle": "منصات",
-      "freelancePlatforms": {
-        "fiverr": "Fiverr",
-        "upwork": "Upwork",
-        "freelance": "Freelance.com"
-      },
-      "socialNetworks": {
-        "whatsapp": "WhatsApp",
-        "email": "بريد إلكتروني",
-        "linkedin": "LinkedIn"
-      },
-      "copyright": "جميع الحقوق محفوظة."
-    },
-    "projects": {
-      "hero": {
-        "title1": "إ",
-        "title2": "نجازاتي",
-        "subtitle": "اكتشف مشاريعي والخبرة التقنية المستخدمة لإنشاء حلول مبتكرة وعالية الأداء",
-        "searchPlaceholder": "ابحث عن مشاريع، تقنيات..."
-      },
-      "filters": {
-        "filterLabel": "تصفية:",
-        "all": "جميع المشاريع",
-        "web": "ويب",
-        "desktop": "سطح مكتب",
-        "mobile": "جوال",
-        "moreFilters": "مزيد من الفلاتر",
-        "projectStatus": "حالة المشروع",
-        "statusAll": "جميع الحالات",
-        "statusCompleted": "مكتمل",
-        "statusInProgress": "قيد التقدم",
-        "technologies": "التقنيات",
-        "applyFilters": "تطبيق الفلاتر",
-        "reset": "إعادة تعيين"
-      },
-      "noProjects": {
-        "title": "لم يتم العثور على مشاريع",
-        "message": "لا توجد مشاريع تطابق بحثك. حاول تغيير الفلاتر أو البحث."
-      },
-      "viewDetails": "عرض التفاصيل",
-      "technologies": {
-        "title1": "الت",
-        "title2": "قنيات التي أتقنها",
-        "subtitle": "الأدوات والتقنيات التي أستخدمها لإنشاء حلول عالية الأداء"
-      },
-      "cta": {
-        "title": "مستعد لتحقيق مشروعك؟",
-        "subtitle": "لنتناقش حول رؤيتك معًا ونخلق شيئًا استثنائيًا",
-        "button": "بدء مشروع"
-      },
-      "status": {
-        "completed": "مكتمل",
-        "inProgress": "قيد التقدم"
-      },
-      "categories": {
-        "web": "ويب",
-        "desktop": "سطح مكتب",
-        "mobile": "جوال"
-      },
-      "projectDetails": {
-        "title": "تفاصيل المشروع",
-        "description": "وصف كامل",
-        "client": "عميل",
-        "period": "فترة",
-        "status": "حالة",
-        "category": "فئة",
-        "technologies": "التقنيات المستخدمة",
-        "results": "النتائج المتحصل عليها",
-        "features": "ميزات",
-        "visitSite": "زيارة الموقع",
-        "viewCode": "عرض الكود"
-      }
-    },
-    "projectsData": [
-      {
-  "id": 2,
-  "title": "نظام إدارة مراسي السفن",
-  "category": "تطبيق ويب",
-  "client": "ميناء بجاية",
-  "period": "2022",
-  "shortDescription": "تطبيق ويب متكامل لتتبع وإدارة مراسي السفن",
-  "fullDescription": "حل ERP للتتبع الشامل للسفن من الإعلان حتى المغادرة النهائية، بما في ذلك جميع حركات الميناء، مع نظام إدارة المستخدمين والاجتماعات والقرارات.",
-  "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
-  "features": [
-    "تتبع السفن في الوقت الحقيقي من الإعلان حتى المغادرة",
-    "تصور جميع حركات الميناء وحالة الحركات",
-    "لوحة تحكم مخصصة مع مؤشرات رئيسية",
-    "إدارة المستخدمين حسب الإدارات مع الأدوار والصلاحيات",
-    "نظام الإشعارات والتنبيهات",
-    "سجل تفصيلي لأنشطة المستخدمين على التطبيق",
-    "ميزات الطباعة وإنشاء المستندات",
-    "إدارة الاجتماعات وتتبع القرارات"
-  ],
-  "status": "مكتمل",
-  "demoUrl": null,
-  "githubUrl": null,
-  "featured": true,
-  "new": false,
-  "img": {
-          "url": "/projets/suivi_des_escales/9.JPG",
-          "alt": "",
-          "caption": ""
-        },
-      "images": [
+      "description": "أقوم بإنشاء حلول ويب وجوال مخصصة تجمع بين التصميم الأنيق والأداء التقني وتجربة المستخدم الاستثنائية. كل مشروع هو فرصة للابتكار.",
+      "button1": "استكشاف أعمالي",
+      "button2": "لنتناقش حول مشروعك",
+      "stats": [
         {
-          "url": "/projets/suivi_des_escales/1.JPG",
-          "alt": "",
-          "caption": ""
+          "value": "5+",
+          "label": "سنوات من الخبرة"
         },
         {
-          "url": "/projets/suivi_des_escales/2.JPG",
-          "alt": "",
-          "caption": ""
+          "value": "50+",
+          "label": "مشروع تم تسليمه"
         },
         {
-          "url": "/projets/suivi_des_escales/3.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/4.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/5.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/6.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/7.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/8.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/9.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/10.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/11.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/12.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/13.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/14.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/15.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/16.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/17.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/18.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/19.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/20.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/21.JPG",
-          "alt": "",
-          "caption": ""
-        },
-        {
-          "url": "/projets/suivi_des_escales/22.JPG",
-          "alt": "",
-          "caption": ""
+          "value": "100%",
+          "label": "عملاء راضون"
         }
       ]
-    }
-    ],
-    "blogPosts": [],
-    "technologies": [
-      { "name": "React", "icon": "SiReact" },
-      { "name": "Vue.js", "icon": "SiVuedotjs" },
-      { "name": "Tailwind", "icon": "SiTailwindcss" },
-      { "name": "JavaScript", "icon": "FiCode" },
-      { "name": "HTML", "icon": "FiCode" },
-      { "name": "CSS", "icon": "FiCode" },
-      { "name": "PHP", "icon": "FiCode" },
-      { "name": "Laravel", "icon": "SiLaravel" },
-      { "name": "Node.js", "icon": "SiNodedotjs" },
-      { "name": "Java", "icon": "FaJava" },
-      { "name": "MySQL", "icon": "SiMysql" },
-      { "name": "Git", "icon": "FiCode" },
-      { "name": "GitHub", "icon": "FiCode" },
-      { "name": "Bitbucket", "icon": "FiCode" },
-      { "name": "Photoshop", "icon": "FiCode" },
-      { "name": "Illustrator", "icon": "FiCode" },
-      { "name": "Canva", "icon": "FiCode" },
-      { "name": "Figma", "icon": "SiFigma" }
-    ],
-    "blog": {
-      "title": "مدونة تقنية",
-      "subtitle": "اكتشف أفكاري حول تطوير الويب، التقنيات الجديدة، وأفضل ممارسات القطاع.",
-      "searchPlaceholder": "ابحث عن مقال، وسم، أو موضوع...",
-      "categoriesButton": "فئات",
-      "resetButton": "إعادة تعيين",
-      "featuredPostTitle": "مقال مميز",
-      "recentPostsTitle": "مقالات حديثة",
-      "foundPostsTitle": "مقالات تم العثور عليها",
-      "noPostsFound": "لم يتم العثور على مقالات لبحثك.",
-      "viewAllPosts": "عرض جميع المقالات",
-      "aboutTitle": "حول المدونة",
-      "aboutDescription": "مطور كامل المكدس شغوف، أشارك هنا تجاربي، اكتشافاتي، وأفكاري حول عالم تطوير الويب. استكشف أحدث الاتجاهات، النصائح، وأفضل الممارسات.",
-      "popularTagsTitle": "وسوم شائعة",
-      "newsletterTitle": "نشرة تقنية",
-      "newsletterDescription": "استلم أحدث المقالات والموارد مباشرة في بريدك الوارد.",
-      "newsletterPlaceholder": "بريدك الإلكتروني",
-      "newsletterButton": "اشتراك",
-      "readMore": "قراءة المزيد",
-      "read": "قراءة",
-      "close": "إغلاق",
-      "leaveComment": "ترك تعليق",
-      "articles": "مقالات",
-      "article": "مقال",
-      "categories": {
-        "all": "جميع المقالات",
-        "development": "تطوير",
-        "design": "تصميم",
-        "seo": "SEO",
-        "methodology": "منهجية",
-        "security": "أمان"
-      },
-      "categoriesList": [
-        { "id": "all", "icon": "LayoutGrid" },
-        { "id": "development", "icon": "BookOpen" },
-        { "id": "design", "icon": "LayoutGrid" },
-        { "id": "seo", "icon": "TrendingUp" },
-        { "id": "methodology", "icon": "LayoutGrid" },
-        { "id": "security", "icon": "LayoutGrid" }
-      ],
-      "popularTags": [
-        "React",
-        "Laravel",
-        "JavaScript",
-        "SEO",
-        "UX/UI",
-        "Agile",
-        "PHP",
-        "CSS",
-        "NextJS",
-        "TypeScript",
-        "Responsive",
-        "Performance"
-      ],
-      "readTimeSuffix": "قراءة",
-      "shareArticle": "مشاركة هذا المقال",
-      "share": "مشاركة",
-      "save": "حفظ",
-      "like": "إعجاب"
     },
-    "cookies": {
-      "hero": {
-        "title": "سياسة الخصوصية وإدارة ملفات تعريف الارتباط",
-        "subtitle": "شفافية وتحكم في بياناتك الشخصية على منصتنا"
+    "skills": {
+      "title": "م",
+      "titleHighlight": "هاراتي",
+      "subtitle": "خبرة تقنية وإبداعية لتحويل أفكارك إلى واقع",
+      "frontend": {
+        "name": "واجهة المستخدم",
+        "tech": "HTML/CSS/JS، Bootstrap، Tailwind، React، Vue.js"
       },
-      "commitment": {
-        "title": "التزامنا تجاه خصوصيتك",
-        "text1": "في شركتنا، حماية بياناتك الشخصية هي أولوية مطلقة. تشرح هذه السياسة كيف نجمع ونستخدم ونحمي معلوماتك.",
-        "text2": "نحن ملتزمون باحترام اللائحة العامة لحماية البيانات (GDPR) واللوائح الفرنسية حول حماية البيانات."
+      "backend": {
+        "name": "واجهة الخادم",
+        "tech": "PHP، Laravel، Java"
       },
-      "cookiesSection": {
-        "title": "سياسة ملفات تعريف الارتباط",
-        "subtitle": "إدارة أداء التتبع والتقنيات المشابهة",
-        "whatAreCookies": "ما هي ملفات تعريف الارتباط؟",
-        "cookiesDefinition": "ملفات تعريف الارتباط هي ملفات نصية صغيرة يتم وضعها على جهازك عند التصفح. تُستخدم لتذكر تفضيلاتك، وتحليل حركة المرور، وتخصيص تجربتك.",
-        "typesTitle": "أنواع ملفات تعريف الارتباط المستخدمة",
-        "essential": {
-          "title": "أساسية",
-          "description": "ضرورية لعمل الموقع (الأمان، سلة التسوق، الحساب)"
-        },
-        "performance": {
-          "title": "أداء",
-          "description": "تحليل استخدام الموقع (الصفحات التي تمت زيارتها، أوقات التحميل)"
-        },
-        "functional": {
-          "title": "وظيفية",
-          "description": "تخصيص التجربة (اللغة، التفضيلات الإقليمية)"
-        },
-        "marketing": {
-          "title": "تسويق",
-          "description": "إعلانات مخصصة وحملات إعادة استهداف"
-        },
-        "management": {
-          "title": "إدارة موافقتك",
-          "text": "لديك تحكم كامل في ملفات تعريف الارتباط غير الأساسية. يمكنك تغيير تفضيلاتك في أي وقت.",
-          "button": "إدارة تفضيلات ملفات تعريف الارتباط"
-        }
+      "design": {
+        "name": "التصميم",
+        "tech": "UX/UI، Photoshop، Illustrator، Canva"
       },
-      "dataSection": {
-        "title": "معالجة البيانات الشخصية",
-        "subtitle": "كيف نجمع ونستخدم معلوماتك",
-        "collectedData": "البيانات المجمعة",
-        "dataList": [
-          "معلومات الحساب (الاسم، البريد الإلكتروني، العنوان)",
-          "بيانات التصفح (عنوان IP، الصفحات التي تمت زيارتها)",
-          "معلومات المعاملة (سجل المشتريات)",
-          "التفضيلات ومراكز الاهتمام"
-        ],
-        "purposesTitle": "أغراض المعالجة",
-        "purposesList": [
-          "تنفيذ الطلبات والخدمات",
-          "تخصيص تجربة المستخدم",
-          "تحسين منتجاتنا وخدماتنا",
-          "الاتصال التسويقي (بموافقتك)",
-          "الامتثال للالتزامات القانونية"
-        ],
-        "protectionTitle": "حماية البيانات",
-        "protectionText": "ننفذ إجراءات أمنية متقدمة تشمل:",
-        "protectionList": [
-          "تشفير AES-256 للبيانات الحساسة",
-          "مراجعات أمنية منتظمة",
-          "وصول مقيد إلى البيانات الشخصية",
-          "سياسة احتفاظ محدودة زمنيًا"
-        ]
+      "seo": {
+        "name": "SEO",
+        "tech": "التحليلات، Search Console، تحسين محركات البحث، إمكانية الوصول، التحسين"
       },
-      "rightsSection": {
-        "title": "حقوقك بموجب اللائحة العامة لحماية البيانات (GDPR)",
-        "subtitle": "التحكم في بياناتك الشخصية",
-        "access": {
-          "title": "حق الوصول",
-          "description": "الحصول على نسخة من بياناتك الشخصية"
-        },
-        "rectification": {
-          "title": "حق التصحيح",
-          "description": "تصحيح المعلومات غير الدقيقة"
-        },
-        "erasure": {
-          "title": "حق المحو",
-          "description": "حذف بياناتك ('حق النسيان')"
-        },
-        "objection": {
-          "title": "حق الاعتراض",
-          "description": "الاعتراض على المعالجة لأسباب مشروعة"
-        },
-        "howToExercise": "كيفية ممارسة حقوقك",
-        "exerciseText": "لأي طلب يتعلق ببياناتك الشخصية، يرجى الاتصال بنا على العنوان أدناه. سنرد في غضون 30 يومًا كحد أقصى."
+      "mobile": {
+        "name": "الجوال",
+        "tech": "التصميم المتجاوب، تطبيقات Flutter، Android"
       },
-      "disableSection": {
-        "title": "تعطيل ملفات تعريف الارتباط",
-        "subtitle": "كيفية إدارة إعدادات متصفحك",
-        "text": "يمكنك التحكم في ملفات تعريف الارتباط من خلال إعدادات متصفحك. إليك أدلة المتصفحات الشائعة:",
-        "browsers": {
-          "chrome": "Google Chrome",
-          "firefox": "Mozilla Firefox",
-          "safari": "Safari",
-          "edge": "Microsoft Edge"
-        }
-      },
-      "contactSection": {
-        "title": "الاتصال ومسؤول حماية البيانات (DPO)",
-        "subtitle": "مسؤول حماية البيانات لدينا",
-        "text": "لأي أسئلة regarding هذه السياسة أو ممارسة حقوقك، اتصل بمسؤول حماية البيانات لدينا:",
-        "dpoName": "السيد جان دوبون",
-        "dpoRole": "مسؤول حماية البيانات",
-        "email": "dpo@yourcompany.com",
-        "phone": "+33 1 23 45 67 89",
-        "mailingAddress": "عن طريق البريد:",
-        "address": [
-          "شركة XYZ",
-          "خدمة حماية البيانات",
-          "123 شارع الجمهورية",
-          "75011 باريس، فرنسا"
-        ]
-      },
-      "lastUpdated": "آخر تحديث: "
-    },
-    "contact": {
-      "faqTitle1": "أسئلة",
-      "faqTitle2": "شائعة",
-      "faqSubtitle": "ابحث عن إجابات للأسئلة الأكثر شيوعًا",
-      "hero": {
-        "title1": "ات",
-        "title2": "صل بي",
-        "subtitle": "هل لديك سؤال، مشروع، أو فقط تريد الدردشة؟ أنا هنا للاستماع.",
-        "contactButton": "اتصل بي",
-        "devisButton": "طلب عرض سعر"
-      },
-      "whatsapp": {
-        "title": "اتصال واتساب",
-        "description": "لنتناقش حول مشروعك مباشرة على واتساب",
-        "button": "فتح واتساب",
-        "link": "https://wa.me/yourphonenumber"
-      },
-      "devis": {
-        "title": "عرض سعر مجاني",
-        "description": "احصل على تقدير مخصص لمشروعك",
-        "button": "طلب عرض سعر"
-      },
-      "guarantees": [
-        {
-          "title": "رد خلال 24 ساعة",
-          "text": "أتعهد بالرد على جميع الطلبات خلال 24 ساعة"
-        },
-        {
-          "title": "تواصل سلس",
-          "text": "متابعة منتظمة وتواصل شفاف طوال المشروع"
-        },
-        {
-          "title": "رضا مضمون",
-          "text": "تعديلات مشمولة حتى تكون راضيًا تمامًا"
-        }
-      ],
-      "errorMessage": "حدث خطأ، يرجى المحاولة مرة أخرى.",
-      "successTitle": "تم إرسال الرسالة!",
-      "successMessage": "شكرًا لك على رسالتك. سأرد عليك بسرعة كبيرة.",
-      "sending": "جاري الإرسال...",
-      "sendMessage": "إرسال الرسالة",
-      "formFooter": "* الحقول الإلزامية. بياناتك محمية ولن يتم مشاركتها أبدًا.",
-      "contactInfo": [
-        {
-          "title": "بريد إلكتروني",
-          "details": ["contact@mysite.com", "support@mysite.com"]
-        },
-        {
-          "title": "هاتف",
-          "details": ["+33 6 12 34 56 78"]
-        },
-        {
-          "title": "موقع",
-          "details": ["باريس، فرنسا"]
-        },
-        {
-          "title": "التوافر",
-          "details": ["الإثنين-الجمعة: 9 صباحًا-6 مساءً", "رد خلال 24 ساعة"]
-        }
-      ],
-      "socialLinks": [
-        {
-          "name": "GitHub",
-          "username": "myprofile",
-          "url": "https://github.com/myprofile"
-        },
-        {
-          "name": "LinkedIn",
-          "username": "myprofile",
-          "url": "https://linkedin.com/in/myprofile"
-        }
-      ],
-      "faqItems": [
-        {
-          "question": "ما هو متوسط وقت استجابتك؟",
-          "answer": "أتعهد بالرد على جميع الرسائل خلال 24 ساعة عمل."
-        },
-        {
-          "question": "هل يمكنني الاتصال بك للحصول على استشارة مجانية؟",
-          "answer": "بالتأكيد! أقدم استشارات مجانية لمدة 15 دقيقة لمناقشة احتياجاتك."
-        },
-        {
-          "question": "هل تتعامل مع الطلبات العاجلة؟",
-          "answer": "نعم، للطلبات العاجلة، يرجى ذكر ذلك في رسالتك وسأبذل قصارى جهدي للرد بسرعة."
-        },
-        {
-          "question": "ما هي المواضيع التي يمكنني مناقشتها؟",
-          "answer": "جميع المواضيع مرحب بها: أسئلة تقنية، طلبات نصيحة، تعاون، أو فقط لقول مرحبًا!"
-        },
-        {
-          "question": "ما هي أوقات استجابتك؟",
-          "answer": "أتعهد بالرد على جميع الطلبات في غضون 24 ساعة عمل كحد أقصى. للمشاريع المعقدة، سأرسل ردًا أوليًا خلال 24 ساعة وعرض سعر مفصل خلال 48 ساعة."
-        },
-        {
-          "question": "هل يمكنني مقابلتك شخصيًا؟",
-          "answer": "بالتأكيد! أنا مقيم في باريس ومتاح للقاءات شخصية. للعملاء الدوليين أو البعيدين، أقدم استشارات عبر Zoom أو Teams أو Google Meet."
-        },
-        {
-          "question": "ما أنواع المشاريع التي تقبلها؟",
-          "answer": "أعمل على مجموعة واسعة من المشاريع: مواقع عرض، تجارة إلكترونية، تطبيقات ويب، إعادة تصميم، تصميم واجهة المستخدم/تجربة المستخدم، وتحسين محركات البحث. إذا كان مشروعك يتطلب خبرة محددة، يمكنني إحالتك إلى شركاء موثوق بهم."
-        },
-        {
-          "question": "هل تقدم دعماً بعد التسليم؟",
-          "answer": "نعم، أقدم مستويات مختلفة من الدعم بعد التسليم، تتراوح من تصحيح الأخطاء البسيطة إلى عقود الصيانة الشاملة التي تشمل التحديثات والنسخ الاحتياطية والتحسينات المستمرة."
-        }
-      ],
-      "form": {
-        "nameLabel": "اسمك",
-        "namePlaceholder": "اسمك الكامل",
-        "emailLabel": "بريدك الإلكتروني",
-        "emailPlaceholder": "your@email.com",
-        "subjectLabel": "الموضوع",
-        "subjectPlaceholder": "موضوع رسالتك",
-        "messageLabel": "رسالتك",
-        "messagePlaceholder": "صف طلبك هنا..."
-      },
-      "sectionTitles": {
-        "sendMessage": "أرسل رسالة",
-        "sendMessageDesc": "املأ هذا النموذج وسأرد في أسرع وقت ممكن.",
-        "myContactInfo": "معلومات الاتصال بي",
-        "socialNetworks": "الشبكات الاجتماعية",
-        "findMe": "أين تجدني",
-        "findMeDesc": "مقيم في باريس، أعمل مع عملاء من جميع أنحاء العالم"
-      },
-      "ctaTitle": "مستعد لبدء مشروعك؟",
-      "ctaSubtitle": "اتصل بي اليوم لمناقشة احتياجاتك ومعرفة كيف يمكنني مساعدتك."
+      "methodology": {
+        "name": "المنهجية",
+        "tech": "Agile، Scrum"
+      }
     },
     "services": {
-      "meta": {
-        "title": "خدمات ويب مخصصة | إنشاء مواقع وتطبيقات",
-        "description": "خبير في تطوير الويب وتصميم UX/UI. حلول كاملة لمواقع العرض، تطبيقات الويب، والاستراتيجية الرقمية."
+      "title": "خ",
+      "titleHighlight": "براتي",
+      "subtitle": "حلول مخصصة لتحويل تحدياتك الرقمية إلى نجاح",
+      "website": {
+        "title": "مواقع الويب",
+        "description": "تصاميم أنيقة وأداء مثالي لمواقع عرض رقمية عالية الأداء لتعزيز مصداقيتك وتوليد العملاء المحتملين 24/7."
       },
-      "hero": {
-        "title1": "حلول",
-        "title2": "رقمية مخصصة",
-        "subtitle": "حول أفكارك إلى تجارب رقمية استثنائية بخبرة تقنية مجتمعة مع تصميم مبتكر.",
-        "button": "ناقش مشروعك"
+      "webapp": {
+        "title": "تطبيقات الويب",
+        "description": "حلول مخصصة لأتمتة عملياتك التجارية وتحويل تحدياتك التشغيلية إلى مزايا تنافسية."
       },
-      "services": {
-        "title1": "خ",
-        "title2": "براتي",
-        "subtitle": "حلول مخصصة لتحويل تحدياتك الرقمية إلى نجاح",
-        "featuresTitle": "الحلول المقترحة",
-        "techTitle": "التقنيات الرئيسية",
-        "ctaButton": "صف مشروعك",
-        "web": {
-          "title": "مواقع ويب",
-          "description": "إنشاء مواقع عالية الأداء وآمنة ومكيفة مع احتياجاتك التجارية.",
-          "features": [
-            "مواقع عرض مخصصة",
-            "متوافقة مع الجوال/اللوحي",
-            "حركات سلسة",
-            "محسنة لجوجل",
-            "تحميل فائق السرعة",
-            "حماية ضد التهديدات الإلكترونية",
-            "استضافة آمنة مع نسخ احتياطية",
-            "مساعدة تقنية دائمة"
-          ],
-          "technologies": [
-            "Bootstrap",
-            "Tailwind CSS",
-            "React",
-            "MUI",
-            "VueJS",
-            "Vuetify"
-          ]
-        },
-        "app": {
-          "title": "تطبيقات ويب",
-          "description": "حلول كاملة لأتمتة عملياتك التجارية.",
-          "features": [
-            "لوحات تحكم مخصصة",
-            "منصات SaaS مخصصة",
-            "متاجر إلكترونية آمنة",
-            "اتصال بأدواتك الحالية",
-            "أتمتة المهام المتكررة",
-            "تحليل البيانات في الوقت الحقيقي",
-            "مزامنة متعددة الأجهزة",
-            "تدريب المستخدمين"
-          ],
-          "technologies": ["Wordpress", "PHP", "Laravel", "MySQL"]
-        },
-        "mobile": {
-          "title": "تطبيقات جوال",
-          "description": "تطبيقات أصلية للهواتف الذكية منشورة على المتاجر الرسمية.",
-          "features": [
-            "iOS و Android عالي الأداء",
-            "النشر على App Store/Google Play",
-            "وظائف دون اتصال",
-            "إشعارات فورية",
-            "حماية البيانات الشخصية",
-            "واجهات بسيطة وبديهية",
-            "اختبار على جميع الأجهزة",
-            "تحديثات منتظمة"
-          ],
-          "technologies": [
-            "Flutter",
-            "React Native",
-            "Firebase",
-            "MYSQL",
-            "NoSQL"
-          ]
-        },
-        "marketing": {
-          "title": "استراتيجية رقمية وتسويق",
-          "description": "حلول لجذب العملاء وزيادة مبيعاتك عبر الإنترنت.",
-          "features": [
-            "إنشاء هوية بصرية (شعارات، ملصقات)",
-            "إدارة شبكاتك الاجتماعية",
-            "إنتاج محتوى جذاب",
-            "إعلانات جوجل المستهدفة",
-            "استراتيجيات الولاء",
-            "أتمتة التسويق",
-            "تحليل الأداء"
-          ],
-          "technologies": [
-            "Google Ads",
-            "Google Analytics",
-            "Canva",
-            "Photoshop",
-            "Illustrator"
-          ]
-        }
+      "mobile": {
+        "title": "تطبيقات الجوال",
+        "description": "حلول جوال بديهية، تجارب جوال أصلية وسلسة منشورة على متاجر التطبيقات."
       },
-      "process": {
-        "title1": "ع",
-        "title2": "ملية إبداعية",
-        "subtitle": "منهجية شفافة لنتائج استثنائية"
+      "marketing": {
+        "title": "الإستراتيجية الرقمية والتسويق",
+        "description": "خطط عمل مخصصة للهيمنة على سوقك وتسريع نموك في العصر الرقمي."
       },
-      "processSteps": [
+      "button": "اكتشف جميع خبراتي"
+    },
+    "projects": {
+      "title": "مش",
+      "titleHighlight": "اريعي الحديثة",
+      "subtitle": "اكتشف أحدث إنجازاتي ودراسات الحالة",
+      "button": "عرض جميع المشاريع"
+    },
+    "blog": {
+      "title": "مق",
+      "titleHighlight": "الاتي الأخيرة",
+      "subtitle": "نصائح ودروس وتفكير في تطوير الويب",
+      "readButton": "قراءة المقال",
+      "button": "عرض جميع المقالات"
+    },
+    "slides": {
+      "slide1": {
+        "title": "تجارب رقمية",
+        "description": "إنشاء تطبيقات ويب عالية الأداء مع React وNext.js",
+        "alt": "تجارب رقمية"
+      },
+      "slide2": {
+        "title": "مواقع ويب جذابة",
+        "description": "تطوير متعدد المنصات مع React Native وFlutter",
+        "alt": "مواقع ويب جذابة"
+      },
+      "slide3": {
+        "title": "حلول مبتكرة",
+        "description": "استراتيجيات تقنية ودلالية لتحسين محركات البحث الطبيعي",
+        "alt": "حلول مبتكرة"
+      },
+      "slide4": {
+        "title": "منصات عالية الأداء1",
+        "description": "استراتيجيات تقنية ودلالية لتحسين محركات البحث الطبيعي",
+        "alt": "منصات عالية الأداء1"
+      },
+      "slide5": {
+        "title": "منصات عالية الأداء3",
+        "description": "استراتيجيات تقنية ودلالية لتحسين محركات البحث الطبيعي",
+        "alt": "منصات عالية الأداء3"
+      }
+    },
+    "process": {
+      "title": "عمل",
+      "titleHighlight": "ي الإجرائي",
+      "subtitle": "منهجية شفافة لنتائج استثنائية",
+      "steps": [
         {
-          "step": "تصميم",
+          "icon": "Users",
+          "step": "التصميم",
           "title": "المخطط الرقمي",
           "description": "تحديد الأهداف والهندسة المعمارية التقنية"
         },
         {
-          "step": "تطوير",
-          "title": "إبداع تقني",
-          "description": "تنفيذ رشيق مع مراجعات أسبوعية"
+          "icon": "Code",
+          "step": "التطوير",
+          "title": "الإبداع التقني",
+          "description": "تنفيذ أجايل مع مراجعات أسبوعية"
         },
         {
-          "step": "تحسين",
-          "title": "ضبط دقيق",
-          "description": "اختبار المستخدم وتعديلات دقيقة"
+          "icon": "BarChart",
+          "step": "التحسين",
+          "title": "الضبط الدقيق",
+          "description": "اختبار المستخدمين وتعديلات دقيقة"
         },
         {
-          "step": "تسليم",
-          "title": "دعم",
-          "description": "تدريب ودعم ما بعد التسليم"
+          "icon": "Shield",
+          "step": "التسليم",
+          "title": "الدعم",
+          "description": "التدريب والدعم بعد التسليم"
+        }
+      ]
+    },
+    "cta": {
+      "title": "مستعد لتحقيق مشروعك؟",
+      "subtitle": "لنتناقش حول رؤيتك معاً ونخلق شيئاً استثنائياً.",
+      "button": "ابدأ مشروعي"
+    }
+  },
+  "projectPopup": {
+    "newBadge": "جديد",
+    "visitButton": "زيارة",
+    "codeButton": "الكود",
+    "descriptionTitle": "الوصف",
+    "challengesTitle": "التحديات",
+    "resultsTitle": "النتائج",
+    "detailsTitle": "التفاصيل",
+    "teamLabel": "الفريق",
+    "technologiesTitle": "التقنيات",
+    "galleryTitle": "المعرض"
+  },
+  "footer": {
+    "description": "أقوم بإنشاء تجارب رقمية استثنائية تحول الأفكار إلى حلول عالية الأداء. متخصص في التطوير الشامل وتصميم UX/UI.",
+    "newsletterTitle": "ابق على اطلاع",
+    "emailPlaceholder": "بريدك الإلكتروني",
+    "subscriptionSuccess": "شكراً للاشتراك!",
+    "navigationTitle": "التنقل",
+    "navigationItems": [
+      { "name": "الرئيسية", "path": "/" },
+      { "name": "الخدمات", "path": "/services" },
+      { "name": "المشاريع", "path": "/projects" },
+      { "name": "المدونة", "path": "/blog" },
+      { "name": "اتصل", "path": "/contact" }
+    ],
+    "legalTitle": "قانوني",
+    "legalItems": [
+      { "name": "الخصوصية", "path": "/privacy" },
+      { "name": "الشروط", "path": "/terms" },
+      { "name": "الكوكيز", "path": "/cookies" },
+      { "name": "الأسئلة الشائعة", "path": "/contact#faqs" }
+    ],
+    "contactTitle": "اتصل",
+    "platformsTitle": "المنصات",
+    "freelancePlatforms": {
+      "fiverr": "Fiverr",
+      "upwork": "Upwork",
+      "freelance": "Freelance.com"
+    },
+    "socialNetworks": {
+      "whatsapp": "WhatsApp",
+      "email": "البريد الإلكتروني",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "جميع الحقوق محفوظة."
+  },
+  "projects": {
+    "hero": {
+      "title1": "إ",
+      "title2": "نجازاتي",
+      "subtitle": "اكتشف مشاريعي والخبرة التقنية المطبقة لإنشاء حلول مبتكرة وعالية الأداء",
+      "searchPlaceholder": "ابحث في المشاريع، التقنيات..."
+    },
+    "filters": {
+      "filterLabel": "تصفية:",
+      "all": "جميع المشاريع",
+      "web": "ويب",
+      "desktop": "سطح المكتب",
+      "mobile": "جوال",
+      "moreFilters": "مزيد من الفلاتر",
+      "projectStatus": "حالة المشروع",
+      "statusAll": "جميع الحالات",
+      "statusCompleted": "مكتمل",
+      "statusInProgress": "قيد التنفيذ",
+      "technologies": "التقنيات",
+      "applyFilters": "تطبيق الفلاتر",
+      "reset": "إعادة تعيين"
+    },
+    "noProjects": {
+      "title": "لم يتم العثور على مشاريع",
+      "message": "لا توجد مشاريع تطابق بحثك. حاول تعديل فلاتر البحث أو البحث."
+    },
+    "viewDetails": "عرض التفاصيل",
+    "technologies": {
+      "title1": "التق",
+      "title2": "نيات المتقنة",
+      "subtitle": "الأدوات والتقنيات التي أستخدمها لإنشاء حلول عالية الأداء"
+    },
+    "cta": {
+      "title": "مستعد لتحقيق مشروعك؟",
+      "subtitle": "لنتناقش حول رؤيتك معاً ونخلق شيئاً استثنائياً",
+      "button": "ابدأ مشروع"
+    },
+    "status": {
+      "completed": "مكتمل",
+      "inProgress": "قيد التنفيذ"
+    },
+    "categories": {
+      "web": "ويب",
+      "desktop": "سطح المكتب",
+      "mobile": "جوال"
+    },
+    "projectDetails": {
+      "title": "تفاصيل المشروع",
+      "description": "الوصف الكامل",
+      "client": "العميل",
+      "period": "الفترة",
+      "status": "الحالة",
+      "category": "الفئة",
+      "technologies": "التقنيات المستخدمة",
+      "results": "النتائج المتحققة",
+      "features": "الميزات",
+      "visitSite": "زيارة الموقع",
+      "viewCode": "عرض الكود"
+    }
+  },
+  "projectsData": [
+    {
+      "id": 6,
+      "title": "شركة تنظيف",
+      "category": "موقع ويب",
+      "client": "CleanSolution",
+      "period": "2024",
+      "shortDescription": "موقع ويب حديث لشركة تنظيف مع حجز مواعيد عبر الإنترنت وطلبات عروض أسعار مخصصة",
+      "fullDescription": "تطوير موقع ويب كامل لشركة تنظيف محترفة. تعرض المنصة جميع خدمات التنظيف السكنية والتجارية، مع نظام حجز مواعيد عبر الإنترنت ونماذج طلب عروض أسعار مخصصة بالكامل. التصميم المتجاوب والنظيف يعزز الصورة الاحترافية للشركة.",
+      "technologies": ["Tailwind", "HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "features": [
+        "عرض خدمات التنظيف السكنية والتجارية",
+        "نظام حجز مواعيد عبر الإنترنت مع اختيار الفترات الزمنية",
+        "نماذج طلب عروض أسعار مخصصة حسب نوع الخدمة",
+        "تصميم متجاوب وتكيفي mobile-first",
+        "معرض صور للإنجازات",
+        "صلة اتصال مع تحديد الموقع الجغرافي",
+        "تحسين محركات البحث للظهور المحلي"
+      ],
+      "status": "completed",
+      "completionDate": "2024",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/clean_company/vid_clean_company.webm"
+    },
+    {
+      "id": 5,
+      "title": "مطعم وجبات سريعة حديث",
+      "category": "موقع ويب",
+      "client": "Fast Food",
+      "period": "2024",
+      "shortDescription": "موقع ويب جذاب لمطعم وجبات سريعة مع قائمة تفاعلية ونظام طلب عبر الإنترنت",
+      "fullDescription": "إنشاء موقع ويب ديناميكي لمطعم وجبات سريعة، يعرض القائمة الكاملة والعروض الترويجية. يتضمن الموقع قائمة تفاعلية مع فئات، صور شهية للمنتجات، ونظام اتصال مباشر للطلبات الخارجية. واجهة المستخدم مصممة لتحفيز الشهية وتسهيل التنقل.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "قائمة كاملة مع التصنيف (برغر، بطاطس، مشروبات، حلويات)",
+        "معرض صور عالي الجودة للمنتجات",
+        "نظام عرض العروض الترويجية والقوائم الخاصة",
+        "صلة اتصال مع نموذج طلب",
+        "تصميم ملون وجذاب مناسب للجمهور الشبابي",
+        "دمج وسائل التواصل الاجتماعي",
+        "تحسين للجوال والتابلت"
+      ],
+      "status": "completed",
+      "completionDate": "2024",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/fast_food/vid_fast_food.webm"
+    },
+    {
+      "id": 4,
+      "title": "مطعم دجاج",
+      "category": "موقع ويب",
+      "client": "مطعم دجاج",
+      "period": "2023",
+      "shortDescription": "موقع ويب أنيق لمطعم متخصص مع عرض القائمة والحجز عبر الإنترنت",
+      "fullDescription": "تنفيذ موقع ويب متطور لمطعم متخصص في الأطباق القائمة على الدجاج. تعرض المنصة القائمة gastronomic الكاملة، تاريخ المطعم، وتسمح للعملاء بالطلب بسرعة أو مسبقاً. التصميم الدافئ والأنيق يعكس الأجواء الودية للمنشأة.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "عرض كامل للقائمة والأطباق المميزة",
+        "معرض لأطباق التوقيع",
+        "قسم 'من نحن' مع تاريخ المطعم",
+        "معلومات عملية (أوقات العمل، الموقع، الاتصال)",
+        "تصميم أنيق بأجواء دافئة"
+      ],
+      "status": "completed",
+      "completionDate": "2023",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/chicken_food/vid_chicken_food.webm"
+    },
+    {
+      "id": 3,
+      "title": "شركة بناء وتجديد",
+      "category": "موقع ويب",
+      "client": "شركة بناء",
+      "period": "2023",
+      "shortDescription": "موقع ويب احترافي لشركة بناء يعرض الخدمات والإنجازات",
+      "fullDescription": "تطوير موقع ويب مؤسسي لشركة بناء وتجديد. تعرض المنصة جميع الخدمات (بناء جديد، تجديد، تطوير)، عرض الإنجازات مع معرض صور، ونظام طلب عروض أسعار مخصص. التصميم القوي والاحترافي يلهم الثقة والخبرة.",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
+      "features": [
+        "عرض خدمات البناء والتجديد",
+        "معرض portfolio للإنجازات مع فلاتر حسب نوع المشروع",
+        "نموذج طلب عرض أسعار مفصل",
+        "قسم الشهادات والضمانات",
+        "تصميم احترافي يلهم الثقة"
+      ],
+      "status": "completed",
+      "completionDate": "2023",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": null,
+      "images": null,
+      "video": "/projets/building_construction/vid_building_construction.webm"
+    },
+    {
+      "id": 2,
+      "title": "متابعة موانئ السفن",
+      "category": "تطبيق ويب",
+      "client": "ميناء بجاية",
+      "period": "2022",
+      "shortDescription": "حل ERP كامل لإدارة ومتابعة موانئ السفن في الوقت الحقيقي",
+      "fullDescription": "تطوير تطبيق ويب ERP كامل مخصص للإدارة الشاملة لموانئ السفن. يغطي هذا الحل العملية بأكملها من إعلان الوصول حتى مغادرة السفينة، بما في ذلك المتابعة في الوقت الحقيقي لجميع حركات الميناء، إدارة multi-user حسب الإدارات، ومتابعة القرارات الجماعية. يتضمن النظام لوحات تحكم مخصصة، سجل audit كامل ووظائف تقارير متقدمة.",
+      "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "API REST"],
+      "features": [
+        "متابعة السفن في الوقت الحقيقي من الإعلان حتى المغادرة",
+        "تصور كامل لحركات الميناء وحالات العمليات",
+        "لوحة تحكم مخصصة مع مؤشرات أداء رئيسية",
+        "إدارة المستخدمين حسب الإدارات مع نظام أدوار وأذونات",
+        "نظام إشعارات وتنبيهات مؤتمت",
+        "سجل audit مفصل لجميع أنشطة المستخدمين",
+        "توليد وطباعة المستندات الرسمية",
+        "إدارة الاجتماعات ومتابعة القرارات الجماعية",
+        "وحدة التقارير والإحصائيات المتقدمة",
+        "واجهة متجاوبة مناسبة لخدمات الميناء المختلفة"
+      ],
+      "status": "completed",
+      "completionDate": "2022",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": {
+        "url": "/projets/suivi_des_escales/9.JPG",
+        "alt": "لوحة التحكم الرئيسية لنظام إدارة الموانئ"
+      },
+      "images": [
+        {
+          "url": "/projets/suivi_des_escales/1.JPG",
+          "alt": "واجهة متابعة السفن في الوقت الحقيقي"
+        },
+        {
+          "url": "/projets/suivi_des_escales/2.JPG",
+          "alt": "إدارة حركات الميناء"
+        },
+        {
+          "url": "/projets/suivi_des_escales/3.JPG",
+          "alt": "لوحة تحكم مخصصة مع مؤشرات KPI"
+        },
+        {
+          "url": "/projets/suivi_des_escales/4.JPG",
+          "alt": "نظام إدارة المستخدمين والأذونات"
+        },
+        {
+          "url": "/projets/suivi_des_escales/5.JPG",
+          "alt": "وحدة توليد المستندات الرسمية"
+        },
+        {
+          "url": "/projets/suivi_des_escales/6.JPG",
+          "alt": "واجهة إدارة الاجتماعات والقرارات"
+        },
+        {
+          "url": "/projets/suivi_des_escales/7.JPG",
+          "alt": "سجل audit لأنشطة المستخدمين"
+        },
+        {
+          "url": "/projets/suivi_des_escales/8.JPG",
+          "alt": "نظام الإشعارات والتنبيهات"
+        },
+        {
+          "url": "/projets/suivi_des_escales/9.JPG",
+          "alt": "نظرة عامة على لوحة التحكم الرئيسية"
+        },
+        {
+          "url": "/projets/suivi_des_escales/10.JPG",
+          "alt": "وحدة التقارير والإحصائيات"
         }
       ],
-      "why": {
-        "title1": "خ",
-        "title2": "برة ملتزمة",
-        "subtitle": "نهج مرتكز على أهدافك التجارية وتعاون شفاف",
-        "imageAlt": "فريق محترف يتعاون على مشروع تكنولوجي",
-        "features": [
-          {
-            "title": "أمان معزز",
-            "description": "حماية البيانات والامتثال للائحة العامة لحماية البيانات (GDPR) مدمج منذ التصميم"
-          },
-          {
-            "title": "احترام المواعيد النهائية",
-            "description": "منهجية رشيقة مع تسليمات وسيطة منتظمة"
-          },
-          {
-            "title": "ابتكار تقني",
-            "description": "مراقبة تكنولوجية مستمرة لحلول مبتكرة"
-          },
-          {
-            "title": "دعم مستمر",
-            "description": "دعم ما بعد التسليم وتطورات مستقبلية"
-          }
-        ]
+      "video": null
+    },
+    {
+      "id": 1,
+      "title": "إدارة وكالة عقارية",
+      "category": "برنامج",
+      "client": "عقارية",
+      "period": "2019",
+      "shortDescription": "تطبيق سطح مكتب كامل لإدارة العقارات مع إدارة العقارات والعملاء والمعاملات",
+      "fullDescription": "تطوير برنامج سطح مكتب كامل لوكالة عقارية يسمح بالإدارة المركزية للعقارات، عملاء المشترين والبائعين، ومتابعة المعاملات. يتضمن التطبيق وحدة إدارة التفويضات، تقويم الزيارات، متابعة مالية العمولات، ووظائف بحث وتصفية متقدمة للعقارات.",
+      "technologies": ["Java", "POO", "Swing", "SQLite"],
+      "features": [
+        "إدارة كاملة لمحفظة العقارات",
+        "قاعدة بيانات العملاء (مشترين وبائعين) مع التاريخ",
+        "متابعة تفويضات البيع والتأجير",
+        "إدارة الزيارات والمواعيد",
+        "وحدة الإدارة المالية وحساب العمولات",
+        "نظام بحث متقدم بمعايير متعددة",
+        "توليد العقود والمستندات القانونية",
+        "نسخ احتياطي واستعادة قاعدة البيانات",
+        "واجهة مستخدم بديهية باللغة الفرنسية",
+        "إدارة توثيق العقارات"
+      ],
+      "status": "completed",
+      "completionDate": "2019",
+      "demoUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "new": false,
+      "img": {
+        "url": "/projets/agence_immobiliere/2.JPG",
+        "alt": "الواجهة الرئيسية لبرنامج إدارة العقارات"
       },
-      "cta": {
-        "title": "مستعد لتحويل رؤيتك الرقمية؟",
-        "subtitle": "اتصل بي للحصول على استشارة مجانية ودعنا نستكشف الإمكانيات معًا.",
-        "button1": "جدولة مكالمة",
-        "button2": "شاهد إنجازاتي"
+      "images": [
+        {
+          "url": "/projets/agence_immobiliere/1.JPG",
+          "alt": "إدارة محفظة العقارات"
+        },
+        {
+          "url": "/projets/agence_immobiliere/2.JPG",
+          "alt": "واجهة إدارة العملاء وال prospects"
+        },
+        {
+          "url": "/projets/agence_immobiliere/3.JPG",
+          "alt": "وحدة متابعة التفويضات والمعاملات"
+        },
+        {
+          "url": "/projets/agence_immobiliere/4.JPG",
+          "alt": "تقويم إدارة الزيارات"
+        },
+        {
+          "url": "/projets/agence_immobiliere/5.JPG",
+          "alt": "نظام البحث المتقدم للعقارات"
+        },
+        {
+          "url": "/projets/agence_immobiliere/6.JPG",
+          "alt": "وحدة الإدارة المالية والعمولات"
+        },
+        {
+          "url": "/projets/agence_immobiliere/7.JPG",
+          "alt": "توليد المستندات والعقود"
+        },
+        {
+          "url": "/projets/agence_immobiliere/8.JPG",
+          "alt": "إعدادات النظام والنسخ الاحتياطي"
+        }
+      ],
+      "video": null
+    }
+  ],
+  "blogPosts": [],
+  "technologies": [
+    { "name": "React", "icon": "SiReact" },
+    { "name": "Vue.js", "icon": "SiVuedotjs" },
+    { "name": "Tailwind", "icon": "SiTailwindcss" },
+    { "name": "JavaScript", "icon": "FiCode" },
+    { "name": "HTML", "icon": "FiCode" },
+    { "name": "CSS", "icon": "FiCode" },
+    { "name": "PHP", "icon": "FiCode" },
+    { "name": "Laravel", "icon": "SiLaravel" },
+    { "name": "Node.js", "icon": "SiNodedotjs" },
+    { "name": "Java", "icon": "FaJava" },
+    { "name": "MySQL", "icon": "SiMysql" },
+    { "name": "Git", "icon": "FiCode" },
+    { "name": "GitHub", "icon": "FiCode" },
+    { "name": "Bitbucket", "icon": "FiCode" },
+    { "name": "Photoshop", "icon": "FiCode" },
+    { "name": "Illustrator", "icon": "FiCode" },
+    { "name": "Canva", "icon": "FiCode" },
+    { "name": "Figma", "icon": "SiFigma" }
+  ],
+  "blog": {
+    "title": "مدونة التقنية",
+    "subtitle": "اكتشف أفكاري حول تطوير الويب، التقنيات الجديدة وأفضل ممارسات القطاع.",
+    "searchPlaceholder": "ابحث عن مقال، وسم أو موضوع...",
+    "categoriesButton": "الفئات",
+    "resetButton": "إعادة تعيين",
+    "featuredPostTitle": "المقال المميز",
+    "recentPostsTitle": "المقالات الحديثة",
+    "foundPostsTitle": "المقالات الموجودة",
+    "noPostsFound": "لم يتم العثور على مقالات لبحثك.",
+    "viewAllPosts": "عرض جميع المقالات",
+    "aboutTitle": "حول المدونة",
+    "aboutDescription": "مطور Full Stack شغوف، أشارك هنا تجاربي واكتشافاتي وأفكاري حول عالم تطوير الويب. استكشف أحدث الاتجاهات، النصائح وأفضل الممارسات.",
+    "popularTagsTitle": "الوسوم الشائعة",
+    "newsletterTitle": "النشرة التقنية",
+    "newsletterDescription": "استقبل أحدث المقالات والموارد مباشرة في بريدك.",
+    "newsletterPlaceholder": "بريدك الإلكتروني",
+    "newsletterButton": "اشتراك",
+    "readMore": "اقرأ المزيد",
+    "read": "اقرأ",
+    "close": "إغلاق",
+    "leaveComment": "اترك تعليق",
+    "articles": "مقالات",
+    "article": "مقال",
+    "categories": {
+      "all": "جميع المقالات",
+      "development": "التطوير",
+      "design": "التصميم",
+      "seo": "SEO",
+      "methodology": "المنهجية",
+      "security": "الأمان"
+    },
+    "categoriesList": [
+      { "id": "all", "icon": "LayoutGrid" },
+      { "id": "development", "icon": "BookOpen" },
+      { "id": "design", "icon": "LayoutGrid" },
+      { "id": "seo", "icon": "TrendingUp" },
+      { "id": "methodology", "icon": "LayoutGrid" },
+      { "id": "security", "icon": "LayoutGrid" }
+    ],
+    "popularTags": [
+      "React",
+      "Laravel",
+      "JavaScript",
+      "SEO",
+      "UX/UI",
+      "Agile",
+      "PHP",
+      "CSS",
+      "NextJS",
+      "TypeScript",
+      "Responsive",
+      "Performance"
+    ],
+    "readTimeSuffix": "قراءة",
+    "shareArticle": "شارك هذا المقال",
+    "share": "شارك",
+    "save": "حفظ",
+    "like": "أعجبني"
+  },
+  "cookies": {
+    "hero": {
+      "title": "سياسة الخصوصية وإدارة الكوكيز",
+      "subtitle": "الشفافية والتحكم في بياناتك الشخصية على منصتنا"
+    },
+    "commitment": {
+      "title": "التزامنا تجاه خصوصيتك",
+      "text1": "في شركتنا، حماية بياناتك الشخصية هي أولوية مطلقة. تشرح هذه السياسة كيف نجمع ونستخدم ونحمي معلوماتك.",
+      "text2": "نحن ملتزمون بالامتثال للـ GDPR واللوائح الفرنسية حول حماية البيانات."
+    },
+    "cookiesSection": {
+      "title": "سياسة الكوكيز",
+      "subtitle": "إدارة المتعقبات والتقنيات المشابهة",
+      "whatAreCookies": "ما هي الكوكيز؟",
+      "cookiesDefinition": "الكوكيز هي ملفات نصية صغيرة توضع على جهازك عند التصفح. تستخدم لتذكر تفضيلاتك، تحليل الحركة وتخصيص تجربتك.",
+      "typesTitle": "أنواع الكوكيز المستخدمة",
+      "essential": {
+        "title": "أساسية",
+        "description": "ضرورية لعمل الموقع (الأمان، السلة، الحساب)"
+      },
+      "performance": {
+        "title": "الأداء",
+        "description": "تحليل استخدام الموقع (الصفحات التي تمت زيارتها، أوقات التحميل)"
+      },
+      "functional": {
+        "title": "وظيفية",
+        "description": "تخصيص التجربة (اللغة، التفضيلات الإقليمية)"
+      },
+      "marketing": {
+        "title": "التسويق",
+        "description": "إعلانات مخصصة وحملات إعادة الاستهداف"
+      },
+      "management": {
+        "title": "إدارة الموافقة",
+        "text": "لديك تحكم كامل في الكوكيز غير الأساسية. يمكنك تعديل تفضيلاتك في أي وقت.",
+        "button": "إدارة تفضيلات الكوكيز"
       }
     },
+    "dataSection": {
+      "title": "معالجة البيانات الشخصية",
+      "subtitle": "كيف نجمع ونستخدم معلوماتك",
+      "collectedData": "البيانات المجمعة",
+      "dataList": [
+        "معلومات الحساب (الاسم، البريد الإلكتروني، العنوان)",
+        "بيانات التصفح (عنوان IP، الصفحات التي تمت مشاهدتها)",
+        "معلومات المعاملات (سجل المشتريات)",
+        "التفضيلات والاهتمامات"
+      ],
+      "purposesTitle": "أغراض المعالجة",
+      "purposesList": [
+        "تنفيذ الطلبات والخدمات",
+        "تخصيص تجربة المستخدم",
+        "تحسين منتجاتنا وخدماتنا",
+        "الاتصالات التسويقية (بموافقتك)",
+        "الامتثال للالتزامات القانونية"
+      ],
+      "protectionTitle": "حماية البيانات",
+      "protectionText": "ننفذ إجراءات أمنية متقدمة تشمل:",
+      "protectionList": [
+        "تشفير AES-256 للبيانات الحساسة",
+        "تدقيق أمني منتظم",
+        "وصول مقيد للبيانات الشخصية",
+        "سياسة احتفاظ محدودة زمنياً"
+      ]
+    },
+    "rightsSection": {
+      "title": "حقوقك بموجب GDPR",
+      "subtitle": "التحكم في بياناتك الشخصية",
+      "access": {
+        "title": "حق الوصول",
+        "description": "الحصول على نسخة من بياناتك الشخصية"
+      },
+      "rectification": {
+        "title": "حق التصحيح",
+        "description": "تصحيح المعلومات غير الدقيقة"
+      },
+      "erasure": {
+        "title": "حق المحو",
+        "description": "حذف بياناتك ('حق النسيان')"
+      },
+      "objection": {
+        "title": "حق الاعتراض",
+        "description": "الاعتراض على المعالجة لأسباب مشروعة"
+      },
+      "howToExercise": "كيفية ممارسة حقوقك",
+      "exerciseText": "لأي طلب يتعلق ببياناتك الشخصية، يرجى الاتصال بنا على العنوان أدناه. سوف نرد في غضون 30 يوماً كحد أقصى."
+    },
+    "disableSection": {
+      "title": "تعطيل الكوكيز",
+      "subtitle": "كيفية إدارة إعدادات متصفحك",
+      "text": "يمكنك التحكم في الكوكيز من خلال إعدادات متصفحك. إليك أدلة للمتصفحات الشائعة:",
+      "browsers": {
+        "chrome": "Google Chrome",
+        "firefox": "Mozilla Firefox",
+        "safari": "Safari",
+        "edge": "Microsoft Edge"
+      }
+    },
+    "contactSection": {
+      "title": "الاتصال وDPO",
+      "subtitle": "مسؤول حماية البيانات لدينا",
+      "text": "لأي أسئلة تتعلق بهذه السياسة أو ممارسة حقوقك، اتصل بـ DPO لدينا:",
+      "dpoName": "السيد جان دوبون",
+      "dpoRole": "مسؤول حماية البيانات",
+      "email": "dpo@yourcompany.com",
+      "phone": "+33 1 23 45 67 89",
+      "mailingAddress": "عن طريق البريد:",
+      "address": [
+        "شركة XYZ",
+        "خدمة حماية البيانات",
+        "123 Avenue de la République",
+        "75011 Paris, France"
+      ]
+    },
+    "lastUpdated": "آخر تحديث: "
+  },
+  "contact": {
+    "faqTitle1": "الأسئلة",
+    "faqTitle2": "الشائعة",
+    "faqSubtitle": "ابحث عن إجابات للأسئلة الأكثر شيوعاً",
+    "hero": {
+      "title1": "ات",
+      "title2": "صل بي",
+      "subtitle": "سؤال، مشروع أو مجرد الرغبة في الدردشة؟ أنا هنا للاستماع.",
+      "contactButton": "اتصل بي",
+      "devisButton": "طلب عرض سعر"
+    },
+    "whatsapp": {
+      "title": "اتصال واتساب",
+      "description": "لنتناقش حول مشروعك مباشرة على واتساب",
+      "button": "فتح واتساب",
+      "link": "https://wa.me/yourphonenumber"
+    },
     "devis": {
-      "documentTitle": "طلب عرض سعر | إنشاء مواقع ويب وتطبيقات",
-      "hero": {
-        "title1": "طلب",
-        "title2": "عرض سعر مخصص",
-        "subtitle": "املأ هذا النموذج المفصل لاستلام تقدير دقيق لمشروعك على الويب أو الجوال.",
-        "contactButton": "اتصل بي"
+      "title": "عرض سعر مجاني",
+      "description": "احصل على تقدير مخصص لمشروعك",
+      "button": "طلب عرض سعر"
+    },
+    "guarantees": [
+      {
+        "title": "رد خلال 24 ساعة",
+        "text": "أتعهد بالرد على جميع الطلبات خلال 24 ساعة"
       },
-      "form": {
-        "title": "طلب عرض سعر",
-        "step": "خطوة {{step}}/{{total}}",
-        "success": {
-          "title": "تم إرسال الطلب!",
-          "message": "شكرًا لك على طلبك. سأتصل بك خلال 24 ساعة بعرض سعر مخصص.",
-          "button": "العودة إلى الرئيسية"
-        }
+      {
+        "title": "تواصل سلس",
+        "text": "متابعة منتظمة وتواصل شفاف طوال المشروع"
       },
-      "step1": {
-        "title": "معلومات شخصية",
-        "firstName": "الاسم الأول",
-        "firstNamePlaceholder": "اسمك الأول",
-        "lastName": "الاسم الأخير",
-        "lastNamePlaceholder": "اسمك الأخير",
-        "email": "عنوان البريد الإلكتروني",
-        "emailPlaceholder": "your@email.com",
-        "phone": "هاتف",
-        "phonePlaceholder": "رقمك",
-        "company": "شركة",
-        "companyPlaceholder": "اسم شركتك",
-        "website": "موقع ويب",
-        "websitePlaceholder": "https://yoursite.com",
-        "nextButton": "التالي"
+      {
+        "title": "رضا مضمون",
+        "text": "تعديلات مشمولة حتى تكون راضياً تماماً"
+      }
+    ],
+    "errorMessage": "حدث خطأ، يرجى المحاولة مرة أخرى.",
+    "successTitle": "تم إرسال الرسالة!",
+    "successMessage": "شكراً لرسالتك. سوف أرد عليك بسرعة كبيرة.",
+    "sending": "جاري الإرسال...",
+    "sendMessage": "إرسال الرسالة",
+    "formFooter": "* الحقول الإلزامية. بياناتك محمية ولن يتم مشاركتها أبداً.",
+    "contactInfo": [
+      {
+        "title": "البريد الإلكتروني",
+        "details": ["contact@mysite.com", "support@mysite.com"]
       },
-      "step2": {
-        "title": "تفاصيل المشروع",
-        "projectName": "اسم المشروع",
-        "projectNamePlaceholder": "مثال: إعادة تصميم موقع تجارة إلكترونية",
-        "service": "نوع الخدمة",
-        "servicePlaceholder": "اختر خدمة",
-        "serviceOtherPlaceholder": "حدد نوع الخدمة",
-        "projectType": "نوع المشروع",
-        "projectTypePlaceholder": "اختر نوع المشروع",
-        "projectTypeOtherPlaceholder": "حدد نوع المشروع",
-        "prevButton": "السابق",
-        "nextButton": "التالي"
+      {
+        "title": "الهاتف",
+        "details": ["+33 6 12 34 56 78"]
       },
-      "step3": {
-        "title": "متطلبات وملفات",
-        "featuresLabel": "الميزات المطلوبة",
-        "projectGoals": "أهداف المشروع",
-        "projectGoalsPlaceholder": "ما هي الأهداف الرئيسية لمشروعك؟ ما هي المشاكل التي يحلها؟",
-        "targetAudience": "الجمهور المستهدف",
-        "targetAudiencePlaceholder": "صف جمهورك المستهدف (العمر، المهنة، الاهتمامات...)",
-        "technicalRequirements": "المتطلبات التقنية",
-        "technicalRequirementsPlaceholder": "مواصفات تقنية، تكاملات ضرورية، قيود خاصة...",
-        "fileUpload": {
-          "title": "تحميل الملفات",
-          "instruction1": "اسحب وأفلت ملفاتك أو",
-          "instruction2": "انقر للتصفح",
-          "formats": "الصيغ المقبولة: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (الحد الأقصى 10MB)",
-          "attachments": "{{count}} ملف مرفق"
-        },
-        "prevButton": "السابق",
-        "nextButton": "التالي"
+      {
+        "title": "الموقع",
+        "details": ["باريس، فرنسا"]
       },
-      "step4": {
-        "title": "الجدول الزمني، الميزانية والإنهاء",
-        "timeline": "الجدول الزمني المطلوب",
-        "timelinePlaceholder": "اختر جدولًا زمنيًا",
-        "timelineOtherPlaceholder": "حدد جدولك الزمني",
-        "budget": "الميزانية المقدرة",
-        "budgetPlaceholder": "اختر ميزانيتك",
-        "budgetOtherPlaceholder": "حدد ميزانيتك",
-        "message": "معلومات إضافية",
-        "messagePlaceholder": "أي معلومات أخرى مفيدة لفهم مشروعك...",
-        "prevButton": "السابق",
-        "submitButton": "إرسال طلبي",
-        "sending": "جاري الإرسال...",
-        "disclaimer": "* الحقول الإلزامية. بياناتك محمية ولن يتم مشاركتها أبدًا."
+      {
+        "title": "التوفر",
+        "details": ["الإثنين-الجمعة: 9ص-6م", "رد خلال 24 ساعة"]
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "username": "myprofile",
+        "url": "https://github.com/myprofile"
       },
-      "otherOption": "أخرى",
-      "validation": {
-        "step1": "يرجى ملء الحقول الإلزامية (الاسم الأول، الاسم الأخير، البريد الإلكتروني)",
-        "step2": "يرجى اختيار نوع الخدمة"
+      {
+        "name": "LinkedIn",
+        "username": "myprofile",
+        "url": "https://linkedin.com/in/myprofile"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "ما هو متوسط وقت ردك؟",
+        "answer": "أتعهد بالرد على جميع الرسائل خلال 24 ساعة عمل."
       },
-      "submitError": "خطأ في الإرسال:",
-      "submitErrorMessage": "حدث خطأ، يرجى المحاولة مرة أخرى.",
-      "services": [
-        "موقع عرض",
-        "موقع تجارة إلكترونية",
-        "تطبيق ويب",
-        "تطبيق جوال",
-        "إعادة تصميم موقع",
-        "SEO وتسويق",
-        "أخرى"
-      ],
-      "projectTypes": [
-        "إنشاء مشروع جديد",
-        "إعادة تصميم كاملة",
-        "إضافة ميزات",
-        "تصحيح أخطاء",
-        "تحسين الأداء",
-        "هجرة بيانات",
-        "أخرى"
-      ],
-      "timelines": [
-        "أقل من شهر",
-        "1 إلى 3 أشهر",
-        "3 إلى 6 أشهر",
-        "أكثر من 6 أشهر",
-        "عاجل (أقل من أسبوعين)",
-        "أخرى"
-      ],
-      "budgetRanges": [
-        "أقل من 50 يورو",
-        "150 يورو - 50 يورو",
-        "300 يورو - 150 يورو",
-        "600 يورو - 300 يورو",
-        "1500 يورو - 600 يورو",
-        "أكثر من 1500 يورو",
-        "لا أعرف",
-        "أخرى"
-      ],
-      "featuresList": [
-        "واجهة متجاوبة",
-        "منطقة أعضاء",
-        "دفع عبر الإنترنت",
-        "متعدد اللغات",
-        "مدونة/أخبار",
-        "حجوزات عبر الإنترنت",
-        "نظام تعليقات",
-        "دمج واجهة برمجة تطبيقات طرف ثالث",
-        "لوحة تحكم المشرف",
-        "بحث متقدم",
-        "معرض وسائط",
-        "دردشة مباشرة",
-        "نشرة إخبارية",
-        "إحصائيات وتقارير",
-        "دمج الشبكات الاجتماعية"
-      ],
-      "fileTypes": [
-        "JPG",
-        "PNG",
-        "PDF",
-        "DOC",
-        "XLS",
-        "PSD",
-        "AI",
-        "FIG",
-        "SKETCH"
-      ],
-      "contactInfo": [
-        {
-          "title": "بريد إلكتروني",
-          "details": ["contact@example.com"],
-          "action": "mailto:contact@example.com",
-          "icon": "Mail"
-        },
-        {
-          "title": "هاتف",
-          "details": ["+33 6 12 34 56 78"],
-          "action": "tel:+33612345678",
-          "icon": "Phone"
-        },
-        {
-          "title": "عنوان",
-          "details": ["باريس، فرنسا", "عن بعد حول العالم"],
-          "icon": "MapPin"
-        }
-      ],
-      "socialLinks": [
-        {
-          "name": "GitHub",
-          "username": "yourusername",
-          "url": "https://github.com/yourusername",
-          "icon": "Github"
-        },
-        {
-          "name": "LinkedIn",
-          "username": "yourname",
-          "url": "https://linkedin.com/in/yourname",
-          "icon": "Linkedin"
-        }
-      ],
-      "contactSection": {
-        "title": "اتصال مباشر"
+      {
+        "question": "هل يمكنني الاتصال بك للحصول على نصيحة مجانية؟",
+        "answer": "بالتأكيد! أقدم استشارات مجانية لمدة 15 دقيقة لمناقشة احتياجاتك."
       },
-      "socialSection": {
-        "title": "الشبكات الاجتماعية"
+      {
+        "question": "هل تتعامل مع الطلبات العاجلة؟",
+        "answer": "نعم، للطلبات العاجلة، يرجى ذكر ذلك في رسالتك وسأبذل قصارى جهدي للرد بسرعة."
       },
-      "guarantees": [
-        {
-          "title": "رد خلال 24 ساعة",
-          "text": "أعالج كل طلب في غضون 24 ساعة كحد أقصى."
-        },
-        {
-          "title": "عرض سعر مفصل",
-          "text": "ستتلقى عرض سعر كامل مع خيارات وجدول زمني."
-        },
-        {
-          "title": "بدون التزام",
-          "text": "طلب عرض السعر مجاني وبدون أي التزام بالشراء."
-        }
-      ],
-      "faq": {
-        "title": "أسئلة شائعة",
-        "subtitle": "معلومات مفيدة حول عملية عرض السعر",
-        "items": [
-          {
-            "question": "ما هي الملفات التي يمكنني إرفاقها بطلبي؟",
-            "answer": "يمكنك إرفاق أي مستند مفيد: صور، نماذج، PDF، ملفات تصميم (PSD, AI, FIG, SKETCH)، مستندات Word/Excel، أو أي ملف آخر يساعد في فهم مشروعك."
-          },
-          {
-            "question": "كيف يتم معالجة ملفاتي المرفقة؟",
-            "answer": "يتم تخزين ملفاتك مؤقتًا لتقييم مشروعك وحذفها بعد إنشاء عرض السعر. لا يتم مشاركتها مطلقًا مع أطراف ثالثة."
-          },
-          {
-            "question": "هل يمكنني تعديل طلبي بعد إرساله؟",
-            "answer": "نعم، إذا كنت بحاجة إلى إجراء تعديلات، ما عليك سوى الرد على بريد التأكيد الإلكتروني الذي ستحصل عليه أو الاتصال بي مباشرة."
-          },
-          {
-            "question": "ماذا يحدث بعد إرسال عرض السعر؟",
-            "answer": "سأتصل بك لمناقشة تفاصيل مشروعك، وتحسين عرض السعر إذا لزم الأمر، وإنشاء جدول زمني للتنفيذ."
-          }
+      {
+        "question": "ما المواضيع التي يمكنني مناقشتها؟",
+        "answer": "جميع المواضيع مرحب بها: أسئلة تقنية، طلبات نصيحة، تعاون، أو فقط لقول مرحباً!"
+      },
+      {
+        "question": "ما هي أوقات ردك؟",
+        "answer": "أتعهد بالرد على جميع الطلبات خلال 24 ساعة عمل كحد أقصى. للمشاريع المعقدة، سأرسل لك رداً أولياً خلال 24 ساعة وعرض سعر مفصل خلال 48 ساعة."
+      },
+      {
+        "question": "هل يمكنني مقابلتك شخصياً؟",
+        "answer": "بالتأكيد! أنا مقيم في باريس ومتاح للقاءات شخصية. للعملاء الدوليين أو البعيدين، أقدم استشارات عبر Zoom أو Teams أو Google Meet."
+      },
+      {
+        "question": "ما أنواع المشاريع التي تقبلها؟",
+        "answer": "أعمل على مجموعة واسعة من المشاريع: مواقع عرض، تجارة إلكترونية، تطبيقات ويب، إعادة تصميم، تصميم UI/UX وتحسين محركات البحث. إذا كان مشروعك يتطلب خبرة محددة، يمكنني إحالتك إلى شركاء موثوقين."
+      },
+      {
+        "question": "هل تقدم دعماً بعد التسليم؟",
+        "answer": "نعم، أقدم مستويات مختلفة من الدعم بعد التسليم، تتراوح من تصحيح الأخطاء البسيطة إلى عقود صيانة شاملة تشمل التحديثات، النسخ الاحتياطية والتحسينات المستمرة."
+      }
+    ],
+    "form": {
+      "nameLabel": "اسمك",
+      "namePlaceholder": "اسمك الكامل",
+      "emailLabel": "بريدك الإلكتروني",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "الموضوع",
+      "subjectPlaceholder": "موضوع رسالتك",
+      "messageLabel": "رسالتك",
+      "messagePlaceholder": "صف طلبك هنا..."
+    },
+    "sectionTitles": {
+      "sendMessage": "أرسل رسالة",
+      "sendMessageDesc": "املأ هذا النموذج وسأرد في أقرب وقت ممكن.",
+      "myContactInfo": "معلومات الاتصال بي",
+      "socialNetworks": "الشبكات الاجتماعية",
+      "findMe": "أين تجدني",
+      "findMeDesc": "مقيم في باريس، أعمل مع عملاء حول العالم"
+    },
+    "ctaTitle": "مستعد لبدء مشروعك؟",
+    "ctaSubtitle": "اتصل بي اليوم لمناقشة احتياجاتك ومعرفة كيف يمكنني مساعدتك."
+  },
+  "services": {
+    "meta": {
+      "title": "خدمات ويب مخصصة | إنشاء مواقع وتطبيقات",
+      "description": "خبير في تطوير الويب وتصميم UX/UI. حلول كاملة لمواقع العرض، تطبيقات الويب والإستراتيجية الرقمية."
+    },
+    "hero": {
+      "title1": "حلول رقمية",
+      "title2": "مخصصة",
+      "subtitle": "حول أفكارك إلى تجارب رقمية استثنائية مع خبرة تقنية مجتمعة مع تصميم مبتكر.",
+      "button": "ناقش مشروعك"
+    },
+    "services": {
+      "title1": "خ",
+      "title2": "براتي",
+      "subtitle": "حلول مخصصة لتحويل تحدياتك الرقمية إلى نجاح",
+      "featuresTitle": "الحلول المقترحة",
+      "techTitle": "التقنيات الرئيسية",
+      "ctaButton": "صف مشروعك",
+      "web": {
+        "title": "مواقع الويب",
+        "description": "إنشاء مواقع ويب آمنة وعالية الأداء مكيفة مع احتياجاتك التجارية.",
+        "features": [
+          "مواقع عرض مخصصة",
+          "متوافقة مع الجوال/التابلت",
+          "حركات سلسة",
+          "تحسين جوجل",
+          "تحميل فائق السرعة",
+          "حماية ضد التهديدات الإلكترونية",
+          "استضافة آمنة مع نسخ احتياطية",
+          "مساعدة تقنية دائمة"
+        ],
+        "technologies": [
+          "Bootstrap",
+          "Tailwind CSS",
+          "React",
+          "MUI",
+          "VueJS",
+          "Vuetify"
         ]
       },
-      "stepTitles": [
-        "معلومات شخصية",
-        "تفاصيل المشروع",
-        "متطلبات وملفات",
-        "الجدول الزمني، الميزانية والإنهاء"
-      ],
+      "app": {
+        "title": "تطبيقات الويب",
+        "description": "حلول كاملة لأتمتة عملياتك التجارية.",
+        "features": [
+          "لوحات تحكم مخصصة",
+          "منصات SaaS مخصصة",
+          "متاجر إلكترونية آمنة",
+          "اتصال بأدواتك الحالية",
+          "أتمتة المهام المتكررة",
+          "تحليل البيانات في الوقت الحقيقي",
+          "مزامنة متعددة الأجهزة",
+          "تدريب المستخدمين"
+        ],
+        "technologies": ["Wordpress", "PHP", "Laravel", "MySQL"]
+      },
+      "mobile": {
+        "title": "تطبيقات الجوال",
+        "description": "تطبيقات جوال أصلية منشورة على المتاجر الرسمية.",
+        "features": [
+          "iOS وAndroid عالي الأداء",
+          "النشر على App Store/Google Play",
+          "وظائف دون اتصال",
+          "إشعارات فورية",
+          "حماية البيانات الشخصية",
+          "واجهات بسيطة وبديهية",
+          "اختبار على جميع الأجهزة",
+          "تحديثات منتظمة"
+        ],
+        "technologies": [
+          "Flutter",
+          "React Native",
+          "Firebase",
+          "MYSQL",
+          "NoSQL"
+        ]
+      },
+      "marketing": {
+        "title": "الإستراتيجية الرقمية والتسويق",
+        "description": "حلول لجذب العملاء وزيادة مبيعاتك عبر الإنترنت.",
+        "features": [
+          "إنشاء هوية بصرية (شعارات، ملصقات)",
+          "إدارة شبكاتك الاجتماعية",
+          "إنتاج محتوى جذاب",
+          "إعلانات جوجل مستهدفة",
+          "استراتيجيات الولاء",
+          "أتمتة التسويق",
+          "تحليل الأداء"
+        ],
+        "technologies": [
+          "Google Ads",
+          "Google Analytics",
+          "Canva",
+          "Photoshop",
+          "Illustrator"
+        ]
+      }
+    },
+    "process": {
+      "title1": "العملية",
+      "title2": "الإبداعية",
+      "subtitle": "منهجية شفافة لنتائج استثنائية"
+    },
+    "processSteps": [
+      {
+        "step": "التصميم",
+        "title": "المخطط الرقمي",
+        "description": "تحديد الأهداف والهندسة المعمارية التقنية"
+      },
+      {
+        "step": "التطوير",
+        "title": "الإبداع التقني",
+        "description": "تنفيذ أجايل مع مراجعات أسبوعية"
+      },
+      {
+        "step": "التحسين",
+        "title": "الضبط الدقيق",
+        "description": "اختبار المستخدمين وتعديلات دقيقة"
+      },
+      {
+        "step": "التسليم",
+        "title": "الدعم",
+        "description": "التدريب والدعم بعد التسليم"
+      }
+    ],
+    "why": {
+      "title1": "خبرة",
+      "title2": "ملتزمة",
+      "subtitle": "نهج مرتكز على أهدافك التجارية وتعاون شفاف",
+      "imageAlt": "فريق محترف يتعاون على مشروع تكنولوجي",
+      "features": [
+        {
+          "title": "أمان معزز",
+          "description": "حماية البيانات والامتثال لـ GDPR مدمج من التصميم"
+        },
+        {
+          "title": "احترام المواعيد النهائية",
+          "description": "منهجية أجايل مع تسليمات وسيطة منتظمة"
+        },
+        {
+          "title": "ابتكار تقني",
+          "description": "مراقبة تكنولوجية مستمرة لحلول avant-garde"
+        },
+        {
+          "title": "دعم مستمر",
+          "description": "الدعم بعد التسليم والتطورات المستقبلية"
+        }
+      ]
+    },
+    "cta": {
+      "title": "مستعد لتحويل رؤيتك الرقمية؟",
+      "subtitle": "اتصل بي للحصول على استشارة مجانية ولنستكشف الاحتمالات معاً.",
+      "button1": "جدولة مكالمة",
+      "button2": "عرض أعمالي"
+    }
+  },
+  "devis": {
+    "documentTitle": "طلب عرض سعر | إنشاء مواقع وتطبيقات",
+    "hero": {
+      "title1": "طلب عرض",
+      "title2": "سعر مخصص",
+      "subtitle": "املأ هذا النموذج المفصل لتلقي تقدير دقيق لمشروعك الإلكتروني أو الجوال.",
+      "contactButton": "اتصل بي"
+    },
+    "form": {
+      "title": "طلب عرض سعر",
+      "step": "خطوة {{step}}/{{total}}",
+      "success": {
+        "title": "تم إرسال الطلب!",
+        "message": "شكراً لطلبك. سأتصل بك خلال 24 ساعة بعرض سعر مخصص.",
+        "button": "العودة إلى الرئيسية"
+      }
+    },
+    "step1": {
+      "title": "المعلومات الشخصية",
+      "firstName": "الاسم الأول",
+      "firstNamePlaceholder": "اسمك الأول",
+      "lastName": "الاسم الأخير",
+      "lastNamePlaceholder": "اسمك الأخير",
+      "email": "عنوان البريد الإلكتروني",
+      "emailPlaceholder": "your@email.com",
+      "phone": "الهاتف",
+      "phonePlaceholder": "رقمك",
+      "company": "الشركة",
+      "companyPlaceholder": "اسم شركتك",
+      "website": "موقع الويب",
+      "websitePlaceholder": "https://yoursite.com",
+      "nextButton": "التالي"
+    },
+    "step2": {
+      "title": "تفاصيل المشروع",
+      "projectName": "اسم المشروع",
+      "projectNamePlaceholder": "مثال: إعادة تصميم موقع تجارة إلكترونية",
+      "service": "نوع الخدمة",
+      "servicePlaceholder": "اختر خدمة",
+      "serviceOtherPlaceholder": "حدد نوع الخدمة",
+      "projectType": "نوع المشروع",
+      "projectTypePlaceholder": "اختر نوع المشروع",
+      "projectTypeOtherPlaceholder": "حدد نوع المشروع",
+      "prevButton": "السابق",
+      "nextButton": "التالي"
+    },
+    "step3": {
+      "title": "المتطلبات والملفات",
+      "featuresLabel": "الميزات المطلوبة",
+      "projectGoals": "أهداف المشروع",
+      "projectGoalsPlaceholder": "ما هي الأهداف الرئيسية لمشروعك؟ ما المشاكل التي يحلها؟",
+      "targetAudience": "الجمهور المستهدف",
+      "targetAudiencePlaceholder": "صف جمهورك المستهدف (العمر، المهنة، الاهتمامات...)",
+      "technicalRequirements": "المتطلبات التقنية",
+      "technicalRequirementsPlaceholder": "المواصفات التقنية، التكاملات الضرورية، قيود خاصة...",
+      "fileUpload": {
+        "title": "رفع الملفات",
+        "instruction1": "اسحب وأفلت ملفاتك أو",
+        "instruction2": "انقر للتصفح",
+        "formats": "الصيغ المقبولة: JPG, PNG, PDF, DOC, XLS, PSD, AI, FIG, SKETCH (الحد الأقصى 10MB)",
+        "attachments": "{{count}} ملف(ملفات) مرفقة"
+      },
+      "prevButton": "السابق",
+      "nextButton": "التالي"
+    },
+    "step4": {
+      "title": "الجدول الزمني، الميزانية والإنهاء",
+      "timeline": "الجدول الزمني المطلوب",
+      "timelinePlaceholder": "اختر جدولاً زمنياً",
+      "timelineOtherPlaceholder": "حدد جدولك الزمني",
+      "budget": "الميزانية المقدرة",
+      "budgetPlaceholder": "اختر ميزانيتك",
+      "budgetOtherPlaceholder": "حدد ميزانيتك",
+      "message": "معلومات إضافية",
+      "messagePlaceholder": "أي معلومات أخرى مفيدة لفهم مشروعك...",
+      "prevButton": "السابق",
+      "submitButton": "إرسال طلبي",
+      "sending": "جاري الإرسال...",
+      "disclaimer": "* الحقول الإلزامية. بياناتك محمية ولن يتم مشاركتها أبداً."
+    },
+    "otherOption": "آخر",
+    "validation": {
+      "step1": "يرجى ملء الحقول الإلزامية (الاسم الأول، الاسم الأخير، البريد الإلكتروني)",
+      "step2": "يرجى اختيار نوع الخدمة"
+    },
+    "submitError": "خطأ في الإرسال:",
+    "submitErrorMessage": "حدث خطأ، يرجى المحاولة مرة أخرى.",
+    "services": [
+      "موقع عرض",
+      "موقع تجارة إلكترونية",
+      "تطبيق ويب",
+      "تطبيق جوال",
+      "إعادة تصميم موقع",
+      "SEO وتسويق",
+      "آخر"
+    ],
+    "projectTypes": [
+      "إنشاء مشروع جديد",
+      "إعادة تصميم كاملة",
+      "إضافة ميزات",
+      "تصحيح أخطاء",
+      "تحسين الأداء",
+      "هجرة البيانات",
+      "آخر"
+    ],
+    "timelines": [
+      "أقل من شهر",
+      "1 إلى 3 أشهر",
+      "3 إلى 6 أشهر",
+      "أكثر من 6 أشهر",
+      "عاجل (أقل من أسبوعين)",
+      "آخر"
+    ],
+    "budgetRanges": [
+      "أقل من 50€",
+      "50€ - 150€",
+      "150€ - 300€",
+      "300€ - 600€",
+      "600€ - 1500€",
+      "أكثر من 1500€",
+      "لا أعرف",
+      "آخر"
+    ],
+    "featuresList": [
+      "واجهة متجاوبة",
+      "منطقة أعضاء",
+      "دفع عبر الإنترنت",
+      "متعدد اللغات",
+      "مدونة/أخبار",
+      "حجوزات عبر الإنترنت",
+      "نظام تعليقات",
+      "تكامل API طرف ثالث",
+      "لوحة تحكم المشرف",
+      "بحث متقدم",
+      "معرض وسائط",
+      "دردشة مباشرة",
+      "نشرة إخبارية",
+      "إحصائيات وتقارير",
+      "دمج الشبكات الاجتماعية"
+    ],
+    "fileTypes": [
+      "JPG",
+      "PNG",
+      "PDF",
+      "DOC",
+      "XLS",
+      "PSD",
+      "AI",
+      "FIG",
+      "SKETCH"
+    ],
+    "contactInfo": [
+      {
+        "title": "البريد الإلكتروني",
+        "details": ["contact@example.com"],
+        "action": "mailto:contact@example.com",
+        "icon": "Mail"
+      },
+      {
+        "title": "الهاتف",
+        "details": ["+33 6 12 34 56 78"],
+        "action": "tel:+33612345678",
+        "icon": "Phone"
+      },
+      {
+        "title": "العنوان",
+        "details": ["باريس، فرنسا", "عن بُعد حول العالم"],
+        "icon": "MapPin"
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "username": "yourusername",
+        "url": "https://github.com/yourusername",
+        "icon": "Github"
+      },
+      {
+        "name": "LinkedIn",
+        "username": "yourname",
+        "url": "https://linkedin.com/in/yourname",
+        "icon": "Linkedin"
+      }
+    ],
+    "contactSection": {
+      "title": "اتصال مباشر"
+    },
+    "socialSection": {
+      "title": "الشبكات الاجتماعية"
+    },
+    "guarantees": [
+      {
+        "title": "رد خلال 24 ساعة",
+        "text": "أعالج كل طلب خلال 24 ساعة كحد أقصى."
+      },
+      {
+        "title": "عرض سعر مفصل",
+        "text": "ستتلقى عرض سعر كامل مع خيارات وجدول زمني."
+      },
+      {
+        "title": "بدون التزام",
+        "text": "طلب عرض السعر مجاني وبدون التزام بالشراء."
+      }
+    ],
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "subtitle": "معلومات مفيدة حول عملية عرض السعر",
+      "items": [
+        {
+          "question": "ما الملفات التي يمكنني إرفاقها بطلبي؟",
+          "answer": "يمكنك إرفاق أي مستندات مفيدة: صور، نماذج، PDF، ملفات تصميم (PSD, AI, FIG, SKETCH)، مستندات Word/Excel، أو أي ملف آخر يساعد في فهم مشروعك."
+        },
+        {
+          "question": "كيف يتم معالجة ملفاتي المرفقة؟",
+          "answer": "يتم تخزين ملفاتك مؤقتاً لتقييم المشروع وحذفها بعد إنشاء عرض السعر. لا يتم مشاركتها مع أطراف ثالثة أبداً."
+        },
+        {
+          "question": "هل يمكنني تعديل طلبي بعد إرساله؟",
+          "answer": "نعم، إذا كنت بحاجة إلى إجراء تغييرات، ما عليك سوى الرد على بريد التأكيد الذي ستتلقاه أو الاتصال بي مباشرة."
+        },
+        {
+          "question": "ماذا يحدث بعد إرسال عرض السعر؟",
+          "answer": "سأتصل بك لمناقشة تفاصيل مشروعك، تحسين عرض السعر إذا لزم الأمر، وإنشاء جدول تنفيذ."
+        }
+      ]
+    },
+    "stepTitles": [
+      "المعلومات الشخصية",
+      "تفاصيل المشروع",
+      "المتطلبات والملفات",
+      "الجدول الزمني، الميزانية والإنهاء"
+    ],
     "contactPage": {
       "title": "عرض سعر مجاني",
       "description": "احصل على تقدير مخصص لمشروعك",
       "button": "طلب عرض سعر"
     }
-    }
   }
+}
