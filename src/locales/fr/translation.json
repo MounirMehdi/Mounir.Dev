@@ -1281,9 +1281,9 @@
       "Délais, Budget & Finalisation"
     ],
     "contactPage": {
-      "title": "Devis Gratuit",
-      "description": "Obtenez une estimation personnalisée de votre projet",
-      "button": "Demander un devis"
+      "title": "Simple Message",
+      "description": "Contactez-nous avec un simple message et parlez-nous de votre projet",
+      "button": "Contactez-nous"
     }
   }
 }

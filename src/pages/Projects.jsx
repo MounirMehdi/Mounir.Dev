@@ -186,7 +186,7 @@ const Projects = () => {
             y: heroY,
             backgroundAttachment: 'fixed',
           }}
-          className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center opacity-30 dark:opacity-20"
+          className="absolute inset-0 bg-[url('https://images.pexels.com/photos/6804077/pexels-photo-6804077.jpeg')] bg-cover bg-center opacity-30 dark:opacity-20"
         />
         <div className="relative z-10">
           <motion.h1

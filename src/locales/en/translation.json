@@ -16,14 +16,14 @@
   "cta_sub": "Contact me today to discuss your needs and get a free personalized quote.",
   "cta_button": "Request a free quote",
   "project1_desc": "Creation of multi-page websites with forms, APIs and SEO optimization.",
-  "project2_desc": "Web application for tracking port calls with modern interface.",
+  "project2_desc": "Web application for port call tracking with modern interface.",
   "project3_desc": "Desktop real estate management software with intuitive interface.",
   "project_not_found": "Project not found",
   "project_not_found_message": "The project you are looking for does not exist or has been moved.",
   "back_to_projects": "Back to projects",
   "about_project": "About the project",
   "challenges": "Challenges and solutions",
-  "results": "Results obtained",
+  "results": "Results achieved",
   "gallery": "Project gallery",
   "project_details": "Project details",
   "launch_date": "Launch date",
@@ -41,7 +41,7 @@
   "view_large": "View large",
   "cta_title": "Ready to bring your project to life?",
   "cta_sub": "Let's discuss your vision and create something extraordinary together",
-  "cta_button": "Get started now",
+  "cta_button": "Start now",
   "cta_hint": "Let's turn your ideas into reality",
   "header": {
     "home": "Home",
@@ -84,7 +84,7 @@
     "skills": {
       "title": "My",
       "titleHighlight": "Skills",
-      "subtitle": "Technical and creative expertise to turn your ideas into reality",
+      "subtitle": "Technical and creative expertise to transform your ideas into reality",
       "frontend": {
         "name": "Frontend",
         "tech": "HTML/CSS/JS, Bootstrap, Tailwind, React, Vue.js"
@@ -116,7 +116,7 @@
       "subtitle": "Custom solutions to transform your digital challenges into success",
       "website": {
         "title": "Websites",
-        "description": "Elegant designs and optimal performance for high-performance digital showcase websites to boost your credibility and generate leads 24/7."
+        "description": "Elegant designs and optimal performance for high-performance digital showcase sites to boost your credibility and generate leads 24/7."
       },
       "webapp": {
         "title": "Web applications",
@@ -265,8 +265,9 @@
     "filters": {
       "filterLabel": "Filter:",
       "all": "All projects",
-      "web": "Web",
-      "desktop": "Desktop",
+      "siteWeb": "Website",
+      "appWeb": "Web App",
+      "logiciel": "Software",
       "mobile": "Mobile",
       "moreFilters": "More filters",
       "projectStatus": "Project status",
@@ -297,9 +298,9 @@
       "inProgress": "In progress"
     },
     "categories": {
-      "web": "Web",
-      "desktop": "Desktop",
-      "mobile": "Mobile"
+      "appWeb": "Web App",
+      "logiciel": "Software",
+      "siteWeb": "Website"
     },
     "projectDetails": {
       "title": "Project details",
@@ -309,7 +310,7 @@
       "status": "Status",
       "category": "Category",
       "technologies": "Technologies used",
-      "results": "Results obtained",
+      "results": "Results achieved",
       "features": "Features",
       "visitSite": "Visit site",
       "viewCode": "View code"
@@ -355,10 +356,10 @@
       "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
       "features": [
         "Complete menu with categorization (burgers, fries, drinks, desserts)",
-        "High-quality product photo gallery",
+        "High-quality photo gallery of products",
         "Promotions and special menus display system",
         "Contact page with order form",
-        "Colorful and attractive design suited for young audience",
+        "Colorful and attractive design suitable for young audience",
         "Social media integration",
         "Optimization for mobile and tablet"
       ],
@@ -379,10 +380,10 @@
       "client": "Chicken Restaurant",
       "period": "2023",
       "shortDescription": "Elegant website for specialized restaurant with menu presentation and online reservation",
-      "fullDescription": "Creation of a sophisticated website for a restaurant specialized in chicken-based dishes. The platform presents the complete gastronomic menu, the restaurant's history, and allows customers to order quickly or in advance. The warm and elegant design reflects the establishment's friendly atmosphere.",
+      "fullDescription": "Creation of a sophisticated website for a restaurant specialized in chicken-based dishes. The platform presents the entire gastronomic menu, the restaurant's history, and allows customers to order quickly or in advance. The warm and elegant design reflects the establishment's friendly atmosphere.",
       "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
       "features": [
-        "Complete presentation of the menu and specialties",
+        "Complete presentation of menu and specialties",
         "Gallery of signature dishes",
         "'About' section with restaurant history",
         "Practical information (hours, location, contact)",
@@ -405,7 +406,7 @@
       "client": "Construction company",
       "period": "2023",
       "shortDescription": "Professional website for construction company presenting services and achievements",
-      "fullDescription": "Development of a corporate website for a construction and renovation company. The platform presents all services (new construction, renovation, development), showcase of achievements with photo gallery, and customized quote request system. The robust and professional design inspires trust and expertise.",
+      "fullDescription": "Development of a corporate website for a construction and renovation company. The platform presents all services (new construction, renovation, fitting out), showcase of achievements with photo gallery, and custom quote request system. The robust and professional design inspires trust and expertise.",
       "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "PHP"],
       "features": [
         "Presentation of construction and renovation services",
@@ -426,22 +427,22 @@
     },
     {
       "id": 2,
-      "title": "Ship Call Monitoring",
+      "title": "Ship Port Calls Tracking",
       "category": "Web App",
       "client": "Port of Béjaïa",
       "period": "2022",
-      "shortDescription": "Complete ERP solution for real-time management and monitoring of ship calls",
-      "fullDescription": "Development of a complete ERP web application dedicated to comprehensive management of ship calls. This solution covers the entire process from arrival announcement to ship departure, including real-time monitoring of all port movements, multi-user management by departments, and tracking of collegial decisions. The system includes customized dashboards, a complete audit log and advanced reporting features.",
+      "shortDescription": "Complete ERP solution for real-time ship port calls management and tracking",
+      "fullDescription": "Development of a complete ERP web application dedicated to comprehensive management of ship port calls. This solution covers the entire process from arrival announcement to ship departure, including real-time tracking of all port movements, multi-user management by departments, and tracking of collegial decisions. The system includes personalized dashboards, a complete audit log and advanced reporting features.",
       "technologies": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
       "features": [
         "Real-time ship tracking from announcement to departure",
         "Complete visualization of port movements and operation statuses",
-        "Customized dashboard with key performance indicators",
+        "Personalized dashboard with key performance indicators",
         "User management by departments with role and permission system",
         "Automated notifications and alerts system",
         "Detailed audit log of all user activities",
         "Generation and printing of official documents",
-        "Meeting management and collegial decision tracking",
+        "Meeting management and collegial decisions tracking",
         "Advanced reporting and statistics module",
         "Responsive interface adapted to different port services"
       ],
@@ -453,7 +454,7 @@
       "new": false,
       "img": {
         "url": "/projets/suivi_des_escales/9.JPG",
-        "alt": "Main dashboard of the call management system"
+        "alt": "Main dashboard of port calls management system"
       },
       "images": [
         {
@@ -466,7 +467,7 @@
         },
         {
           "url": "/projets/suivi_des_escales/3.JPG",
-          "alt": "Customized dashboard with KPI indicators"
+          "alt": "Personalized dashboard with KPI indicators"
         },
         {
           "url": "/projets/suivi_des_escales/4.JPG",
@@ -478,7 +479,7 @@
         },
         {
           "url": "/projets/suivi_des_escales/6.JPG",
-          "alt": "Meeting and decision management interface"
+          "alt": "Meeting and decisions management interface"
         },
         {
           "url": "/projets/suivi_des_escales/7.JPG",
@@ -505,7 +506,7 @@
       "category": "Software",
       "client": "Real Estate",
       "period": "2019",
-      "shortDescription": "Complete desktop real estate management application with property, client and transaction management",
+      "shortDescription": "Complete desktop application for real estate management with property, client and transaction management",
       "fullDescription": "Development of complete desktop software for real estate agency allowing centralized management of real estate properties, buyer and seller clients, and transaction tracking. The application includes a mandate management module, visit calendar, commission financial tracking, and advanced property search and filtering features.",
       "technologies": ["Java", "OOP", "Swing", "SQLite"],
       "features": [
@@ -516,7 +517,7 @@
         "Financial management module and commission calculation",
         "Advanced search system with multiple criteria",
         "Generation of contracts and legal documents",
-        "Database backup and restoration",
+        "Database backup and restore",
         "Intuitive user interface in French",
         "Property documentation management"
       ],
@@ -557,7 +558,7 @@
         },
         {
           "url": "/projets/agence_immobiliere/7.JPG",
-          "alt": "Document and contract generation"
+          "alt": "Documents and contracts generation"
         },
         {
           "url": "/projets/agence_immobiliere/8.JPG",
@@ -571,6 +572,7 @@
   "technologies": [
     { "name": "React", "icon": "SiReact" },
     { "name": "Vue.js", "icon": "SiVuedotjs" },
+    { "name": "Bootstrap", "icon": "FiCode" },
     { "name": "Tailwind", "icon": "SiTailwindcss" },
     { "name": "JavaScript", "icon": "FiCode" },
     { "name": "HTML", "icon": "FiCode" },
@@ -603,7 +605,7 @@
     "aboutDescription": "Passionate Full Stack Developer, I share here my experiences, discoveries and thoughts on the world of web development. Explore the latest trends, tips and best practices.",
     "popularTagsTitle": "Popular Tags",
     "newsletterTitle": "Tech Newsletter",
-    "newsletterDescription": "Receive the latest articles and resources directly in your mailbox.",
+    "newsletterDescription": "Receive the latest articles and resources directly in your inbox.",
     "newsletterPlaceholder": "Your email",
     "newsletterButton": "Subscribe",
     "readMore": "Read more",
@@ -662,11 +664,11 @@
       "title": "Cookies Policy",
       "subtitle": "Management of trackers and similar technologies",
       "whatAreCookies": "What are cookies?",
-      "cookiesDefinition": "Cookies are small text files placed on your device when you browse. They are used to remember your preferences, analyze traffic and personalize your experience.",
+      "cookiesDefinition": "Cookies are small text files placed on your device when you browse. They serve to remember your preferences, analyze traffic and personalize your experience.",
       "typesTitle": "Types of cookies used",
       "essential": {
         "title": "Essential",
-        "description": "Necessary for website operation (security, cart, account)"
+        "description": "Necessary for website operation (security, shopping cart, account)"
       },
       "performance": {
         "title": "Performance",
@@ -681,13 +683,13 @@
         "description": "Personalized advertising and remarketing campaigns"
       },
       "management": {
-        "title": "Consent management",
+        "title": "Managing your consent",
         "text": "You have full control over non-essential cookies. You can modify your preferences at any time.",
         "button": "Manage my cookie preferences"
       }
     },
     "dataSection": {
-      "title": "Personal data processing",
+      "title": "Personal Data Processing",
       "subtitle": "How we collect and use your information",
       "collectedData": "Data collected",
       "dataList": [
@@ -698,7 +700,7 @@
       ],
       "purposesTitle": "Processing purposes",
       "purposesList": [
-        "Order and service execution",
+        "Execution of orders and services",
         "User experience personalization",
         "Improvement of our products and services",
         "Marketing communication (with your consent)",
@@ -714,14 +716,14 @@
       ]
     },
     "rightsSection": {
-      "title": "Your GDPR rights",
+      "title": "Your GDPR Rights",
       "subtitle": "Control of your personal data",
       "access": {
         "title": "Right of access",
         "description": "Obtain copy of your personal data"
       },
       "rectification": {
-        "title": "Right to rectification",
+        "title": "Right of rectification",
         "description": "Correct inaccurate information"
       },
       "erasure": {
@@ -736,7 +738,7 @@
       "exerciseText": "For any request regarding your personal data, please contact us at the address below. We will respond within a maximum of 30 days."
     },
     "disableSection": {
-      "title": "Cookies deactivation",
+      "title": "Disabling cookies",
       "subtitle": "How to manage your browser settings",
       "text": "You can control cookies through your browser settings. Here are guides for popular browsers:",
       "browsers": {
@@ -752,7 +754,7 @@
       "text": "For any questions regarding this policy or exercising your rights, contact our DPO:",
       "dpoName": "Mr. Jean Dupont",
       "dpoRole": "Data Protection Officer",
-      "email": "dpo@yourcompany.com",
+      "email": "dpo@yourscompany.com",
       "phone": "+33 1 23 45 67 89",
       "mailingAddress": "By mail:",
       "address": [
@@ -789,10 +791,10 @@
     "guarantees": [
       {
         "title": "Response within 24h",
-        "text": "I commit to respond to all requests within 24 hours"
+        "text": "I commit to responding to all requests within 24 hours"
       },
       {
-        "title": "Smooth communication",
+        "title": "Fluid communication",
         "text": "Regular follow-up and transparent communication throughout the project"
       },
       {
@@ -839,7 +841,7 @@
     "faqItems": [
       {
         "question": "What is your average response time?",
-        "answer": "I commit to respond to all messages within 24 business hours."
+        "answer": "I commit to responding to all messages within 24 business hours."
       },
       {
         "question": "Can I contact you for free advice?",
@@ -855,7 +857,7 @@
       },
       {
         "question": "What are your response times?",
-        "answer": "I commit to respond to all requests within a maximum of 24 business hours. For complex projects, I will send you an initial response within 24h and a detailed quote within 48h."
+        "answer": "I commit to responding to all requests within a maximum of 24 business hours. For complex projects, I will send you an initial response within 24h and a detailed quote within 48h."
       },
       {
         "question": "Can I meet you in person?",
@@ -894,7 +896,7 @@
   "services": {
     "meta": {
       "title": "Custom Web Services | Website and Application Creation",
-      "description": "Expert in web development and UX/UI design. Complete solutions for showcase websites, web applications and digital strategy."
+      "description": "Expert in web development and UX/UI design. Complete solutions for showcase sites, web applications and digital strategy."
     },
     "hero": {
       "title1": "Custom Digital",
@@ -911,7 +913,7 @@
       "ctaButton": "Describe your project",
       "web": {
         "title": "Websites",
-        "description": "Creation of secure and high-performance websites adapted to your business needs.",
+        "description": "Creation of high-performance and secure websites adapted to your business needs.",
         "features": [
           "Custom showcase sites",
           "Mobile/tablet compatible",
@@ -948,7 +950,7 @@
       },
       "mobile": {
         "title": "Mobile Applications",
-        "description": "Native smartphone applications published on official stores.",
+        "description": "Native applications for smartphones published on official stores.",
         "features": [
           "High-performance iOS and Android",
           "Publication on App Store/Google Play",
@@ -1031,7 +1033,7 @@
         },
         {
           "title": "Technical innovation",
-          "description": "Constant technological watch for avant-garde solutions"
+          "description": "Constant technological watch for cutting-edge solutions"
         },
         {
           "title": "Continuous support",
@@ -1043,7 +1045,7 @@
       "title": "Ready to transform your digital vision?",
       "subtitle": "Contact me for a free consultation and let's explore possibilities together.",
       "button1": "Schedule a call",
-      "button2": "View my work"
+      "button2": "See my work"
     }
   },
   "devis": {
@@ -1131,14 +1133,14 @@
       "step1": "Please fill in required fields (First name, Last name, Email)",
       "step2": "Please select a service type"
     },
-    "submitError": "Send error:",
+    "submitError": "Sending error:",
     "submitErrorMessage": "An error occurred, please try again.",
     "services": [
-      "Showcase Website",
-      "E-commerce Website",
+      "Showcase Site",
+      "E-commerce Site",
       "Web Application",
       "Mobile Application",
-      "Website Redesign",
+      "Site Redesign",
       "SEO & Marketing",
       "Other"
     ],
@@ -1175,7 +1177,7 @@
       "Online payment",
       "Multilingual",
       "Blog/News",
-      "Online reservations",
+      "Online bookings",
       "Comment system",
       "Third-party API integration",
       "Admin dashboard",
@@ -1256,7 +1258,7 @@
       "items": [
         {
           "question": "What files can I attach to my request?",
-          "answer": "You can attach any useful documents: images, mockups, PDF, design files (PSD, AI, FIG, SKETCH), Word/Excel documents, or any other file helping to understand your project."
+          "answer": "You can attach any useful document: images, mockups, PDF, design files (PSD, AI, FIG, SKETCH), Word/Excel documents, or any other file helping to understand your project."
         },
         {
           "question": "How are my attached files processed?",
@@ -1268,7 +1270,7 @@
         },
         {
           "question": "What happens after sending the quote?",
-          "answer": "I will contact you to discuss your project details, refine the quote if necessary, and establish a realization schedule."
+          "answer": "I will contact you to discuss your project details, refine the quote if necessary, and establish a production schedule."
         }
       ]
     },
@@ -1279,9 +1281,9 @@
       "Timeline, Budget & Finalization"
     ],
     "contactPage": {
-      "title": "Free Quote",
-      "description": "Get a personalized estimate of your project",
-      "button": "Request a quote"
+      "title": "Simple Message",
+      "description": "Contact us with a simple message and tell us about your project",
+      "button": "Contact Us"
     }
   }
 }
