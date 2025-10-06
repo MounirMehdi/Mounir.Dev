@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate  } from 'react-router-dom'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Home from './pages/Home'
@@ -26,6 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/devis" element={<Devis />} />
             <Route path="/cookies" element={<Cookies />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />

@@ -58,9 +58,9 @@ const Projects = () => {
   // Filtres
   const categoryFilters = [
     { id: 'all', label: t('projects.filters.all') },
-    { id: 'web', label: t('projects.filters.web') },
-    { id: 'desktop', label: t('projects.filters.desktop') },
-    { id: 'mobile', label: t('projects.filters.mobile') }
+    { id: 'siteWeb', label: t('projects.filters.siteWeb') },
+    { id: 'appWeb', label: t('projects.filters.appWeb') },
+    { id: 'logiciel', label: t('projects.filters.logiciel') }
   ];
 
   const statusFilters = [
@@ -100,10 +100,19 @@ const Projects = () => {
   const { scrollY } = useScroll();
   const heroY = useTransform(scrollY, [0, 300], [0, 80]);
 
+  // Fonction pour normaliser les catégories
+  const normalizeCategory = (category) => {
+    if (!category) return '';
+    return category.toLowerCase().replace(/\s+/g, '');
+  };
+
   // Filtrer les projets
   const filteredProjects = projects.filter(project => {
-    // Filtre par catégorie
-    const matchesCategory = categoryFilter === 'all' || project.category === categoryFilter;
+    // Filtre par catégorie - normaliser les valeurs pour la comparaison
+    const projectCategory = normalizeCategory(project.category);
+    const filterCategory = normalizeCategory(categoryFilter);
+    
+    const matchesCategory = categoryFilter === 'all' || projectCategory === filterCategory;
 
     // Filtre par statut
     const matchesStatus = statusFilter === 'all' || project.status === statusFilter;
@@ -113,7 +122,8 @@ const Projects = () => {
       techFilters.some(tech => project.technologies.includes(tech));
 
     // Filtre par recherche
-    const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    const matchesSearch = searchQuery === '' ||
+      project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.technologies.some(tech => tech.toLowerCase().includes(searchQuery.toLowerCase()));
 
@@ -155,6 +165,13 @@ const Projects = () => {
   useEffect(() => {
     setCurrentPage(1);
   }, [categoryFilter, statusFilter, techFilters, searchQuery]);
+
+  // Debug: Afficher les projets et filtres
+  useEffect(() => {
+    console.log('Category Filter:', categoryFilter);
+    console.log('Projects:', projects.map(p => ({ title: p.title, category: p.category, normalized: normalizeCategory(p.category) })));
+    console.log('Filtered Projects:', filteredProjects.length);
+  }, [categoryFilter, projects, filteredProjects]);
 
   return (
     <motion.div
@@ -228,7 +245,6 @@ const Projects = () => {
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-between gap-3">
             {/* Filtres principaux */}
             <div className="w-full sm:w-auto">
-
               <div className="flex overflow-x-auto pb-2 gap-2 hide-scrollbar">
                 {categoryFilters.map((filter) => (
                   <motion.div
@@ -244,7 +260,7 @@ const Projects = () => {
                         : "bg-slate-100 dark:bg-[#055BA4]/20 hover:bg-slate-200 dark:hover:bg-[#055BA4]/30 text-[#055BA4] dark:text-slate-300"
                         }`}
                     >
-                      {t(`projects.filters.${filter.id}`)}
+                      {filter.label}
                     </button>
                   </motion.div>
                 ))}
@@ -422,7 +438,7 @@ const Projects = () => {
                                   <span>{project.period}</span>
                                 </div>
                                 <span className="px-2 py-1 bg-[#41ADE8]/20 text-[#41ADE8] rounded-full">
-                                  {t(`${project.category}`)}
+                                  {project.category}
                                 </span>
                               </div>
                             </div>

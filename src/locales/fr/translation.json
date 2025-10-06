@@ -265,8 +265,9 @@
     "filters": {
       "filterLabel": "Filtrer :",
       "all": "Tous les projets",
-      "web": "Web",
-      "desktop": "Desktop",
+      "siteWeb": "Site Web",
+      "appWeb": "App Web",
+      "logiciel": "Logiciel",
       "mobile": "Mobile",
       "moreFilters": "Plus de filtres",
       "projectStatus": "Statut du projet",
@@ -297,9 +298,9 @@
       "inProgress": "En cours"
     },
     "categories": {
-      "web": "Web",
-      "desktop": "Desktop",
-      "mobile": "Mobile"
+      "appWeb": "App Web",
+      "logiciel": "Logiciel",
+      "siteWeb": "Site Web"
     },
     "projectDetails": {
       "title": "Détails du projet",
@@ -571,6 +572,7 @@
   "technologies": [
     { "name": "React", "icon": "SiReact" },
     { "name": "Vue.js", "icon": "SiVuedotjs" },
+    { "name": "Bootstrap", "icon": "FiCode" },
     { "name": "Tailwind", "icon": "SiTailwindcss" },
     { "name": "JavaScript", "icon": "FiCode" },
     { "name": "HTML", "icon": "FiCode" },
