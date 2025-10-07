@@ -900,7 +900,7 @@ const Devis = () => {
                       className="bg-green-600 hover:bg-green-700 w-full"
                     >
                       <a
-                        href={t('contact.whatsapp.link')}
+                        href="https://wa.me/0021366090610"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

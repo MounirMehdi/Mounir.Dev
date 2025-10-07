@@ -409,7 +409,7 @@ const Contact = () => {
                       className="w-full bg-white text-green-700 hover:bg-green-50 dark:bg-white dark:text-green-700 mt-4"
                     >
                       <a 
-                        href={t('contact.whatsapp.link')} 
+                        href="https://wa.me/0021366090610" 
                         target="_blank"
                         rel="noopener noreferrer"
                       >

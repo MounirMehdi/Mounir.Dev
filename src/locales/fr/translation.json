@@ -952,8 +952,8 @@
         "title": "Applications Mobile",
         "description": "Applications natives pour smartphones publiées sur les stores officiels.",
         "features": [
-          "iOS et Android performants",
-          "Publication sur App Store/Google Play",
+          "Android performants",
+          "Publication sur Google Play",
           "Fonctionnalités hors connexion",
           "Notifications instantanées",
           "Protection des données personnelles",
@@ -962,8 +962,7 @@
           "Mises à jour régulières"
         ],
         "technologies": [
-          "Flutter",
-          "React Native",
+          "Android Studio",
           "Firebase",
           "MYSQL",
           "NoSQL"

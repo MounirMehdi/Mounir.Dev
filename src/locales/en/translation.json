@@ -952,8 +952,8 @@
         "title": "Mobile Applications",
         "description": "Native applications for smartphones published on official stores.",
         "features": [
-          "High-performance iOS and Android",
-          "Publication on App Store/Google Play",
+          "High-performance Android",
+          "Publication on Google Play",
           "Offline functionality",
           "Instant notifications",
           "Personal data protection",
@@ -962,8 +962,7 @@
           "Regular updates"
         ],
         "technologies": [
-          "Flutter",
-          "React Native",
+          "Android Studio",
           "Firebase",
           "MYSQL",
           "NoSQL"

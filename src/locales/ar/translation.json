@@ -952,8 +952,8 @@
         "title": "تطبيقات الجوال",
         "description": "تطبيقات أصلية للهواتف الذكية منشورة على المتاجر الرسمية.",
         "features": [
-          "iOS و Android عالي الأداء",
-          "النشر على App Store/Google Play",
+          "Android عالي الأداء",
+          "النشر على Google Play",
           "وظائف دون اتصال",
           "إشعارات فورية",
           "حماية البيانات الشخصية",
@@ -962,9 +962,7 @@
           "تحديثات منتظمة"
         ],
         "technologies": [
-          "Flutter",
-          "React Native",
-          "Firebase",
+          "Andoid Studio",
           "MYSQL",
           "NoSQL"
         ]
