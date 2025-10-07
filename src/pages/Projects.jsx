@@ -30,6 +30,12 @@ import {
 import {
   FaJava
 } from 'react-icons/fa';
+import { 
+  SiBootstrap, SiJavascript,
+  SiHtml5, SiCss3, SiPhp,
+  SiGit, SiGithub, SiBitbucket, SiAdobephotoshop, SiAdobeillustrator,
+  SiCanva 
+} from 'react-icons/si';
 import ProjectDetailModal from '../components/projects/ProjectDetailModal';
 
 const Projects = () => {
@@ -605,16 +611,26 @@ const Projects = () => {
                 whileHover={{ y: -5 }}
               >
                 <div className="w-10 h-10 mx-auto mb-3 flex items-center justify-center">
-                  {tech.icon === 'SiReact' && <SiReact className="text-blue-500 text-2xl" />}
-                  {tech.icon === 'SiVuedotjs' && <SiVuedotjs className="text-green-500 text-2xl" />}
-                  {tech.icon === 'SiTailwindcss' && <SiTailwindcss className="text-teal-500 text-2xl" />}
-                  {tech.icon === 'FiCode' && <FiCode className="text-blue-600 text-2xl" />}
-                  {tech.icon === 'SiNodedotjs' && <SiNodedotjs className="text-green-600 text-2xl" />}
-                  {tech.icon === 'SiLaravel' && <SiLaravel className="text-red-500 text-2xl" />}
-                  {tech.icon === 'FaJava' && <FaJava className="text-red-400 text-2xl" />}
-                  {tech.icon === 'SiMysql' && <SiMysql className="text-orange-500 text-2xl" />}
-                  {tech.icon === 'SiFigma' && <SiFigma className="text-purple-500 text-2xl" />}
-                </div>
+    {tech.icon === 'SiReact' && <SiReact className="text-blue-500 text-2xl" />}
+    {tech.icon === 'SiVuedotjs' && <SiVuedotjs className="text-green-500 text-2xl" />}
+    {tech.icon === 'SiBootstrap' && <SiBootstrap className="text-purple-500 text-2xl" />}
+    {tech.icon === 'SiTailwindcss' && <SiTailwindcss className="text-teal-500 text-2xl" />}
+    {tech.icon === 'SiJavascript' && <SiJavascript className="text-yellow-500 text-2xl" />}
+    {tech.icon === 'SiHtml5' && <SiHtml5 className="text-orange-500 text-2xl" />}
+    {tech.icon === 'SiCss3' && <SiCss3 className="text-blue-500 text-2xl" />}
+    {tech.icon === 'SiPhp' && <SiPhp className="text-purple-500 text-2xl" />}
+    {tech.icon === 'SiLaravel' && <SiLaravel className="text-red-500 text-2xl" />}
+    {tech.icon === 'SiNodedotjs' && <SiNodedotjs className="text-green-600 text-2xl" />}
+    {tech.icon === 'FaJava' && <FaJava className="text-red-400 text-2xl" />}
+    {tech.icon === 'SiMysql' && <SiMysql className="text-orange-500 text-2xl" />}
+    {tech.icon === 'SiGit' && <SiGit className="text-orange-600 text-2xl" />}
+    {tech.icon === 'SiGithub' && <SiGithub className="text-gray-800 text-2xl" />}
+    {tech.icon === 'SiBitbucket' && <SiBitbucket className="text-blue-500 text-2xl" />}
+    {tech.icon === 'SiAdobephotoshop' && <SiAdobephotoshop className="text-blue-500 text-2xl" />}
+    {tech.icon === 'SiAdobeillustrator' && <SiAdobeillustrator className="text-orange-500 text-2xl" />}
+    {tech.icon === 'SiCanva' && <SiCanva className="text-blue-500 text-2xl" />}
+    {tech.icon === 'SiFigma' && <SiFigma className="text-purple-500 text-2xl" />}
+</div>
                 <span className="text-[#055BA4] dark:text-slate-300 font-medium group-hover:text-[#055BA4] dark:group-hover:text-[#41ADE8] transition-colors">
                   {tech.name}
                 </span>
